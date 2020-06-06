@@ -4,31 +4,33 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.github.policebrutality.R
+import com.github.policebrutality.databinding.FragmentHomeBinding
 import dagger.android.support.DaggerFragment
 import javax.inject.Inject
 
 class HomeFragment : DaggerFragment() {
-
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
     private val viewModel by viewModels<HomeViewModel> { viewModelFactory }
+    private lateinit var viewDataBinding: FragmentHomeBinding
 
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
+        viewDataBinding = FragmentHomeBinding.inflate(inflater, container, false).apply {
+            lifecycleOwner = this@HomeFragment
+            vm = viewModel
+        }
+
         viewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
+            viewDataBinding.textHome.text = it
         })
-        return root
+        return viewDataBinding.root
     }
 }
