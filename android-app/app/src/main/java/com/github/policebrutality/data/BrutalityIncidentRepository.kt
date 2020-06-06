@@ -8,4 +8,8 @@ class BrutalityIncidentRepository @Inject constructor(private val dao: IncidentD
     override fun getIncidents(): LiveData<List<Incident>> {
         return dao.getIncidents()
     }
+
+    override fun getStates(): LiveData<List<String>> {
+        return dao.getUniqueStates()
+    }
 }
