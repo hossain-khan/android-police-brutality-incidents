@@ -12,6 +12,9 @@ interface IncidentDao {
     @Query("SELECT * FROM incidents ORDER BY name")
     fun getIncidents(): LiveData<List<Incident>>
 
+    @Query("SELECT DISTINCT state FROM incidents ORDER BY state ASC")
+    fun getUniqueStates(): LiveData<List<String>>
+
     @Query("SELECT * FROM incidents WHERE state = :stateName ORDER BY name")
     fun getIncidentsForState(stateName: String): LiveData<List<Incident>>
 
