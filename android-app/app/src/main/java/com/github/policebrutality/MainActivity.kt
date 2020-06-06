@@ -1,12 +1,15 @@
 package com.github.policebrutality
 
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.github.policebrutality.data.AppDatabase
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,5 +25,11 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        val incidentDao = AppDatabase.getInstance(this).incidentDao()
+
+        incidentDao.getIncidents().observe(this, Observer { list ->
+            Log.d("TAG", "Got data $list")
+        })
     }
 }
