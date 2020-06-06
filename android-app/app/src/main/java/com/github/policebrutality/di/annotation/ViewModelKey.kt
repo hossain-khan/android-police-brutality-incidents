@@ -4,8 +4,14 @@ import androidx.lifecycle.ViewModel
 import dagger.MapKey
 import kotlin.reflect.KClass
 
+/**
+ * Used to add keys to view model factory.
+ */
+@Target(
+    AnnotationTarget.FUNCTION,
+    AnnotationTarget.PROPERTY_GETTER,
+    AnnotationTarget.PROPERTY_SETTER
+)
 @Retention(AnnotationRetention.RUNTIME)
-@Target(AnnotationTarget.FUNCTION)
 @MapKey
-annotation class ViewModelKey(val value: KClass<out ViewModel>) {
-}
+annotation class ViewModelKey(val value: KClass<out ViewModel>)
