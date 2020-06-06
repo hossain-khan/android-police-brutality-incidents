@@ -1,7 +1,12 @@
+> **NOTE:** _This repository was created on June 6th, 2020 after discovering the [police-brutality](https://github.com/2020PB/police-brutality) repository that contains the incidents data. The hope is to quickly build an Android app that is easily accessible for people to get updates on new incidents or browse._
+
 # Police Brutality Incidents - Android App
 
 Android client app for https://github.com/2020PB/police-brutality (Repository containing evidence of police brutality during the 2020 George Floyd protests)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/amardeshbd/android-police-brutality-incidents/develop/resources/poster/github-repository-social-preview.png" width="50%">
+</p>
 
 ## Objective
 
