@@ -29,8 +29,9 @@ buildscript {
         retrofitVersion = '2.8.1'
         roomVersion = '2.2.5'
         runnerVersion = '1.0.1'
-        truthVersion = '0.42'
         testExtJunit = '1.1.0'
+        timberVersion = '4.7.1'
+        truthVersion = '0.42'
         viewPagerVersion = '1.0.0'
         workVersion = '2.3.4'
     }

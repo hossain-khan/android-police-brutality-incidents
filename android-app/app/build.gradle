@@ -81,6 +81,9 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:$rootProject.okhttpVersion"
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttpVersion"
 
+    implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
+
+    // Unit testing
     testImplementation "junit:junit:$rootProject.junitVersion"
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'

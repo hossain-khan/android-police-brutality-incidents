@@ -40,11 +40,5 @@ class MainActivity : DaggerAppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
-        val incidentDao = AppDatabase.getInstance(this).incidentDao()
-
-        incidentDao.getIncidents().observe(this, Observer { list ->
-            Log.d("TAG", "Got data $list")
-        })
     }
 }
