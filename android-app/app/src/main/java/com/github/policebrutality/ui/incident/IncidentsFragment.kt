@@ -22,6 +22,7 @@ class IncidentsFragment : DaggerFragment() {
     private val viewModel by viewModels<IncidentViewModel> { viewModelFactory }
     private lateinit var viewDataBinding: FragmentIncidentBinding
     private val navArgs: IncidentsFragmentArgs by navArgs()
+    private lateinit var adapter: IncidentsAdapter
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -32,9 +33,13 @@ class IncidentsFragment : DaggerFragment() {
 
         viewModel.selectedSate(navArgs.stateName)
 
+        adapter = IncidentsAdapter {
+            Timber.d("Selected Incident: $it")
+        }
+
         viewDataBinding.recyclerView.setHasFixedSize(false)
         viewDataBinding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        //viewDataBinding.recyclerView.adapter = adapter
+        viewDataBinding.recyclerView.adapter = adapter
 
 
         return viewDataBinding.root
@@ -48,8 +53,7 @@ class IncidentsFragment : DaggerFragment() {
         }
 
         viewModel.incidents.observe(viewLifecycleOwner, Observer {
-            Timber.d("Got incidents: $it")
-            //adapter.submitList(it.map { name -> State(name) })
+            adapter.submitList(it)
         })
     }
 }
