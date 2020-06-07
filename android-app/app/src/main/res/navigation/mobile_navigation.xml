@@ -9,7 +9,21 @@
         android:id="@+id/navigation_home"
         android:name="com.github.policebrutality.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/navigation_to_incidentsFragment"
+            app:destination="@id/incidentsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/incidentsFragment"
+        android:name="com.github.policebrutality.ui.incident.IncidentsFragment"
+        android:label="IncidentsFragment">
+        <argument
+            android:name="stateName"
+            app:argType="string" />
+    </fragment>
+
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -22,4 +36,5 @@
         android:name="com.github.policebrutality.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
 </navigation>

@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.github.policebrutality.databinding.FragmentHomeBinding
 import dagger.android.support.DaggerFragment
@@ -28,8 +29,9 @@ class HomeFragment : DaggerFragment() {
         }
 
 
-        adapter = StateListAdapter {
-            Timber.d("Tapped on state item $it")
+        adapter = StateListAdapter { state ->
+            Timber.d("Tapped on state item $state")
+            findNavController().navigate(HomeFragmentDirections.navigationToIncidentsFragment(stateName = state.id))
         }
         adapter.submitList(emptyList())
 
