@@ -43,7 +43,7 @@ android {
 }
 
 dependencies {
-
+    // Google JetPack libs
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$rootProject.kotlinVersion"
     implementation "androidx.core:core-ktx:$rootProject.ktxVersion"
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
@@ -56,6 +56,7 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"
     implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
+    implementation "androidx.cardview:cardview:$rootProject.cardViewVersion"
 
     // Firebase
     implementation "com.google.firebase:firebase-analytics:$rootProject.firebaseAnalyticsVersion"
