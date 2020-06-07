@@ -4,6 +4,8 @@ plugins {
     id 'kotlin-android-extensions'
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -54,6 +56,11 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:2.2.2"
     implementation "androidx.navigation:navigation-ui-ktx:2.2.2"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
+
+    // Firebase
+    implementation "com.google.firebase:firebase-analytics:$rootProject.firebaseAnalyticsVersion"
+    implementation "com.google.firebase:firebase-analytics-ktx:$rootProject.firebaseAnalyticsVersion"
+    implementation "com.google.firebase:firebase-crashlytics:$rootProject.firebaseCrashlyticsVersion"
 
     implementation "androidx.work:work-runtime-ktx:$rootProject.workVersion"
 
