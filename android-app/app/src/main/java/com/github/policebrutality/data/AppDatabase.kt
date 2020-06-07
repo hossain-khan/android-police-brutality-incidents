@@ -15,7 +15,7 @@ import com.github.policebrutality.worker.SeedDatabaseWorker
 /**
  * The Room database for this app
  */
-@Database(entities = [Incident::class], version = 1, exportSchema = false)
+@Database(entities = [Incident::class], version = 1, exportSchema = true)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun incidentDao(): IncidentDao
