@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.github.policebrutality.R
 import com.github.policebrutality.databinding.FragmentIncidentBinding
 import dagger.android.support.DaggerFragment
 import timber.log.Timber
@@ -49,7 +50,7 @@ class IncidentsFragment : DaggerFragment() {
         super.onActivityCreated(savedInstanceState)
 
         (activity as AppCompatActivity?)?.supportActionBar?.let { actionBar ->
-            actionBar.title = navArgs.stateName
+            actionBar.title = getString(R.string.title_incidents, navArgs.stateName)
         }
 
         viewModel.incidents.observe(viewLifecycleOwner, Observer {
