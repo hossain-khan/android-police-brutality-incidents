@@ -3,6 +3,7 @@ package com.github.policebrutality.data.model
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.google.gson.annotations.SerializedName
 
 /**
  * An example data exposed from JSON response.
@@ -21,19 +22,21 @@ import androidx.room.PrimaryKey
  *    "city":"Bentonville",
  *    "name":"Law enforcement gas a crowd chanting \u201cwe want peace\u201d right after exiting the building.",
  *    "date":"2020-06-01",
- *    "date_text":"June 1st"
+ *    "date_text":"June 1st",
+ *    "id": "ar-bentonville-1"
  * }
  * ```
  */
 @Entity(tableName = "incidents")
 data class Incident(
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "_id") val id: Long,
-    @ColumnInfo(name = "state") val state: String = "",
-    @ColumnInfo(name = "edit_url") val edit_at: String = "",
-    @ColumnInfo(name = "city") val city: String = "",
-    @ColumnInfo(name = "name") val name: String = "",
-    @ColumnInfo(name = "date") val date: String = "",
-    @ColumnInfo(name = "date_text") val date_text: String = "",
+    @ColumnInfo(name = "_id") val _id: Long,
+    @SerializedName("id") @ColumnInfo(name = "incident_id") val incident_id: String? = "",
+    @ColumnInfo(name = "state") val state: String? = "",
+    @ColumnInfo(name = "edit_url") val edit_at: String? = "",
+    @ColumnInfo(name = "city") val city: String? = "",
+    @ColumnInfo(name = "name") val name: String? = "",
+    @ColumnInfo(name = "date") val date: String? = "",
+    @ColumnInfo(name = "date_text") val date_text: String? = "",
     @ColumnInfo(name = "links") val links: List<String> = emptyList()
 )

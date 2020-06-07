@@ -15,7 +15,7 @@ import com.github.policebrutality.worker.SeedDatabaseWorker
 /**
  * The Room database for this app
  */
-@Database(entities = [Incident::class], version = 1, exportSchema = true)
+@Database(entities = [Incident::class], version = 2, exportSchema = true)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun incidentDao(): IncidentDao
@@ -23,7 +23,8 @@ abstract class AppDatabase : RoomDatabase() {
     companion object {
 
         // For Singleton instantiation
-        @Volatile private var instance: AppDatabase? = null
+        @Volatile
+        private var instance: AppDatabase? = null
 
         fun getInstance(context: Context): AppDatabase {
             return instance ?: synchronized(this) {
@@ -31,18 +32,32 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
-        // Create and pre-populate the database. See this article for more details:
-        // https://medium.com/google-developers/7-pro-tips-for-room-fbadea4bfbd1#4785
+
         private fun buildDatabase(context: Context): AppDatabase {
             return Room.databaseBuilder(context, AppDatabase::class.java, DATABASE_NAME)
-                    .addCallback(object : RoomDatabase.Callback() {
-                        override fun onCreate(db: SupportSQLiteDatabase) {
-                            super.onCreate(db)
-                            val request = OneTimeWorkRequestBuilder<SeedDatabaseWorker>().build()
-                            WorkManager.getInstance(context).enqueue(request)
-                        }
-                    })
-                    .build()
+                .addCallback(object : RoomDatabase.Callback() {
+                    override fun onCreate(db: SupportSQLiteDatabase) {
+                        super.onCreate(db)
+                        populateDatabase(context)
+                    }
+
+                    override fun onDestructiveMigration(db: SupportSQLiteDatabase) {
+                        super.onDestructiveMigration(db)
+                        populateDatabase(context)
+                    }
+                })
+                // https://developer.android.com/training/data-storage/room/migrating-db-versions#kotlin
+                .fallbackToDestructiveMigration()
+                .build()
+        }
+
+        /**
+         * Create and pre-populate the database. See this article for more details:
+         * https://medium.com/google-developers/7-pro-tips-for-room-fbadea4bfbd1#4785
+         */
+        private fun populateDatabase(context: Context) {
+            val request = OneTimeWorkRequestBuilder<SeedDatabaseWorker>().build()
+            WorkManager.getInstance(context).enqueue(request)
         }
     }
 }
