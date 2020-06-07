@@ -5,28 +5,28 @@
 
     <data>
 
+        <import type="android.view.View" />
+
         <variable
-            name="data"
-            type="com.github.policebrutality.ui.home.State" />
+            name="vm"
+            type="com.github.policebrutality.ui.incident.IncidentViewModel" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackground">
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeFragment">
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/name"
-            style="@style/TextAppearance.MaterialComponents.Headline6"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="@{data.id}"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="State Name" />
-
+            tools:background="#cad"
+            tools:itemCount="8" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

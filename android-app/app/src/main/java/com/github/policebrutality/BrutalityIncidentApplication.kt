@@ -19,7 +19,13 @@ class BrutalityIncidentApplication : DaggerApplication() {
         return appComponent
     }
 
-
+    override fun onCreate() {
+        super.onCreate()
+        
+        if (BuildConfig.DEBUG) {
+            installLogging()
+        }
+    }
 
     private fun installLogging() {
         // Include logging in release builds so we can test from client.

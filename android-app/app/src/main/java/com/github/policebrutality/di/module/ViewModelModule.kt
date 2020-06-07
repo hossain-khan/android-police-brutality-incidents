@@ -5,6 +5,7 @@ import com.github.policebrutality.MainViewModel
 import com.github.policebrutality.di.annotation.ViewModelKey
 import com.github.policebrutality.ui.dashboard.DashboardViewModel
 import com.github.policebrutality.ui.home.HomeViewModel
+import com.github.policebrutality.ui.incident.IncidentViewModel
 import com.github.policebrutality.ui.notifications.NotificationsViewModel
 import dagger.Binds
 import dagger.Module
@@ -27,6 +28,11 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(HomeViewModel::class)
     abstract fun bindHomeViewModel(viewModel: HomeViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(IncidentViewModel::class)
+    abstract fun bindIncidentViewModel(viewModel: IncidentViewModel): ViewModel
 
     @Binds
     @IntoMap
