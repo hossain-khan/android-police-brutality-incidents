@@ -90,6 +90,9 @@ dependencies {
 
     implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
 
+    // debugImplementation because LeakCanary should only run in debug builds.
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:2.3"
+
     // Unit testing
     testImplementation "junit:junit:$rootProject.junitVersion"
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
