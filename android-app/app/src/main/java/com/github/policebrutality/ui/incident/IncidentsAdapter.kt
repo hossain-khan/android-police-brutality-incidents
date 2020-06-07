@@ -16,7 +16,7 @@ class IncidentsAdapter constructor(
 ) : DataBoundListAdapter<Incident, ListItemIncidentCoreBinding>(
     diffCallback = object : DiffUtil.ItemCallback<Incident>() {
         override fun areItemsTheSame(oldItem: Incident, newItem: Incident): Boolean {
-            return oldItem.id == newItem.id
+            return oldItem.incident_id == newItem.incident_id
         }
 
         override fun areContentsTheSame(oldItem: Incident, newItem: Incident): Boolean {
