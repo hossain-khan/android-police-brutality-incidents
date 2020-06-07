@@ -36,6 +36,7 @@ object IntentBuilder {
      */
     fun build(context: Context, link: String): Intent? {
         val webPageUri: Uri = Uri.parse(link)
+        val plainIntent = Intent(Intent.ACTION_VIEW, webPageUri)
         val intent = Intent(Intent.ACTION_VIEW, webPageUri)
         val appId: String? = appIdMap[webPageUri.authority]
 
@@ -44,9 +45,16 @@ object IntentBuilder {
         }
 
         if (intent.resolveActivity(context.packageManager) != null) {
+            // Try to use the package based intent first that opens the app directly
             return intent
         }
 
+        if (plainIntent.resolveActivity(context.packageManager) != null) {
+            // As fallback use vanilla intent that can be used by web browsers
+            return plainIntent
+        }
+
+        // Finally if nothing works, return null as error indication
         return null
     }
 }
