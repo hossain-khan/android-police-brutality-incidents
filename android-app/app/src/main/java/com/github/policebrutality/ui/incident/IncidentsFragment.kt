@@ -12,6 +12,8 @@ import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.github.policebrutality.R
 import com.github.policebrutality.databinding.FragmentIncidentBinding
+import com.github.policebrutality.ui.util.IntentBuilder
+import com.google.android.material.snackbar.Snackbar
 import dagger.android.support.DaggerFragment
 import timber.log.Timber
 import javax.inject.Inject
@@ -34,9 +36,11 @@ class IncidentsFragment : DaggerFragment() {
 
         viewModel.selectedSate(navArgs.stateName)
 
-        adapter = IncidentsAdapter {
-            Timber.d("Selected Incident: $it")
-        }
+        adapter = IncidentsAdapter(itemClickCallback = { clickedIncident ->
+            Timber.d("Selected Incident: $clickedIncident")
+        }, linkClickCallback = { clickedLink ->
+            openWebPage(clickedLink)
+        })
 
         viewDataBinding.recyclerView.setHasFixedSize(false)
         viewDataBinding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
@@ -56,5 +60,18 @@ class IncidentsFragment : DaggerFragment() {
         viewModel.incidents.observe(viewLifecycleOwner, Observer {
             adapter.submitList(it)
         })
+    }
+
+    /**
+     * Opens external web URL
+     * See: https://developer.android.com/guide/components/intents-common#ViewUrl
+     */
+    fun openWebPage(url: String) {
+        val intent = IntentBuilder.build(requireContext(), url)
+        if (intent != null) {
+            startActivity(intent)
+        } else {
+            Snackbar.make(viewDataBinding.root, R.string.unable_to_load_url, Snackbar.LENGTH_LONG).show()
+        }
     }
 }

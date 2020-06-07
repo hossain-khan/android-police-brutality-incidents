@@ -43,6 +43,7 @@ object LinkTransformer {
         val linkUri = Uri.parse(link)
 
         return LinkInfo(
+            sourceLink = link,
             name = linkUri.authority?.replace("www.", "") ?: "External Link",
             iconResId = socialIcons.getValue(linkUri.authority.toString())
         )

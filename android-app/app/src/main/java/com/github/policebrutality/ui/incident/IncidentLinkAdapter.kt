@@ -32,7 +32,7 @@ class IncidentLinkAdapter(
 
         binding.root.setOnClickListener {
             binding.link?.let {
-                itemClickCallback?.invoke(it.name)
+                itemClickCallback?.invoke(it.sourceLink)
             }
         }
         return binding

@@ -3,7 +3,11 @@ package com.github.policebrutality.data.model
 import androidx.annotation.DrawableRes
 import com.github.policebrutality.R
 
-data class LinkInfo(
+data class LinkInfo constructor(
+    /**
+     * Original source URL.
+     */
+    val sourceLink: String,
     /**
      * Drawable resource for the link.
      *

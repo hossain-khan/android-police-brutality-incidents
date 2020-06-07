@@ -10,8 +10,9 @@ import com.github.policebrutality.data.model.Incident
 import com.github.policebrutality.databinding.ListItemIncidentCoreBinding
 import com.github.policebrutality.ui.common.DataBoundListAdapter
 
-class IncidentsAdapter(
-    private val itemClickCallback: ((Incident) -> Unit)?
+class IncidentsAdapter constructor(
+    private val itemClickCallback: ((Incident) -> Unit)?,
+    private val linkClickCallback: ((String) -> Unit)? = null
 ) : DataBoundListAdapter<Incident, ListItemIncidentCoreBinding>(
     diffCallback = object : DiffUtil.ItemCallback<Incident>() {
         override fun areItemsTheSame(oldItem: Incident, newItem: Incident): Boolean {
@@ -41,9 +42,7 @@ class IncidentsAdapter(
     override fun bind(binding: ListItemIncidentCoreBinding, item: Incident) {
         binding.incident = item
 
-        val adapter = IncidentLinkAdapter {
-            // TODO - use link callback
-        }
+        val adapter = IncidentLinkAdapter(itemClickCallback = linkClickCallback)
         binding.linksRecyclerView.layoutManager = LinearLayoutManager(binding.root.context)
         binding.linksRecyclerView.setHasFixedSize(true)
         binding.linksRecyclerView.adapter = adapter
