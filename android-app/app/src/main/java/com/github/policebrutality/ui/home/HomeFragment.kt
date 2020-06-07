@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.github.policebrutality.databinding.FragmentHomeBinding
 import dagger.android.support.DaggerFragment
@@ -21,19 +22,16 @@ class HomeFragment : DaggerFragment() {
     private lateinit var viewDataBinding: FragmentHomeBinding
     private lateinit var adapter: StateListAdapter
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         viewDataBinding = FragmentHomeBinding.inflate(inflater, container, false).apply {
             lifecycleOwner = this@HomeFragment
             vm = viewModel
         }
 
 
-        adapter = StateListAdapter {
-            Timber.d("Tapped on state item $id")
+        adapter = StateListAdapter { state ->
+            Timber.d("Tapped on state item $state")
+            findNavController().navigate(HomeFragmentDirections.navigationToIncidentsFragment(stateName = state.id))
         }
         adapter.submitList(emptyList())
 
@@ -50,7 +48,7 @@ class HomeFragment : DaggerFragment() {
 
         viewModel.states.observe(viewLifecycleOwner, Observer {
             Timber.d("Got states: $it")
-            adapter.submitList(it.map { name -> ModelObject(name) })
+            adapter.submitList(it.map { name -> State(name) })
         })
     }
 }
