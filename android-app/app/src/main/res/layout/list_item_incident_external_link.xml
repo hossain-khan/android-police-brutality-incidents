@@ -21,5 +21,5 @@
         android:layout_height="wrap_content"
         android:text="@{link.name}"
         tools:icon="@drawable/ic_outline_web"
-        tools:text="This is a text button" />
+        tools:text="Link to Twitter.com post" />
 </layout>
