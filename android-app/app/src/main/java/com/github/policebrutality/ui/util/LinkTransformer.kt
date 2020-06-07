@@ -9,6 +9,8 @@ object LinkTransformer {
      * Convenience map to get drawable resource icon for respective web domain name.
      */
     private val socialIcons = mapOf(
+        "www.instagram.com" to R.drawable.ic_web_instagram,
+        "www.facebook.com" to R.drawable.ic_web_facebook,
         "twitter.com" to R.drawable.ic_web_twitter,
         "mobile.twitter.com" to R.drawable.ic_web_twitter,
         "youtu.be" to R.drawable.ic_web_youtube,
@@ -41,7 +43,7 @@ object LinkTransformer {
         val linkUri = Uri.parse(link)
 
         return LinkInfo(
-            name = linkUri.authority ?: "External Link",
+            name = linkUri.authority?.replace("www.", "") ?: "External Link",
             iconResId = socialIcons.getValue(linkUri.authority.toString())
         )
     }
