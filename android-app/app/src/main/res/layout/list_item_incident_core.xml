@@ -29,12 +29,12 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:textStyle="bold"
                 android:text="@{incident.name}"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Item Description" />
+                tools:text="Police brutality incident title from different states. This can be long and multile. It should not truncate." />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/incident_links_label"
