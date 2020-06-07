@@ -18,7 +18,8 @@
     <fragment
         android:id="@+id/incidentsFragment"
         android:name="com.github.policebrutality.ui.incident.IncidentsFragment"
-        android:label="IncidentsFragment">
+        android:label="@string/title_incidents"
+        tools:layout="@layout/fragment_incident">
         <argument
             android:name="stateName"
             app:argType="string" />
