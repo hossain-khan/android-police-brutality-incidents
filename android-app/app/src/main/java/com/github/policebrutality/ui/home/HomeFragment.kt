@@ -21,11 +21,7 @@ class HomeFragment : DaggerFragment() {
     private lateinit var viewDataBinding: FragmentHomeBinding
     private lateinit var adapter: StateListAdapter
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         viewDataBinding = FragmentHomeBinding.inflate(inflater, container, false).apply {
             lifecycleOwner = this@HomeFragment
             vm = viewModel
@@ -33,7 +29,7 @@ class HomeFragment : DaggerFragment() {
 
 
         adapter = StateListAdapter {
-            Timber.d("Tapped on state item $id")
+            Timber.d("Tapped on state item $it")
         }
         adapter.submitList(emptyList())
 
@@ -50,7 +46,7 @@ class HomeFragment : DaggerFragment() {
 
         viewModel.states.observe(viewLifecycleOwner, Observer {
             Timber.d("Got states: $it")
-            adapter.submitList(it.map { name -> ModelObject(name) })
+            adapter.submitList(it.map { name -> State(name) })
         })
     }
 }

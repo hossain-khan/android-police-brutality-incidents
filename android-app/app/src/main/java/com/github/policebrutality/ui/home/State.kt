@@ -1,3 +1,3 @@
 package com.github.policebrutality.ui.home
 
-data class ModelObject(val id: String)
+data class State(val id: String)

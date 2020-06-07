@@ -9,14 +9,14 @@ import com.github.policebrutality.databinding.ListItemStateBinding
 import com.github.policebrutality.ui.common.DataBoundListAdapter
 
 class StateListAdapter(
-    private val itemClickCallback: ((ModelObject) -> Unit)?
-) : DataBoundListAdapter<ModelObject, ListItemStateBinding>(
-    diffCallback = object : DiffUtil.ItemCallback<ModelObject>() {
-        override fun areItemsTheSame(oldItem: ModelObject, newItem: ModelObject): Boolean {
+    private val itemClickCallback: ((State) -> Unit)?
+) : DataBoundListAdapter<State, ListItemStateBinding>(
+    diffCallback = object : DiffUtil.ItemCallback<State>() {
+        override fun areItemsTheSame(oldItem: State, newItem: State): Boolean {
             return oldItem.id == newItem.id
         }
 
-        override fun areContentsTheSame(oldItem: ModelObject, newItem: ModelObject): Boolean {
+        override fun areContentsTheSame(oldItem: State, newItem: State): Boolean {
             return oldItem == newItem
         }
     }
@@ -36,8 +36,7 @@ class StateListAdapter(
         return binding
     }
 
-    override fun bind(binding: ListItemStateBinding, item: ModelObject) {
+    override fun bind(binding: ListItemStateBinding, item: State) {
         binding.data = item
-        binding.name.text = item.id
     }
 }

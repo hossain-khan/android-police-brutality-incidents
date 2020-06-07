@@ -7,18 +7,22 @@
 
         <variable
             name="data"
-            type="com.github.policebrutality.ui.home.ModelObject" />
+            type="com.github.policebrutality.ui.home.State" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/name"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
             android:layout_width="0dp"
-            android:layout_margin="16dp"
             android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@{data.id}"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
