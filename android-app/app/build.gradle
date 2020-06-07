@@ -4,8 +4,8 @@ plugins {
     id 'kotlin-android-extensions'
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs.kotlin'
-    id 'com.google.firebase.crashlytics'
     id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
@@ -43,19 +43,20 @@ android {
 }
 
 dependencies {
-
+    // Google JetPack libs
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$rootProject.kotlinVersion"
     implementation "androidx.core:core-ktx:$rootProject.ktxVersion"
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
     implementation "com.google.android.material:material:$rootProject.materialVersion"
-    implementation "androidx.constraintlayout:constraintlayout:1.1.3"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
     implementation "androidx.navigation:navigation-fragment:$rootProject.navigationVersion"
     implementation "androidx.navigation:navigation-ui:$rootProject.navigationVersion"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.lifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
-    implementation "androidx.navigation:navigation-fragment-ktx:2.2.2"
-    implementation "androidx.navigation:navigation-ui-ktx:2.2.2"
+    implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
+    implementation "androidx.cardview:cardview:$rootProject.cardViewVersion"
 
     // Firebase
     implementation "com.google.firebase:firebase-analytics:$rootProject.firebaseAnalyticsVersion"
@@ -89,6 +90,9 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttpVersion"
 
     implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
+
+    // debugImplementation because LeakCanary should only run in debug builds.
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:2.3"
 
     // Unit testing
     testImplementation "junit:junit:$rootProject.junitVersion"

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="incident"
+            type="com.github.policebrutality.data.model.Incident" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="@dimen/list_item_card_corner_radius"
+        app:cardElevation="@dimen/list_item_card_elevation"
+        app:contentPadding="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/incident_title"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:text="@{incident.name}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Item Description" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/incident_links_label"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/external_links_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/incident_title" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/links_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/incident_links_label"
+                tools:layout_height="200dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/links_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/list_item_incident_external_link" />
+
+            </androidx.core.widget.NestedScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
