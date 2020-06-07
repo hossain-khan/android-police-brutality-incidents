@@ -25,6 +25,7 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/incident_title"
+                style="@style/TextAppearance.MaterialComponents.Body1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
@@ -34,13 +35,23 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Item Description" />
 
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/incident_links_label"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/external_links_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/incident_title" />
+
             <androidx.core.widget.NestedScrollView
                 android:id="@+id/links_container"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/incident_title"
+                app:layout_constraintTop_toBottomOf="@+id/incident_links_label"
                 tools:layout_height="200dp">
 
                 <androidx.recyclerview.widget.RecyclerView

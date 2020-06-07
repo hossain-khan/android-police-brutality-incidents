@@ -4,4 +4,5 @@
     <string name="title_incidents">Incidents at %s</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="external_links_label">External Links</string>
 </resources>

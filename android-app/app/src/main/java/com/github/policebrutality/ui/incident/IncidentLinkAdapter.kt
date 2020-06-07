@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import com.github.policebrutality.R
 import com.github.policebrutality.databinding.ListItemIncidentExternalLinkBinding
 import com.github.policebrutality.ui.common.DataBoundListAdapter
+import com.github.policebrutality.ui.util.LinkTransformer
 
 
 class IncidentLinkAdapter(
@@ -31,13 +32,16 @@ class IncidentLinkAdapter(
 
         binding.root.setOnClickListener {
             binding.link?.let {
-                itemClickCallback?.invoke(it)
+                itemClickCallback?.invoke(it.name)
             }
         }
         return binding
     }
 
     override fun bind(binding: ListItemIncidentExternalLinkBinding, item: String) {
-        binding.link = item
+        val linkInfo = LinkTransformer.toLinkInfo(item)
+        binding.link = linkInfo
+
+        binding.button.setIconResource(linkInfo.iconResId)
     }
 }
