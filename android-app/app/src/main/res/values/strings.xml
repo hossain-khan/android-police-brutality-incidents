@@ -4,6 +4,6 @@
     <string name="title_incidents">Incidents at %s</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="external_links_label">External Links</string>
+    <string name="external_links_label">External links on this incident</string>
     <string name="unable_to_load_url">Unable to load selected URL due to internal issue. Try different external URLs.</string>
 </resources>
