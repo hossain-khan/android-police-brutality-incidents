@@ -32,19 +32,32 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
-        // Create and pre-populate the database. See this article for more details:
-        // https://medium.com/google-developers/7-pro-tips-for-room-fbadea4bfbd1#4785
-        // TODO - check https://developer.android.com/training/data-storage/room/migrating-db-versions#kotlin
+
         private fun buildDatabase(context: Context): AppDatabase {
             return Room.databaseBuilder(context, AppDatabase::class.java, DATABASE_NAME)
-                    .addCallback(object : RoomDatabase.Callback() {
-                        override fun onCreate(db: SupportSQLiteDatabase) {
-                            super.onCreate(db)
-                            val request = OneTimeWorkRequestBuilder<SeedDatabaseWorker>().build()
-                            WorkManager.getInstance(context).enqueue(request)
-                        }
-                    })
-                    .build()
+                .addCallback(object : RoomDatabase.Callback() {
+                    override fun onCreate(db: SupportSQLiteDatabase) {
+                        super.onCreate(db)
+                        populateDatabase(context)
+                    }
+
+                    override fun onDestructiveMigration(db: SupportSQLiteDatabase) {
+                        super.onDestructiveMigration(db)
+                        populateDatabase(context)
+                    }
+                })
+                // https://developer.android.com/training/data-storage/room/migrating-db-versions#kotlin
+                .fallbackToDestructiveMigration()
+                .build()
+        }
+
+        /**
+         * Create and pre-populate the database. See this article for more details:
+         * https://medium.com/google-developers/7-pro-tips-for-room-fbadea4bfbd1#4785
+         */
+        private fun populateDatabase(context: Context) {
+            val request = OneTimeWorkRequestBuilder<SeedDatabaseWorker>().build()
+            WorkManager.getInstance(context).enqueue(request)
         }
     }
 }
