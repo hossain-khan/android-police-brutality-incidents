@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.github.policebrutality.R
 import com.github.policebrutality.data.model.Incident
 import com.github.policebrutality.databinding.ListItemIncidentCoreBinding
@@ -39,5 +40,13 @@ class IncidentsAdapter(
 
     override fun bind(binding: ListItemIncidentCoreBinding, item: Incident) {
         binding.incident = item
+
+        val adapter = IncidentLinkAdapter {
+            // TODO - use link callback
+        }
+        binding.linksRecyclerView.layoutManager = LinearLayoutManager(binding.root.context)
+        binding.linksRecyclerView.setHasFixedSize(true)
+        binding.linksRecyclerView.adapter = adapter
+        adapter.submitList(item.links)
     }
 }
