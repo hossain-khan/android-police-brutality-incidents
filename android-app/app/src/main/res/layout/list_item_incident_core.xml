@@ -22,19 +22,47 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/list_item_horizontal_margin" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/list_item_horizontal_margin" />
+
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/incident_title"
                 style="@style/TextAppearance.MaterialComponents.Body1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:textStyle="bold"
+                android:padding="@dimen/list_item_vertical_margin"
                 android:text="@{incident.name}"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Item Description" />
+                tools:text="Police brutality incident title from different states. This can be long and multile. It should not truncate." />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/incident_date"
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/list_item_vertical_margin"
+                android:drawableStart="@drawable/ic_outline_date_range"
+                android:drawablePadding="@dimen/list_item_horizontal_margin"
+                android:text="@{incident.date_text}"
+                android:textAlignment="textEnd"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintTop_toBottomOf="@+id/incident_title"
+                tools:text="June 3rd, 2020" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/incident_links_label"
@@ -42,16 +70,17 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/external_links_label"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/incident_title" />
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/incident_date" />
 
+            <!-- Nester scroll view to contain all dynamic links -->
             <androidx.core.widget.NestedScrollView
                 android:id="@+id/links_container"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
                 app:layout_constraintTop_toBottomOf="@+id/incident_links_label"
                 tools:layout_height="200dp">
 
