@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -53,9 +52,7 @@ class IncidentsFragment : DaggerFragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        (activity as AppCompatActivity?)?.supportActionBar?.let { actionBar ->
-            actionBar.title = getString(R.string.title_incidents, navArgs.stateName)
-        }
+        viewDataBinding.toolbar.title = getString(R.string.title_incidents, navArgs.stateName)
 
         viewModel.incidents.observe(viewLifecycleOwner, Observer {
             adapter.submitList(it)
