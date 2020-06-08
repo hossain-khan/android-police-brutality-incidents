@@ -1,6 +1,6 @@
 package com.blacklivesmatter.policebrutality.di.module
 
-import com.blacklivesmatter.policebrutality.ui.dashboard.DashboardFragment
+import com.blacklivesmatter.policebrutality.ui.newreport.NewReportFragment
 import com.blacklivesmatter.policebrutality.ui.home.HomeFragment
 import com.blacklivesmatter.policebrutality.ui.incident.IncidentsFragment
 import com.blacklivesmatter.policebrutality.ui.notifications.NotificationsFragment
@@ -11,7 +11,7 @@ import dagger.android.ContributesAndroidInjector
 @Module
 abstract class FragmentBindingModule {
     @ContributesAndroidInjector
-    abstract fun contributeDashboardFragment(): DashboardFragment
+    abstract fun contributeDashboardFragment(): NewReportFragment
 
     @ContributesAndroidInjector
     abstract fun contributeHomeFragment(): HomeFragment
