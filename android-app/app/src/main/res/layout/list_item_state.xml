@@ -7,7 +7,7 @@
 
         <variable
             name="data"
-            type="com.github.policebrutality.ui.home.State" />
+            type="com.blacklivesmatter.policebrutality.ui.home.State" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
