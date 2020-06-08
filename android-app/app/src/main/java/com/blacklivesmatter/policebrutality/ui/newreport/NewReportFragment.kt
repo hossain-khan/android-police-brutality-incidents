@@ -1,34 +1,62 @@
 package com.blacklivesmatter.policebrutality.ui.newreport
 
 import android.os.Bundle
+import android.text.method.LinkMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import androidx.core.text.HtmlCompat
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.blacklivesmatter.policebrutality.R
+import com.blacklivesmatter.policebrutality.databinding.FragmentNewReportBinding
+import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
+import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
+import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.textview.MaterialTextView
 import dagger.android.support.DaggerFragment
 import javax.inject.Inject
 
 class NewReportFragment : DaggerFragment() {
-
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
     private val viewModel by viewModels<NewReportViewModel> { viewModelFactory }
+    private lateinit var viewDataBinding: FragmentNewReportBinding
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val root = inflater.inflate(R.layout.fragment_new_report, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
-        viewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
-        return root
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        viewDataBinding = FragmentNewReportBinding.inflate(inflater, container, false).apply {
+            lifecycleOwner = this@NewReportFragment
+            vm = viewModel
+        }
+
+        return viewDataBinding.root
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        bindGuideText(viewDataBinding.content.incidentReportGuideText)
+
+        viewModel.openReportIncidentUrl.observeKotlin(viewLifecycleOwner) { reportUrl ->
+            val webUrlOpenIntent = IntentBuilder.build(requireContext(), reportUrl)
+
+            if (webUrlOpenIntent != null) {
+                startActivity(webUrlOpenIntent)
+            } else {
+                Snackbar
+                    .make(viewDataBinding.root, R.string.unable_to_load_report_incident_url, Snackbar.LENGTH_LONG)
+                    .show()
+            }
+        }
+    }
+
+    private fun bindGuideText(textView: MaterialTextView) {
+        val message = HtmlCompat.fromHtml(
+            resources.getText(R.string.report_new_incident_guideline_text) as String,
+            HtmlCompat.FROM_HTML_MODE_LEGACY
+        )
+        textView.movementMethod = LinkMovementMethod.getInstance()
+        textView.text = message
     }
 }

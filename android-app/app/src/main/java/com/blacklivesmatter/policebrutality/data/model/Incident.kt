@@ -36,7 +36,7 @@ data class Incident(
     @ColumnInfo(name = "edit_url") val edit_at: String? = "",
     @ColumnInfo(name = "city") val city: String? = "",
     @ColumnInfo(name = "name") val name: String? = "",
-    @ColumnInfo(name = "date") val date: String? = "",
+    @ColumnInfo(name = "date") val date: String? = "", // TODO - should use proper date to be able to use it as filter
     @ColumnInfo(name = "date_text") val date_text: String? = "",
     @ColumnInfo(name = "links") val links: List<String> = emptyList()
 )
