@@ -6,7 +6,7 @@ import com.blacklivesmatter.policebrutality.di.annotation.ViewModelKey
 import com.blacklivesmatter.policebrutality.ui.newreport.NewReportViewModel
 import com.blacklivesmatter.policebrutality.ui.home.HomeViewModel
 import com.blacklivesmatter.policebrutality.ui.incident.IncidentViewModel
-import com.blacklivesmatter.policebrutality.ui.notifications.NotificationsViewModel
+import com.blacklivesmatter.policebrutality.ui.moreinfo.MoreInfoViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -36,6 +36,6 @@ abstract class ViewModelModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(NotificationsViewModel::class)
-    abstract fun bindNotificationsViewModel(viewModel: NotificationsViewModel): ViewModel
+    @ViewModelKey(MoreInfoViewModel::class)
+    abstract fun bindNotificationsViewModel(viewModel: MoreInfoViewModel): ViewModel
 }

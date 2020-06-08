@@ -1,4 +1,4 @@
-package com.blacklivesmatter.policebrutality.ui.notifications
+package com.blacklivesmatter.policebrutality.ui.moreinfo
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,19 +12,19 @@ import com.blacklivesmatter.policebrutality.R
 import dagger.android.support.DaggerFragment
 import javax.inject.Inject
 
-class NotificationsFragment : DaggerFragment() {
+class MoreInfoFragment : DaggerFragment() {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
-    private val viewModel by viewModels<NotificationsViewModel> { viewModelFactory }
+    private val viewModel by viewModels<MoreInfoViewModel> { viewModelFactory }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
+        val root = inflater.inflate(R.layout.fragment_more_info, container, false)
         val textView: TextView = root.findViewById(R.id.text_notifications)
         viewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it

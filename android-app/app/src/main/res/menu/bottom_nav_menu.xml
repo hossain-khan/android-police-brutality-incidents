@@ -2,13 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_menu_incident"
         android:icon="@drawable/ic_fist_raised"
         android:title="@string/title_brutality_incidents" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_menu_report"
         android:icon="@drawable/ic_bullhorn"
         android:title="@string/title_report_new_incident" />
 
+
+    <item
+        android:id="@+id/navigation_menu_more_info"
+        android:icon="@drawable/ic_info_circle"
+        android:title="@string/title_more_info_and_sources" />
 </menu>
