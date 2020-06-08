@@ -34,6 +34,13 @@ Advanced feature
 
 ### Architecture
 
-TBA - Planning
+Essentially, the app should follow standard guidelines from Google. 
+Currently following key features are being used.
 
-Essentially, the app should follow
+* MVVM, Dagger2, Room, Architecture Components and other JetPack libraries.
+
+### Preview
+
+Here is a snapshot of the app in early stages (taken on June 7th)
+
+<img src="https://user-images.githubusercontent.com/99822/83992016-c2c39f00-a91c-11ea-8a20-f0b7d893d038.gif" width="50%">
