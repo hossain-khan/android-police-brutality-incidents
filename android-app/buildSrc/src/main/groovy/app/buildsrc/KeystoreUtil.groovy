@@ -13,7 +13,6 @@ class KeystoreUtil {
 
         // Loads the keystore.properties file into the keystoreProperties object.
         if (keystorePropertiesFile.exists()) {
-            println("Found local keystore file")
             keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
         } else {
             // For CI builds, use debug cert to pass it.
@@ -21,7 +20,7 @@ class KeystoreUtil {
             // https://coderwall.com/p/r09hoq/android-generate-release-debug-keystores
             keystoreProperties['keyAlias'] = 'androiddebugkey'
             keystoreProperties['keyPassword'] = 'android'
-            keystoreProperties['storeFile'] = 'keystore/debug.keystore'
+            keystoreProperties['storeFile'] = '../keystore/debug.keystore'
             keystoreProperties['storePassword'] = 'android'
         }
 
