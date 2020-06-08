@@ -30,4 +30,8 @@ class MoreInfoFragment : DaggerFragment() {
 
         return viewDataBinding.root
     }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+    }
 }

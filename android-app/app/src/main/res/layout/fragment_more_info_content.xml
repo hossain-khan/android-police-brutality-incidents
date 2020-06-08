@@ -3,95 +3,108 @@
 <!--
     Scrolling content inside more info screen
 -->
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:showIn="@layout/fragment_more_info">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="@dimen/activity_horizontal_margin" />
+    <data>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_end"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="@dimen/activity_horizontal_margin" />
+        <import type="android.view.View" />
 
+        <variable
+            name="viewModel"
+            type="com.blacklivesmatter.policebrutality.ui.moreinfo.MoreInfoViewModel" />
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/text_background"
-        style="?textAppearanceBody1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/view_spacing_large"
-        android:autoLink="web"
-        android:text="@string/incident_source_background"
-        android:textAlignment="textStart"
-        app:layout_constraintEnd_toEndOf="@id/guideline_end"
-        app:layout_constraintStart_toStartOf="@id/guideline_start"
-        app:layout_constraintTop_toTopOf="parent" />
+    </data>
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/popular_hash_tags_title"
-        style="?textAppearanceHeadline6"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/view_spacing_large"
-        android:text="Most used hash tags"
-        app:layout_constraintEnd_toStartOf="@+id/guideline_end"
-        app:layout_constraintStart_toStartOf="@+id/guideline_start"
-        app:layout_constraintTop_toBottomOf="@+id/text_background" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:showIn="@layout/fragment_more_info">
 
-    <com.google.android.material.chip.ChipGroup
-        android:id="@+id/popular_hash_tags_container"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@+id/guideline_end"
-        app:layout_constraintStart_toStartOf="@+id/guideline_start"
-        app:layout_constraintTop_toBottomOf="@+id/popular_hash_tags_title">
-
-        <!--
-            Chips can be declared here, or added dynamically.
-            https://material.io/develop/android/components/chip/
-        -->
-        <com.google.android.material.chip.Chip
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hash_tag_blacklivesmatter" />
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/activity_horizontal_margin" />
 
-
-        <com.google.android.material.chip.Chip
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hash_tag_justiceforgeorgefloyd" />
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/activity_horizontal_margin" />
 
-        <com.google.android.material.chip.Chip
-            android:layout_width="wrap_content"
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_background"
+            style="?textAppearanceBody1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/hash_tag_blacklivesmatter_short" />
+            android:layout_marginTop="@dimen/view_spacing_large"
+            android:autoLink="web"
+            android:text="@string/incident_source_background"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.chip.Chip
-            android:layout_width="wrap_content"
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/popular_hash_tags_title"
+            style="?textAppearanceHeadline6"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/hash_tag_policebrutality" />
+            android:layout_marginTop="@dimen/view_spacing_large"
+            android:text="Most used hash tags"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/text_background" />
 
-    </com.google.android.material.chip.ChipGroup>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/popular_hash_tags_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/popular_hash_tags_title">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="96dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="@dimen/view_spacing_larger"
-        android:contentDescription="@string/content_description_fist_icon"
-        android:tint="?colorOnSurface"
-        app:layout_constraintEnd_toStartOf="@+id/guideline_end"
-        app:layout_constraintStart_toStartOf="@+id/guideline_start"
-        app:layout_constraintTop_toBottomOf="@+id/popular_hash_tags_container"
-        app:srcCompat="@drawable/ic_fist_raised" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <!--
+                Chips can be declared here, or added dynamically.
+                https://material.io/develop/android/components/chip/
+            -->
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hash_tag_blacklivesmatter" />
+
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hash_tag_justiceforgeorgefloyd" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hash_tag_blacklivesmatter_short" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hash_tag_policebrutality" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="96dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="@dimen/view_spacing_xlarge"
+            android:contentDescription="@string/content_description_fist_icon"
+            android:tint="?colorOnSurface"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/popular_hash_tags_container"
+            app:srcCompat="@drawable/ic_fist_raised" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

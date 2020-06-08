@@ -41,7 +41,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:contentDescription="george floyd graffiti"
+                    android:contentDescription="@string/content_description_george_floyd_graffiti_image"
                     android:fitsSystemWindows="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/george_floyd_graffiti"
@@ -85,7 +85,8 @@
 
             <include
                 android:id="@+id/content"
-                layout="@layout/fragment_more_info_content" />
+                layout="@layout/fragment_more_info_content"
+                app:viewModel="@{vm}" />
 
         </androidx.core.widget.NestedScrollView>
 
