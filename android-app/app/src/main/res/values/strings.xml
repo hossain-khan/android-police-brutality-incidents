@@ -7,5 +7,7 @@
     <string name="external_links_label">External links on this incident</string>
     <string name="unable_to_load_url">Unable to load selected URL due to internal issue. Try different external URLs.</string>
     <string name="total_reported_incident_for_location">Total %d reported incidents.</string>
-    <string name="title_more_info_and_sources">Info</string>
+    <string name="title_more_info_and_sources">Additional Resources</string>
+    <string name="menu_title_more_info_and_sources">Info</string>
+    <string name="hash_tags_for_blacklivesmatter">#BlackLivesMatter\n#JusticeForGeorgeFloyd\n#PoliceBrutality</string>
 </resources>
