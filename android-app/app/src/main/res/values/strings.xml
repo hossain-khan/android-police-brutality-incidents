@@ -17,4 +17,5 @@
     <string name="hash_tag_policebrutality">#PoliceBrutality</string>
     <string name="content_description_fist_icon">Justice for George Floyd protest fist image icon</string>
     <string name="content_description_george_floyd_graffiti_image">george floyd graffiti</string>
+    <string name="message_hashtag_copied_to_clipboard">The %s hash tag has been copied to your clipboard.</string>
 </resources>
