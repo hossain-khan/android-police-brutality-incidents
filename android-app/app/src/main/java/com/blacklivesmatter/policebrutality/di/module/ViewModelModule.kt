@@ -3,7 +3,7 @@ package com.blacklivesmatter.policebrutality.di.module
 import androidx.lifecycle.ViewModel
 import com.blacklivesmatter.policebrutality.MainViewModel
 import com.blacklivesmatter.policebrutality.di.annotation.ViewModelKey
-import com.blacklivesmatter.policebrutality.ui.dashboard.DashboardViewModel
+import com.blacklivesmatter.policebrutality.ui.newreport.NewReportViewModel
 import com.blacklivesmatter.policebrutality.ui.home.HomeViewModel
 import com.blacklivesmatter.policebrutality.ui.incident.IncidentViewModel
 import com.blacklivesmatter.policebrutality.ui.notifications.NotificationsViewModel
@@ -21,8 +21,8 @@ abstract class ViewModelModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(DashboardViewModel::class)
-    abstract fun bindDashboardViewModel(viewModel: DashboardViewModel): ViewModel
+    @ViewModelKey(NewReportViewModel::class)
+    abstract fun bindDashboardViewModel(viewModel: NewReportViewModel): ViewModel
 
     @Binds
     @IntoMap

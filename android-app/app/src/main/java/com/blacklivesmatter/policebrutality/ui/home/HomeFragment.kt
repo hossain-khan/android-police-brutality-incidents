@@ -31,7 +31,7 @@ class HomeFragment : DaggerFragment() {
 
         adapter = StateListAdapter { state ->
             Timber.d("Tapped on state item $state")
-            findNavController().navigate(HomeFragmentDirections.navigationToIncidentsFragment(stateName = state.id))
+            findNavController().navigate(HomeFragmentDirections.navigationToIncidentsFragment(stateName = state.stateName))
         }
         adapter.submitList(emptyList())
 
@@ -46,9 +46,9 @@ class HomeFragment : DaggerFragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewModel.states.observe(viewLifecycleOwner, Observer {
+        viewModel.locations.observe(viewLifecycleOwner, Observer {
             Timber.d("Got states: $it")
-            adapter.submitList(it.map { name -> State(name) })
+            adapter.submitList(it)
         })
     }
 }

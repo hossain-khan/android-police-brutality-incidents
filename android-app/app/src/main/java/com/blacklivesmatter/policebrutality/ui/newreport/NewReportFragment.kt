@@ -1,4 +1,4 @@
-package com.blacklivesmatter.policebrutality.ui.dashboard
+package com.blacklivesmatter.policebrutality.ui.newreport
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,19 +12,19 @@ import com.blacklivesmatter.policebrutality.R
 import dagger.android.support.DaggerFragment
 import javax.inject.Inject
 
-class DashboardFragment : DaggerFragment() {
+class NewReportFragment : DaggerFragment() {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
-    private val viewModel by viewModels<DashboardViewModel> { viewModelFactory }
+    private val viewModel by viewModels<NewReportViewModel> { viewModelFactory }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
+        val root = inflater.inflate(R.layout.fragment_new_report, container, false)
         val textView: TextView = root.findViewById(R.id.text_dashboard)
         viewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
