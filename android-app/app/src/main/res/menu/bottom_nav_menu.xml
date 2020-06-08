@@ -4,7 +4,7 @@
     <item
         android:id="@+id/navigation_menu_incident"
         android:icon="@drawable/ic_fist_raised"
-        android:title="@string/title_brutality_incidents" />
+        android:title="@string/menu_title_brutality_incidents" />
 
     <item
         android:id="@+id/navigation_menu_report"

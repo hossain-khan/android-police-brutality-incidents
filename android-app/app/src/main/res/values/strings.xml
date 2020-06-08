@@ -1,22 +1,33 @@
 <resources>
     <string name="app_name">BLM Incidents</string>
-    <string name="title_brutality_incidents">Incidents</string>
+
+    <!-- Screen Titles -->
+    <string name="title_brutality_incidents">Reported Incidents</string>
     <string name="title_incidents">Incidents at %s</string>
-    <string name="menu_title_report_new_incident">Report</string>
     <string name="title_report_new_incident">Report Incident</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_more_info_and_sources">Additional Resources</string>
+
+    <!-- Menu Titles -->
+    <string name="menu_title_brutality_incidents">Incidents</string>
+    <string name="menu_title_report_new_incident">Report</string>
+    <string name="menu_title_more_info_and_sources">Info</string>
+
+    <!-- Use messages - info, success, error etc -->
+    <string name="message_hashtag_copied_to_clipboard">The %s hash tag has been copied to your clipboard.</string>
+
+    <!-- Content description for accessibility -->
+    <string name="content_description_fist_icon">Justice for George Floyd protest fist image icon</string>
+    <string name="content_description_george_floyd_graffiti_image">george floyd graffiti</string>
+
+    <!-- Other string resrouces -->
     <string name="external_links_label">External links on this incident</string>
     <string name="unable_to_load_url">Unable to load selected URL due to internal issue. Try different external URLs.</string>
     <string name="total_reported_incident_for_location">Total %d reported incidents.</string>
-    <string name="title_more_info_and_sources">Additional Resources</string>
-    <string name="menu_title_more_info_and_sources">Info</string>
     <string name="hash_tags_for_blacklivesmatter">#BlackLivesMatter\n#JusticeForGeorgeFloyd\n#PoliceBrutality</string>
     <string name="incident_source_background"><![CDATA[All the reported incidents are part of initiative taken by subreddit \"r/2020PoliceBrutality\" found at www.reddit.com/r/2020PoliceBrutality \n\nThis subreddit exists to document the violence committed by law enforcement on peaceful protesters during the protests & riots of 2020 following the murder of George Floyd. \n\nThese incidents are documented on Github at github.com/2020PB/police-brutality with further information. If you would like to contribute to this repository, please check the contribution guide at the repository.]]></string>
-    <string name="hash_tag_blacklivesmatter">#BlackLivesMatter</string>
-    <string name="hash_tag_blacklivesmatter_short">#BLM</string>
-    <string name="hash_tag_justiceforgeorgefloyd">#JusticeForGeorgeFloyd</string>
-    <string name="hash_tag_policebrutality">#PoliceBrutality</string>
-    <string name="content_description_fist_icon">Justice for George Floyd protest fist image icon</string>
-    <string name="content_description_george_floyd_graffiti_image">george floyd graffiti</string>
-    <string name="message_hashtag_copied_to_clipboard">The %s hash tag has been copied to your clipboard.</string>
+    <string name="hash_tag_blacklivesmatter" translatable="false">#BlackLivesMatter</string>
+    <string name="hash_tag_blacklivesmatter_short" translatable="false">#BLM</string>
+    <string name="hash_tag_justiceforgeorgefloyd" translatable="false">#JusticeForGeorgeFloyd</string>
+    <string name="hash_tag_policebrutality" translatable="false">#PoliceBrutality</string>
 </resources>
