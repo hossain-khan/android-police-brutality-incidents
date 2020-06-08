@@ -1,3 +1,5 @@
+import app.buildsrc.KeystoreUtil
+
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
@@ -7,13 +9,14 @@ plugins {
     id 'com.google.gms.google-services'
     id 'com.google.firebase.crashlytics'
 }
+def keystoreProperties = KeystoreUtil.buildProperties(rootProject)
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.github.policebrutality"
+        applicationId "com.blacklivesmatter.policebrutality"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
         versionCode 1
@@ -28,6 +31,15 @@ android {
         }
     }
 
+    signingConfigs {
+        config {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
 
     buildFeatures {
         dataBinding = true
@@ -37,6 +49,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
         }
     }
     compileOptions {

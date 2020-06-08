@@ -7,7 +7,7 @@
 
         <variable
             name="link"
-            type="com.github.policebrutality.data.model.LinkInfo" />
+            type="com.blacklivesmatter.policebrutality.data.model.LinkInfo" />
     </data>
 
 

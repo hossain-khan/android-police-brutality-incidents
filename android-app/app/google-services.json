@@ -8,6 +8,35 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:93486937753:android:612938f17e269bbee4aa08",
+        "android_client_info": {
+          "package_name": "com.blacklivesmatter.policebrutality"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93486937753-1igej3bpfebukn9p98tfjh0m3a45da2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwHWsCNQov_l61LgKAqblfi_fC1Ql6xuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93486937753-1igej3bpfebukn9p98tfjh0m3a45da2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:93486937753:android:f415c393c6d9421ee4aa08",
         "android_client_info": {
           "package_name": "com.github.policebrutality"

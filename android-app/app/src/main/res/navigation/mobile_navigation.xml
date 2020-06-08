@@ -18,12 +18,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_menu_incident">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.github.policebrutality.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:id="@+id/navigation_menu_incident"
+        android:name="com.blacklivesmatter.policebrutality.ui.home.HomeFragment"
+        android:label="@string/title_brutality_incidents"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/navigation_to_incidentsFragment"
@@ -36,7 +36,7 @@
 
     <fragment
         android:id="@+id/incidentsFragment"
-        android:name="com.github.policebrutality.ui.incident.IncidentsFragment"
+        android:name="com.blacklivesmatter.policebrutality.ui.incident.IncidentsFragment"
         android:label="@string/title_incidents"
         tools:layout="@layout/fragment_incident">
         <argument
@@ -44,17 +44,28 @@
             app:argType="string" />
     </fragment>
 
+    <!-- ================================================== -->
+    <!-- ======== End of incident navigation block ======== -->
+    <!-- ================================================== -->
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.github.policebrutality.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_menu_report"
+        android:name="com.blacklivesmatter.policebrutality.ui.newreport.NewReportFragment"
+        android:label="@string/title_report_new_incident"
+        tools:layout="@layout/fragment_new_report" />
+
+    <!-- ========================================================= -->
+    <!-- ======== End of report incident navigation block ======== -->
+    <!-- ========================================================= -->
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.github.policebrutality.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_menu_more_info"
+        android:name="com.blacklivesmatter.policebrutality.ui.moreinfo.MoreInfoFragment"
+        android:label="@string/title_report_new_incident"
+        tools:layout="@layout/fragment_more_info" />
+
+    <!-- =================================================== -->
+    <!-- ======== End of more info navigation block ======== -->
+    <!-- =================================================== -->
 
 </navigation>

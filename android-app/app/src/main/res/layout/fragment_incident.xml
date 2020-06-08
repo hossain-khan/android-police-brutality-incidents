@@ -9,7 +9,7 @@
 
         <variable
             name="vm"
-            type="com.github.policebrutality.ui.incident.IncidentViewModel" />
+            type="com.blacklivesmatter.policebrutality.ui.incident.IncidentViewModel" />
 
     </data>
 
