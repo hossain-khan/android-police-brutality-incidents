@@ -37,7 +37,7 @@ class MainActivity : DaggerAppCompatActivity() {
                 R.id.navigation_menu_more_info
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        //setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
 }
