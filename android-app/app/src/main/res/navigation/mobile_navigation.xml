@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Navigation graph for the app.
+    See following for additional information:
+    * https://developer.android.com/guide/navigation/navigation-nested-graphs
+    * https://developer.android.com/guide/navigation/navigation-pass-data
+
+    Animation Properties Explanation
+    ================================
+     * `enterAnim`    - The "destination" screen loading animation
+     * `exitAnim`     - Animation to remove "source" screen before the "destination" screen loads
+     * `popEnterAnim` - Animation to re-appear the "source" screen when destination is
+                        removed (usually by pressing "BACK" from the "destination" screen)
+     * `popExitAnim`  - Animation when the "destination" screen is removed (eg. by pressing "BACK")
+-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.github.policebrutality.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/navigation_to_incidentsFragment"
+            app:destination="@id/incidentsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/incidentsFragment"
+        android:name="com.github.policebrutality.ui.incident.IncidentsFragment"
+        android:label="@string/title_incidents"
+        tools:layout="@layout/fragment_incident">
+        <argument
+            android:name="stateName"
+            app:argType="string" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.github.policebrutality.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.github.policebrutality.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+</navigation>
