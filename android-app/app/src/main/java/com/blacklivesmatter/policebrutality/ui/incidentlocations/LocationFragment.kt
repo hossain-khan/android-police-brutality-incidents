@@ -1,4 +1,4 @@
-package com.blacklivesmatter.policebrutality.ui.home
+package com.blacklivesmatter.policebrutality.ui.incidentlocations
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,29 +9,31 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.blacklivesmatter.policebrutality.databinding.FragmentHomeBinding
+import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentLocationsBinding
 import dagger.android.support.DaggerFragment
 import timber.log.Timber
 import javax.inject.Inject
 
-class HomeFragment : DaggerFragment() {
+class LocationFragment : DaggerFragment() {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
-    private val viewModel by viewModels<HomeViewModel> { viewModelFactory }
-    private lateinit var viewDataBinding: FragmentHomeBinding
-    private lateinit var adapter: StateListAdapter
+    private val viewModel by viewModels<LocationViewModel> { viewModelFactory }
+    private lateinit var viewDataBinding: FragmentIncidentLocationsBinding
+    private lateinit var adapter: LocationListAdapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        viewDataBinding = FragmentHomeBinding.inflate(inflater, container, false).apply {
-            lifecycleOwner = this@HomeFragment
+        viewDataBinding = FragmentIncidentLocationsBinding.inflate(inflater, container, false).apply {
+            lifecycleOwner = this@LocationFragment
             vm = viewModel
         }
 
 
-        adapter = StateListAdapter { state ->
+        adapter = LocationListAdapter { state ->
             Timber.d("Tapped on state item $state")
-            findNavController().navigate(HomeFragmentDirections.navigationToIncidentsFragment(stateName = state.stateName))
+            findNavController().navigate(
+                LocationFragmentDirections.navigationToIncidentsFragment(stateName = state.stateName)
+            )
         }
         adapter.submitList(emptyList())
 
@@ -46,9 +48,9 @@ class HomeFragment : DaggerFragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewModel.locations.observe(viewLifecycleOwner, Observer {
-            Timber.d("Got states: $it")
-            adapter.submitList(it)
+        viewModel.locations.observe(viewLifecycleOwner, Observer { locationList ->
+            Timber.d("Got locations: $locationList")
+            adapter.submitList(locationList)
         })
     }
 }

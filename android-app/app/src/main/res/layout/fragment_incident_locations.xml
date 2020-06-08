@@ -9,7 +9,7 @@
 
         <variable
             name="vm"
-            type="com.blacklivesmatter.policebrutality.ui.home.HomeViewModel" />
+            type="com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel" />
 
     </data>
 
