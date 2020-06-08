@@ -1,7 +1,9 @@
 package com.blacklivesmatter.policebrutality
 
+import androidx.appcompat.app.AppCompatDelegate
 import com.blacklivesmatter.policebrutality.di.component.AppComponent
 import com.blacklivesmatter.policebrutality.di.component.DaggerAppComponent
+import com.blacklivesmatter.policebrutality.ui.common.ThemeHelper
 import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication
 import timber.log.Timber
@@ -21,7 +23,11 @@ class BrutalityIncidentApplication : DaggerApplication() {
 
     override fun onCreate() {
         super.onCreate()
-        
+
+        // Sets the application theme to dark-mode regardless of user's preferences
+        // Because it's #BlackLivesMatter
+        ThemeHelper.applyTheme(AppCompatDelegate.MODE_NIGHT_YES)
+
         if (BuildConfig.DEBUG) {
             installLogging()
         }
