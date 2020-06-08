@@ -23,7 +23,7 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.blacklivesmatter.policebrutality.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="@string/title_brutality_incidents"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/navigation_to_incidentsFragment"
@@ -48,13 +48,7 @@
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.blacklivesmatter.policebrutality.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_report_new_incident"
         tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.blacklivesmatter.policebrutality.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
 
 </navigation>
