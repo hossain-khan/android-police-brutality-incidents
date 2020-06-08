@@ -10,4 +10,10 @@
     <string name="title_more_info_and_sources">Additional Resources</string>
     <string name="menu_title_more_info_and_sources">Info</string>
     <string name="hash_tags_for_blacklivesmatter">#BlackLivesMatter\n#JusticeForGeorgeFloyd\n#PoliceBrutality</string>
+    <string name="incident_source_background"><![CDATA[All the reported incidents are part of initiative taken by subreddit \"r/2020PoliceBrutality\" found at www.reddit.com/r/2020PoliceBrutality \n\nThis subreddit exists to document the violence committed by law enforcement on peaceful protesters during the protests & riots of 2020 following the murder of George Floyd. \n\nThese incidents are documented on Github at github.com/2020PB/police-brutality with further information. If you would like to contribute to this repository, please check the contribution guide at the repository.]]></string>
+    <string name="hash_tag_blacklivesmatter">#BlackLivesMatter</string>
+    <string name="hash_tag_blacklivesmatter_short">#BLM</string>
+    <string name="hash_tag_justiceforgeorgefloyd">#JusticeForGeorgeFloyd</string>
+    <string name="hash_tag_policebrutality">#PoliceBrutality</string>
+    <string name="content_description_fist_icon">Justice for George Floyd protest fist image icon</string>
 </resources>

@@ -6,4 +6,8 @@
     <dimen name="list_item_vertical_margin">4dp</dimen>
     <dimen name="list_item_card_corner_radius">4dp</dimen>
     <dimen name="list_item_card_elevation">4dp</dimen>
+    <dimen name="view_spacing_larger">16dp</dimen>
+    <dimen name="view_spacing_large">12dp</dimen>
+    <dimen name="view_spacing_medium">8dp</dimen>
+    <dimen name="view_spacing_small">4dp</dimen>
 </resources>
