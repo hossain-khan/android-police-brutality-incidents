@@ -1,5 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!--
+        #########################################################################
+        NOTE: The app is locked to Dark-Mode to support #BlackLivesMatter cause.
+        #########################################################################
+
         Base application theme.
         https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md
     -->
