@@ -2,6 +2,7 @@ package com.blacklivesmatter.policebrutality.data
 
 import androidx.lifecycle.LiveData
 import com.blacklivesmatter.policebrutality.data.model.Incident
+import com.blacklivesmatter.policebrutality.data.model.LocationIncidents
 import javax.inject.Inject
 
 class BrutalityIncidentRepository @Inject constructor(private val dao: IncidentDao) : IncidentRepository {
@@ -13,7 +14,7 @@ class BrutalityIncidentRepository @Inject constructor(private val dao: IncidentD
         return dao.getIncidentsForState(state)
     }
 
-    override fun getStates(): LiveData<List<String>> {
+    override fun getLocations(): LiveData<List<LocationIncidents>> {
         return dao.getUniqueStates()
     }
 }

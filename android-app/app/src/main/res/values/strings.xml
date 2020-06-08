@@ -6,4 +6,5 @@
     <string name="title_notifications">Notifications</string>
     <string name="external_links_label">External links on this incident</string>
     <string name="unable_to_load_url">Unable to load selected URL due to internal issue. Try different external URLs.</string>
+    <string name="total_reported_incident_for_location">Total %d reported incidents.</string>
 </resources>
