@@ -4,7 +4,8 @@
     Content for make new report screen.
 -->
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -18,7 +19,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        tools:showIn="@layout/fragment_new_report">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_start"
@@ -33,6 +36,46 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_end="@dimen/activity_horizontal_margin" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/incident_report_guide_text"
+            style="?textAppearanceBody1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_spacing_large"
+            android:text="@string/report_new_incident_guideline_text"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/report_incident_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> viewModel.onReportIncidentClicked()}"
+            android:padding="@dimen/view_spacing_xxlarge"
+            android:text="@string/button_cta_report_new_incident"
+            app:icon="@drawable/ic_fist_raised"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/incident_report_guide_text"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <TextView
+            style="?textAppearanceCaption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_spacing_larger"
+            android:layout_marginEnd="@dimen/view_spacing_larger"
+            android:text="@string/message_report_incident_external_link_info"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/report_incident_button" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
