@@ -66,7 +66,6 @@ class MoreInfoFragment : DaggerFragment() {
         }
     }
 
-
     /**
      * Internal listener to handle clicks from existing chips.
      */

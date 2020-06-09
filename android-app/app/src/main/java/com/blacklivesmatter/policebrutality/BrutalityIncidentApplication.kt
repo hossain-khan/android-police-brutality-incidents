@@ -6,8 +6,8 @@ import com.blacklivesmatter.policebrutality.di.component.DaggerAppComponent
 import com.blacklivesmatter.policebrutality.ui.common.ThemeHelper
 import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication
-import timber.log.Timber
 import kotlin.math.abs
+import timber.log.Timber
 
 class BrutalityIncidentApplication : DaggerApplication() {
     override fun applicationInjector(): AndroidInjector<out DaggerApplication> {

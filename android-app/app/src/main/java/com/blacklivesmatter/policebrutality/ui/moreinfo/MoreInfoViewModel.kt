@@ -9,8 +9,8 @@ import com.blacklivesmatter.policebrutality.config.PB_LINK_REDDIT
 import com.blacklivesmatter.policebrutality.config.PB_LINK_TWITTER
 import com.blacklivesmatter.policebrutality.config.PB_LINK_WEB
 import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
-import timber.log.Timber
 import javax.inject.Inject
+import timber.log.Timber
 
 class MoreInfoViewModel @Inject constructor() : ViewModel() {
     private val _openExternalUrl = LiveEvent<String>()

@@ -1,9 +1,9 @@
 package com.blacklivesmatter.policebrutality.di.module
 
-import com.blacklivesmatter.policebrutality.ui.newreport.NewReportFragment
-import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationFragment
 import com.blacklivesmatter.policebrutality.ui.incident.IncidentsFragment
+import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationFragment
 import com.blacklivesmatter.policebrutality.ui.moreinfo.MoreInfoFragment
+import com.blacklivesmatter.policebrutality.ui.newreport.NewReportFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
