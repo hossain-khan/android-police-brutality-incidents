@@ -22,9 +22,9 @@
 
     <fragment
         android:id="@+id/navigation_menu_incident"
-        android:name="com.blacklivesmatter.policebrutality.ui.home.HomeFragment"
+        android:name="com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationFragment"
         android:label="@string/title_brutality_incidents"
-        tools:layout="@layout/fragment_home">
+        tools:layout="@layout/fragment_incident_locations">
         <action
             android:id="@+id/navigation_to_incidentsFragment"
             app:destination="@id/incidentsFragment"
@@ -38,7 +38,7 @@
         android:id="@+id/incidentsFragment"
         android:name="com.blacklivesmatter.policebrutality.ui.incident.IncidentsFragment"
         android:label="@string/title_incidents"
-        tools:layout="@layout/fragment_incident">
+        tools:layout="@layout/fragment_incidents">
         <argument
             android:name="stateName"
             app:argType="string" />

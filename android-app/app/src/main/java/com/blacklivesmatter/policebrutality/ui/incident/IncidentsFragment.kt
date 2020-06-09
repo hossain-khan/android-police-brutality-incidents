@@ -4,14 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blacklivesmatter.policebrutality.R
-import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentBinding
+import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentsBinding
 import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
 import com.google.android.material.snackbar.Snackbar
 import dagger.android.support.DaggerFragment
@@ -23,13 +23,13 @@ class IncidentsFragment : DaggerFragment() {
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
     private val viewModel by viewModels<IncidentViewModel> { viewModelFactory }
-    private lateinit var viewDataBinding: FragmentIncidentBinding
+    private lateinit var viewDataBinding: FragmentIncidentsBinding
     private val navArgs: IncidentsFragmentArgs by navArgs()
     private lateinit var adapter: IncidentsAdapter
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        viewDataBinding = FragmentIncidentBinding.inflate(inflater, container, false).apply {
+        viewDataBinding = FragmentIncidentsBinding.inflate(inflater, container, false).apply {
             lifecycleOwner = this@IncidentsFragment
             vm = viewModel
         }
@@ -53,8 +53,9 @@ class IncidentsFragment : DaggerFragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        (activity as AppCompatActivity?)?.supportActionBar?.let { actionBar ->
-            actionBar.title = getString(R.string.title_incidents, navArgs.stateName)
+        viewDataBinding.toolbar.title = getString(R.string.title_incidents, navArgs.stateName)
+        viewDataBinding.toolbar.setNavigationOnClickListener {
+            findNavController().popBackStack()
         }
 
         viewModel.incidents.observe(viewLifecycleOwner, Observer {
@@ -66,7 +67,7 @@ class IncidentsFragment : DaggerFragment() {
      * Opens external web URL
      * See: https://developer.android.com/guide/components/intents-common#ViewUrl
      */
-    fun openWebPage(url: String) {
+    private fun openWebPage(url: String) {
         val intent = IntentBuilder.build(requireContext(), url)
         if (intent != null) {
             startActivity(intent)

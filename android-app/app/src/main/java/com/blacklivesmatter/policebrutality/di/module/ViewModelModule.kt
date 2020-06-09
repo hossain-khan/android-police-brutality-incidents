@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import com.blacklivesmatter.policebrutality.MainViewModel
 import com.blacklivesmatter.policebrutality.di.annotation.ViewModelKey
 import com.blacklivesmatter.policebrutality.ui.newreport.NewReportViewModel
-import com.blacklivesmatter.policebrutality.ui.home.HomeViewModel
+import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel
 import com.blacklivesmatter.policebrutality.ui.incident.IncidentViewModel
 import com.blacklivesmatter.policebrutality.ui.moreinfo.MoreInfoViewModel
 import dagger.Binds
@@ -26,8 +26,8 @@ abstract class ViewModelModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(HomeViewModel::class)
-    abstract fun bindHomeViewModel(viewModel: HomeViewModel): ViewModel
+    @ViewModelKey(LocationViewModel::class)
+    abstract fun bindHomeViewModel(viewModel: LocationViewModel): ViewModel
 
     @Binds
     @IntoMap
