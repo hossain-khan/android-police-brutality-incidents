@@ -34,6 +34,9 @@ jobs:
           ${{ runner.os }}-gradle-
 
 
+    - name: Kotlin lint (use `./gradlew ktlintFormat` on error)
+      run: ./gradlew ktlintCheck
+
     - name: Build with Gradle
       run: ./gradlew build
 
