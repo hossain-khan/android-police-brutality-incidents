@@ -14,8 +14,8 @@ const val INCIDENT_DATA_FILENAME = "all_locations_fallback.json"
 /**
  * NOTE: URL taken from https://github.com/2020PB/police-brutality/blob/master/README.md on June 8th, 2020
  */
-const val REPORT_INCIDENT_WEB_URL =
-    "https://github.com/2020PB/police-brutality/issues/new?assignees=&labels=Incident+report&template=incident-report.md&title=Incident+in+CITY%2C+STATE"
+const val REPORT_INCIDENT_WEB_URL = "https://github.com/2020PB/police-brutality/issues/new?" +
+        "assignees=&labels=Incident+report&template=incident-report.md&title=Incident+in+CITY%2C+STATE"
 
 /*
  * Relevant Links taken from https://www.reddit.com/r/2020PoliceBrutality/comments/gwxgsa/i_just_wanted_to_take_a_moment_to_share_with_you/
