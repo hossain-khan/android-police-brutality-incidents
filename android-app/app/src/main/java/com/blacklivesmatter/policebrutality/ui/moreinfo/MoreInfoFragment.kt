@@ -12,6 +12,8 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.blacklivesmatter.policebrutality.R
 import com.blacklivesmatter.policebrutality.databinding.FragmentMoreInfoBinding
+import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
+import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
 import com.google.android.material.chip.Chip
 import com.google.android.material.snackbar.Snackbar
 import dagger.android.support.DaggerFragment
@@ -42,6 +44,18 @@ class MoreInfoFragment : DaggerFragment() {
         super.onActivityCreated(savedInstanceState)
 
         setupHashTagHandler()
+        handleExternalUrl()
+    }
+
+    private fun handleExternalUrl() {
+        viewModel.openExternalUrl.observeKotlin(viewLifecycleOwner) { url ->
+            val intent = IntentBuilder.build(requireContext(), url)
+            if (intent != null) {
+                startActivity(intent)
+            } else {
+                Snackbar.make(viewDataBinding.root, R.string.unable_to_load_url, Snackbar.LENGTH_LONG).show()
+            }
+        }
     }
 
     private fun setupHashTagHandler() {
