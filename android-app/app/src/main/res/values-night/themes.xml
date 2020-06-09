@@ -6,12 +6,12 @@
     <style name="Theme.PoliceBrutality" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/blue_grey_500</item>
-        <item name="colorPrimaryDark">@color/grey_700</item>
+        <item name="colorPrimaryDark">@color/blue_grey_700</item>
         <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorSecondary">@color/teal_300</item>
+        <item name="colorSecondaryVariant">@color/teal_400</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>

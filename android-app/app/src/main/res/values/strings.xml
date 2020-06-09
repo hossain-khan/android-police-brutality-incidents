@@ -21,6 +21,7 @@
     <!-- Content description for accessibility -->
     <string name="content_description_fist_icon">Justice for George Floyd protest fist image icon</string>
     <string name="content_description_george_floyd_graffiti_image">george floyd graffiti</string>
+    <string name="content_description_go_back_to_prev_screen">Go back to previous screen</string>
 
     <!-- Labels, Button CTA and so on -->
     <string name="external_links_label">External links on this incident</string>

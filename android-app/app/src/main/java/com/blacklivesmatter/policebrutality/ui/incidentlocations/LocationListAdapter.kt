@@ -1,4 +1,4 @@
-package com.blacklivesmatter.policebrutality.ui.home
+package com.blacklivesmatter.policebrutality.ui.incidentlocations
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -9,7 +9,7 @@ import com.blacklivesmatter.policebrutality.data.model.LocationIncidents
 import com.blacklivesmatter.policebrutality.databinding.ListItemLocationBinding
 import com.blacklivesmatter.policebrutality.ui.common.DataBoundListAdapter
 
-class StateListAdapter(
+class LocationListAdapter(
     private val itemClickCallback: ((LocationIncidents) -> Unit)?
 ) : DataBoundListAdapter<LocationIncidents, ListItemLocationBinding>(
     diffCallback = object : DiffUtil.ItemCallback<LocationIncidents>() {
