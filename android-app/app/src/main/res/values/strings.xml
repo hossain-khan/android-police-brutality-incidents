@@ -12,6 +12,8 @@
     <string name="menu_title_brutality_incidents">Incidents</string>
     <string name="menu_title_report_new_incident">Report</string>
     <string name="menu_title_more_info_and_sources">Info</string>
+    <string name="menu_title_about_app">About App</string>
+    <string name="menu_title_share_app">Share App</string>
 
     <!-- Use messages - info, success, error etc -->
     <string name="message_hashtag_copied_to_clipboard">The %s hash tag has been copied to your clipboard.</string>
@@ -24,8 +26,11 @@
     <string name="content_description_go_back_to_prev_screen">Go back to previous screen</string>
 
     <!-- Labels, Button CTA and so on -->
-    <string name="external_links_label">External links on this incident</string>
+    <string name="label_external_links">External links on this incident</string>
     <string name="button_cta_report_new_incident">Report New Incident</string>
+    <string name="label_about_app">About App</string>
+    <string name="label_app_resource_credits">Credits</string>
+    <string name="button_cta_okay">OK</string>
 
     <!-- Other string resrouces -->
     <string name="total_reported_incident_for_location">Total %d reported incidents.</string>
@@ -49,4 +54,6 @@
     first to find out the Incident Report Guidelines and Frequently Asked Questions (FAQ).</p>]]></string>
 
     <string name="message_report_incident_external_link_info">NOTE: This opens link on your browser app. You will need GitHub account to report incident in the \'2020PB/police-brutality\' GitHub repository.</string>
+    <string name="info_message_about_app_background"><![CDATA[This app is developed to provide easy access to police brutality incidents that happened during protest for George Floyd\'s murder.\n\nThe app is open-source and available for contribution. If you find issue you can report it at https://bit.ly/PB2020App]]></string>
+    <string name="info_message_about_app_credits"><![CDATA[The app is actively maintained by following people:\n • Hossain Khan (hossain.dev)\n\nArt work used:\n • Fist Icon - https://commons.wikimedia.org/wiki/File:Fist.svg (License: Public)\n • Graffiti mural honoring George Floyd by munshots - https://unsplash.com/photos/_vAC0je-hKo (License: Public)]]></string>
 </resources>

@@ -6,21 +6,27 @@
 
     <application
         android:name="com.blacklivesmatter.policebrutality.BrutalityIncidentApplication"
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PoliceBrutality">
         <activity
-            android:name="com.blacklivesmatter.policebrutality.MainActivity"
-            android:label="@string/app_name">
+            android:name=".ui.launcher.LauncherActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PoliceBrutality.Launcher"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.blacklivesmatter.policebrutality.MainActivity"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

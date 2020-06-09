@@ -22,4 +22,17 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- The launcher theme. It sets the main window background drawable. -->
+    <style name="Theme.PoliceBrutality.Launcher" parent="Theme.PoliceBrutality">
+        <!-- Set fullScreen and window background in the theme so that the screen goes dark and
+             removes the status bar as soon as possible. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <!-- Use drawable instead of color, see https://stackoverflow.com/a/23207466/1596587 -->
+        <item name="android:windowBackground">@drawable/launcher_background</item>
+        <!-- Optional, on Android 5+ you can modify the colorPrimaryDark color
+        to match the windowBackground color for further branding-->
+        <!-- <item name="colorPrimaryDark">@color/black</item> -->
+    </style>
 </resources>

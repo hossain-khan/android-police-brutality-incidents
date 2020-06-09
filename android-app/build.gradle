@@ -30,6 +30,7 @@ buildscript {
         materialVersion = '1.2.0-beta01' // https://github.com/material-components/material-components-android/releases
         navigationVersion = '2.2.2'
         okhttpVersion = '4.6.0'
+        preferenceVersion = '1.1.1'
         recyclerViewVersion = '1.1.0'
         retrofitVersion = '2.8.1'
         roomVersion = '2.2.5'
@@ -44,6 +45,9 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$gradleVersion"
@@ -51,6 +55,7 @@ buildscript {
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
         classpath "com.google.gms:google-services:$googleGmsServices"
         classpath "com.google.firebase:firebase-crashlytics-gradle:$firebaseCrashlyticsGradle"
+        classpath "org.jlleitschuh.gradle:ktlint-gradle:9.2.1"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

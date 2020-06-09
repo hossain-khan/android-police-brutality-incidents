@@ -1,7 +1,7 @@
 package com.blacklivesmatter.policebrutality.di.module
 
-
 import com.blacklivesmatter.policebrutality.MainActivity
+import com.blacklivesmatter.policebrutality.ui.launcher.LauncherActivity
 import dagger.Module
 import dagger.android.AndroidInjectionModule
 import dagger.android.ContributesAndroidInjector
@@ -10,6 +10,8 @@ import dagger.android.ContributesAndroidInjector
 abstract class ActivityModule {
 
     @ContributesAndroidInjector
-    abstract fun bindMainActivity(): MainActivity
+    abstract fun bindLauncherActivity(): LauncherActivity
 
+    @ContributesAndroidInjector
+    abstract fun bindMainActivity(): MainActivity
 }
