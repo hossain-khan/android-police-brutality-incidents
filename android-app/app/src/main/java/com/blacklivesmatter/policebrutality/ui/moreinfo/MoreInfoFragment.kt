@@ -4,8 +4,12 @@ import android.content.ClipData
 import android.content.ClipboardManager
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.children
 import androidx.fragment.app.viewModels
@@ -18,6 +22,7 @@ import com.google.android.material.chip.Chip
 import com.google.android.material.snackbar.Snackbar
 import dagger.android.support.DaggerFragment
 import javax.inject.Inject
+import timber.log.Timber
 
 class MoreInfoFragment : DaggerFragment() {
 
@@ -27,15 +32,18 @@ class MoreInfoFragment : DaggerFragment() {
     private val viewModel by viewModels<MoreInfoViewModel> { viewModelFactory }
     private lateinit var viewDataBinding: FragmentMoreInfoBinding
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         viewDataBinding = FragmentMoreInfoBinding.inflate(inflater, container, false).apply {
             lifecycleOwner = this@MoreInfoFragment
             vm = viewModel
         }
+
+        (requireActivity() as AppCompatActivity).setSupportActionBar(viewDataBinding.toolbar)
 
         return viewDataBinding.root
     }
@@ -86,5 +94,29 @@ class MoreInfoFragment : DaggerFragment() {
             resources.getString(R.string.message_hashtag_copied_to_clipboard, copyText),
             Snackbar.LENGTH_LONG
         ).show()
+    }
+
+    //
+    // Handle menu icons
+    //
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.more_info_menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.toolbar_menu_about_app -> {
+                Timber.d("About app menu item selected.")
+                return true
+            }
+            R.id.toolbar_menu_share -> {
+                Timber.d("Share app menu item selected.")
+                return true
+            }
+            else -> {
+                return super.onOptionsItemSelected(item)
+            }
+        }
     }
 }

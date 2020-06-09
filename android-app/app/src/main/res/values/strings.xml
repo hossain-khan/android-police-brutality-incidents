@@ -12,6 +12,8 @@
     <string name="menu_title_brutality_incidents">Incidents</string>
     <string name="menu_title_report_new_incident">Report</string>
     <string name="menu_title_more_info_and_sources">Info</string>
+    <string name="menu_title_about_app">About App</string>
+    <string name="menu_title_share_app">Share App</string>
 
     <!-- Use messages - info, success, error etc -->
     <string name="message_hashtag_copied_to_clipboard">The %s hash tag has been copied to your clipboard.</string>
