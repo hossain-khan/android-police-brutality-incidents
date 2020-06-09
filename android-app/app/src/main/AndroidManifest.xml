@@ -12,7 +12,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PoliceBrutality">
-        <!-- TODO launched reference activity -->
         <activity
             android:name=".ui.launcher.LauncherActivity"
             android:launchMode="singleTop"
