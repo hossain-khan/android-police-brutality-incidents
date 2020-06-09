@@ -1,8 +1,10 @@
 package com.blacklivesmatter.policebrutality.data.model
 
 import androidx.annotation.DrawableRes
+import androidx.annotation.Keep
 import com.blacklivesmatter.policebrutality.R
 
+@Keep
 data class LinkInfo constructor(
     /**
      * Original source URL.

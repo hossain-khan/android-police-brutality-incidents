@@ -1,5 +1,7 @@
 package com.blacklivesmatter.policebrutality.data.model
 
+import androidx.annotation.Keep
+
 /**
  * Container object for list of [Incident]s.
  * Example data:
@@ -12,6 +14,7 @@ package com.blacklivesmatter.policebrutality.data.model
  * }
  * ```
  */
+@Keep
 data class IncidentsSource constructor(
     val edit_at: String = "",
     val help: String = "",

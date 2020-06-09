@@ -1,5 +1,6 @@
 package com.blacklivesmatter.policebrutality.data.model
 
+import androidx.annotation.Keep
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -27,6 +28,7 @@ import com.google.gson.annotations.SerializedName
  * }
  * ```
  */
+@Keep
 @Entity(tableName = "incidents")
 data class Incident(
     @PrimaryKey(autoGenerate = true)
