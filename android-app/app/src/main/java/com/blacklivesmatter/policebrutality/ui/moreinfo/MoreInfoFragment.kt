@@ -19,6 +19,7 @@ import com.blacklivesmatter.policebrutality.databinding.FragmentMoreInfoBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
 import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
 import com.google.android.material.chip.Chip
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import dagger.android.support.DaggerFragment
 import timber.log.Timber
@@ -108,6 +109,7 @@ class MoreInfoFragment : DaggerFragment() {
         when (item.itemId) {
             R.id.toolbar_menu_about_app -> {
                 Timber.d("About app menu item selected.")
+                showAboutAppDialog()
                 return true
             }
             R.id.toolbar_menu_share -> {
@@ -126,5 +128,13 @@ class MoreInfoFragment : DaggerFragment() {
                 return super.onOptionsItemSelected(item)
             }
         }
+    }
+
+    private fun showAboutAppDialog() {
+        val dialog = MaterialAlertDialogBuilder(requireContext())
+            .setPositiveButton("OK", null)
+            .setNegativeButton("Nah", null)
+            .setView(R.layout.dialog_about_app)
+            .show()
     }
 }
