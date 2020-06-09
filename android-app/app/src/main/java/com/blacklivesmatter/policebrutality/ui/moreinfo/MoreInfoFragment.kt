@@ -131,9 +131,8 @@ class MoreInfoFragment : DaggerFragment() {
     }
 
     private fun showAboutAppDialog() {
-        val dialog = MaterialAlertDialogBuilder(requireContext())
-            .setPositiveButton("OK", null)
-            .setNegativeButton("Nah", null)
+        MaterialAlertDialogBuilder(requireContext())
+            .setPositiveButton(R.string.button_cta_okay, null)
             .setView(R.layout.dialog_about_app)
             .show()
     }

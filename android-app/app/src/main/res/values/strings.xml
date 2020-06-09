@@ -30,6 +30,7 @@
     <string name="button_cta_report_new_incident">Report New Incident</string>
     <string name="label_about_app">About App</string>
     <string name="label_app_resource_credits">Credits</string>
+    <string name="button_cta_okay">OK</string>
 
     <!-- Other string resrouces -->
     <string name="total_reported_incident_for_location">Total %d reported incidents.</string>

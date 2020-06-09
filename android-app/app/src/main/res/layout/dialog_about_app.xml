@@ -27,7 +27,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/about_app_title"
-        style="?textAppearanceHeadline6"
+        style="?textAppearanceHeadline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/view_spacing_large"
@@ -53,7 +53,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/credits_title"
-        style="?textAppearanceHeadline6"
+        style="?textAppearanceHeadline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/view_spacing_xxlarge"
