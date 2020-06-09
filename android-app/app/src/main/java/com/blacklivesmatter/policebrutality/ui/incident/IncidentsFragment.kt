@@ -15,8 +15,8 @@ import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentsBinding
 import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
 import com.google.android.material.snackbar.Snackbar
 import dagger.android.support.DaggerFragment
-import timber.log.Timber
 import javax.inject.Inject
+import timber.log.Timber
 
 class IncidentsFragment : DaggerFragment() {
     @Inject
@@ -26,7 +26,6 @@ class IncidentsFragment : DaggerFragment() {
     private lateinit var viewDataBinding: FragmentIncidentsBinding
     private val navArgs: IncidentsFragmentArgs by navArgs()
     private lateinit var adapter: IncidentsAdapter
-
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         viewDataBinding = FragmentIncidentsBinding.inflate(inflater, container, false).apply {
@@ -45,7 +44,6 @@ class IncidentsFragment : DaggerFragment() {
         viewDataBinding.recyclerView.setHasFixedSize(false)
         viewDataBinding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         viewDataBinding.recyclerView.adapter = adapter
-
 
         return viewDataBinding.root
     }

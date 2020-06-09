@@ -9,11 +9,11 @@ object IntentBuilder {
     // Any "APPID" defined here should resolve to valid content using following URL:
     // https://play.google.com/store/apps/details?id=[APPID]
 
-    private const val APP_ID_FACEBOOK = "com.facebook.katana";
-    private const val APP_ID_INSTAGRAM = "com.instagram.android";
-    private const val APP_ID_REDDIT = "com.reddit.frontpage";
-    private const val APP_ID_TWITTER = "com.twitter.android";
-    private const val APP_ID_YOUTUBE = "com.google.android.youtube";
+    private const val APP_ID_FACEBOOK = "com.facebook.katana"
+    private const val APP_ID_INSTAGRAM = "com.instagram.android"
+    private const val APP_ID_REDDIT = "com.reddit.frontpage"
+    private const val APP_ID_TWITTER = "com.twitter.android"
+    private const val APP_ID_YOUTUBE = "com.google.android.youtube"
 
     /**
      * Map of URI authority(domain) to Android App ID

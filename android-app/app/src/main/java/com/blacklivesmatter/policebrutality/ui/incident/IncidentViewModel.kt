@@ -6,8 +6,8 @@ import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.ViewModel
 import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.Incident
-import timber.log.Timber
 import javax.inject.Inject
+import timber.log.Timber
 
 class IncidentViewModel @Inject constructor(
     private val incidentRepository: IncidentRepository

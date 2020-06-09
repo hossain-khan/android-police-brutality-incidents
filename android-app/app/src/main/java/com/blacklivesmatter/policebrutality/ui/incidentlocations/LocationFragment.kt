@@ -11,8 +11,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentLocationsBinding
 import dagger.android.support.DaggerFragment
-import timber.log.Timber
 import javax.inject.Inject
+import timber.log.Timber
 
 class LocationFragment : DaggerFragment() {
     @Inject
@@ -28,7 +28,6 @@ class LocationFragment : DaggerFragment() {
             vm = viewModel
         }
 
-
         adapter = LocationListAdapter { state ->
             Timber.d("Tapped on state item $state")
             findNavController().navigate(
@@ -40,7 +39,6 @@ class LocationFragment : DaggerFragment() {
         viewDataBinding.recyclerView.setHasFixedSize(false)
         viewDataBinding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         viewDataBinding.recyclerView.adapter = adapter
-
 
         return viewDataBinding.root
     }

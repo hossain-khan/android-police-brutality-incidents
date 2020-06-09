@@ -9,7 +9,6 @@ import com.blacklivesmatter.policebrutality.databinding.ListItemIncidentExternal
 import com.blacklivesmatter.policebrutality.ui.common.DataBoundListAdapter
 import com.blacklivesmatter.policebrutality.ui.util.LinkTransformer
 
-
 class IncidentLinkAdapter(
     private val itemClickCallback: ((String) -> Unit)?
 ) : DataBoundListAdapter<String, ListItemIncidentExternalLinkBinding>(

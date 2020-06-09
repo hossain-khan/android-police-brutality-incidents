@@ -8,8 +8,8 @@ import androidx.databinding.BindingAdapter
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.NavHostFragment
-import com.bumptech.glide.Glide
 import com.blacklivesmatter.policebrutality.BuildConfig
+import com.bumptech.glide.Glide
 import timber.log.Timber
 
 /**
