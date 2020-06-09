@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/launcher_background_layer" />
+    <item>
+        <bitmap
+            android:gravity="bottom|center_horizontal|clip_vertical"
+            android:src="@drawable/fist_raised_large" />
+    </item>
+</layer-list>
