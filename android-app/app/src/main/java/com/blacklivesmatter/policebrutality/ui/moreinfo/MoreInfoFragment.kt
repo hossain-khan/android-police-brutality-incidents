@@ -21,8 +21,8 @@ import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
 import com.google.android.material.chip.Chip
 import com.google.android.material.snackbar.Snackbar
 import dagger.android.support.DaggerFragment
-import javax.inject.Inject
 import timber.log.Timber
+import javax.inject.Inject
 
 class MoreInfoFragment : DaggerFragment() {
 
@@ -97,7 +97,7 @@ class MoreInfoFragment : DaggerFragment() {
     }
 
     //
-    // Handle menu icons
+    // Handle menu icons for about app and share app
     //
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.more_info_menu, menu)
@@ -112,6 +112,14 @@ class MoreInfoFragment : DaggerFragment() {
             }
             R.id.toolbar_menu_share -> {
                 Timber.d("Share app menu item selected.")
+                // TODO - update this whenever app is published at
+                // https://play.google.com/store/apps/details?id=com.blacklivesmatter.policebrutality
+                Snackbar.make(
+                    viewDataBinding.root,
+                    "Sharing coming soon: This app is pending approval on Google Play Store. " +
+                            "Thanks for caring! ❤️",
+                    Snackbar.LENGTH_LONG
+                ).show()
                 return true
             }
             else -> {
