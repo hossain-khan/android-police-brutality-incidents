@@ -1,5 +1,6 @@
 package com.blacklivesmatter.policebrutality.ui.launcher
 
+import android.content.SharedPreferences
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -12,10 +13,13 @@ import javax.inject.Inject
 /**
  * View model for [LauncherActivity].
  */
-class LauncherViewModel @Inject constructor() : ViewModel() {
+class LauncherViewModel @Inject constructor(
+    private val preferences: SharedPreferences
+) : ViewModel() {
     companion object {
-        const val SPLASH_SCREEN_DELAY_FIRST_TIME_MS = 1600L
-        const val SPLASH_SCREEN_DELAY_MS = 1000L
+        private const val SPLASH_SCREEN_DELAY_FIRST_TIME_MS = 3000L
+        private const val SPLASH_SCREEN_DELAY_MS = 1000L
+        private const val PREF_KEY_FIRST_LAUNCH = "preference_key_first_time_app_launch"
     }
 
     sealed class NavigationEvent {
@@ -29,7 +33,16 @@ class LauncherViewModel @Inject constructor() : ViewModel() {
     fun countDownSplash() {
         viewModelScope.launch {
             Timber.d("Waiting for splash delay...")
-            delay(SPLASH_SCREEN_DELAY_MS)
+
+            val isFirstTime = preferences.getBoolean(PREF_KEY_FIRST_LAUNCH, true)
+            if (isFirstTime) {
+                Timber.d("User has launched app for first time, show splash for extended time.")
+                preferences.edit().putBoolean(PREF_KEY_FIRST_LAUNCH, false).apply()
+            } else {
+                Timber.d("Not first time app launch, showing quicker splash screen.")
+            }
+
+            delay(if (isFirstTime) SPLASH_SCREEN_DELAY_FIRST_TIME_MS else SPLASH_SCREEN_DELAY_MS)
             _launcherTimeoutEvent.value = NavigationEvent.Home
         }
     }
