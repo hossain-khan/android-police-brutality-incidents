@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blacklivesmatter.policebrutality.R
@@ -53,6 +54,9 @@ class IncidentsFragment : DaggerFragment() {
         super.onActivityCreated(savedInstanceState)
 
         viewDataBinding.toolbar.title = getString(R.string.title_incidents, navArgs.stateName)
+        viewDataBinding.toolbar.setNavigationOnClickListener {
+            findNavController().popBackStack()
+        }
 
         viewModel.incidents.observe(viewLifecycleOwner, Observer {
             adapter.submitList(it)
