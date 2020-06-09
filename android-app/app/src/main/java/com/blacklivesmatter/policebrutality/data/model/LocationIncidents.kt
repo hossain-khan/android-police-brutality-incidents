@@ -1,5 +1,6 @@
 package com.blacklivesmatter.policebrutality.data.model
 
+import androidx.annotation.Keep
 import androidx.room.ColumnInfo
 
 /**
@@ -7,6 +8,7 @@ import androidx.room.ColumnInfo
  *
  * See https://developer.android.com/training/data-storage/room/accessing-data#query-subset-cols
  */
+@Keep
 data class LocationIncidents constructor(
     @ColumnInfo(name = "state") val stateName: String,
     @ColumnInfo(name = "total_incidents") val totalIncidents: Int
