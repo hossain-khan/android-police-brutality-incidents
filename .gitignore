@@ -85,3 +85,4 @@ lint/tmp/
 # lint/reports/
 .DS_Store
 android-app/keystore.properties
+android-app/app/release/output.json

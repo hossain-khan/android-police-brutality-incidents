@@ -59,6 +59,62 @@
             android:text="Most used hash tags"
             app:layout_constraintEnd_toStartOf="@+id/guideline_end"
             app:layout_constraintStart_toStartOf="@+id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/pb2020_ext_link_web" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pb2020_ext_link_reddit"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:onClick="@{(view) -> viewModel.onExternalResourceClicked(view.getId())}"
+            app:icon="@drawable/ic_web_reddit"
+            app:layout_constraintBottom_toBottomOf="@+id/pb2020_ext_link_twitter"
+            app:layout_constraintEnd_toStartOf="@+id/pb2020_ext_link_twitter"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pb2020_ext_link_twitter" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pb2020_ext_link_instagram"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:onClick="@{(view) -> viewModel.onExternalResourceClicked(view.getId())}"
+            app:icon="@drawable/ic_web_instagram"
+            app:layout_constraintBottom_toBottomOf="@+id/pb2020_ext_link_web"
+            app:layout_constraintEnd_toStartOf="@+id/pb2020_ext_link_web"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/pb2020_ext_link_facebook"
+            app:layout_constraintTop_toTopOf="@+id/pb2020_ext_link_web" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pb2020_ext_link_facebook"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:onClick="@{(view) -> viewModel.onExternalResourceClicked(view.getId())}"
+            app:icon="@drawable/ic_web_facebook"
+            app:layout_constraintBottom_toBottomOf="@+id/pb2020_ext_link_instagram"
+            app:layout_constraintEnd_toStartOf="@+id/pb2020_ext_link_instagram"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/pb2020_ext_link_twitter"
+            app:layout_constraintTop_toTopOf="@+id/pb2020_ext_link_instagram" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pb2020_ext_link_twitter"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:onClick="@{(view) -> viewModel.onExternalResourceClicked(view.getId())}"
+            app:icon="@drawable/ic_web_twitter"
+            app:layout_constraintBottom_toBottomOf="@+id/pb2020_ext_link_facebook"
+            app:layout_constraintEnd_toStartOf="@+id/pb2020_ext_link_facebook"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/pb2020_ext_link_reddit"
+            app:layout_constraintTop_toTopOf="@+id/pb2020_ext_link_facebook" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pb2020_ext_link_web"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:layout_marginTop="@dimen/view_spacing_large"
+            android:onClick="@{(view) -> viewModel.onExternalResourceClicked(view.getId())}"
+            app:icon="@drawable/ic_baseline_public_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/pb2020_ext_link_instagram"
             app:layout_constraintTop_toBottomOf="@+id/text_background" />
 
         <com.google.android.material.chip.ChipGroup
