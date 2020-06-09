@@ -8,6 +8,11 @@ Android client app for https://github.com/2020PB/police-brutality (Repository co
   <img src="https://raw.githubusercontent.com/amardeshbd/android-police-brutality-incidents/develop/resources/poster/github-repository-social-preview.png" width="50%">
 </p>
 
+### Early BETA Testing
+If you want to try the app as it is being developed, you can get the latest Android APK in 2 different ways:
+* GitHub Releases - See [current release](https://github.com/amardeshbd/android-police-brutality-incidents/releases) with APK bundled with it.
+* Firebase App Distribution - Subscribe to new updates via email. Use this [open-beta testing](https://appdistribution.firebase.dev/i/5d2cb8359305f7e7) process.
+
 ## Objective
 
 The objective of the app is to be front-end of the data that is collected and exposed by [police-brutality](https://github.com/2020PB/police-brutality) repository.
@@ -41,6 +46,6 @@ Currently following key features are being used.
 
 ### Preview
 
-Here is a snapshot of the app in early stages (taken on June 7th)
+Here is a snapshot of the app in early stages _(taken on June 8th)_
 
-<img src="https://user-images.githubusercontent.com/99822/83992016-c2c39f00-a91c-11ea-8a20-f0b7d893d038.gif" width="50%">
+<img src="https://user-images.githubusercontent.com/99822/84097521-dc272280-a9d2-11ea-9022-3f57b45f7096.gif" width="50%">
