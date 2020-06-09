@@ -80,6 +80,7 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
     implementation "androidx.cardview:cardview:$rootProject.cardViewVersion"
+    implementation "androidx.preference:preference:$rootProject.preferenceVersion"
 
     // Firebase
     implementation "com.google.firebase:firebase-analytics:$rootProject.firebaseAnalyticsVersion"
