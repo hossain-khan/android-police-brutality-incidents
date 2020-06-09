@@ -6,3 +6,7 @@ Poster source (credit): https://www.reddit.com/r/PlexPosters/comments/gx54fr/cou
 <p align="center">
   <img src="https://raw.githubusercontent.com/amardeshbd/android-police-brutality-incidents/develop/resources/poster/github-repository-social-preview.png" width="40%">
 </p>
+
+### Additional External Sources
+* https://commons.wikimedia.org/wiki/File:Fist_.svg
+* https://commons.wikimedia.org/wiki/File:Fist.svg
