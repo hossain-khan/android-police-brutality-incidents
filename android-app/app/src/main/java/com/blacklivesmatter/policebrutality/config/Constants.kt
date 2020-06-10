@@ -14,7 +14,7 @@ import org.threeten.bp.ZoneOffset
  * - https://en.wikipedia.org/wiki/8%E2%80%B246%E2%80%B3
  */
 val THE_846_DAY: OffsetDateTime = OffsetDateTime.of(/* year */ 2020, /* month */ 5, /* dayOfMonth */ 25,
-    /* hour */8, /* minute */19, /* second */0, /* nanoOfSecond */0, ZoneOffset.UTC
+    /* hour */ 8, /* minute */ 19, /* second */ 0, /* nanoOfSecond */ 0, ZoneOffset.UTC
 )
 
 const val DATABASE_NAME = "incidents-db"
