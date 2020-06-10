@@ -9,13 +9,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blacklivesmatter.policebrutality.R
 import com.blacklivesmatter.policebrutality.config.THE_846_DAY
 import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentLocationsBinding
+import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
 import com.google.android.material.datepicker.CalendarConstraints
 import com.google.android.material.datepicker.CalendarConstraints.DateValidator
 import com.google.android.material.datepicker.CompositeDateValidator
@@ -64,10 +64,20 @@ class LocationFragment : DaggerFragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewModel.locations.observe(viewLifecycleOwner, Observer { locationList ->
-            Timber.d("Got locations: $locationList")
+        viewModel.locations.observeKotlin(viewLifecycleOwner) { locationList ->
             adapter.submitList(locationList)
-        })
+        }
+
+        viewModel.dateFilterEvent.observeKotlin(viewLifecycleOwner) { navigationEvent ->
+            when (navigationEvent) {
+                is LocationViewModel.NavigationEvent.Error -> {
+                    Timber.d("There are no records, can't navigate")
+                }
+                is LocationViewModel.NavigationEvent.Filter -> {
+                    Timber.d("Navigate to $navigationEvent")
+                }
+            }
+        }
     }
 
     //
@@ -111,6 +121,9 @@ class LocationFragment : DaggerFragment() {
             ).setTitleText(R.string.title_filter_incidents_by_date)
 
         val picker = builder.build()
+        picker.addOnPositiveButtonClickListener { selectedTimeStamp ->
+            viewModel.onDateTimeStampSelected(selectedTimeStamp)
+        }
         picker.show(childFragmentManager, picker.toString())
     }
 }

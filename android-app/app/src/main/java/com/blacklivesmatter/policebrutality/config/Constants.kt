@@ -1,7 +1,6 @@
 package com.blacklivesmatter.policebrutality.config
 
 import org.threeten.bp.OffsetDateTime
-import org.threeten.bp.ZoneId
 import org.threeten.bp.ZoneOffset
 
 /*
