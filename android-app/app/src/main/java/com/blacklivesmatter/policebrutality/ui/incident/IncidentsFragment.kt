@@ -51,12 +51,7 @@ class IncidentsFragment : DaggerFragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        val toolbarTitleText: String = if (navArgs.timestamp != 0L) getString(
-            R.string.title_incidents_on_date,
-            navArgs.dateText
-        ) else getString(R.string.title_incidents_at_location, navArgs.stateName)
-
-        viewDataBinding.toolbar.title = toolbarTitleText
+        viewDataBinding.toolbar.title = getString(navArgs.titleResId(), navArgs.titleText())
         viewDataBinding.toolbar.setNavigationOnClickListener {
             findNavController().popBackStack()
         }
@@ -78,4 +73,10 @@ class IncidentsFragment : DaggerFragment() {
             Snackbar.make(viewDataBinding.root, R.string.unable_to_load_url, Snackbar.LENGTH_LONG).show()
         }
     }
+
+    private fun IncidentsFragmentArgs.isDateBased(): Boolean = navArgs.timestamp != 0L
+    private fun IncidentsFragmentArgs.titleResId(): Int =
+        if (isDateBased()) R.string.title_incidents_on_date else R.string.title_incidents_at_location
+
+    private fun IncidentsFragmentArgs.titleText(): String = if (isDateBased()) dateText!! else stateName!!
 }
