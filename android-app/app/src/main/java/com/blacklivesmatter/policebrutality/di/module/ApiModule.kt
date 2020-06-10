@@ -1,6 +1,7 @@
 package com.blacklivesmatter.policebrutality.di.module
 
 import com.blacklivesmatter.policebrutality.BuildConfig
+import com.blacklivesmatter.policebrutality.api.IncidentApi
 import com.blacklivesmatter.policebrutality.data.OffsetDateTimeConverter
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -18,7 +19,14 @@ import javax.inject.Singleton
 @Module
 class ApiModule {
     companion object {
-        private const val API_BASE_URL = "" // TODO - define base URL for the data
+        /**
+         * Base URL for 8:46 police brutality API.
+         *
+         * See
+         * - https://github.com/949mac/846-backend#api
+         * - https://github.com/949mac/846-backend/issues/6
+         */
+        private const val API_BASE_URL = "https://api.846policebrutality.com/api/"
     }
 
     private val loggingInterceptor: HttpLoggingInterceptor = HttpLoggingInterceptor()
@@ -43,12 +51,19 @@ class ApiModule {
     @Singleton
     @Provides
     fun providesRetrofit(client: OkHttpClient, gson: Gson): Retrofit {
+        // https://square.github.io/retrofit/
         return Retrofit.Builder()
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create(gson))
             .baseUrl(API_BASE_URL)
             .client(client)
             .build()
+    }
+
+    @Singleton
+    @Provides
+    fun provideIncidentApi(retrofit: Retrofit): IncidentApi {
+        return retrofit.create(IncidentApi::class.java)
     }
 
     @Singleton
