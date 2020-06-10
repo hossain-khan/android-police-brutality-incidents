@@ -17,6 +17,7 @@ import com.blacklivesmatter.policebrutality.config.THE_846_DAY
 import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentLocationsBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
 import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel.NavigationEvent
+import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel.RefreshEvent
 import com.google.android.material.datepicker.CalendarConstraints
 import com.google.android.material.datepicker.CalendarConstraints.DateValidator
 import com.google.android.material.datepicker.CompositeDateValidator
@@ -94,6 +95,33 @@ class LocationFragment : DaggerFragment() {
                 }
             }
         }
+
+        setupSwipeRefreshAction()
+    }
+
+    private fun setupSwipeRefreshAction() {
+        viewDataBinding.swipeRefresh.setColorSchemeResources(R.color.teal_700, R.color.blue_grey_500, R.color.teal_800)
+        viewDataBinding.swipeRefresh.setOnRefreshListener {
+            viewModel.onRefreshIncidentsRequested()
+        }
+
+        viewModel.refreshEvent.observeKotlin(viewLifecycleOwner) { event: RefreshEvent ->
+            when (event) {
+                is RefreshEvent.Success -> {
+                    Timber.d("Refresh was successful")
+                    viewDataBinding.swipeRefresh.isRefreshing = false
+                    Snackbar.make(viewDataBinding.root, R.string.message_incident_refreshed, Snackbar.LENGTH_SHORT)
+                }
+                is RefreshEvent.Error -> {
+                    Timber.d("Refresh was unsuccessful")
+                    viewDataBinding.swipeRefresh.isRefreshing = false
+                    Snackbar.make(viewDataBinding.root, R.string.message_incident_refresh_fail, Snackbar.LENGTH_SHORT)
+                }
+                is RefreshEvent.Loading -> {
+                    viewDataBinding.swipeRefresh.isRefreshing = true
+                }
+            }
+        }
     }
 
     //
@@ -113,6 +141,10 @@ class LocationFragment : DaggerFragment() {
         when (item.itemId) {
             R.id.toolbar_menu_filter_by_date -> {
                 showDatePicker()
+                return true
+            }
+            R.id.toolbar_menu_refresh -> {
+                viewModel.onRefreshIncidentsRequested()
                 return true
             }
             else -> return super.onOptionsItemSelected(item)
