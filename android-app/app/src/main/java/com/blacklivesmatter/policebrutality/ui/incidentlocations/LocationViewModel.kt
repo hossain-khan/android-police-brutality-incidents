@@ -11,7 +11,6 @@ import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.data.model.LocationIncidents
 import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.threeten.bp.Instant
 import org.threeten.bp.OffsetDateTime
@@ -32,7 +31,7 @@ class LocationViewModel @Inject constructor(
 
     sealed class RefreshEvent {
         object Loading : RefreshEvent()
-        object Success : RefreshEvent()
+        data class Success(val totalItems: Int) : RefreshEvent()
         data class Error(val exception: Exception) : RefreshEvent()
     }
 
@@ -80,11 +79,10 @@ class LocationViewModel @Inject constructor(
         _refreshEvent.value = RefreshEvent.Loading
         Timber.d("Refresh requested")
         viewModelScope.launch {
-            delay(2000)
             isOperationInProgress.set(false)
             val incidents: List<Incident> = incidentRepository.getIncidentsCoroutine()
             incidentRepository.addIncidents(incidents)
-            _refreshEvent.value = RefreshEvent.Success
+            _refreshEvent.value = RefreshEvent.Success(incidents.size)
         }
     }
 }
