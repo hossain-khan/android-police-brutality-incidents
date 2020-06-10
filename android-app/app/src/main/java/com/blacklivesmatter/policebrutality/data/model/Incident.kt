@@ -3,9 +3,13 @@ package com.blacklivesmatter.policebrutality.data.model
 import androidx.annotation.Keep
 import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.Ignore
 import androidx.room.PrimaryKey
+import com.blacklivesmatter.policebrutality.config.THE_846_DAY
 import com.google.gson.annotations.SerializedName
 import org.threeten.bp.OffsetDateTime
+import org.threeten.bp.format.DateTimeFormatter
+import org.threeten.bp.format.FormatStyle
 
 /**
  * An example data exposed from JSON response.
@@ -49,4 +53,18 @@ data class Incident(
     @SerializedName("date") @ColumnInfo(name = "date") val date: OffsetDateTime? = null,
     @SerializedName("geocoding") @ColumnInfo(name = "geocoding") val geocoding: GeoCoding,
     @SerializedName("links") @ColumnInfo(name = "links") val links: List<String> = emptyList()
-)
+) {
+    @Ignore
+    private val unknownDateText = "Unknown Date"
+
+    val dateText: String
+        get() {
+            return date?.let { incidentDate ->
+                if (incidentDate.isBefore(THE_846_DAY)) {
+                    return@let unknownDateText
+                } else {
+                    return@let incidentDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG))
+                }
+            } ?: unknownDateText
+        }
+}

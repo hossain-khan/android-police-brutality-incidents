@@ -58,7 +58,7 @@
                 android:layout_marginTop="@dimen/list_item_vertical_margin"
                 android:drawableStart="@drawable/ic_outline_date_range"
                 android:drawablePadding="@dimen/list_item_horizontal_margin"
-                android:text="@{incident.date.toString()}"
+                android:text="@{incident.dateText}"
                 android:textAlignment="textEnd"
                 app:layout_constraintEnd_toEndOf="@id/guideline_end"
                 app:layout_constraintTop_toBottomOf="@+id/incident_title"

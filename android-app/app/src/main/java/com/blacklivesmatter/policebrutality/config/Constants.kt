@@ -1,8 +1,21 @@
 package com.blacklivesmatter.policebrutality.config
 
+import org.threeten.bp.OffsetDateTime
+import org.threeten.bp.ZoneOffset
+
 /*
- * Constants used throughout the app.
+ * All constants used throughout the app.
  */
+
+/**
+ * George Perry Floyd Jr. (October 14, 1973 – May 25, 2020)
+ *
+ * - https://en.wikipedia.org/wiki/George_Floyd
+ * - https://en.wikipedia.org/wiki/8%E2%80%B246%E2%80%B3
+ */
+val THE_846_DAY: OffsetDateTime = OffsetDateTime.of(/* year */ 2020, /* month */ 5, /* dayOfMonth */ 25,
+    /* hour */8, /* minute */19, /* second */0, /* nanoOfSecond */0, ZoneOffset.UTC
+)
 
 const val DATABASE_NAME = "incidents-db"
 

@@ -9,7 +9,7 @@
         "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `incident_id` TEXT, `state` TEXT, `city` TEXT, `name` TEXT, `date` TEXT, `geocoding` TEXT NOT NULL, `links` TEXT NOT NULL, PRIMARY KEY(`id`))",
         "fields": [
           {
-            "fieldPath": "_id",
+            "fieldPath": "id",
             "columnName": "id",
             "affinity": "TEXT",
             "notNull": true
