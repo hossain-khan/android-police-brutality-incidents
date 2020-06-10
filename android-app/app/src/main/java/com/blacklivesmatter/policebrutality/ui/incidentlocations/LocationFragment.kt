@@ -138,7 +138,7 @@ class LocationFragment : DaggerFragment() {
 
         val picker = builder.build()
         picker.addOnPositiveButtonClickListener { selectedTimeStamp ->
-            viewModel.onDateTimeStampSelected(selectedTimeStamp)
+            viewModel.onDateTimeStampSelected(viewLifecycleOwner, selectedTimeStamp)
         }
         picker.show(childFragmentManager, picker.toString())
     }
