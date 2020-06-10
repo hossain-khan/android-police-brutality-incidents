@@ -1,14 +1,15 @@
 package com.blacklivesmatter.policebrutality
 
 import androidx.lifecycle.ViewModel
-import com.blacklivesmatter.policebrutality.data.IncidentRepository
-import javax.inject.Inject
 import timber.log.Timber
+import javax.inject.Inject
 
-class MainViewModel @Inject constructor(
-    private val incidentRepository: IncidentRepository
-) : ViewModel() {
+/**
+ * The ViewModel for [MainActivity].
+ * For now there is nothing special going on here. All actions are managed in Fragments.
+ */
+class MainViewModel @Inject constructor() : ViewModel() {
     init {
-        Timber.d("Got incident repo: $incidentRepository")
+        Timber.d("Main ViewModel loaded.")
     }
 }
