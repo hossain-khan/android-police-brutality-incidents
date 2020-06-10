@@ -8,6 +8,7 @@ import com.blacklivesmatter.policebrutality.di.module.AppModule
 import com.blacklivesmatter.policebrutality.di.module.DaoModule
 import com.blacklivesmatter.policebrutality.di.module.RepositoryModule
 import com.blacklivesmatter.policebrutality.di.module.ViewModelModule
+import com.blacklivesmatter.policebrutality.di.module.WorkerModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -23,7 +24,8 @@ import javax.inject.Singleton
         ViewModelModule::class,
         RepositoryModule::class,
         DaoModule::class,
-        ApiModule::class
+        ApiModule::class,
+        WorkerModule::class
     ]
 )
 interface AppComponent : AndroidInjector<BrutalityIncidentApplication> {

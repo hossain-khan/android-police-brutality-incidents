@@ -5,6 +5,12 @@
 
     <data>
 
+        <import type="android.view.View" />
+
+        <variable
+            name="isDateBased"
+            type="Boolean" />
+
         <variable
             name="incident"
             type="com.blacklivesmatter.policebrutality.data.model.Incident" />
@@ -51,17 +57,35 @@
                 tools:text="Police brutality incident title from different states. This can be long and multile. It should not truncate." />
 
             <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/incident_location"
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/list_item_vertical_margin"
+                android:text="@{@string/incident_location_at_display_text(incident.city, incident.state)}"
+                android:textAlignment="textEnd"
+                android:visibility="@{safeUnbox(isDateBased)? View.VISIBLE : View.GONE}"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintTop_toBottomOf="@+id/incident_title"
+                tools:background="#cad"
+                tools:text="at Denver, Colorado"
+                tools:visibility="visible" />
+
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/incident_date"
                 style="@style/TextAppearance.MaterialComponents.Subtitle1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/list_item_vertical_margin"
+                android:layout_marginEnd="@dimen/view_spacing_small"
                 android:drawableStart="@drawable/ic_outline_date_range"
                 android:drawablePadding="@dimen/list_item_horizontal_margin"
-                android:text="@{incident.date_text}"
+                android:text="@{incident.dateText}"
                 android:textAlignment="textEnd"
-                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintEnd_toStartOf="@+id/incident_location"
                 app:layout_constraintTop_toBottomOf="@+id/incident_title"
+                app:layout_goneMarginEnd="0dp"
+                tools:background="#daa"
                 tools:text="June 3rd, 2020" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -69,6 +93,7 @@
                 style="@style/TextAppearance.MaterialComponents.Caption"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_spacing_medium"
                 android:text="@string/label_external_links"
                 app:layout_constraintEnd_toEndOf="@id/guideline_end"
                 app:layout_constraintStart_toStartOf="@id/guideline_start"

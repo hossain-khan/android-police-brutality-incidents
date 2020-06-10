@@ -15,8 +15,8 @@ import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentsBinding
 import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
 import com.google.android.material.snackbar.Snackbar
 import dagger.android.support.DaggerFragment
-import javax.inject.Inject
 import timber.log.Timber
+import javax.inject.Inject
 
 class IncidentsFragment : DaggerFragment() {
     @Inject
@@ -33,13 +33,16 @@ class IncidentsFragment : DaggerFragment() {
             vm = viewModel
         }
 
-        viewModel.selectedSate(navArgs.stateName)
+        viewModel.setArgs(navArgs)
 
-        adapter = IncidentsAdapter(itemClickCallback = { clickedIncident ->
-            Timber.d("Selected Incident: $clickedIncident")
-        }, linkClickCallback = { clickedLink ->
-            openWebPage(clickedLink)
-        })
+        adapter = IncidentsAdapter(
+            isDateBasedIncidents = navArgs.isDateBased(),
+            itemClickCallback = { clickedIncident ->
+                Timber.d("Selected Incident: $clickedIncident")
+            }, linkClickCallback = { clickedLink ->
+                openWebPage(clickedLink)
+            }
+        )
 
         viewDataBinding.recyclerView.setHasFixedSize(false)
         viewDataBinding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
@@ -51,7 +54,7 @@ class IncidentsFragment : DaggerFragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewDataBinding.toolbar.title = getString(R.string.title_incidents, navArgs.stateName)
+        viewDataBinding.toolbar.title = getString(navArgs.titleResId(), navArgs.titleText())
         viewDataBinding.toolbar.setNavigationOnClickListener {
             findNavController().popBackStack()
         }
@@ -73,4 +76,10 @@ class IncidentsFragment : DaggerFragment() {
             Snackbar.make(viewDataBinding.root, R.string.unable_to_load_url, Snackbar.LENGTH_LONG).show()
         }
     }
+
+    private fun IncidentsFragmentArgs.isDateBased(): Boolean = navArgs.timestamp != 0L
+    private fun IncidentsFragmentArgs.titleResId(): Int =
+        if (isDateBased()) R.string.title_incidents_on_date else R.string.title_incidents_at_location
+
+    private fun IncidentsFragmentArgs.titleText(): String = if (isDateBased()) dateText!! else stateName!!
 }

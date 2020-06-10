@@ -37,11 +37,30 @@
     <fragment
         android:id="@+id/incidentsFragment"
         android:name="com.blacklivesmatter.policebrutality.ui.incident.IncidentsFragment"
-        android:label="@string/title_incidents"
+        android:label="@string/title_incidents_at_location"
         tools:layout="@layout/fragment_incidents">
+
+        <!--
+            NOTE: The fragment takes 2 kinds of arguments
+                  1. Location - where `stateName` required and provided.
+                  2. Timestamp - where both `timestamp` and `dateText` are required and provided.
+        -->
         <argument
             android:name="stateName"
-            app:argType="string" />
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="timestamp"
+            android:defaultValue="0L"
+            app:argType="long"
+            app:nullable="false" />
+        <!-- Date display text for the `timestamp` provided above -->
+        <argument
+            android:name="dateText"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
 
     <!-- ================================================== -->
