@@ -35,11 +35,14 @@ class IncidentsFragment : DaggerFragment() {
 
         viewModel.setArgs(navArgs)
 
-        adapter = IncidentsAdapter(itemClickCallback = { clickedIncident ->
-            Timber.d("Selected Incident: $clickedIncident")
-        }, linkClickCallback = { clickedLink ->
-            openWebPage(clickedLink)
-        })
+        adapter = IncidentsAdapter(
+            isDateBasedIncidents = navArgs.isDateBased(),
+            itemClickCallback = { clickedIncident ->
+                Timber.d("Selected Incident: $clickedIncident")
+            }, linkClickCallback = { clickedLink ->
+                openWebPage(clickedLink)
+            }
+        )
 
         viewDataBinding.recyclerView.setHasFixedSize(false)
         viewDataBinding.recyclerView.layoutManager = LinearLayoutManager(requireContext())

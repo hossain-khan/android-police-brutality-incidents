@@ -11,6 +11,7 @@ import com.blacklivesmatter.policebrutality.databinding.ListItemIncidentCoreBind
 import com.blacklivesmatter.policebrutality.ui.common.DataBoundListAdapter
 
 class IncidentsAdapter constructor(
+    private val isDateBasedIncidents: Boolean,
     private val itemClickCallback: ((Incident) -> Unit)?,
     private val linkClickCallback: ((String) -> Unit)? = null
 ) : DataBoundListAdapter<Incident, ListItemIncidentCoreBinding>(
@@ -41,6 +42,7 @@ class IncidentsAdapter constructor(
 
     override fun bind(binding: ListItemIncidentCoreBinding, item: Incident) {
         binding.incident = item
+        binding.isDateBased = isDateBasedIncidents
 
         val adapter = IncidentLinkAdapter(itemClickCallback = linkClickCallback)
         binding.linksRecyclerView.layoutManager = LinearLayoutManager(binding.root.context)
