@@ -30,6 +30,7 @@ class ApiModule {
             loggingInterceptor.level = HttpLoggingInterceptor.Level.NONE
     }
 
+    @Singleton
     @Provides
     fun providesOkHttpClient(): OkHttpClient {
         val clientBuilder: OkHttpClient.Builder = OkHttpClient.Builder()
@@ -39,6 +40,7 @@ class ApiModule {
         return clientBuilder.build()
     }
 
+    @Singleton
     @Provides
     fun providesRetrofit(client: OkHttpClient, gson: Gson): Retrofit {
         return Retrofit.Builder()
