@@ -15,8 +15,8 @@ import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentsBinding
 import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
 import com.google.android.material.snackbar.Snackbar
 import dagger.android.support.DaggerFragment
-import javax.inject.Inject
 import timber.log.Timber
+import javax.inject.Inject
 
 class IncidentsFragment : DaggerFragment() {
     @Inject
@@ -33,7 +33,7 @@ class IncidentsFragment : DaggerFragment() {
             vm = viewModel
         }
 
-        viewModel.selectedSate(navArgs.stateName)
+        viewModel.setArgs(navArgs)
 
         adapter = IncidentsAdapter(itemClickCallback = { clickedIncident ->
             Timber.d("Selected Incident: $clickedIncident")
@@ -51,7 +51,12 @@ class IncidentsFragment : DaggerFragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewDataBinding.toolbar.title = getString(R.string.title_incidents, navArgs.stateName)
+        val toolbarTitleText: String = if (navArgs.timestamp != 0L) getString(
+            R.string.title_incidents_on_date,
+            navArgs.dateText
+        ) else getString(R.string.title_incidents_at_location, navArgs.stateName)
+
+        viewDataBinding.toolbar.title = toolbarTitleText
         viewDataBinding.toolbar.setNavigationOnClickListener {
             findNavController().popBackStack()
         }

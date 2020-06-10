@@ -18,7 +18,7 @@ class LocationViewModel @Inject constructor(
     private val incidentRepository: IncidentRepository
 ) : ViewModel() {
     sealed class NavigationEvent {
-        data class Filter(val timestamp: Long) : NavigationEvent()
+        data class Filter(val timestamp: Long, val dateText: String) : NavigationEvent()
         data class Error(val selectedDateText: String) : NavigationEvent()
     }
 
@@ -34,15 +34,16 @@ class LocationViewModel @Inject constructor(
         val timeStamp = TimeUnit.MILLISECONDS.toSeconds(selectedTimeStamp)
         val totalIncidentsOnDate = incidentRepository.getTotalIncidentsOnDate(timeStamp)
 
+        val dateTimeFormatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG)
+        val instant = Instant.ofEpochMilli(selectedTimeStamp)
+        val offsetDateTime: OffsetDateTime = OffsetDateTime.ofInstant(instant, ZoneId.of("UTC"))
+        val selectedDateText = offsetDateTime.format(dateTimeFormatter)
+
         _dateFilterMediatorEvent.addSource(totalIncidentsOnDate) {
             if (it > 0) {
-                _dateFilterMediatorEvent.value = NavigationEvent.Filter(timeStamp)
+                _dateFilterMediatorEvent.value = NavigationEvent.Filter(timeStamp, selectedDateText)
             } else {
-                val dateTimeFormatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG)
-                val instant = Instant.ofEpochMilli(selectedTimeStamp)
-                val offsetDateTime: OffsetDateTime = OffsetDateTime.ofInstant(instant, ZoneId.of("UTC"))
-
-                _dateFilterMediatorEvent.value = NavigationEvent.Error(offsetDateTime.format(dateTimeFormatter))
+                _dateFilterMediatorEvent.value = NavigationEvent.Error(selectedDateText)
             }
         }
     }

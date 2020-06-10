@@ -84,7 +84,13 @@ class LocationFragment : DaggerFragment() {
                     ).show()
                 }
                 is NavigationEvent.Filter -> {
-                    Timber.d("Navigate to $navigationEvent")
+                    Timber.d("Navigate incident list for $navigationEvent")
+                    findNavController().navigate(
+                        LocationFragmentDirections.navigationToIncidentsFragment(
+                            timestamp = navigationEvent.timestamp,
+                            dateText = navigationEvent.dateText
+                        )
+                    )
                 }
             }
         }
