@@ -18,7 +18,15 @@ class BrutalityIncidentRepository @Inject constructor(
         return incidentDao.getIncidentsForState(state)
     }
 
+    override fun getIncidentsByDate(timeStamp: Long): LiveData<List<Incident>> {
+        return incidentDao.getIncidentsByDate(timeStamp)
+    }
+
     override fun getLocations(): LiveData<List<LocationIncidents>> {
         return incidentDao.getUniqueStates()
+    }
+
+    override fun getTotalIncidentsOnDate(timeStamp: Long): LiveData<Int> {
+        return incidentDao.getTotalIncidentsOnDate(timeStamp)
     }
 }

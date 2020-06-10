@@ -19,3 +19,11 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Ignore following warnings:
+# AGPBI: {"kind":"warning","text":"Missing class: java.util.concurrent.Flow$Processor","sources":[{}],"tool":"R8"}
+# https://github.com/ReactiveX/RxJava/issues/6698
+-dontwarn org.reactivestreams.FlowAdapters
+-dontwarn org.reactivestreams.**
+-dontwarn java.util.concurrent.Flow.**
+-dontwarn java.util.concurrent.**
