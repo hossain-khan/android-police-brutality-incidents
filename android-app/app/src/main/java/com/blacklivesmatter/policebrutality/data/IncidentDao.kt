@@ -19,7 +19,7 @@ interface IncidentDao {
     @Query("SELECT * FROM incidents WHERE state = :stateName ORDER BY name")
     fun getIncidentsForState(stateName: String): LiveData<List<Incident>>
 
-    @Query("SELECT COUNT(_id) FROM incidents")
+    @Query("SELECT COUNT(id) FROM incidents")
     fun getTotalRecords(): LiveData<Int>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

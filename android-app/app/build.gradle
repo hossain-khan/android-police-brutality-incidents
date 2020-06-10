@@ -117,6 +117,8 @@ dependencies {
 
     implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
 
+    implementation "org.threeten:threetenbp:1.4.4" // https://www.threeten.org/threetenbp/
+
     // debugImplementation because LeakCanary should only run in debug builds.
     debugImplementation "com.squareup.leakcanary:leakcanary-android:2.3"
 

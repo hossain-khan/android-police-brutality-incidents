@@ -5,10 +5,12 @@ import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import com.blacklivesmatter.policebrutality.config.INCIDENT_DATA_FILENAME
 import com.blacklivesmatter.policebrutality.data.AppDatabase
+import com.blacklivesmatter.policebrutality.data.OffsetDateTimeConverter
 import com.blacklivesmatter.policebrutality.data.model.IncidentsSource
-import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import com.google.gson.stream.JsonReader
 import kotlinx.coroutines.coroutineScope
+import org.threeten.bp.OffsetDateTime
 import timber.log.Timber
 
 class SeedDatabaseWorker(
@@ -19,7 +21,10 @@ class SeedDatabaseWorker(
         try {
             applicationContext.assets.open(INCIDENT_DATA_FILENAME).use { inputStream ->
                 JsonReader(inputStream.reader()).use { jsonReader ->
-                    val incidents = Gson().fromJson<IncidentsSource>(jsonReader, IncidentsSource::class.java)
+                    val gson = GsonBuilder()
+                        .registerTypeAdapter(OffsetDateTime::class.java, OffsetDateTimeConverter())
+                        .create() // TODO - move gson creation to DI
+                    val incidents = gson.fromJson<IncidentsSource>(jsonReader, IncidentsSource::class.java)
                     Timber.i("Processed ${incidents.data.size} incidents from JSON.")
 
                     val database = AppDatabase.getInstance(applicationContext)

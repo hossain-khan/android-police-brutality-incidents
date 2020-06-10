@@ -1,0 +1,85 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 4,
+    "identityHash": "242e3b94374f61870cfc739505c6ed2c",
+    "entities": [
+      {
+        "tableName": "incidents",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `incident_id` TEXT, `state` TEXT, `city` TEXT, `name` TEXT, `date` TEXT, `geocoding` TEXT NOT NULL, `links` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "_id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "incident_id",
+            "columnName": "incident_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "city",
+            "columnName": "city",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "date",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "geocoding",
+            "columnName": "geocoding",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "links",
+            "columnName": "links",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_incidents_incident_id",
+            "unique": false,
+            "columnNames": [
+              "incident_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_incidents_incident_id` ON `${TABLE_NAME}` (`incident_id`)"
+          }
+        ],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '242e3b94374f61870cfc739505c6ed2c')"
+    ]
+  }
+}
