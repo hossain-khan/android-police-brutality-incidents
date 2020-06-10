@@ -16,6 +16,7 @@ import com.blacklivesmatter.policebrutality.R
 import com.blacklivesmatter.policebrutality.config.THE_846_DAY
 import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentLocationsBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
+import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel.NavigationEvent
 import com.google.android.material.datepicker.CalendarConstraints
 import com.google.android.material.datepicker.CalendarConstraints.DateValidator
 import com.google.android.material.datepicker.CompositeDateValidator
@@ -70,10 +71,10 @@ class LocationFragment : DaggerFragment() {
 
         viewModel.dateFilterEvent.observeKotlin(viewLifecycleOwner) { navigationEvent ->
             when (navigationEvent) {
-                is LocationViewModel.NavigationEvent.Error -> {
+                is NavigationEvent.Error -> {
                     Timber.d("There are no records, can't navigate")
                 }
-                is LocationViewModel.NavigationEvent.Filter -> {
+                is NavigationEvent.Filter -> {
                     Timber.d("Navigate to $navigationEvent")
                 }
             }
