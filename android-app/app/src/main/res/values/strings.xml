@@ -21,6 +21,7 @@
     <string name="message_hashtag_copied_to_clipboard">The %s hash tag has been copied to your clipboard.</string>
     <string name="unable_to_load_url">Unable to load selected URL due to internal issue. Try different external URLs.</string>
     <string name="unable_to_load_report_incident_url">Unable to load report incident from app. Visit original GitHub repository to report incident. See \"More Info\" section for additional resources.</string>
+    <string name="message_no_incident_found_on_selected_date">Sorry, there are no incidents reported on selected date %1$s</string>
 
     <!-- Content description for accessibility -->
     <string name="content_description_fist_icon">Justice for George Floyd protest fist image icon</string>

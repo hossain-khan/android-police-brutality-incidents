@@ -23,6 +23,7 @@ import com.google.android.material.datepicker.CompositeDateValidator
 import com.google.android.material.datepicker.DateValidatorPointBackward
 import com.google.android.material.datepicker.DateValidatorPointForward
 import com.google.android.material.datepicker.MaterialDatePicker
+import com.google.android.material.snackbar.Snackbar
 import dagger.android.support.DaggerFragment
 import org.threeten.bp.DateTimeUtils
 import timber.log.Timber
@@ -73,6 +74,14 @@ class LocationFragment : DaggerFragment() {
             when (navigationEvent) {
                 is NavigationEvent.Error -> {
                     Timber.d("There are no records, can't navigate")
+                    Snackbar.make(
+                        viewDataBinding.root,
+                        getString(
+                            R.string.message_no_incident_found_on_selected_date,
+                            navigationEvent.selectedDateText
+                        ),
+                        Snackbar.LENGTH_LONG
+                    ).show()
                 }
                 is NavigationEvent.Filter -> {
                     Timber.d("Navigate to $navigationEvent")

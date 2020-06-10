@@ -6,6 +6,11 @@ import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.ViewModel
 import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.LocationIncidents
+import org.threeten.bp.Instant
+import org.threeten.bp.OffsetDateTime
+import org.threeten.bp.ZoneId
+import org.threeten.bp.format.DateTimeFormatter
+import org.threeten.bp.format.FormatStyle
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
@@ -14,7 +19,7 @@ class LocationViewModel @Inject constructor(
 ) : ViewModel() {
     sealed class NavigationEvent {
         data class Filter(val timestamp: Long) : NavigationEvent()
-        object Error : NavigationEvent()
+        data class Error(val selectedDateText: String) : NavigationEvent()
     }
 
     val isOperationInProgress = ObservableField(false)
@@ -33,7 +38,11 @@ class LocationViewModel @Inject constructor(
             if (it > 0) {
                 _dateFilterMediatorEvent.value = NavigationEvent.Filter(timeStamp)
             } else {
-                _dateFilterMediatorEvent.value = NavigationEvent.Error
+                val dateTimeFormatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG)
+                val instant = Instant.ofEpochMilli(selectedTimeStamp)
+                val offsetDateTime: OffsetDateTime = OffsetDateTime.ofInstant(instant, ZoneId.of("UTC"))
+
+                _dateFilterMediatorEvent.value = NavigationEvent.Error(offsetDateTime.format(dateTimeFormatter))
             }
         }
     }
