@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import com.blacklivesmatter.policebrutality.api.IncidentApi
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.data.model.LocationIncidents
+import timber.log.Timber
 import javax.inject.Inject
 
 class BrutalityIncidentRepository @Inject constructor(
@@ -28,5 +29,15 @@ class BrutalityIncidentRepository @Inject constructor(
 
     override fun getTotalIncidentsOnDate(timeStamp: Long): LiveData<Int> {
         return incidentDao.getTotalIncidentsOnDate(timeStamp)
+    }
+
+    override suspend fun getIncidentsCoroutine(): List<Incident> {
+        val source = incidentApi.getAllIncidents()
+        return source.data
+    }
+
+    override suspend fun addIncidents(incidents: List<Incident>) {
+        Timber.i("Adding/updating ${incidents.size} incidents.")
+        incidentDao.insertAll(incidents)
     }
 }

@@ -29,5 +29,5 @@ interface IncidentDao {
     fun getTotalIncidentsOnDate(timestamp: Long): LiveData<Int>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAll(plants: List<Incident>)
+    suspend fun insertAll(incidents: List<Incident>)
 }

@@ -25,6 +25,8 @@ import com.google.android.material.datepicker.DateValidatorPointBackward
 import com.google.android.material.datepicker.DateValidatorPointForward
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.snackbar.Snackbar.LENGTH_LONG
+import com.google.android.material.snackbar.Snackbar.LENGTH_SHORT
 import dagger.android.support.DaggerFragment
 import org.threeten.bp.DateTimeUtils
 import timber.log.Timber
@@ -110,12 +112,12 @@ class LocationFragment : DaggerFragment() {
                 is RefreshEvent.Success -> {
                     Timber.d("Refresh was successful")
                     viewDataBinding.swipeRefresh.isRefreshing = false
-                    Snackbar.make(viewDataBinding.root, R.string.message_incident_refreshed, Snackbar.LENGTH_SHORT)
+                    Snackbar.make(viewDataBinding.root, R.string.message_incident_refreshed, LENGTH_SHORT).show()
                 }
                 is RefreshEvent.Error -> {
                     Timber.d("Refresh was unsuccessful")
                     viewDataBinding.swipeRefresh.isRefreshing = false
-                    Snackbar.make(viewDataBinding.root, R.string.message_incident_refresh_fail, Snackbar.LENGTH_SHORT)
+                    Snackbar.make(viewDataBinding.root, R.string.message_incident_refresh_fail, LENGTH_LONG).show()
                 }
                 is RefreshEvent.Loading -> {
                     viewDataBinding.swipeRefresh.isRefreshing = true

@@ -8,6 +8,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.blacklivesmatter.policebrutality.data.IncidentRepository
+import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.data.model.LocationIncidents
 import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
 import kotlinx.coroutines.delay
@@ -81,6 +82,8 @@ class LocationViewModel @Inject constructor(
         viewModelScope.launch {
             delay(2000)
             isOperationInProgress.set(false)
+            val incidents: List<Incident> = incidentRepository.getIncidentsCoroutine()
+            incidentRepository.addIncidents(incidents)
             _refreshEvent.value = RefreshEvent.Success
         }
     }
