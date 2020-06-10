@@ -1,14 +1,19 @@
 package com.blacklivesmatter.policebrutality.di.module
 
 import com.blacklivesmatter.policebrutality.BuildConfig
+import com.blacklivesmatter.policebrutality.data.OffsetDateTimeConverter
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
-import java.util.concurrent.TimeUnit
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import org.threeten.bp.OffsetDateTime
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.concurrent.TimeUnit
+import javax.inject.Singleton
 
 @Module
 class ApiModule {
@@ -35,12 +40,21 @@ class ApiModule {
     }
 
     @Provides
-    fun providesRetrofit(client: OkHttpClient): Retrofit {
+    fun providesRetrofit(client: OkHttpClient, gson: Gson): Retrofit {
         return Retrofit.Builder()
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-            .addConverterFactory(GsonConverterFactory.create())
+            .addConverterFactory(GsonConverterFactory.create(gson))
             .baseUrl(API_BASE_URL)
             .client(client)
             .build()
+    }
+
+    @Singleton
+    @Provides
+    fun providesGson(): Gson {
+        val gson = GsonBuilder()
+            .registerTypeAdapter(OffsetDateTime::class.java, OffsetDateTimeConverter())
+            .create()
+        return gson
     }
 }
