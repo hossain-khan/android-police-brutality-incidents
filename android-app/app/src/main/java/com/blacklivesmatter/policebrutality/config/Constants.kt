@@ -1,6 +1,7 @@
 package com.blacklivesmatter.policebrutality.config
 
 import org.threeten.bp.OffsetDateTime
+import org.threeten.bp.ZoneId
 import org.threeten.bp.ZoneOffset
 
 /*
@@ -9,12 +10,13 @@ import org.threeten.bp.ZoneOffset
 
 /**
  * George Perry Floyd Jr. (October 14, 1973 – May 25, 2020)
+ * Time zone in Minneapolis, MN, USA (GMT-5)
  *
  * - https://en.wikipedia.org/wiki/George_Floyd
  * - https://en.wikipedia.org/wiki/8%E2%80%B246%E2%80%B3
  */
 val THE_846_DAY: OffsetDateTime = OffsetDateTime.of(/* year */ 2020, /* month */ 5, /* dayOfMonth */ 25,
-    /* hour */ 8, /* minute */ 19, /* second */ 0, /* nanoOfSecond */ 0, ZoneOffset.UTC
+    /* hour */ 8, /* minute */ 19, /* second */ 0, /* nanoOfSecond */ 0, ZoneOffset.of("-5")
 )
 
 const val DATABASE_NAME = "incidents-db"

@@ -2,17 +2,32 @@ package com.blacklivesmatter.policebrutality.ui.incidentlocations
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.blacklivesmatter.policebrutality.R
+import com.blacklivesmatter.policebrutality.config.THE_846_DAY
 import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentLocationsBinding
+import com.google.android.material.datepicker.CalendarConstraints
+import com.google.android.material.datepicker.CalendarConstraints.DateValidator
+import com.google.android.material.datepicker.CompositeDateValidator
+import com.google.android.material.datepicker.DateValidatorPointBackward
+import com.google.android.material.datepicker.DateValidatorPointForward
+import com.google.android.material.datepicker.MaterialDatePicker
 import dagger.android.support.DaggerFragment
-import javax.inject.Inject
+import org.threeten.bp.DateTimeUtils
 import timber.log.Timber
+import java.util.ArrayList
+import java.util.Calendar
+import javax.inject.Inject
 
 class LocationFragment : DaggerFragment() {
     @Inject
@@ -27,6 +42,9 @@ class LocationFragment : DaggerFragment() {
             lifecycleOwner = this@LocationFragment
             vm = viewModel
         }
+
+        // This required to participate in providing toolbar menu on the host activity
+        (requireActivity() as AppCompatActivity).setSupportActionBar(viewDataBinding.toolbar)
 
         adapter = LocationListAdapter { state ->
             Timber.d("Tapped on state item $state")
@@ -50,5 +68,49 @@ class LocationFragment : DaggerFragment() {
             Timber.d("Got locations: $locationList")
             adapter.submitList(locationList)
         })
+    }
+
+    //
+    // Handle menu icons for about app and share app
+    //
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.locations_menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.toolbar_menu_filter_by_date -> {
+                showDatePicker()
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
+        }
+    }
+
+    private fun showDatePicker() {
+        val the846Day: Calendar = Calendar.getInstance()
+        the846Day.timeInMillis = DateTimeUtils.toDate(THE_846_DAY.toInstant()).time
+        the846Day.roll(Calendar.DATE, -1) // Give extra day in case something happened earlier
+
+        val validators: MutableList<DateValidator> = ArrayList()
+        validators.add(DateValidatorPointForward.from(the846Day.timeInMillis))
+        validators.add(DateValidatorPointBackward.now())
+
+        val builder = MaterialDatePicker.Builder.datePicker()
+            .setCalendarConstraints(
+                CalendarConstraints.Builder()
+                    .setStart(the846Day.timeInMillis)
+                    .setValidator(CompositeDateValidator.allOf(validators))
+                    .build()
+            ).setTitleText(R.string.title_filter_incidents_by_date)
+
+        val picker = builder.build()
+        picker.show(childFragmentManager, picker.toString())
     }
 }
