@@ -32,6 +32,8 @@ android {
                 arguments += ["room.schemaLocation": "$projectDir/schemas".toString()]
             }
         }
+
+        resValue("string", "app_version_name", "v${versionName}")
     }
 
     signingConfigs {
@@ -44,7 +46,7 @@ android {
     }
 
 
-    buildFeatures {
+    buildFeatures { // https://developer.android.com/studio/releases/gradle-plugin#buildFeatures
         dataBinding = true
     }
 
