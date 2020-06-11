@@ -10,6 +10,7 @@ interface IncidentRepository {
     fun getIncidentsByDate(timeStamp: Long): LiveData<List<Incident>>
     fun getLocations(): LiveData<List<LocationIncidents>>
     fun getTotalIncidentsOnDate(timeStamp: Long): LiveData<Int>
+    fun getIncidentDates(): LiveData<List<String>>
 
     /*
      * Based on return type table using live data provides us with lifecycle aware stream of data
