@@ -86,3 +86,5 @@ lint/tmp/
 .DS_Store
 android-app/keystore.properties
 android-app/app/release/output.json
+android-app/keystore/upload-keystore.jks
+android-app/keystore/private_key.pepk
