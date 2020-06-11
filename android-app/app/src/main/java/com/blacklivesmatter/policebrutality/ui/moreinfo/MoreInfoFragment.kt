@@ -63,7 +63,7 @@ class MoreInfoFragment : DaggerFragment() {
 
     override fun onStart() {
         super.onStart()
-        activity?.let { analytics.logPageView(it, MoreInfoFragment::class.java.simpleName) }
+        activity?.let { analytics.logPageView(it, Analytics.SCREEN_MORE_INFO) }
     }
 
     private fun handleExternalUrl() {
@@ -145,6 +145,6 @@ class MoreInfoFragment : DaggerFragment() {
             .setPositiveButton(R.string.button_cta_okay, null)
             .setView(R.layout.dialog_about_app)
             .show()
-        activity?.let { analytics.logPageView(it, getString(R.string.menu_title_about_app)) }
+        activity?.let { analytics.logPageView(it, Analytics.SCREEN_ABOUT_APP) }
     }
 }

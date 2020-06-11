@@ -19,6 +19,9 @@ import dagger.android.support.DaggerFragment
 import timber.log.Timber
 import javax.inject.Inject
 
+/**
+ * Shows list of incidents that happened during the peaceful protest.
+ */
 class IncidentsFragment : DaggerFragment() {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
@@ -70,7 +73,12 @@ class IncidentsFragment : DaggerFragment() {
 
     override fun onStart() {
         super.onStart()
-        activity?.let { analytics.logPageView(it, IncidentsFragment::class.java.simpleName) }
+        activity?.let {
+            analytics.logPageView(
+                it, if (navArgs.isDateBased()) Analytics.SCREEN_INCIDENT_LIST_BY_DATE
+                else Analytics.SCREEN_INCIDENT_LIST_BY_LOCATION
+            )
+        }
     }
 
     /**

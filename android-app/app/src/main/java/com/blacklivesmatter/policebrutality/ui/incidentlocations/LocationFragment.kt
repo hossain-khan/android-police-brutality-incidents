@@ -113,7 +113,7 @@ class LocationFragment : DaggerFragment() {
 
     override fun onStart() {
         super.onStart()
-        activity?.let { analytics.logPageView(it, LocationFragment::class.java.simpleName) }
+        activity?.let { analytics.logPageView(it, Analytics.SCREEN_INCIDENT_LOCATION) }
     }
 
     private fun setupSwipeRefreshAction() {
@@ -197,5 +197,6 @@ class LocationFragment : DaggerFragment() {
             viewModel.onDateTimeStampSelected(viewLifecycleOwner, selectedTimeStamp)
         }
         picker.show(childFragmentManager, picker.toString())
+        activity?.let { analytics.logPageView(it, Analytics.SCREEN_INCIDENT_DATE_FILTER) }
     }
 }

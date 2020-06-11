@@ -57,7 +57,7 @@ class NewReportFragment : DaggerFragment() {
 
     override fun onStart() {
         super.onStart()
-        activity?.let { analytics.logPageView(it, NewReportFragment::class.java.simpleName) }
+        activity?.let { analytics.logPageView(it, Analytics.SCREEN_REPORT_INCIDENT) }
     }
 
     private fun bindGuideText(textView: MaterialTextView) {
