@@ -18,6 +18,7 @@ import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentLocation
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
 import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel.NavigationEvent
 import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel.RefreshEvent
+import com.blacklivesmatter.policebrutality.ui.util.IncidentAvailabilityValidator
 import com.google.android.material.datepicker.CalendarConstraints
 import com.google.android.material.datepicker.CalendarConstraints.DateValidator
 import com.google.android.material.datepicker.CompositeDateValidator
@@ -39,6 +40,7 @@ class LocationFragment : DaggerFragment() {
     private val viewModel by viewModels<LocationViewModel> { viewModelFactory }
     private lateinit var viewDataBinding: FragmentIncidentLocationsBinding
     private lateinit var adapter: LocationListAdapter
+    private var incidentDates: List<String> = emptyList()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         viewDataBinding = FragmentIncidentLocationsBinding.inflate(inflater, container, false).apply {
@@ -94,6 +96,12 @@ class LocationFragment : DaggerFragment() {
                     )
                 }
             }
+        }
+
+        viewModel.incidentDates.observeKotlin(viewLifecycleOwner) { incidentDates ->
+            // Saves the dates for use in date picker
+            Timber.d("Received list of incident dates: $incidentDates")
+            this.incidentDates = incidentDates
         }
 
         setupSwipeRefreshAction()
@@ -164,11 +172,13 @@ class LocationFragment : DaggerFragment() {
         val validators: MutableList<DateValidator> = ArrayList()
         validators.add(DateValidatorPointForward.from(the846Day.timeInMillis))
         validators.add(DateValidatorPointBackward.now())
+        validators.add(IncidentAvailabilityValidator(incidentDates))
 
         val builder = MaterialDatePicker.Builder.datePicker()
             .setCalendarConstraints(
                 CalendarConstraints.Builder()
                     .setStart(the846Day.timeInMillis)
+                    .setEnd(System.currentTimeMillis())
                     .setValidator(CompositeDateValidator.allOf(validators))
                     .build()
             ).setTitleText(R.string.title_filter_incidents_by_date)
