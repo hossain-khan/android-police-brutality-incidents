@@ -23,6 +23,8 @@ android {
         versionCode 5
         versionName "1.4"
 
+        resConfigs "en"
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         javaCompileOptions {
