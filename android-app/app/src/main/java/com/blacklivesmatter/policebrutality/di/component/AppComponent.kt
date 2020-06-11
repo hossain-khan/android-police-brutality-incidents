@@ -3,6 +3,7 @@ package com.blacklivesmatter.policebrutality.di.component
 import android.app.Application
 import com.blacklivesmatter.policebrutality.BrutalityIncidentApplication
 import com.blacklivesmatter.policebrutality.di.module.ActivityModule
+import com.blacklivesmatter.policebrutality.di.module.AnalyticsModule
 import com.blacklivesmatter.policebrutality.di.module.ApiModule
 import com.blacklivesmatter.policebrutality.di.module.AppModule
 import com.blacklivesmatter.policebrutality.di.module.DaoModule
@@ -19,12 +20,13 @@ import javax.inject.Singleton
 @Component(
     modules = [
         AndroidSupportInjectionModule::class,
-        AppModule::class,
         ActivityModule::class,
-        ViewModelModule::class,
-        RepositoryModule::class,
-        DaoModule::class,
+        AnalyticsModule::class,
         ApiModule::class,
+        AppModule::class,
+        DaoModule::class,
+        RepositoryModule::class,
+        ViewModelModule::class,
         WorkerModule::class
     ]
 )
