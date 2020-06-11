@@ -31,6 +31,10 @@ class BrutalityIncidentRepository @Inject constructor(
         return incidentDao.getTotalIncidentsOnDate(timeStamp)
     }
 
+    override fun getIncidentDates(): LiveData<List<String>> {
+        return incidentDao.getIncidentDates()
+    }
+
     override suspend fun getIncidentsCoroutine(): List<Incident> {
         val source = incidentApi.getAllIncidents()
         return source.data

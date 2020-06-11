@@ -38,6 +38,7 @@ class LocationViewModel @Inject constructor(
     val isOperationInProgress = ObservableField(false)
 
     val locations: LiveData<List<LocationIncidents>> = incidentRepository.getLocations()
+    val incidentDates: LiveData<List<String>> = incidentRepository.getIncidentDates()
 
     private val _dateFilterMediatorEvent = MediatorLiveData<NavigationEvent>()
     private val _dateFilterEvent = LiveEvent<NavigationEvent>()

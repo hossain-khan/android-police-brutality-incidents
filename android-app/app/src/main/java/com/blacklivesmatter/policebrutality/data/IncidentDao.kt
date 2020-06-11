@@ -28,6 +28,9 @@ interface IncidentDao {
     @Query("SELECT COUNT(*) as count FROM incidents where DATE(date) = DATE(DATETIME(:timestamp, 'unixepoch'))")
     fun getTotalIncidentsOnDate(timestamp: Long): LiveData<Int>
 
+    @Query("SELECT DATE(date) as date_text FROM incidents GROUP BY DATE(date) ORDER BY date_text")
+    fun getIncidentDates(): LiveData<List<String>>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(incidents: List<Incident>)
 }
