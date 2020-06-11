@@ -17,6 +17,7 @@ interface Analytics {
 
         const val ACTION_INCIDENT_REFRESH = "RefreshIncidents"
         const val ACTION_INCIDENT_REPORT_NEW = "MakeIncidentReport"
+        const val ACTION_SHARE_APP = "ShareApplication"
     }
 
     /**
@@ -38,4 +39,9 @@ interface Analytics {
      * Log event when a user has shared content in an app
      */
     fun logShare(type: String, id: String)
+
+    /**
+     * Log event when a user action is taken.
+     */
+    fun logEvent(name: String)
 }

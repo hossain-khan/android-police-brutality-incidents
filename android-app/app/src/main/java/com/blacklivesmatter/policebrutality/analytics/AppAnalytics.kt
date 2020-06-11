@@ -42,4 +42,8 @@ class AppAnalytics @Inject constructor(
 
         firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SHARE, bundle)
     }
+
+    override fun logEvent(name: String) {
+        firebaseAnalytics.logEvent(name, null)
+    }
 }

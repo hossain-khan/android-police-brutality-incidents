@@ -132,6 +132,7 @@ class MoreInfoFragment : DaggerFragment() {
                             "Thanks for caring! ❤️",
                     Snackbar.LENGTH_LONG
                 ).show()
+                analytics.logEvent(Analytics.ACTION_SHARE_APP)
                 return true
             }
             else -> {
