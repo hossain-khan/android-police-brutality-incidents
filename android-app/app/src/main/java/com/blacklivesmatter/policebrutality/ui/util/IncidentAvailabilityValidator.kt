@@ -21,6 +21,10 @@ class IncidentAvailabilityValidator(
 ) : CalendarConstraints.DateValidator {
     private val dateFormat: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.US)
     override fun isValid(date: Long): Boolean {
+        if (datesIncidentHappened.isEmpty()) {
+            return true // Don't block all the dates in case we don't have dates data
+        }
+
         val instant = Instant.ofEpochMilli(date)
         val offsetDateTime: OffsetDateTime = OffsetDateTime.ofInstant(instant, ZoneId.of("UTC"))
         val formattedDate = offsetDateTime.format(dateFormat)
