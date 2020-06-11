@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blacklivesmatter.policebrutality.R
+import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.config.THE_846_DAY
 import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentLocationsBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
@@ -36,6 +37,9 @@ import javax.inject.Inject
 class LocationFragment : DaggerFragment() {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
+
+    @Inject
+    lateinit var analytics: Analytics
 
     private val viewModel by viewModels<LocationViewModel> { viewModelFactory }
     private lateinit var viewDataBinding: FragmentIncidentLocationsBinding
@@ -105,6 +109,11 @@ class LocationFragment : DaggerFragment() {
         }
 
         setupSwipeRefreshAction()
+    }
+
+    override fun onStart() {
+        super.onStart()
+        activity?.let { analytics.logPageView(it, LocationFragment::class.java.simpleName) }
     }
 
     private fun setupSwipeRefreshAction() {

@@ -15,6 +15,7 @@ import androidx.core.view.children
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.blacklivesmatter.policebrutality.R
+import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.databinding.FragmentMoreInfoBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
 import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
@@ -29,6 +30,9 @@ class MoreInfoFragment : DaggerFragment() {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
+
+    @Inject
+    lateinit var analytics: Analytics
 
     private val viewModel by viewModels<MoreInfoViewModel> { viewModelFactory }
     private lateinit var viewDataBinding: FragmentMoreInfoBinding
@@ -55,6 +59,11 @@ class MoreInfoFragment : DaggerFragment() {
 
         setupHashTagHandler()
         handleExternalUrl()
+    }
+
+    override fun onStart() {
+        super.onStart()
+        activity?.let { analytics.logPageView(it, MoreInfoFragment::class.java.simpleName) }
     }
 
     private fun handleExternalUrl() {
@@ -136,5 +145,6 @@ class MoreInfoFragment : DaggerFragment() {
             .setPositiveButton(R.string.button_cta_okay, null)
             .setView(R.layout.dialog_about_app)
             .show()
+        activity?.let { analytics.logPageView(it, getString(R.string.menu_title_about_app)) }
     }
 }

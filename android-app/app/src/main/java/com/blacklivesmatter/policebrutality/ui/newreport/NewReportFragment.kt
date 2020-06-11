@@ -9,6 +9,7 @@ import androidx.core.text.HtmlCompat
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.blacklivesmatter.policebrutality.R
+import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.databinding.FragmentNewReportBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
 import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
@@ -20,6 +21,9 @@ import javax.inject.Inject
 class NewReportFragment : DaggerFragment() {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
+
+    @Inject
+    lateinit var analytics: Analytics
 
     private val viewModel by viewModels<NewReportViewModel> { viewModelFactory }
     private lateinit var viewDataBinding: FragmentNewReportBinding
@@ -49,6 +53,11 @@ class NewReportFragment : DaggerFragment() {
                     .show()
             }
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        activity?.let { analytics.logPageView(it, NewReportFragment::class.java.simpleName) }
     }
 
     private fun bindGuideText(textView: MaterialTextView) {

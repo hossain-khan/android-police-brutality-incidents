@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blacklivesmatter.policebrutality.R
+import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentsBinding
 import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
 import com.google.android.material.snackbar.Snackbar
@@ -21,6 +22,9 @@ import javax.inject.Inject
 class IncidentsFragment : DaggerFragment() {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
+
+    @Inject
+    lateinit var analytics: Analytics
 
     private val viewModel by viewModels<IncidentViewModel> { viewModelFactory }
     private lateinit var viewDataBinding: FragmentIncidentsBinding
@@ -62,6 +66,11 @@ class IncidentsFragment : DaggerFragment() {
         viewModel.incidents.observe(viewLifecycleOwner, Observer {
             adapter.submitList(it)
         })
+    }
+
+    override fun onStart() {
+        super.onStart()
+        activity?.let { analytics.logPageView(it, IncidentsFragment::class.java.simpleName) }
     }
 
     /**
