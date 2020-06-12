@@ -40,7 +40,7 @@
             android:layout_margin="@dimen/view_spacing_large"
             android:onClick="@{() -> vm.onShareIncidentClicked(data)}"
             android:padding="@dimen/view_spacing_larger"
-            android:text="Share"
+            android:text="@string/button_cta_share_incident"
             android:textStyle="bold"
             app:icon="@drawable/ic_baseline_share_24"
             app:iconGravity="textStart"

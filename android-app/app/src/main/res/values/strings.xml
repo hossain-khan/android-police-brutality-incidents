@@ -39,6 +39,8 @@
     <string name="label_about_app">About App</string>
     <string name="label_app_resource_credits">Credits</string>
     <string name="button_cta_okay">OK</string>
+    <string name="button_cta_thanks">Thanks</string>
+    <string name="button_cta_share_incident">Share Incident</string>
 
     <!-- Other string resrouces -->
     <string name="total_reported_incident_for_location">Total %d reported incidents.</string>
