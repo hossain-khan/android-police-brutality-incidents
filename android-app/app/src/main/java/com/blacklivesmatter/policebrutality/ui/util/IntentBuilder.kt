@@ -3,6 +3,8 @@ package com.blacklivesmatter.policebrutality.ui.util
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import com.blacklivesmatter.policebrutality.config.PB_LINK_WEB
+import com.blacklivesmatter.policebrutality.data.model.Incident
 
 object IntentBuilder {
     // Google Play Application IDs that allows to launch appropriate app without having chooser intent.
@@ -56,5 +58,36 @@ object IntentBuilder {
 
         // Finally if nothing works, return null as error indication
         return null
+    }
+
+    /**
+     * Builds intent to share [incident] via email or other social network
+     *
+     * See: https://developer.android.com/training/sharing/send#send-text-content
+     */
+    fun share(incident: Incident): Intent {
+        // First, build the share texts
+        val shareContentTitle = "Check this incident that was reported at $PB_LINK_WEB"
+
+        val shareBodyText = """
+$shareContentTitle
+
+- Incident: ${incident.name}
+- Location: ${incident.city}, ${incident.state}
+- Date: ${incident.date}
+
+Reference/Evidence Links:
+${incident.links.joinToString(separator = " \n * ", prefix = " * ")}
+        """.trimIndent()
+
+        val sendIntent: Intent = Intent().apply {
+            action = Intent.ACTION_SEND
+            putExtra(Intent.EXTRA_TEXT, shareBodyText)
+            putExtra(Intent.EXTRA_SUBJECT, shareContentTitle)
+            type = "text/plain"
+        }
+
+        val shareIntent = Intent.createChooser(sendIntent, null)
+        return shareIntent
     }
 }

@@ -26,6 +26,8 @@
     <string name="message_no_incident_found_on_selected_date">Sorry, there are no incidents reported on selected date %1$s</string>
     <string name="message_incident_refreshed">Successfully refreshed %1$s incidents from source \'2020PB/police-brutality\'.</string>
     <string name="message_incident_refresh_fail">Sorry, we are unable to refresh new incidents data at the moment. Please try again later.</string>
+    <string name="message_share_confirmation">Share this incident with %1$s external link(s)?</string>
+    <string name="message_share_incident_capability">Did you know, you can share incident details by just tapping on it?</string>
 
     <!-- Content description for accessibility -->
     <string name="content_description_fist_icon">Justice for George Floyd protest fist image icon</string>
@@ -38,6 +40,8 @@
     <string name="label_about_app">About App</string>
     <string name="label_app_resource_credits">Credits</string>
     <string name="button_cta_okay">OK</string>
+    <string name="button_cta_thanks">Thanks</string>
+    <string name="button_cta_share_incident">Share Incident</string>
 
     <!-- Other string resrouces -->
     <string name="total_reported_incident_for_location">Total %d reported incidents.</string>
