@@ -18,6 +18,9 @@ interface Analytics {
         const val ACTION_INCIDENT_REFRESH = "RefreshIncidents"
         const val ACTION_INCIDENT_REPORT_NEW = "MakeIncidentReport"
         const val ACTION_SHARE_APP = "ShareApplication"
+
+        const val CONTENT_TYPE_LOCATION = "TypeLocation"
+        const val CONTENT_TYPE_INCIDENT = "TypeIncident"
     }
 
     /**

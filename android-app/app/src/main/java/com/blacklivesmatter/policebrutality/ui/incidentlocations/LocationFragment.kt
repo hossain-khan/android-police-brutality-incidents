@@ -57,6 +57,7 @@ class LocationFragment : DaggerFragment() {
 
         adapter = LocationListAdapter { state ->
             Timber.d("Tapped on state item $state")
+            analytics.logSelectItem(Analytics.CONTENT_TYPE_LOCATION, state.stateName, state.stateName)
             findNavController().navigate(
                 LocationFragmentDirections.navigationToIncidentsFragment(stateName = state.stateName)
             )
