@@ -21,6 +21,8 @@ interface Analytics {
 
         const val CONTENT_TYPE_LOCATION = "TypeLocation"
         const val CONTENT_TYPE_INCIDENT = "TypeIncident"
+        const val CONTENT_TYPE_HASHTAG = "TypeHashtag"
+        const val CONTENT_TYPE_PB2020_LINK = "TypePBLink"
     }
 
     /**
