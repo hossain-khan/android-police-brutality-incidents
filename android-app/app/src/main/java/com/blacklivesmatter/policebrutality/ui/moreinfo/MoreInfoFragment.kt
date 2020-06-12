@@ -15,6 +15,7 @@ import androidx.core.view.children
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.blacklivesmatter.policebrutality.R
+import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.databinding.FragmentMoreInfoBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
 import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
@@ -29,6 +30,9 @@ class MoreInfoFragment : DaggerFragment() {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
+
+    @Inject
+    lateinit var analytics: Analytics
 
     private val viewModel by viewModels<MoreInfoViewModel> { viewModelFactory }
     private lateinit var viewDataBinding: FragmentMoreInfoBinding
@@ -57,8 +61,14 @@ class MoreInfoFragment : DaggerFragment() {
         handleExternalUrl()
     }
 
+    override fun onStart() {
+        super.onStart()
+        activity?.let { analytics.logPageView(it, Analytics.SCREEN_MORE_INFO) }
+    }
+
     private fun handleExternalUrl() {
         viewModel.openExternalUrl.observeKotlin(viewLifecycleOwner) { url ->
+            analytics.logSelectItem(Analytics.CONTENT_TYPE_PB2020_LINK, url, url)
             val intent = IntentBuilder.build(requireContext(), url)
             if (intent != null) {
                 startActivity(intent)
@@ -86,6 +96,7 @@ class MoreInfoFragment : DaggerFragment() {
     }
 
     private fun copyTextToClipboard(copyText: String) {
+        analytics.logSelectItem(Analytics.CONTENT_TYPE_HASHTAG, copyText, copyText)
         val clipboardManager: ClipboardManager =
             ContextCompat.getSystemService(requireContext(), ClipboardManager::class.java)!!
         val clipData = ClipData.newPlainText("text", copyText)
@@ -117,12 +128,14 @@ class MoreInfoFragment : DaggerFragment() {
                 Timber.d("Share app menu item selected.")
                 // TODO - update this whenever app is published at
                 // https://play.google.com/store/apps/details?id=com.blacklivesmatter.policebrutality
+                // TODO https://github.com/amardeshbd/android-police-brutality-incidents/issues/55
                 Snackbar.make(
                     viewDataBinding.root,
                     "Sharing coming soon: This app is pending approval on Google Play Store. " +
                             "Thanks for caring! ❤️",
                     Snackbar.LENGTH_LONG
                 ).show()
+                analytics.logEvent(Analytics.ACTION_SHARE_APP)
                 return true
             }
             else -> {
@@ -136,5 +149,6 @@ class MoreInfoFragment : DaggerFragment() {
             .setPositiveButton(R.string.button_cta_okay, null)
             .setView(R.layout.dialog_about_app)
             .show()
+        activity?.let { analytics.logPageView(it, Analytics.SCREEN_ABOUT_APP) }
     }
 }

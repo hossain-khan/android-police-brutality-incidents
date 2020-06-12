@@ -20,8 +20,8 @@ android {
         applicationId "com.blacklivesmatter.policebrutality"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
-        versionCode 5
-        versionName "1.4"
+        versionCode 6
+        versionName "1.5"
 
         resConfigs "en"
 
@@ -90,7 +90,6 @@ dependencies {
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-rc01"
 
     // Firebase
-    implementation "com.google.firebase:firebase-analytics:$rootProject.firebaseAnalyticsVersion"
     implementation "com.google.firebase:firebase-analytics-ktx:$rootProject.firebaseAnalyticsVersion"
     implementation "com.google.firebase:firebase-crashlytics:$rootProject.firebaseCrashlyticsVersion"
 

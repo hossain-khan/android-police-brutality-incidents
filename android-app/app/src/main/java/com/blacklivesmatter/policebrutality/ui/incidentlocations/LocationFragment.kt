@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blacklivesmatter.policebrutality.R
+import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.config.THE_846_DAY
 import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentLocationsBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
@@ -37,6 +38,9 @@ class LocationFragment : DaggerFragment() {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
+    @Inject
+    lateinit var analytics: Analytics
+
     private val viewModel by viewModels<LocationViewModel> { viewModelFactory }
     private lateinit var viewDataBinding: FragmentIncidentLocationsBinding
     private lateinit var adapter: LocationListAdapter
@@ -53,6 +57,7 @@ class LocationFragment : DaggerFragment() {
 
         adapter = LocationListAdapter { state ->
             Timber.d("Tapped on state item $state")
+            analytics.logSelectItem(Analytics.CONTENT_TYPE_LOCATION, state.stateName, state.stateName)
             findNavController().navigate(
                 LocationFragmentDirections.navigationToIncidentsFragment(stateName = state.stateName)
             )
@@ -105,6 +110,11 @@ class LocationFragment : DaggerFragment() {
         }
 
         setupSwipeRefreshAction()
+    }
+
+    override fun onStart() {
+        super.onStart()
+        activity?.let { analytics.logPageView(it, Analytics.SCREEN_INCIDENT_LOCATION) }
     }
 
     private fun setupSwipeRefreshAction() {
@@ -188,5 +198,6 @@ class LocationFragment : DaggerFragment() {
             viewModel.onDateTimeStampSelected(viewLifecycleOwner, selectedTimeStamp)
         }
         picker.show(childFragmentManager, picker.toString())
+        activity?.let { analytics.logPageView(it, Analytics.SCREEN_INCIDENT_DATE_FILTER) }
     }
 }

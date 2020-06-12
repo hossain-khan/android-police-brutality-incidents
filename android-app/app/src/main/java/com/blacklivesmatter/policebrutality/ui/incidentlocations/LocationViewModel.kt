@@ -7,6 +7,7 @@ import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.data.model.LocationIncidents
@@ -22,7 +23,8 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
 class LocationViewModel @Inject constructor(
-    private val incidentRepository: IncidentRepository
+    private val incidentRepository: IncidentRepository,
+    private val analytics: Analytics
 ) : ViewModel() {
     sealed class NavigationEvent {
         data class Filter(val timestamp: Long, val dateText: String) : NavigationEvent()
@@ -75,6 +77,7 @@ class LocationViewModel @Inject constructor(
             Timber.w("Already loading content. Ignore additional refresh request.")
             return
         }
+        analytics.logEvent(Analytics.ACTION_INCIDENT_REFRESH)
 
         isOperationInProgress.set(true)
         _refreshEvent.value = RefreshEvent.Loading
