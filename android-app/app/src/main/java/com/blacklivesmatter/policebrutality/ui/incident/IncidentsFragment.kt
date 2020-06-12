@@ -46,6 +46,11 @@ class IncidentsFragment : DaggerFragment() {
             isDateBasedIncidents = navArgs.isDateBased(),
             itemClickCallback = { clickedIncident ->
                 Timber.d("Selected Incident: $clickedIncident")
+                analytics.logSelectItem(
+                    type = Analytics.CONTENT_TYPE_INCIDENT,
+                    id = clickedIncident.id,
+                    name = clickedIncident.incident_id ?: "---"
+                )
             }, linkClickCallback = { clickedLink ->
                 openWebPage(clickedLink)
             }

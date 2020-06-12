@@ -1,8 +1,14 @@
 package com.blacklivesmatter.policebrutality.analytics
 
 import android.app.Activity
-import android.os.Bundle
 import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.FirebaseAnalytics.Event
+import com.google.firebase.analytics.FirebaseAnalytics.Event.SEARCH
+import com.google.firebase.analytics.FirebaseAnalytics.Param.CONTENT_TYPE
+import com.google.firebase.analytics.FirebaseAnalytics.Param.ITEM_ID
+import com.google.firebase.analytics.FirebaseAnalytics.Param.ITEM_NAME
+import com.google.firebase.analytics.FirebaseAnalytics.Param.SEARCH_TERM
+import com.google.firebase.analytics.ktx.logEvent
 import javax.inject.Inject
 
 /**
@@ -17,30 +23,24 @@ class AppAnalytics @Inject constructor(
     }
 
     override fun logSearch(searchTerm: String) {
-        val bundle = Bundle().apply {
-            putString(FirebaseAnalytics.Param.SEARCH_TERM, searchTerm)
+        firebaseAnalytics.logEvent(SEARCH) {
+            param(SEARCH_TERM, searchTerm)
         }
-
-        firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SEARCH, bundle)
     }
 
     override fun logSelectItem(type: String, id: String, name: String) {
-        val bundle = Bundle().apply {
-            putString(FirebaseAnalytics.Param.ITEM_ID, id)
-            putString(FirebaseAnalytics.Param.ITEM_NAME, name)
-            putString(FirebaseAnalytics.Param.CONTENT_TYPE, type)
+        firebaseAnalytics.logEvent(Event.SELECT_CONTENT) {
+            param(ITEM_ID, id)
+            param(ITEM_NAME, name)
+            param(CONTENT_TYPE, type)
         }
-
-        firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle)
     }
 
     override fun logShare(type: String, id: String) {
-        val bundle = Bundle().apply {
-            putString(FirebaseAnalytics.Param.ITEM_ID, id)
-            putString(FirebaseAnalytics.Param.CONTENT_TYPE, type)
+        firebaseAnalytics.logEvent(Event.SHARE) {
+            param(ITEM_ID, id)
+            param(CONTENT_TYPE, type)
         }
-
-        firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SHARE, bundle)
     }
 
     override fun logEvent(name: String) {
