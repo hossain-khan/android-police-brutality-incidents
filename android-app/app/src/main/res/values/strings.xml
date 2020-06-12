@@ -27,6 +27,7 @@
     <string name="message_incident_refreshed">Successfully refreshed %1$s incidents from source \'2020PB/police-brutality\'.</string>
     <string name="message_incident_refresh_fail">Sorry, we are unable to refresh new incidents data at the moment. Please try again later.</string>
     <string name="message_share_confirmation">Share this incident with %1$s external link(s)?</string>
+    <string name="message_share_incident_capability">Did you know, you can share incident details by just tapping on it?</string>
 
     <!-- Content description for accessibility -->
     <string name="content_description_fist_icon">Justice for George Floyd protest fist image icon</string>

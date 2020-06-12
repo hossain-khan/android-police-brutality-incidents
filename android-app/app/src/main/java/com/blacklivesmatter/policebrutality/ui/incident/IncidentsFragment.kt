@@ -89,6 +89,14 @@ class IncidentsFragment : DaggerFragment() {
             analytics.logSelectItem(CONTENT_TYPE_INCIDENT_SHARE, incident.id, incident.incident_id ?: "---")
             startActivity(IntentBuilder.share(incident))
         }
+
+        viewModel.shouldShowShareCapabilityMessage.observeKotlin(viewLifecycleOwner) {
+            Snackbar.make(
+                viewDataBinding.root,
+                R.string.message_share_incident_capability,
+                Snackbar.LENGTH_INDEFINITE
+            ).setAction(R.string.button_cta_thanks, {}).show()
+        }
     }
 
     override fun onStart() {
