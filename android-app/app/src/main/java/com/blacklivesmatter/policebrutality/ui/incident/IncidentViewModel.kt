@@ -6,6 +6,7 @@ import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.ViewModel
 import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.Incident
+import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
 import timber.log.Timber
 import javax.inject.Inject
 
@@ -16,6 +17,14 @@ class IncidentViewModel @Inject constructor(
 
     private val _incidents = MediatorLiveData<List<Incident>>()
     val incidents: LiveData<List<Incident>> = _incidents
+
+    private val _shareIncident = LiveEvent<Incident>()
+    val shareIncident: LiveData<Incident> = _shareIncident
+
+    fun onShareIncidentClicked(incident: Incident) {
+        Timber.d("User clicked on share incident")
+        _shareIncident.value = incident
+    }
 
     fun setArgs(navArgs: IncidentsFragmentArgs) {
         navArgs.stateName?.let { selectedSate(it) }
