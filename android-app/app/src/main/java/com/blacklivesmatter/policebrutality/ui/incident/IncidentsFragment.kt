@@ -130,7 +130,7 @@ class IncidentsFragment : DaggerFragment() {
         }
     }
 
-    private fun IncidentsFragmentArgs.isDateBased(): Boolean = navArgs.timestamp != 0L
+    private fun IncidentsFragmentArgs.isDateBased(): Boolean = timestamp != 0L
     private fun IncidentsFragmentArgs.titleResId(): Int =
         if (isDateBased()) R.string.title_incidents_on_date else R.string.title_incidents_at_location
 
