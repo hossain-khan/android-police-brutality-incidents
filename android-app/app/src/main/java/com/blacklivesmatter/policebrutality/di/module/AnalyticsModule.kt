@@ -6,9 +6,12 @@ import com.blacklivesmatter.policebrutality.analytics.AppAnalytics
 import com.google.firebase.analytics.FirebaseAnalytics
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ApplicationComponent
 import timber.log.Timber
 import javax.inject.Singleton
 
+@InstallIn(ApplicationComponent::class)
 @Module
 class AnalyticsModule {
     @Singleton

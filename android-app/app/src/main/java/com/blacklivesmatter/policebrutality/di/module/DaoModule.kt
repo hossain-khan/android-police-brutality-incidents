@@ -7,7 +7,10 @@ import com.blacklivesmatter.policebrutality.data.AppDatabase
 import com.blacklivesmatter.policebrutality.data.IncidentDao
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ApplicationComponent
 
+@InstallIn(ApplicationComponent::class)
 @Module
 class DaoModule {
 

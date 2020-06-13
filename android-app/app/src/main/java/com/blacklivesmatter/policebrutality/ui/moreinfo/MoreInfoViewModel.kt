@@ -1,5 +1,6 @@
 package com.blacklivesmatter.policebrutality.ui.moreinfo
 
+import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.blacklivesmatter.policebrutality.R
@@ -9,10 +10,9 @@ import com.blacklivesmatter.policebrutality.config.PB_LINK_REDDIT
 import com.blacklivesmatter.policebrutality.config.PB_LINK_TWITTER
 import com.blacklivesmatter.policebrutality.config.PB_LINK_WEB
 import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
-import javax.inject.Inject
 import timber.log.Timber
 
-class MoreInfoViewModel @Inject constructor() : ViewModel() {
+class MoreInfoViewModel @ViewModelInject constructor() : ViewModel() {
     private val _openExternalUrl = LiveEvent<String>()
     val openExternalUrl: LiveData<String> = _openExternalUrl
 

@@ -1,6 +1,7 @@
 package com.blacklivesmatter.policebrutality.ui.incidentlocations
 
 import androidx.databinding.ObservableField
+import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
@@ -20,9 +21,8 @@ import org.threeten.bp.format.DateTimeFormatter
 import org.threeten.bp.format.FormatStyle
 import timber.log.Timber
 import java.util.concurrent.TimeUnit
-import javax.inject.Inject
 
-class LocationViewModel @Inject constructor(
+class LocationViewModel @ViewModelInject constructor(
     private val incidentRepository: IncidentRepository,
     private val analytics: Analytics
 ) : ViewModel() {

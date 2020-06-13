@@ -1,6 +1,8 @@
 package com.blacklivesmatter.policebrutality.worker
 
 import android.content.Context
+import androidx.hilt.Assisted
+import androidx.hilt.work.WorkerInject
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import com.blacklivesmatter.policebrutality.config.INCIDENT_DATA_FILENAME
@@ -8,24 +10,14 @@ import com.blacklivesmatter.policebrutality.data.AppDatabase
 import com.blacklivesmatter.policebrutality.data.model.IncidentsSource
 import com.google.gson.Gson
 import com.google.gson.stream.JsonReader
-import dagger.android.HasAndroidInjector
 import kotlinx.coroutines.coroutineScope
 import timber.log.Timber
-import javax.inject.Inject
 
-class SeedDatabaseWorker(
-    context: Context,
-    workerParams: WorkerParameters
+class SeedDatabaseWorker @WorkerInject constructor(
+    @Assisted context: Context,
+    @Assisted workerParams: WorkerParameters,
+    val gson: Gson
 ) : CoroutineWorker(context, workerParams) {
-    init {
-        // Inject into Workers (androidx.WorkManager API)
-        // https://github.com/google/dagger/issues/1183#issuecomment-601158396
-        val injector = context.applicationContext as HasAndroidInjector
-        injector.androidInjector().inject(this)
-    }
-
-    @Inject
-    internal lateinit var gson: Gson
 
     override suspend fun doWork(): Result = coroutineScope {
         try {
