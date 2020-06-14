@@ -45,7 +45,7 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/incident_title"
-                style="@style/TextAppearance.MaterialComponents.Body1"
+                style="?textAppearanceHeadline6"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/list_item_vertical_margin"
@@ -58,12 +58,13 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/incident_location"
-                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                style="?textAppearanceSubtitle1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/list_item_vertical_margin"
                 android:text="@{@string/incident_location_at_display_text(incident.city, incident.state)}"
                 android:textAlignment="textEnd"
+                android:textColor="@color/grey_500"
                 android:visibility="@{safeUnbox(isDateBased)? View.VISIBLE : View.GONE}"
                 app:layout_constraintEnd_toEndOf="@id/guideline_end"
                 app:layout_constraintTop_toBottomOf="@+id/incident_title"
@@ -73,7 +74,7 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/incident_date"
-                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                style="?textAppearanceSubtitle1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/list_item_vertical_margin"
@@ -82,6 +83,7 @@
                 android:drawablePadding="@dimen/list_item_horizontal_margin"
                 android:text="@{incident.dateText}"
                 android:textAlignment="textEnd"
+                android:textColor="@color/grey_500"
                 app:layout_constraintEnd_toStartOf="@+id/incident_location"
                 app:layout_constraintTop_toBottomOf="@+id/incident_title"
                 app:layout_goneMarginEnd="0dp"
