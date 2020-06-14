@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/view_spacing_xxlarge">
@@ -10,12 +11,14 @@
         style="?textAppearanceHeadline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/view_spacing_large"
+        android:layout_marginTop="@dimen/view_spacing_xxlarge"
         android:shadowColor="?attr/colorAccent"
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="2"
         android:text="@string/hash_tag_blacklivesmatter"
+        android:textAlignment="center"
+        app:fontFamily="@font/alfa_slab_one"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,17 +34,21 @@
         android:shadowDy="2"
         android:shadowRadius="2"
         android:text="@string/hash_tag_justiceforgeorgefloyd"
+        android:textAlignment="center"
+        app:fontFamily="@font/alfa_slab_one"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView"
+        tools:text="#JustticeForGeorgeFloyedForEver" />
 
     <com.google.android.material.textview.MaterialTextView
-        style="?textAppearanceBody1"
+        style="?textAppearanceHeadline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="... a collection of Police brutality incidents during George Floyd protests ✊"
+        android:text="@string/app_splash_subtitle_about_cause"
         android:textAlignment="center"
         android:textStyle="bold"
+        app:fontFamily="@font/handlee"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

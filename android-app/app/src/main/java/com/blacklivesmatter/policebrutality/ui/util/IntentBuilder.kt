@@ -2,7 +2,10 @@ package com.blacklivesmatter.policebrutality.ui.util
 
 import android.content.Context
 import android.content.Intent
+import android.content.res.Resources
 import android.net.Uri
+import com.blacklivesmatter.policebrutality.BuildConfig
+import com.blacklivesmatter.policebrutality.R
 import com.blacklivesmatter.policebrutality.config.PB_LINK_WEB
 import com.blacklivesmatter.policebrutality.data.model.Incident
 
@@ -89,5 +92,25 @@ ${incident.links.joinToString(separator = " \n * ", prefix = " * ")}
 
         val shareIntent = Intent.createChooser(sendIntent, null)
         return shareIntent
+    }
+
+    fun shareApp(resources: Resources): Intent {
+        val sendIntent: Intent = Intent().apply {
+            action = Intent.ACTION_SEND
+            putExtra(Intent.EXTRA_SUBJECT, resources.getString(R.string.share_android_app_with_friends_body_title))
+            putExtra(
+                Intent.EXTRA_TEXT, resources.getString(
+                    R.string.share_android_app_with_friends_body_content,
+                    BuildConfig.APPLICATION_ID,
+                    resources.getString(R.string.hash_tag_blacklivesmatter),
+                    resources.getString(R.string.hash_tag_justiceforgeorgefloyd),
+                    resources.getString(R.string.hash_tag_policebrutality)
+                )
+            )
+            type = "text/plain"
+        }
+
+        val shareAppIntent = Intent.createChooser(sendIntent, null)
+        return shareAppIntent
     }
 }

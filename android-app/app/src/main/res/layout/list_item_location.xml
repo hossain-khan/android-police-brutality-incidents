@@ -21,7 +21,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/activity_horizontal_margin">
+            android:layout_margin="@dimen/view_spacing_larger">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline_start"
@@ -38,12 +38,28 @@
                 app:layout_constraintGuide_end="@dimen/list_item_horizontal_margin" />
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/name"
-                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:id="@+id/total_incidents_number"
+                style="@style/TextAppearance.MaterialComponents.Headline3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@{data.stateName}"
+                android:alpha=".5"
+                android:text="@{data.totalIncidentsText}"
+                android:textAlignment="textEnd"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-thin"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="128" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/name"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/view_spacing_medium"
+                android:text="@{data.stateName}"
+                app:layout_constraintEnd_toStartOf="@+id/total_incidents_number"
                 app:layout_constraintStart_toStartOf="@id/guideline_start"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="State Name" />
@@ -54,9 +70,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/list_item_vertical_margin"
+                android:layout_marginEnd="@dimen/view_spacing_medium"
                 android:text="@{@string/total_reported_incident_for_location(data.totalIncidents)}"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintEnd_toStartOf="@+id/total_incidents_number"
                 app:layout_constraintStart_toStartOf="@id/guideline_start"
                 app:layout_constraintTop_toBottomOf="@+id/name"
                 tools:text="Total 13 reported incidents." />
