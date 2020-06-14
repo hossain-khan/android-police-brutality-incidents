@@ -43,15 +43,17 @@
     <string name="button_cta_thanks">Thanks</string>
     <string name="button_cta_share_incident">Share Incident</string>
 
-    <!-- Other string resrouces -->
-    <string name="total_reported_incident_for_location">Total %d reported incidents.</string>
-    <string name="incident_location_at_display_text" description="Example: at Denver, Colorado">at %1$s, %2$s</string>
-    <string name="hash_tags_for_blacklivesmatter">#BlackLivesMatter\n#JusticeForGeorgeFloyd\n#PoliceBrutality</string>
-    <string name="incident_source_background"><![CDATA[All the reported incidents are part of initiative taken by subreddit \"r/2020PoliceBrutality\" found at www.reddit.com/r/2020PoliceBrutality \n\nThis subreddit exists to document the violence committed by law enforcement on peaceful protesters during the protests & riots of 2020 following the murder of George Floyd. \n\nThese incidents are documented on Github at github.com/2020PB/police-brutality with further information. If you would like to contribute to this repository, please check the contribution guide at the repository.]]></string>
+    <!-- Social tags -->
     <string name="hash_tag_blacklivesmatter" translatable="false">#BlackLivesMatter</string>
     <string name="hash_tag_blacklivesmatter_short" translatable="false">#BLM</string>
     <string name="hash_tag_justiceforgeorgefloyd" translatable="false">#JusticeForGeorgeFloyd</string>
     <string name="hash_tag_policebrutality" translatable="false">#PoliceBrutality</string>
+    <string name="hash_tags_for_blacklivesmatter">#BlackLivesMatter\n#JusticeForGeorgeFloyd\n#PoliceBrutality</string>
+
+    <!-- Other string resrouces -->
+    <string name="total_reported_incident_for_location">Total %d reported incidents.</string>
+    <string name="incident_location_at_display_text" description="Example: at Denver, Colorado">at %1$s, %2$s</string>
+    <string name="incident_source_background"><![CDATA[All the reported incidents are part of initiative taken by subreddit \"r/2020PoliceBrutality\" found at www.reddit.com/r/2020PoliceBrutality \n\nThis subreddit exists to document the violence committed by law enforcement on peaceful protesters during the protests & riots of 2020 following the murder of George Floyd. \n\nThese incidents are documented on Github at github.com/2020PB/police-brutality with further information. If you would like to contribute to this repository, please check the contribution guide at the repository.]]></string>
 
     <!--
         Using HTML content to provide rich description for the
