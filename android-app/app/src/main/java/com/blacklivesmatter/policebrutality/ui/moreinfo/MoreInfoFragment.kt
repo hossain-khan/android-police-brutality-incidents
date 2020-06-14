@@ -128,11 +128,13 @@ class MoreInfoFragment : DaggerFragment() {
                 Timber.d("Share app menu item selected.")
                 Snackbar.make(
                     viewDataBinding.root,
-                    "Thanks for caring! ❤️",
-                    Snackbar.LENGTH_LONG
-                ).show()
+                    "Thanks for caring! ❤️" +
+                            "\nShare this App with friends?",
+                    Snackbar.LENGTH_INDEFINITE
+                ).setAction(R.string.button_cta_share_app, { startActivity(IntentBuilder.shareApp(resources)) })
+                    .show()
                 analytics.logEvent(Analytics.ACTION_SHARE_APP)
-                startActivity(IntentBuilder.shareApp(resources))
+
                 return true
             }
             else -> {

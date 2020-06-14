@@ -41,6 +41,7 @@
     <string name="label_app_resource_credits">Credits</string>
     <string name="button_cta_okay">OK</string>
     <string name="button_cta_thanks">Thanks</string>
+    <string name="button_cta_share_app">Share</string>
     <string name="button_cta_share_incident">Share Incident</string>
 
     <!-- Social tags -->
