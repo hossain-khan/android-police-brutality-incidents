@@ -71,4 +71,15 @@
     <string name="info_message_about_app_background"><![CDATA[This app is developed to provide easy access to police brutality incidents that happened during protest for George Floyd\'s murder.\n\nThe app is open-source and available for contribution. If you find issue you can report it at bit.ly/PB2020App]]></string>
     <string name="info_message_about_app_credits"><![CDATA[The app is actively maintained by following people:\n • Hossain Khan (hossain.dev)\n\nArt work used:\n • Fist Icon - bit.ly/2AnXZd6 (License: Public)\n • Graffiti mural honoring George Floyd by munshots - bit.ly/3dRj524 (License: Public)\n • Font Awesome Icons (License: CC BY 4.0)]]></string>
     <string name="app_splash_subtitle_about_cause">… a collection of Police brutality incidents during George Floyd protests ✊</string>
+    <string name="share_android_app_with_friends_body_title">Check this Android app that shows all the reported Police brutality incidents during protests for George Floyd\'s murder.</string>
+    <string name="share_android_app_with_friends_body_content">Hey, check this Android app out, it provides access to all the reported police brutality incidents that happened following the murder of George Floyd on May 25th, 2020.
+        \n\n Get it on Google Play at:
+        \nhttps://play.google.com/store/apps/details?id=%1$s
+        \n\n Popular social media hash-tags:
+        \n  %2$s
+        \n  %3$s
+        \n  %4$s
+        \n\n
+        \nCredits: All the data is reported via https://github.com/2020PB/police-brutality
+    </string>
 </resources>
