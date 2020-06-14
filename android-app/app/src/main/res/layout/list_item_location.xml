@@ -39,14 +39,29 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/name"
-                style="@style/TextAppearance.MaterialComponents.Headline6"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@{data.stateName}"
-                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintEnd_toStartOf="@+id/total_incidents_number"
                 app:layout_constraintStart_toStartOf="@id/guideline_start"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="State Name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/total_incidents_number"
+                style="@style/TextAppearance.MaterialComponents.Headline3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:alpha=".5"
+                android:text="@{data.totalIncidentsText}"
+                android:textAlignment="textEnd"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-thin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="28" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/total_incidents"
@@ -56,7 +71,7 @@
                 android:layout_marginTop="@dimen/list_item_vertical_margin"
                 android:text="@{@string/total_reported_incident_for_location(data.totalIncidents)}"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintEnd_toStartOf="@+id/total_incidents_number"
                 app:layout_constraintStart_toStartOf="@id/guideline_start"
                 app:layout_constraintTop_toBottomOf="@+id/name"
                 tools:text="Total 13 reported incidents." />
