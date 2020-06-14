@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BLM Incidents</string>
+    <string name="app_name">2020PB</string>
 
     <!-- Screen Titles -->
     <string name="title_brutality_incidents">Reported Incidents</string>
