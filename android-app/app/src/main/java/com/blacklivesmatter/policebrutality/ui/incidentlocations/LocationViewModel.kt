@@ -12,6 +12,7 @@ import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.data.model.LocationIncidents
 import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
+import com.google.firebase.crashlytics.FirebaseCrashlytics
 import kotlinx.coroutines.launch
 import org.threeten.bp.Instant
 import org.threeten.bp.OffsetDateTime
@@ -84,7 +85,21 @@ class LocationViewModel @Inject constructor(
         Timber.d("Refresh requested")
         viewModelScope.launch {
             isOperationInProgress.set(false)
-            val incidents: List<Incident> = incidentRepository.getIncidentsCoroutine()
+            val incidents: List<Incident> = try {
+                incidentRepository.getIncidentsCoroutine()
+            } catch (error: Exception) {
+                // Report error so that I get notified to fix it.
+                FirebaseCrashlytics.getInstance().recordException(error)
+                emptyList()
+            }
+
+            if (incidents.isEmpty()) {
+                // Something went wrong, DO NOT proceed
+                _refreshEvent.value = RefreshEvent.Error(IllegalStateException("Unable to refresh content"))
+                return@launch
+            }
+
+            Timber.d("Received total ${incidents.size} incidents, updating local cache.")
             incidentRepository.addIncidents(incidents)
             incidentRepository.removeStaleIncidents(incidents)
             _refreshEvent.value = RefreshEvent.Success(incidents.size)
