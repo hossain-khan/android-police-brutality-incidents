@@ -11,7 +11,7 @@
         style="?textAppearanceHeadline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/view_spacing_large"
+        android:layout_marginTop="@dimen/view_spacing_xxlarge"
         android:shadowColor="?attr/colorAccent"
         android:shadowDx="2"
         android:shadowDy="2"
