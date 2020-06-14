@@ -86,6 +86,7 @@ class LocationViewModel @Inject constructor(
             isOperationInProgress.set(false)
             val incidents: List<Incident> = incidentRepository.getIncidentsCoroutine()
             incidentRepository.addIncidents(incidents)
+            incidentRepository.removeStaleIncidents(incidents)
             _refreshEvent.value = RefreshEvent.Success(incidents.size)
         }
     }
