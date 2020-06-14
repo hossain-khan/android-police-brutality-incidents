@@ -59,7 +59,7 @@
                 android:textStyle="italic"
                 app:fontFamily="sans-serif-thin"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="28" />
 
