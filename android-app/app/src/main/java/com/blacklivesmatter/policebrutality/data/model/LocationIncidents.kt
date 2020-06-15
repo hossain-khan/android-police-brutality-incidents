@@ -12,4 +12,7 @@ import androidx.room.ColumnInfo
 data class LocationIncidents constructor(
     @ColumnInfo(name = "state") val stateName: String,
     @ColumnInfo(name = "total_incidents") val totalIncidents: Int
-)
+) {
+    val totalIncidentsText: String
+        get() = totalIncidents.toString().trim()
+}

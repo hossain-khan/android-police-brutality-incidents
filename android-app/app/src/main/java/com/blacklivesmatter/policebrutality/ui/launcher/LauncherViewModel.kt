@@ -17,8 +17,8 @@ class LauncherViewModel @ViewModelInject constructor(
     private val preferences: SharedPreferences
 ) : ViewModel() {
     companion object {
-        private const val SPLASH_SCREEN_DELAY_FIRST_TIME_MS = 3000L
-        private const val SPLASH_SCREEN_DELAY_MS = 1000L
+        private const val SPLASH_SCREEN_DELAY_FIRST_TIME_MS = 3500L
+        private const val SPLASH_SCREEN_DELAY_MS = 1200L
         private const val PREF_KEY_FIRST_LAUNCH = "preference_key_first_time_app_launch"
     }
 

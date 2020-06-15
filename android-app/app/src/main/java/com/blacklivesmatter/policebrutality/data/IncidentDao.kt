@@ -8,6 +8,13 @@ import androidx.room.Query
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.data.model.LocationIncidents
 
+/**
+ * Data access object interface for Room.
+ *
+ * See:
+ * - https://developer.android.com/training/data-storage/room
+ * - https://developer.android.com/topic/libraries/architecture/room
+ */
 @Dao
 interface IncidentDao {
     @Query("SELECT * FROM incidents ORDER BY name")
@@ -33,4 +40,7 @@ interface IncidentDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(incidents: List<Incident>)
+
+    @Query("DELETE FROM incidents WHERE id NOT IN (:ids)")
+    suspend fun deleteItemByIds(ids: List<String>): Int
 }

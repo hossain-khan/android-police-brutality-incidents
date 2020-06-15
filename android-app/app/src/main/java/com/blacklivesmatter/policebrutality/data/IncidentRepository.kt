@@ -21,4 +21,9 @@ interface IncidentRepository {
      */
     suspend fun getIncidentsCoroutine(): List<Incident>
     suspend fun addIncidents(incidents: List<Incident>)
+
+    /**
+     * Should remove all stale incidents except the [latestIncidents] provided here.
+     */
+    suspend fun removeStaleIncidents(latestIncidents: List<Incident>)
 }

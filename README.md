@@ -46,6 +46,6 @@ Currently following key features are being used.
 
 ### Preview
 
-Here is a snapshot of the app in early stages _(taken on June 10th)_
+Here is a snapshot of the app in early stages _(taken on June 14th)_
 
-<img src="https://user-images.githubusercontent.com/99822/84335138-28ed3380-ab62-11ea-9f10-0a61bfde1f44.gif" width="50%">
+<img src="https://user-images.githubusercontent.com/99822/84598731-d8642780-ae3a-11ea-99e9-15ce12f00eb4.gif" width="50%">

@@ -123,16 +123,15 @@ class MoreInfoFragment : Fragment() {
             }
             R.id.toolbar_menu_share -> {
                 Timber.d("Share app menu item selected.")
-                // TODO - update this whenever app is published at
-                // https://play.google.com/store/apps/details?id=com.blacklivesmatter.policebrutality
-                // TODO https://github.com/amardeshbd/android-police-brutality-incidents/issues/55
                 Snackbar.make(
                     viewDataBinding.root,
-                    "Sharing coming soon: This app is pending approval on Google Play Store. " +
-                            "Thanks for caring! ❤️",
-                    Snackbar.LENGTH_LONG
-                ).show()
+                    "Thanks for caring! ❤️" +
+                            "\nShare this App with friends?",
+                    Snackbar.LENGTH_INDEFINITE
+                ).setAction(R.string.button_cta_share_app, { startActivity(IntentBuilder.shareApp(resources)) })
+                    .show()
                 analytics.logEvent(Analytics.ACTION_SHARE_APP)
+
                 return true
             }
             else -> {
