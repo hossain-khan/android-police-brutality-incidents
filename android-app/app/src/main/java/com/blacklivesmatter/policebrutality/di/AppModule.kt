@@ -1,4 +1,4 @@
-package com.blacklivesmatter.policebrutality.di.module
+package com.blacklivesmatter.policebrutality.di
 
 import android.app.Application
 import android.content.Context

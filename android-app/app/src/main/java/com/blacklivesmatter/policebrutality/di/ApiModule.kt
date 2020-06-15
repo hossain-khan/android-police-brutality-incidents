@@ -1,4 +1,4 @@
-package com.blacklivesmatter.policebrutality.di.module
+package com.blacklivesmatter.policebrutality.di
 
 import com.blacklivesmatter.policebrutality.BuildConfig
 import com.blacklivesmatter.policebrutality.api.IncidentApi

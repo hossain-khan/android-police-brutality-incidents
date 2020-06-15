@@ -1,4 +1,4 @@
-package com.blacklivesmatter.policebrutality.di.module
+package com.blacklivesmatter.policebrutality.di
 
 import android.content.Context
 import android.content.SharedPreferences
