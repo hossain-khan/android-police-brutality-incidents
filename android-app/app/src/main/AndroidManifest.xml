@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.blacklivesmatter.policebrutality">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -31,6 +32,15 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <!--
+            Remove the default initializer for Dagger Hilt DI to work for injecting `Worker`s
+            https://developer.android.com/topic/libraries/architecture/workmanager/advanced/custom-configuration#remove-default
+        -->
+        <provider
+            android:name="androidx.work.impl.WorkManagerInitializer"
+            android:authorities="${applicationId}.workmanager-init"
+            tools:node="remove" />
     </application>
 
 </manifest>

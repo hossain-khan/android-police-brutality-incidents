@@ -13,7 +13,6 @@ buildscript {
         constraintLayoutVersion = '2.0.0-beta6'
         coreTestingVersion = '2.0.0'
         coroutinesVersion = "1.3.0-M2"
-        dagger2Version = '2.27'
         espressoVersion = '3.1.1'
         firebaseAnalyticsVersion = '17.4.3'
         firebaseCrashlyticsGradle = '2.1.1'
