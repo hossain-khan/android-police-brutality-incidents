@@ -1,5 +1,6 @@
 package com.blacklivesmatter.policebrutality.data
 
+import android.annotation.SuppressLint
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
@@ -17,6 +18,7 @@ import com.blacklivesmatter.policebrutality.worker.SeedDatabaseWorker
  */
 @Database(entities = [Incident::class], version = 4, exportSchema = true)
 @TypeConverters(Converters::class)
+@SuppressLint("SyntheticAccessor") // TODO - This needs to be moved over to Dagger Hilt
 abstract class AppDatabase : RoomDatabase() {
     abstract fun incidentDao(): IncidentDao
 

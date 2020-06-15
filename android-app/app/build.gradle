@@ -70,6 +70,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    lintOptions { // https://developer.android.com/studio/write/lint.html
+        checkAllWarnings true
+        warningsAsErrors true
+        ignore 'GradleDependency', 'NewerVersionAvailable', 'UnusedIds'
+    }
 }
 
 dependencies {

@@ -17,7 +17,8 @@ object LinkTransformer {
         "www.youtube.com" to R.drawable.ic_web_youtube,
         "v.redd.it" to R.drawable.ic_web_reddit,
         "old.reddit.com" to R.drawable.ic_web_reddit,
-        "www.reddit.com" to R.drawable.ic_web_reddit
+        "www.reddit.com" to R.drawable.ic_web_reddit,
+        "vimeo.com" to R.drawable.ic_web_vimeo
     ).withDefault { R.drawable.ic_outline_web }
 
     /**

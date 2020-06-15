@@ -23,6 +23,8 @@ package com.blacklivesmatter.policebrutality.data;
  * THE SOFTWARE.
  */
 
+import androidx.annotation.NonNull;
+
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
@@ -60,7 +62,8 @@ public class OffsetDateTimeConverter implements JsonSerializer<OffsetDateTime>, 
      * @return a JsonElement corresponding to the specified object.
      */
     @Override
-    public JsonElement serialize(final OffsetDateTime src, final Type typeOfSrc, final JsonSerializationContext context) {
+    @NonNull
+    public JsonElement serialize(@NonNull final OffsetDateTime src, @NonNull final Type typeOfSrc, @NonNull final JsonSerializationContext context) {
         return new JsonPrimitive(FORMATTER.format(src));
     }
 
@@ -80,7 +83,8 @@ public class OffsetDateTimeConverter implements JsonSerializer<OffsetDateTime>, 
      * @throws JsonParseException if json is not in the expected format of {@code typeOfT}
      */
     @Override
-    public OffsetDateTime deserialize(final JsonElement json, final Type typeOfT, final JsonDeserializationContext context)
+    @NonNull
+    public OffsetDateTime deserialize(@NonNull final JsonElement json, @NonNull final Type typeOfT, @NonNull final JsonDeserializationContext context)
             throws JsonParseException {
         return FORMATTER.parse(json.getAsString(), OffsetDateTime.FROM);
     }
