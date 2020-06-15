@@ -1,6 +1,7 @@
 package com.blacklivesmatter.policebrutality.ui.launcher
 
 import android.content.SharedPreferences
+import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -8,12 +9,11 @@ import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import timber.log.Timber
-import javax.inject.Inject
 
 /**
  * View model for [LauncherActivity].
  */
-class LauncherViewModel @Inject constructor(
+class LauncherViewModel @ViewModelInject constructor(
     private val preferences: SharedPreferences
 ) : ViewModel() {
     companion object {

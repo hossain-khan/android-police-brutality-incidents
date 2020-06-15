@@ -12,8 +12,8 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.children
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
 import com.blacklivesmatter.policebrutality.R
 import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.databinding.FragmentMoreInfoBinding
@@ -22,19 +22,16 @@ import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
 import com.google.android.material.chip.Chip
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
-import dagger.android.support.DaggerFragment
+import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 import javax.inject.Inject
 
-class MoreInfoFragment : DaggerFragment() {
-
-    @Inject
-    lateinit var viewModelFactory: ViewModelProvider.Factory
-
+@AndroidEntryPoint
+class MoreInfoFragment : Fragment() {
     @Inject
     lateinit var analytics: Analytics
 
-    private val viewModel by viewModels<MoreInfoViewModel> { viewModelFactory }
+    private val viewModel by viewModels<MoreInfoViewModel>()
     private lateinit var viewDataBinding: FragmentMoreInfoBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

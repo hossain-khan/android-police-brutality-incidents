@@ -1,25 +1,19 @@
 package com.blacklivesmatter.policebrutality
 
+import android.app.Application
 import androidx.appcompat.app.AppCompatDelegate
-import com.blacklivesmatter.policebrutality.di.component.AppComponent
-import com.blacklivesmatter.policebrutality.di.component.DaggerAppComponent
+import androidx.hilt.work.HiltWorkerFactory
+import androidx.work.Configuration
 import com.blacklivesmatter.policebrutality.ui.common.ThemeHelper
-import dagger.android.AndroidInjector
-import dagger.android.support.DaggerApplication
-import kotlin.math.abs
+import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
+import javax.inject.Inject
+import kotlin.math.abs
 
-class BrutalityIncidentApplication : DaggerApplication() {
-    override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
-        // Build app component
-        val appComponent: AppComponent = DaggerAppComponent.builder()
-            .application(this)
-            .build()
-
-        // Inject the application instance
-        appComponent.inject(this)
-        return appComponent
-    }
+@HiltAndroidApp
+class BrutalityIncidentApplication : Application(), Configuration.Provider {
+    @Inject
+    lateinit var workerFactory: HiltWorkerFactory
 
     override fun onCreate() {
         super.onCreate()
@@ -31,6 +25,12 @@ class BrutalityIncidentApplication : DaggerApplication() {
         if (BuildConfig.DEBUG) {
             installLogging()
         }
+    }
+
+    override fun getWorkManagerConfiguration(): Configuration {
+        return Configuration.Builder()
+            .setWorkerFactory(workerFactory)
+            .build()
     }
 
     private fun installLogging() {

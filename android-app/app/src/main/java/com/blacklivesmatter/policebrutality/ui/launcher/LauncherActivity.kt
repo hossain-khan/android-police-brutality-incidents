@@ -5,23 +5,19 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
-import androidx.lifecycle.ViewModelProvider
+import androidx.appcompat.app.AppCompatActivity
 import com.blacklivesmatter.policebrutality.MainActivity
 import com.blacklivesmatter.policebrutality.R
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
-import dagger.android.support.DaggerAppCompatActivity
-import javax.inject.Inject
+import dagger.hilt.android.AndroidEntryPoint
 
 /**
  * Shows splash screen. Splash screen provided by window background,
  * so that the image is immediately visible.
  */
-class LauncherActivity : DaggerAppCompatActivity() {
-
-    @Inject
-    internal lateinit var viewModelFactory: ViewModelProvider.Factory
-
-    private val viewModel: LauncherViewModel by viewModels { viewModelFactory }
+@AndroidEntryPoint
+class LauncherActivity : AppCompatActivity() {
+    private val viewModel: LauncherViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
