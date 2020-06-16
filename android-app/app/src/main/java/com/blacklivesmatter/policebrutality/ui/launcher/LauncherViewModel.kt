@@ -1,6 +1,7 @@
 package com.blacklivesmatter.policebrutality.ui.launcher
 
 import android.content.SharedPreferences
+import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -8,17 +9,16 @@ import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import timber.log.Timber
-import javax.inject.Inject
 
 /**
  * View model for [LauncherActivity].
  */
-class LauncherViewModel @Inject constructor(
+class LauncherViewModel @ViewModelInject constructor(
     private val preferences: SharedPreferences
 ) : ViewModel() {
     companion object {
-        private const val SPLASH_SCREEN_DELAY_FIRST_TIME_MS = 3000L
-        private const val SPLASH_SCREEN_DELAY_MS = 1000L
+        private const val SPLASH_SCREEN_DELAY_FIRST_TIME_MS = 3500L
+        private const val SPLASH_SCREEN_DELAY_MS = 1200L
         private const val PREF_KEY_FIRST_LAUNCH = "preference_key_first_time_app_launch"
     }
 

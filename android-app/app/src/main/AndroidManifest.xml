@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.blacklivesmatter.policebrutality">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,13 +12,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PoliceBrutality">
+        android:theme="@style/Theme.PoliceBrutality"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".ui.launcher.LauncherActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.PoliceBrutality.Launcher"
-            android:windowSoftInputMode="adjustResize">
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -31,6 +34,16 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <!--
+            Remove the default initializer for Dagger Hilt DI to work for injecting `Worker`s
+            https://developer.android.com/topic/libraries/architecture/workmanager/advanced/custom-configuration#remove-default
+        -->
+        <provider
+            android:name="androidx.work.impl.WorkManagerInitializer"
+            android:authorities="${applicationId}.workmanager-init"
+            android:exported="false"
+            tools:node="remove" />
     </application>
 
 </manifest>

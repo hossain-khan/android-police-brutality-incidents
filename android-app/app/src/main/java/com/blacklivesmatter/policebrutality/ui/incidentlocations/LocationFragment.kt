@@ -8,8 +8,8 @@ import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blacklivesmatter.policebrutality.R
@@ -27,21 +27,19 @@ import com.google.android.material.datepicker.DateValidatorPointBackward
 import com.google.android.material.datepicker.DateValidatorPointForward
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.snackbar.Snackbar
-import dagger.android.support.DaggerFragment
+import dagger.hilt.android.AndroidEntryPoint
 import org.threeten.bp.DateTimeUtils
 import timber.log.Timber
 import java.util.ArrayList
 import java.util.Calendar
 import javax.inject.Inject
 
-class LocationFragment : DaggerFragment() {
-    @Inject
-    lateinit var viewModelFactory: ViewModelProvider.Factory
-
+@AndroidEntryPoint
+class LocationFragment : Fragment() {
     @Inject
     lateinit var analytics: Analytics
 
-    private val viewModel by viewModels<LocationViewModel> { viewModelFactory }
+    private val viewModel by viewModels<LocationViewModel>()
     private lateinit var viewDataBinding: FragmentIncidentLocationsBinding
     private lateinit var adapter: LocationListAdapter
     private var incidentDates: List<String> = emptyList()

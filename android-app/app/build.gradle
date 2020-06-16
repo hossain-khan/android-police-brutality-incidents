@@ -6,6 +6,7 @@ plugins {
     id 'kotlin-android-extensions'
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs.kotlin'
+    id 'dagger.hilt.android.plugin'
     id 'com.google.gms.google-services'
     id 'com.google.firebase.crashlytics'
     id 'org.jlleitschuh.gradle.ktlint'
@@ -20,8 +21,8 @@ android {
         applicationId "com.blacklivesmatter.policebrutality"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
-        versionCode 6
-        versionName "1.5"
+        versionCode 7
+        versionName "2.0"
 
         resConfigs "en"
 
@@ -69,6 +70,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    lintOptions { // https://developer.android.com/studio/write/lint.html
+        checkAllWarnings true
+        warningsAsErrors true
+        ignore 'GradleDependency', 'NewerVersionAvailable', 'UnusedIds'
+    }
 }
 
 dependencies {
@@ -84,7 +91,6 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
     implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"
     implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
-    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
     implementation "androidx.cardview:cardview:$rootProject.cardViewVersion"
     implementation "androidx.preference:preference:$rootProject.preferenceVersion"
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-rc01"
@@ -93,24 +99,27 @@ dependencies {
     implementation "com.google.firebase:firebase-analytics-ktx:$rootProject.firebaseAnalyticsVersion"
     implementation "com.google.firebase:firebase-crashlytics:$rootProject.firebaseCrashlyticsVersion"
 
+    // Work Manager
     implementation "androidx.work:work-runtime-ktx:$rootProject.workVersion"
 
+    // Room Database
     implementation "androidx.room:room-runtime:$rootProject.roomVersion"
     implementation "androidx.room:room-ktx:$rootProject.roomVersion"
     kapt "androidx.room:room-compiler:$rootProject.roomVersion"
 
-
+    // Glide - image loading
     kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
     implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
 
-    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+    // Google Gson for JSON
+    implementation "com.google.code.gson:gson:2.8.6"
 
-    // Dagger 2 - DI
-    implementation "com.google.dagger:dagger:$rootProject.dagger2Version"
-    implementation "com.google.dagger:dagger-android:$rootProject.dagger2Version"
-    implementation "com.google.dagger:dagger-android-support:$rootProject.dagger2Version"
-    kapt "com.google.dagger:dagger-android-processor:$rootProject.dagger2Version"
-    kapt "com.google.dagger:dagger-compiler:$rootProject.dagger2Version"
+    // Dagger Hilt (android dependency injection)
+    implementation "com.google.dagger:hilt-android:$hiltVersion"
+    kapt "com.google.dagger:hilt-android-compiler:$hiltVersion"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$rootProject.androidXHiltVersion"
+    implementation "androidx.hilt:hilt-work:$rootProject.androidXHiltVersion"
+    kapt "androidx.hilt:hilt-compiler:$rootProject.androidXHiltVersion"
 
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
@@ -119,12 +128,14 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:$rootProject.okhttpVersion"
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttpVersion"
 
-    implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
+    // Timber for logging
+    implementation "com.jakewharton.timber:timber:4.7.1"
 
+    // 310BP - Backport of the Java SE 8 date-time classes
     implementation "org.threeten:threetenbp:1.4.4" // https://www.threeten.org/threetenbp/
 
     // debugImplementation because LeakCanary should only run in debug builds.
-    debugImplementation "com.squareup.leakcanary:leakcanary-android:2.3"
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:2.4"
 
     // Unit testing
     testImplementation "junit:junit:$rootProject.junitVersion"

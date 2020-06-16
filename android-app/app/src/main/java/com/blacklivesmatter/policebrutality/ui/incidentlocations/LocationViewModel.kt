@@ -1,6 +1,7 @@
 package com.blacklivesmatter.policebrutality.ui.incidentlocations
 
 import androidx.databinding.ObservableField
+import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
@@ -12,7 +13,6 @@ import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.data.model.LocationIncidents
 import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
-import com.google.firebase.crashlytics.FirebaseCrashlytics
 import kotlinx.coroutines.launch
 import org.threeten.bp.Instant
 import org.threeten.bp.OffsetDateTime
@@ -21,9 +21,8 @@ import org.threeten.bp.format.DateTimeFormatter
 import org.threeten.bp.format.FormatStyle
 import timber.log.Timber
 import java.util.concurrent.TimeUnit
-import javax.inject.Inject
 
-class LocationViewModel @Inject constructor(
+class LocationViewModel @ViewModelInject constructor(
     private val incidentRepository: IncidentRepository,
     private val analytics: Analytics
 ) : ViewModel() {
@@ -88,8 +87,7 @@ class LocationViewModel @Inject constructor(
             val incidents: List<Incident> = try {
                 incidentRepository.getIncidentsCoroutine()
             } catch (error: Exception) {
-                // Report error so that I get notified to fix it.
-                FirebaseCrashlytics.getInstance().recordException(error)
+                Timber.e(error, "Unable to process API request.")
                 emptyList()
             }
 

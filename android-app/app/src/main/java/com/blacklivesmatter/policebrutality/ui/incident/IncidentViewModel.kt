@@ -2,6 +2,7 @@ package com.blacklivesmatter.policebrutality.ui.incident
 
 import android.content.SharedPreferences
 import androidx.databinding.ObservableField
+import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
@@ -10,9 +11,8 @@ import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
 import timber.log.Timber
-import javax.inject.Inject
 
-class IncidentViewModel @Inject constructor(
+class IncidentViewModel @ViewModelInject constructor(
     private val incidentRepository: IncidentRepository,
     private val preferences: SharedPreferences
 ) : ViewModel() {

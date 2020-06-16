@@ -7,7 +7,7 @@
     android:layout_margin="@dimen/view_spacing_xxlarge">
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/materialTextView"
+        android:id="@+id/hashtag_1"
         style="?textAppearanceHeadline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,8 +24,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/materialTextView2"
-        style="?textAppearanceHeadline5"
+        android:id="@+id/hashtag_2"
+        style="?textAppearanceHeadline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/view_spacing_large"
@@ -38,10 +38,26 @@
         app:fontFamily="@font/alfa_slab_one"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialTextView"
+        app:layout_constraintTop_toBottomOf="@+id/hashtag_1"
         tools:text="#JustticeForGeorgeFloyedForEver" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/usa_outline_map"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.4"
+        android:background="@drawable/ic_usa_map_outline"
+        android:scaleType="fitCenter"
+        android:tint="@color/grey_800"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="8:5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hashtag_2"
+        app:srcCompat="@drawable/ic_usa_map_outline" />
+
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/app_cause_text"
         style="?textAppearanceHeadline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,7 +68,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+        app:layout_constraintTop_toBottomOf="@+id/hashtag_2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
