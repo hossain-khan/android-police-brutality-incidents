@@ -1,0 +1,20 @@
+name: Firebase App Dist - Test
+# Testing for medium post at https://medium.com/@hossainkhan/setup-android-gradle-based-firebase-app-distribution-with-github-actions-ci-a7803269a4e1
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+
+      - name: Firebase App Distribute
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: ./gradlew assembleRelease appDistributionUploadRelease
