@@ -1,4 +1,4 @@
-package com.blacklivesmatter.policebrutality.di.module
+package com.blacklivesmatter.policebrutality.di
 
 import com.blacklivesmatter.policebrutality.data.BrutalityIncidentRepository
 import com.blacklivesmatter.policebrutality.data.IncidentRepository

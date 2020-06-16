@@ -6,7 +6,7 @@ import androidx.hilt.work.WorkerInject
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import com.blacklivesmatter.policebrutality.config.INCIDENT_DATA_FILENAME
-import com.blacklivesmatter.policebrutality.data.AppDatabase
+import com.blacklivesmatter.policebrutality.data.IncidentDao
 import com.blacklivesmatter.policebrutality.data.model.IncidentsSource
 import com.google.gson.Gson
 import com.google.gson.stream.JsonReader
@@ -16,7 +16,8 @@ import timber.log.Timber
 class SeedDatabaseWorker @WorkerInject constructor(
     @Assisted context: Context,
     @Assisted workerParams: WorkerParameters,
-    val gson: Gson
+    private val gson: Gson,
+    private val incidentDao: IncidentDao
 ) : CoroutineWorker(context, workerParams) {
 
     override suspend fun doWork(): Result = coroutineScope {
@@ -26,8 +27,7 @@ class SeedDatabaseWorker @WorkerInject constructor(
                     val incidents = gson.fromJson<IncidentsSource>(jsonReader, IncidentsSource::class.java)
                     Timber.i("Processed ${incidents.data.size} incidents from JSON.")
 
-                    val database = AppDatabase.getInstance(applicationContext)
-                    database.incidentDao().insertAll(incidents.data)
+                    incidentDao.insertAll(incidents.data)
 
                     Result.success()
                 }
