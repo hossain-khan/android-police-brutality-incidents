@@ -10,6 +10,7 @@ plugins {
     id 'com.google.gms.google-services'
     id 'com.google.firebase.crashlytics'
     id 'org.jlleitschuh.gradle.ktlint'
+    id 'com.google.firebase.appdistribution'
 }
 def keystoreProperties = KeystoreUtil.buildProperties(rootProject)
 
@@ -58,6 +59,11 @@ android {
             shrinkResources true // Enables resource shrinking
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config
+
+            firebaseAppDistribution {
+                releaseNotes="Latest release notes at https://github.com/amardeshbd/android-police-brutality-incidents/releases"
+                groups="lli-devs"
+            }
         }
         debug {
             signingConfig signingConfigs.config
