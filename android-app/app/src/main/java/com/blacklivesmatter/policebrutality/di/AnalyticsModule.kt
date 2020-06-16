@@ -8,6 +8,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.android.qualifiers.ApplicationContext
 import timber.log.Timber
 import javax.inject.Singleton
 
@@ -16,9 +17,9 @@ import javax.inject.Singleton
 class AnalyticsModule {
     @Singleton
     @Provides
-    fun provideAnalytics(context: Context): FirebaseAnalytics {
+    fun provideAnalytics(@ApplicationContext appContext: Context): FirebaseAnalytics {
         // https://firebase.google.com/docs/analytics/get-started?platform=android
-        val instance = FirebaseAnalytics.getInstance(context)
+        val instance = FirebaseAnalytics.getInstance(appContext)
         Timber.d("Providing firebase analytics instance: $instance")
         return instance
     }
