@@ -19,6 +19,8 @@ interface Analytics {
         const val ACTION_INCIDENT_REFRESH = "RefreshIncidents"
         const val ACTION_INCIDENT_REPORT_NEW = "MakeIncidentReport"
         const val ACTION_SHARE_APP = "ShareApplication"
+        const val ACTION_CHARITY_DONATE = "DonateCharity"
+        const val ACTION_CHARITY_DONATE_INFO = "DonateCharityInfo"
 
         const val CONTENT_TYPE_LOCATION = "TypeLocation"
         const val CONTENT_TYPE_CHARITY = "TypeCharity"
