@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AppCompatResource">
+    <item
+        android:id="@+id/toolbar_menu_donate_info"
+        android:icon="@drawable/ic_outline_warn_info_24"
+        android:title="@string/menu_title_donate_disclaimer_info"
+        app:showAsAction="always" />
+</menu>

@@ -23,9 +23,14 @@ val THE_846_DAY: OffsetDateTime = OffsetDateTime.of(
 const val DATABASE_NAME = "incidents-db"
 
 /**
- * Fallback data file
+ * Fallback data file incidents
  */
 const val INCIDENT_DATA_FILENAME = "all_locations_fallback.json"
+
+/**
+ * Bundled charity list data
+ */
+const val CHARITY_DATA_FILENAME = "donate_for_cause.json"
 
 /**
  * NOTE: URL taken from https://github.com/2020PB/police-brutality/blob/master/README.md on June 8th, 2020

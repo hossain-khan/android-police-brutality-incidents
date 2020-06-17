@@ -1,4 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- The app name that shows up in Android launcher / App drawer -->
     <string name="app_name">2020PB</string>
 
     <!-- Screen Titles -->
@@ -7,12 +8,16 @@
     <string name="title_incidents_on_date">Incidents on %s</string>
     <string name="title_report_new_incident">Report Incident</string>
     <string name="title_more_info_and_sources">Additional Resources</string>
+    <string name="title_donate_for_cause">Donate for Cause</string>
     <string name="title_filter_incidents_by_date">Filter incident by specific date</string>
+    <string name="title_dialog_disclaimer">DISCLAIMER</string>
 
     <!-- Menu Titles -->
     <string name="menu_title_brutality_incidents">Incidents</string>
     <string name="menu_title_report_new_incident">Report</string>
-    <string name="menu_title_more_info_and_sources">Info</string>
+    <string name="menu_title_more_info_and_sources" tools:ignore="DuplicateStrings">Info</string>
+    <string name="menu_title_donate_to_charity" tools:ignore="DuplicateStrings">Donate</string>
+    <string name="menu_title_donate_disclaimer_info" tools:ignore="DuplicateStrings">Info</string>
     <string name="menu_title_about_app" tools:ignore="DuplicateStrings">About App</string>
     <string name="menu_title_share_app">Share App</string>
     <string name="menu_title_date_filter">Filter by Date</string>
@@ -26,11 +31,13 @@
     <string name="message_incident_refreshed">Successfully refreshed %1$s incidents from source &#8216;2020PB/police-brutality&#8217;.</string>
     <string name="message_incident_refresh_fail">Sorry, we are unable to refresh new incidents data at the moment. Please try again later.</string>
     <string name="message_share_confirmation">Share this incident with %1$s external link(s)?</string>
-    <string name="message_share_incident_capability">Did you know, you can share a incident details by just tapping on the item from list?</string>
+    <string name="message_share_incident_capability">Did you know, you can share a incident details by just tapping on the item from the list?</string>
+    <string name="message_charity_donation_landing_first_time_info">Consider helping the cause, every $ helps.\nTap on the (i) info icon to learn more.</string>
 
     <!-- Content description for accessibility -->
     <string name="content_description_fist_icon">Justice for George Floyd protest fist image icon</string>
     <string name="content_description_george_floyd_graffiti_image">george floyd graffiti</string>
+    <string name="content_description_donate_for_cause_image">Donate to support the cause</string>
     <string name="content_description_go_back_to_prev_screen">Go back to previous screen</string>
 
     <!-- Labels, Button CTA and so on -->
@@ -42,6 +49,8 @@
     <string name="button_cta_thanks">Thanks</string>
     <string name="button_cta_share_app">Share</string>
     <string name="button_cta_share_incident">Share Incident</string>
+    <string name="button_cta_charity_learn_more">Learn More</string>
+    <string name="button_cta_charity_donate_now" tools:ignore="DuplicateStrings">Donate</string>
 
     <!-- Social tags -->
     <string name="hash_tag_blacklivesmatter" translatable="false">#BlackLivesMatter</string>
@@ -83,4 +92,10 @@
         \nCredits: All the data is reported via https://github.com/2020PB/police-brutality
     </string>
     <string name="label_most_used_hash_tags">Most used hash tags</string>
+    <string name="lorem_ipsum_single_paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="message_charity_list_not_affiliated_with_app"><![CDATA[This app or \'r/2020PoliceBrutality\' is not affiliated with any of the charities listed here.
+        This is provided as a convenience only to easily find relevant charities that are working for this cause.
+        \n\nIf you don\'t find any of the charities listed here relevant, then you should try to do your own research to find suitable charity that aligns with your principals.
+        \n\nThank you.]]></string>
+
 </resources>

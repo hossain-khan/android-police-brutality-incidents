@@ -10,6 +10,7 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import com.blacklivesmatter.policebrutality.config.DATABASE_NAME
 import com.blacklivesmatter.policebrutality.data.AppDatabase
+import com.blacklivesmatter.policebrutality.data.CharityDao
 import com.blacklivesmatter.policebrutality.data.IncidentDao
 import com.blacklivesmatter.policebrutality.worker.SeedDatabaseWorker
 import dagger.Module
@@ -56,6 +57,11 @@ object DaoModule {
     @Provides
     fun provideIncidentDao(database: AppDatabase): IncidentDao {
         return database.incidentDao()
+    }
+
+    @Provides
+    fun provideCharityDao(database: AppDatabase): CharityDao {
+        return database.charityDao()
     }
 
     @Provides
