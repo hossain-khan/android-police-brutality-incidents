@@ -61,6 +61,7 @@ class LocationFragment : Fragment() {
             )
         }
         adapter.submitList(emptyList())
+        showLoadingIndicator()
 
         viewDataBinding.recyclerView.setHasFixedSize(false)
         viewDataBinding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
@@ -73,6 +74,9 @@ class LocationFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         viewModel.locations.observeKotlin(viewLifecycleOwner) { locationList ->
+            if (locationList.isEmpty().not()) {
+                hideLoadingIndicator()
+            }
             adapter.submitList(locationList)
         }
 
@@ -125,7 +129,7 @@ class LocationFragment : Fragment() {
             when (event) {
                 is RefreshEvent.Success -> {
                     Timber.d("Refresh was successful")
-                    viewDataBinding.swipeRefresh.isRefreshing = false
+                    hideLoadingIndicator()
                     Snackbar.make(
                         viewDataBinding.root,
                         getString(R.string.message_incident_refreshed, event.totalItems.toString()),
@@ -134,15 +138,23 @@ class LocationFragment : Fragment() {
                 }
                 is RefreshEvent.Error -> {
                     Timber.d("Refresh was unsuccessful")
-                    viewDataBinding.swipeRefresh.isRefreshing = false
+                    hideLoadingIndicator()
                     Snackbar.make(viewDataBinding.root, R.string.message_incident_refresh_fail, Snackbar.LENGTH_LONG)
                         .show()
                 }
                 is RefreshEvent.Loading -> {
-                    viewDataBinding.swipeRefresh.isRefreshing = true
+                    showLoadingIndicator()
                 }
             }
         }
+    }
+
+    private fun showLoadingIndicator() {
+        viewDataBinding.swipeRefresh.isRefreshing = true
+    }
+
+    private fun hideLoadingIndicator() {
+        viewDataBinding.swipeRefresh.isRefreshing = false
     }
 
     //
