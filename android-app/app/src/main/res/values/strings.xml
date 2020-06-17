@@ -10,6 +10,7 @@
     <string name="title_more_info_and_sources">Additional Resources</string>
     <string name="title_donate_for_cause" tools:ignore="DuplicateStrings">Donate</string>
     <string name="title_filter_incidents_by_date">Filter incident by specific date</string>
+    <string name="title_dialog_disclaimer">DISCLAIMER</string>
 
     <!-- Menu Titles -->
     <string name="menu_title_brutality_incidents">Incidents</string>
@@ -92,5 +93,9 @@
     </string>
     <string name="label_most_used_hash_tags">Most used hash tags</string>
     <string name="lorem_ipsum_single_paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="message_charity_list_not_affiliated_with_app"><![CDATA[This app or \'r/2020PoliceBrutality\' is not affiliated with any of the charities listed here.
+        This is provided as a convenience only to easily find relevant charities that are working for this cause.
+        \n\nIf you don\'t find any of the charities listed here relevant, then you should try to do your own research to find suitable charity that aligns with your principals.
+        \n\nThank you.]]></string>
 
 </resources>

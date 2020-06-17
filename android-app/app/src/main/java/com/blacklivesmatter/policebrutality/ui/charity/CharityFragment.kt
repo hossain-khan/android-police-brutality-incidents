@@ -16,6 +16,7 @@ import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.databinding.FragmentCharityDonateBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
 import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
@@ -96,6 +97,12 @@ class CharityFragment : Fragment() {
         when (item.itemId) {
             R.id.toolbar_menu_donate_info -> {
                 Timber.d("Show disclaimer")
+                MaterialAlertDialogBuilder(requireContext())
+                    .setIcon(R.drawable.ic_outline_warn_info_24)
+                    .setTitle(R.string.title_dialog_disclaimer)
+                    .setMessage(R.string.message_charity_list_not_affiliated_with_app)
+                    .setPositiveButton(R.string.button_cta_okay, null)
+                    .show()
                 return true
             }
             else -> return super.onOptionsItemSelected(item)
