@@ -48,16 +48,88 @@
             tools:background="#ccc"
             tools:minHeight="200dp">
 
-            <com.google.android.material.textview.MaterialTextView
-                style="?textAppearanceHeadline3"
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_start"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{data.name}"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/list_item_horizontal_margin" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/list_item_horizontal_margin" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/charity_logo_thumb"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/view_spacing_large"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
                 app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/fist_raised_large"
+                tools:background="@color/light_blue_300" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/charity_name"
+                style="?textAppearanceHeadline6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_spacing_medium"
+                android:text="@{data.name}"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toEndOf="@+id/charity_logo_thumb"
+                app:layout_constraintTop_toTopOf="@+id/charity_logo_thumb"
                 tools:ignore="HardcodedText"
                 tools:text="Charity Name Which Can Be Long" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/charity_description"
+                style="?textAppearanceCaption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_spacing_medium"
+                android:text="@{data.description}"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@+id/charity_name"
+                app:layout_constraintTop_toBottomOf="@+id/charity_name"
+                tools:text="@string/lorem_ipsum_single_paragraph" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier_charity_info_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="charity_description,charity_logo_thumb" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/charity_learn_more_button"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_spacing_large"
+                android:layout_marginEnd="@dimen/view_spacing_small"
+                android:text="@string/button_cta_charity_learn_more"
+                app:layout_constraintEnd_toStartOf="@+id/charity_donate_now_button"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/barrier_charity_info_end" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/charity_donate_now_button"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_spacing_small"
+                android:text="@string/button_cta_charity_donate_now"
+                app:layout_constraintBottom_toBottomOf="@+id/charity_learn_more_button"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/charity_learn_more_button"
+                app:layout_constraintTop_toTopOf="@+id/charity_learn_more_button" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>

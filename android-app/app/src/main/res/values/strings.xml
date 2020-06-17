@@ -1,4 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- The app name that shows up in Android launcher / App drawer -->
     <string name="app_name">2020PB</string>
 
     <!-- Screen Titles -->
@@ -46,6 +47,8 @@
     <string name="button_cta_thanks">Thanks</string>
     <string name="button_cta_share_app">Share</string>
     <string name="button_cta_share_incident">Share Incident</string>
+    <string name="button_cta_charity_learn_more">Learn More</string>
+    <string name="button_cta_charity_donate_now" tools:ignore="DuplicateStrings">Donate</string>
 
     <!-- Social tags -->
     <string name="hash_tag_blacklivesmatter" translatable="false">#BlackLivesMatter</string>
@@ -87,4 +90,6 @@
         \nCredits: All the data is reported via https://github.com/2020PB/police-brutality
     </string>
     <string name="label_most_used_hash_tags">Most used hash tags</string>
+    <string name="lorem_ipsum_single_paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+
 </resources>
