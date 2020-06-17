@@ -16,6 +16,7 @@ import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.databinding.FragmentCharityDonateBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
 import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
+import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 import javax.inject.Inject
@@ -34,6 +35,9 @@ class CharityFragment : Fragment() {
             lifecycleOwner = this@CharityFragment
             vm = viewModel
         }
+
+        // Observes fragment lifecycle events to handle lifecycle specific events
+        lifecycle.addObserver(viewModel)
 
         // This required to participate in providing toolbar menu on the host activity
         (requireActivity() as AppCompatActivity).setSupportActionBar(viewDataBinding.toolbar)
@@ -59,6 +63,14 @@ class CharityFragment : Fragment() {
 
         viewModel.charityList.observeKotlin(viewLifecycleOwner) { items ->
             adapter.submitList(items)
+        }
+
+        viewModel.shouldShowCharityDisclaimerInfoMessage.observeKotlin(viewLifecycleOwner) {
+            Snackbar.make(
+                viewDataBinding.root,
+                R.string.message_charity_donation_landing_first_time_info,
+                Snackbar.LENGTH_INDEFINITE
+            ).setAction(R.string.button_cta_thanks, {}).show()
         }
     }
 
