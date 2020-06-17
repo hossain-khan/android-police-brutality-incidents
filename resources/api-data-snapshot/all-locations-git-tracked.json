@@ -1,7 +1,7 @@
 {
    "edit_at": "https://github.com/2020PB/police-brutality",
    "help": "ask @ubershmekel on twitter",
-   "updated_at": "2020-06-06T10:35:46.054104+00:00",
+   "updated_at": "2020-06-07T14:16:28.370861+00:00",
    "data": [
       {
          "links": [
@@ -14,18 +14,21 @@
          "city": "Bentonville",
          "name": "Law enforcement gas a crowd chanting \u201cwe want peace\u201d right after exiting the building.",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "ar-bentonville-1"
       },
       {
          "links": [
-            "https://twitter.com/KATVShelby/status/1267554421019475972?s=20"
+            "https://twitter.com/KATVShelby/status/1267554421019475972?s=20",
+            "https://twitter.com/KATVNews/status/1267509911954440194"
          ],
          "state": "Arkansas",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Arkansas.md",
          "city": "Little Rock",
          "name": "Peaceful protestors kneeling are shot with an explosive projectile.",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ar-littlerock-2"
       },
       {
          "links": [
@@ -36,7 +39,8 @@
          "city": "Salt Lake City",
          "name": "Police shove an old man with a cane to the ground",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "ut-saltlakecity-1"
       },
       {
          "links": [
@@ -47,18 +51,8 @@
          "city": "Salt Lake City",
          "name": "Police shoot man on the ground in the spine with a beanbag point-blank",
          "date": "2020-05-30",
-         "date_text": "May 30th"
-      },
-      {
-         "links": [
-            "https://v.redd.it/fl4y919v1q251"
-         ],
-         "state": "Utah",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Utah.md",
-         "city": "Salt Lake City",
-         "name": "Police push and tackle man that is being vocal",
-         "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "May 30th",
+         "id": "ut-saltlakecity-2"
       },
       {
          "links": [
@@ -70,7 +64,33 @@
          "city": "Salt Lake City",
          "name": "Police shoot tear gas canister at man from close range, striking him in the chest",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "ut-saltlakecity-4"
+      },
+      {
+         "links": [
+            "https://v.redd.it/fl4y919v1q251"
+         ],
+         "state": "Utah",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Utah.md",
+         "city": "Salt Lake City",
+         "name": "Police push and tackle man that is being vocal",
+         "date": "2020-06-01",
+         "date_text": "June 1st",
+         "id": "ut-saltlakecity-3"
+      },
+      {
+         "links": [
+            "https://twitter.com/CorinneAllen20/status/1268000716884283393",
+            "https://twitter.com/CliffBraun/status/1268038070667849728"
+         ],
+         "state": "California",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+         "city": "Clayton",
+         "name": "Law enforcement gas teenagers at a park",
+         "date": "2020-06-02",
+         "date_text": "June 2nd",
+         "id": "ca-clayton-1"
       },
       {
          "links": [
@@ -81,7 +101,20 @@
          "city": "Compton",
          "name": "Police beat person on the ground",
          "date": "2020-06-01",
-         "date_text": "(believed to be) June 1st"
+         "date_text": "(believed to be) June 1st",
+         "id": "ca-compton-1"
+      },
+      {
+         "links": [
+            "https://old.reddit.com/r/orangecounty/comments/gvn42k/oc_sheriff_deputy_forgoing_his_name_badge_to_wear/"
+         ],
+         "state": "California",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+         "city": "Costa Mesa",
+         "name": "Law enforcement concealing badge",
+         "date": "2020-06-03",
+         "date_text": "June 3rd",
+         "id": "ca-costa-mesa-1"
       },
       {
          "links": [
@@ -92,7 +125,20 @@
          "city": "Hollywood",
          "name": "Law enforcement arrest people walking, you can hear on the radio \u201cYou should not be driving past anybody, stop and take somebody into custody\u201d.",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "ca-hollywood-2"
+      },
+      {
+         "links": [
+            "https://twitter.com/mamitbh/status/1267030342243778561"
+         ],
+         "state": "California",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+         "city": "La Mesa",
+         "name": "Law enforcement shoot and throw tear gas at protesters",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "ca-lamesa-4"
       },
       {
          "links": [
@@ -105,18 +151,8 @@
          "city": "La Mesa",
          "name": "Police shoot woman in the face",
          "date": "2020-05-31",
-         "date_text": "May 31st"
-      },
-      {
-         "links": [
-            "https://twitter.com/mamitbh/status/1267030342243778561"
-         ],
-         "state": "California",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
-         "city": "La Mesa",
-         "name": "Law enforcement shoot and throw tear gas at protesters",
-         "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 31st",
+         "id": "ca-lamesa-3"
       },
       {
          "links": [
@@ -128,32 +164,20 @@
          "city": "Long Beach",
          "name": "Reporter shot in neck by rubber bullet",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ca-longbeach-5"
       },
       {
          "links": [
-            "https://twitter.com/balleralert/status/1268014113105555456",
-            "https://twitter.com/theweirdingwayy/status/1268048483920928768",
-            "https://twitter.com/EarvinD/status/1268087279458775040",
-            "https://abc7.com/deputies-shoot-pepper-balls-at-skateboarders-in-hollywood---video/6230652/"
+            "https://www.reddit.com/r/2020PoliceBrutality/comments/gxjk67/reposted_wo_officer_name_footage_of_lapd_at_last/"
          ],
          "state": "California",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
          "city": "Los Angeles",
-         "name": "LAPD drive by shootings at fleeing people announcing \"This is an illegal assembly\"",
-         "date": "2020-06-02",
-         "date_text": "June 2"
-      },
-      {
-         "links": [
-            "https://peertube.slat.org/videos/watch/2dcae21d-6502-41f4-bdf2-9ae40c8e8cee"
-         ],
-         "state": "California",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
-         "city": "Los Angeles",
-         "name": "Police intimidate person filming them by shooting at apartment building",
+         "name": "LAPD officer beats multiple protesters that are filming them during a protest in Beverley Hills",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "ca-losangeles-7"
       },
       {
          "links": [
@@ -165,7 +189,8 @@
          "city": "Los Angeles",
          "name": "Los Angeles law enforcement beat protesters with batons",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "ca-losangeles-9"
       },
       {
          "links": [
@@ -176,7 +201,20 @@
          "city": "Los Angeles",
          "name": "ABC7 reporters are hit by tear gas",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "ca-losangeles-10"
+      },
+      {
+         "links": [
+            "https://www.reddit.com/r/2020PoliceBrutality/comments/gxjk67/reposted_wo_officer_name_footage_of_lapd_at_last/"
+         ],
+         "state": "California",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+         "city": "Los Angeles",
+         "name": "Police beat protesters with batons",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "ca-losangeles-11"
       },
       {
          "links": [
@@ -187,7 +225,8 @@
          "city": "Los Angeles",
          "name": "Police fire rubber/pepper bullets at innocent protestors",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ca-losangeles-12"
       },
       {
          "links": [
@@ -198,7 +237,8 @@
          "city": "Los Angeles",
          "name": "Police officer puts his knee on a protesters neck, is pulled off",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ca-losangeles-13"
       },
       {
          "links": [
@@ -209,7 +249,8 @@
          "city": "Los Angeles",
          "name": "Police shoot rubber bullets at protesters",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ca-losangeles-14"
       },
       {
          "links": [
@@ -221,7 +262,8 @@
          "city": "Los Angeles",
          "name": "Man shot in the head with deterrent rounds, is sent to hospital",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ca-losangeles-15"
       },
       {
          "links": [
@@ -232,7 +274,8 @@
          "city": "Los Angeles",
          "name": "Los Angeles law enforcement beat protesters for no apparent reason.",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ca-losangeles-16"
       },
       {
          "links": [
@@ -244,7 +287,8 @@
          "city": "Los Angeles",
          "name": "Police tackle and arrest protester, indiscriminately beat others with batons and shoot them with less lethals",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ca-losangeles-17"
       },
       {
          "links": [
@@ -260,7 +304,8 @@
          "city": "Los Angeles",
          "name": "LAPD SUV drives into protesters, speeds away",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ca-losangeles-18"
       },
       {
          "links": [
@@ -271,7 +316,20 @@
          "city": "Los Angeles",
          "name": "Los Angeles law enforcement shot at a man on his own balcony",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ca-losangeles-19"
+      },
+      {
+         "links": [
+            "https://www.tiktok.com/@w17ard/video/6833082563913977093?lang=en"
+         ],
+         "state": "California",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+         "city": "Los Angeles",
+         "name": "Police shoot crowd of unarmed protestors with rubber bullets",
+         "date": "2020-05-31",
+         "date_text": "Believed to be May 31st",
+         "id": "ca-losangeles-22"
       },
       {
          "links": [
@@ -283,7 +341,8 @@
          "city": "Los Angeles",
          "name": "Police strike protestors with batons",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "ca-losangeles-20"
       },
       {
          "links": [
@@ -295,18 +354,23 @@
          "city": "Los Angeles",
          "name": "Police shoot rubber bullets at two peaceful protestors",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "ca-losangeles-21"
       },
       {
          "links": [
-            "https://www.tiktok.com/@w17ard/video/6833082563913977093?lang=en"
+            "https://twitter.com/balleralert/status/1268014113105555456",
+            "https://twitter.com/theweirdingwayy/status/1268048483920928768",
+            "https://twitter.com/EarvinD/status/1268087279458775040",
+            "https://abc7.com/deputies-shoot-pepper-balls-at-skateboarders-in-hollywood---video/6230652/"
          ],
          "state": "California",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
          "city": "Los Angeles",
-         "name": "Police shoot crowd of unarmed protestors with rubber bullets",
-         "date": "2020-05-31",
-         "date_text": "Believed to be May 31st"
+         "name": "LAPD drive by shootings at fleeing people announcing \"This is an illegal assembly\"",
+         "date": "2020-06-02",
+         "date_text": "June 2nd",
+         "id": "ca-losangeles-6"
       },
       {
          "links": [
@@ -320,7 +384,8 @@
          "city": "Los Angeles",
          "name": "Police shoot unarmed man in a wheelchair in the face",
          "date": "2020-06-03",
-         "date_text": "June 3rd"
+         "date_text": "June 3rd",
+         "id": "ca-losangeles-23"
       },
       {
          "links": [
@@ -331,7 +396,8 @@
          "city": "Oakland",
          "name": "Officer runs down protesters with police cruiser",
          "date": "2020-05-30",
-         "date_text": "Believed to be May 30th"
+         "date_text": "Believed to be May 30th",
+         "id": "ca-oakland-24"
       },
       {
          "links": [
@@ -342,7 +408,8 @@
          "city": "Oakland",
          "name": "Oakland law enforcement shoot a reporter",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ca-oakland-25"
       },
       {
          "links": [
@@ -353,7 +420,8 @@
          "city": "Riverside",
          "name": "Law enforcement break a car window for no apparent reason",
          "date": "2020-06-02",
-         "date_text": "June 2nd"
+         "date_text": "June 2nd",
+         "id": "ca-riverside-26"
       },
       {
          "links": [
@@ -365,7 +433,8 @@
          "city": "Sacramento",
          "name": "Police shoot protester in the head",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ca-sacramento-27"
       },
       {
          "links": [
@@ -374,9 +443,10 @@
          "state": "California",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
          "city": "Sacramento",
-         "name": "Sacramento law enforcement shoot shoot protesters and then announce their assembly unlawful.",
+         "name": "Sacramento law enforcement shoot shoot protesters and then announce their assembly unlawful",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "ca-sacramento-28"
       },
       {
          "links": [
@@ -388,7 +458,8 @@
          "city": "Sacramento",
          "name": "Police choke man and push woman filming event to the ground",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "ca-sacramento-29"
       },
       {
          "links": [
@@ -399,19 +470,24 @@
          "city": "San Diego",
          "name": "Police abduct woman in unmarked van",
          "date": "2020-06-04",
-         "date_text": "June 4th"
+         "date_text": "June 4th",
+         "id": "ca-sandiego-30"
       },
       {
          "links": [
+            "https://twitter.com/junkieanteater/status/1266603252839141377",
             "https://www.reddit.com/r/PublicFreakout/comments/gtksgq/cop_decides_to_shoot_at_protestor_who_hurt_his/",
-            "https://www.reddit.com/r/PublicFreakout/comments/gtg2cb/cop_waits_in_excitement_like_its_a_game/"
+            "https://www.reddit.com/r/PublicFreakout/comments/gtg2cb/cop_waits_in_excitement_like_its_a_game/",
+            "https://twitter.com/bowiezamudio/status/1266598285206106113",
+            "https://twitter.com/kakimeows/status/1266982771005616128"
          ],
          "state": "California",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
          "city": "San Jose",
          "name": "Police shoot a projectile at a protestor",
-         "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date": "2020-05-29",
+         "date_text": "May 29th",
+         "id": "ca-sanjose-31"
       },
       {
          "links": [
@@ -422,7 +498,8 @@
          "city": "Santa Ana",
          "name": "Police open fire on protestors",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ca-santaana-32"
       },
       {
          "links": [
@@ -433,7 +510,8 @@
          "city": "San Luis Obispo",
          "name": "Law enforcement fire on crowd with their arms up chanting",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "ca-sanluisobispo-33"
       },
       {
          "links": [
@@ -444,7 +522,8 @@
          "city": "San Francisco",
          "name": "San Francisco law enforcement shove man off the sidewalk onto the ground",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ca-sanfrancisco-34"
       },
       {
          "links": [
@@ -455,18 +534,8 @@
          "city": "Santa Monica",
          "name": "Police fire pepper bullets into apartment",
          "date": "2020-05-31",
-         "date_text": "May 31st"
-      },
-      {
-         "links": [
-            "https://www.instagram.com/p/CA7KMc9pX5S/"
-         ],
-         "state": "California",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
-         "city": "Walnut Creek",
-         "name": "Armored law enforcement vehicle threatens protestors",
-         "date": "2020-06-02",
-         "date_text": "June 2nd"
+         "date_text": "May 31st",
+         "id": "ca-santamonica-35"
       },
       {
          "links": [
@@ -477,51 +546,20 @@
          "city": "Vallejo",
          "name": "Police fatally shoot unarmed 22 year old",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "ca-vallejo-37"
       },
       {
          "links": [
-            "https://twitter.com/imunoz03/status/1266908372881768448"
+            "https://www.instagram.com/p/CA7KMc9pX5S/"
          ],
-         "state": "Missouri",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Missouri.md",
-         "city": "Kansas City",
-         "name": "Police tear gas a park",
-         "date": "2020-05-31",
-         "date_text": "May 31st"
-      },
-      {
-         "links": [
-            "https://old.reddit.com/r/PublicFreakout/comments/guswxo/he_wasnt_even_addressing_the_police/"
-         ],
-         "state": "Missouri",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Missouri.md",
-         "city": "Kansas City",
-         "name": "Kansas City police attempt to arrest a man leading the protest then spray the crowd.",
-         "date": "",
-         "date_text": ""
-      },
-      {
-         "links": [
-            "https://twitter.com/weslyinfinity/status/1267321172309544960?"
-         ],
-         "state": "Missouri",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Missouri.md",
-         "city": "Kansas City",
-         "name": "Police arrest man for speaking and teargas nearby protestors",
-         "date": "2020-06-01",
-         "date_text": "June 1st"
-      },
-      {
-         "links": [
-            "https://www.reddit.com/r/2020PoliceBrutality/comments/gut8n1/in_kansas_city/"
-         ],
-         "state": "Missouri",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Missouri.md",
-         "city": "Kansas City",
-         "name": "Police pullaway protestor and pepper sprays others",
-         "date": "2020-06-01",
-         "date_text": "June 1st"
+         "state": "California",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+         "city": "Walnut Creek",
+         "name": "Armored law enforcement vehicle threatens protestors",
+         "date": "2020-06-02",
+         "date_text": "June 2nd",
+         "id": "ca-walnutcreek-36"
       },
       {
          "links": [
@@ -533,7 +571,8 @@
          "city": "Kansas City",
          "name": "Police pepper spray and arrest protestor holding sign",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "mo-kansascity-5"
       },
       {
          "links": [
@@ -545,7 +584,56 @@
          "city": "Kansas City",
          "name": "Police pepper spray protestors walking away and later arrest one of them",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "mo-kansascity-6"
+      },
+      {
+         "links": [
+            "https://twitter.com/imunoz03/status/1266908372881768448"
+         ],
+         "state": "Missouri",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Missouri.md",
+         "city": "Kansas City",
+         "name": "Police tear gas a park",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "mo-kansascity-1"
+      },
+      {
+         "links": [
+            "https://old.reddit.com/r/PublicFreakout/comments/guswxo/he_wasnt_even_addressing_the_police/"
+         ],
+         "state": "Missouri",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Missouri.md",
+         "city": "Kansas City",
+         "name": "Kansas City police attempt to arrest a man leading the protest then spray the crowd",
+         "date": "2020-06-01",
+         "date_text": "(Believed to be) June 1st",
+         "id": "mo-kansascity-2"
+      },
+      {
+         "links": [
+            "https://twitter.com/weslyinfinity/status/1267321172309544960?"
+         ],
+         "state": "Missouri",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Missouri.md",
+         "city": "Kansas City",
+         "name": "Police arrest man for speaking and teargas nearby protestors",
+         "date": "2020-06-01",
+         "date_text": "June 1st",
+         "id": "mo-kansascity-3"
+      },
+      {
+         "links": [
+            "https://www.reddit.com/r/2020PoliceBrutality/comments/gut8n1/in_kansas_city/"
+         ],
+         "state": "Missouri",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Missouri.md",
+         "city": "Kansas City",
+         "name": "Police pullaway protestor and pepper sprays others",
+         "date": "2020-06-01",
+         "date_text": "June 1st",
+         "id": "mo-kansascity-4"
       },
       {
          "links": [
@@ -556,7 +644,8 @@
          "city": "Phoenix",
          "name": "Officer tackles and arrests person walking home from protest",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "az-phoenix-1"
       },
       {
          "links": [
@@ -567,7 +656,8 @@
          "city": "Des Moines",
          "name": "Police use or threaten to use pepper-spray in an elevator on apartment residents trying to go home",
          "date": "2020-06-02",
-         "date_text": "(believed to be) June 2nd"
+         "date_text": "(believed to be) June 2nd",
+         "id": "ia-desmoines-1"
       },
       {
          "links": [
@@ -578,7 +668,20 @@
          "city": "Iowa City",
          "name": "Police shoot tear gas at peaceful protestors who have their hands up",
          "date": "2020-06-03",
-         "date_text": "June 3rd"
+         "date_text": "June 3rd",
+         "id": "ia-iowacity-2"
+      },
+      {
+         "links": [
+            "https://twitter.com/itsraiialex/status/1266770032719040513"
+         ],
+         "state": "Nevada",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Nevada.md",
+         "city": "Las Vegas",
+         "name": "Police arrest a man for speaking at them from a distance.",
+         "date": "2020-05-29",
+         "date_text": "May 29th.",
+         "id": "nv-lasvegas-3"
       },
       {
          "links": [
@@ -590,7 +693,8 @@
          "city": "Las Vegas",
          "name": "Police shove and drag man through the street",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "nv-lasvegas-1"
       },
       {
          "links": [
@@ -601,7 +705,32 @@
          "city": "Las Vegas",
          "name": "Police charge into peaceful crowd shouting \"grab anybody\"",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "nv-lasvegas-2"
+      },
+      {
+         "links": [
+            "https://twitter.com/Youbeenafannn/status/1268253924471037959"
+         ],
+         "state": "Connecticut",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Connecticut.md",
+         "city": "Waterbury",
+         "name": "Officer forces women into car and wrestles with another",
+         "date": "2020-06-03",
+         "date_text": "June 3rd"
+      },
+      {
+         "links": [
+            "https://twitter.com/mattaustinTV/status/1267189278691528706",
+            "https://twitter.com/RACCEWtby/status/1268173057375514624",
+            "https://twitter.com/Calibud_Art/status/1268274760250777600"
+         ],
+         "state": "Connecticut",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Connecticut.md",
+         "city": "Waterbury",
+         "name": "Police tackle and detain 6 protestors",
+         "date": "2020-05-31",
+         "date_text": "May 31st"
       },
       {
          "links": [
@@ -614,7 +743,8 @@
          "city": "Erie",
          "name": "Police officer maces woman and kicks her in the head",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "pa-erie-1"
       },
       {
          "links": [
@@ -625,7 +755,8 @@
          "city": "Harrisburg",
          "name": "Police pepperspray protesters helping someone stand up",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "pa-harrisburg-2"
       },
       {
          "links": [
@@ -636,7 +767,8 @@
          "city": "Philadelphia",
          "name": "Police beat down man",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "pa-philadelphia-3"
       },
       {
          "links": [
@@ -647,10 +779,12 @@
          "city": "Philadelphia",
          "name": "Police drag cooperating man from car and punch him in the face",
          "date": "",
-         "date_text": ""
+         "date_text": "",
+         "id": "pa-philadelphia-4"
       },
       {
          "links": [
+            "https://metro.co.uk/2020/06/01/cop-put-baton-george-floyd-protesters-hand-put-knee-neck-12789427/",
             "https://twitter.com/mkultranews/status/1267305587206807553"
          ],
          "state": "Pennsylvania",
@@ -658,7 +792,8 @@
          "city": "Philadelphia",
          "name": "Philadelphia cops beat man and forcefully put his fingers on their baton.",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "pa-philadelphia-5"
       },
       {
          "links": [
@@ -672,9 +807,10 @@
          "state": "Pennsylvania",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Pennsylvania.md",
          "city": "Philadelphia",
-         "name": "Philadelphia Police Trap Protesters on Highway, Then Tear Gas Them",
+         "name": "Philadelphia Police Trap Protesters on Highway, Then Tear Gas Them and Shoot Rubber Bullets",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "pa-philadelphia-6"
       },
       {
          "links": [
@@ -685,7 +821,8 @@
          "city": "Philadelphia",
          "name": "Police officer pepper-sprays three people on their knees",
          "date": "2020-06-01",
-         "date_text": "believed to be June 1st"
+         "date_text": "believed to be June 1st",
+         "id": "pa-philadelphia-7"
       },
       {
          "links": [
@@ -696,19 +833,23 @@
          "city": "Philadelphia",
          "name": "Police kneel on man who says \"I can't breathe\", officer yells profanities back",
          "date": "2020-06-03",
-         "date_text": "believed to be June 3rd"
+         "date_text": "believed to be June 3rd",
+         "id": "pa-philadelphia-8"
       },
       {
          "links": [
             "https://twitter.com/greg_doucette/status/1268766216161763328",
-            "https://twitter.com/Peopledelphia/status/1267588991655784448"
+            "https://twitter.com/Peopledelphia/status/1267588991655784448",
+            "https://www.inquirer.com/news/philadelphia-police-beating-temple-student-joseph-bologna-protest-20200605.html",
+            "https://whyy.org/articles/philly-police-commander-videotaped-beating-protesters-linked-to-narcotics-scandal-misconduct/"
          ],
          "state": "Pennsylvania",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Pennsylvania.md",
          "city": "Philadelphia",
-         "name": "Police shove protestors and strike woman across the face with a baton",
+         "name": "Police shove protestors and strike man across the face with a baton",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "Jun 1st",
+         "id": "pa-philadelphia-9"
       },
       {
          "links": [
@@ -721,7 +862,8 @@
          "city": "Pittsburgh",
          "name": "Officer pepper-sprays a woman who is on her knees with her hands up",
          "date": "",
-         "date_text": ""
+         "date_text": "",
+         "id": "pa-pittsburgh-10"
       },
       {
          "links": [
@@ -734,7 +876,8 @@
          "city": "Pittsburgh",
          "name": "Police fire tear gas and rubber bullets on peaceful assembly",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "pa-pittsburgh-11"
       },
       {
          "links": [
@@ -745,7 +888,8 @@
          "city": "Buffalo",
          "name": "Police tackle man giving interview",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "ny-buffalo-1"
       },
       {
          "links": [
@@ -760,7 +904,8 @@
          "city": "Buffalo",
          "name": "Police shove elderly man, causing him to fall and hit the back of his head",
          "date": "2020-06-04",
-         "date_text": "June 4th"
+         "date_text": "June 4th",
+         "id": "ny-buffalo-2"
       },
       {
          "links": [
@@ -771,100 +916,8 @@
          "city": "Rochester",
          "name": "Police shoot at people filming",
          "date": "2020-05-31",
-         "date_text": "May 31st"
-      },
-      {
-         "links": [
-            "https://twitter.com/jhermann/status/1268043720399691776",
-            "https://twitter.com/altochulo/status/1268018561571840000"
-         ],
-         "state": "New York",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
-         "city": "New York City",
-         "name": "Police officer body slams protestor",
-         "date": "2020-06-02",
-         "date_text": "June 2nd"
-      },
-      {
-         "links": [
-            "https://twitter.com/Stoney_Holiday/status/1266616250685444096",
-            "https://www.instagram.com/p/CAzSOtGlKQY/"
-         ],
-         "state": "New York",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
-         "city": "New York City",
-         "name": "Police officer throws man against police car",
-         "date": "2020-05-30",
-         "date_text": "May 30th"
-      },
-      {
-         "links": [
-            "https://twitter.com/_doreenpt/status/1266994439039455232"
-         ],
-         "state": "New York",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
-         "city": "New York City",
-         "name": "Police pull off protesters mask to pepper spray him",
-         "date": "2020-05-31",
-         "date_text": "May 31st"
-      },
-      {
-         "links": [
-            "https://twitter.com/j0ncampbell/status/1266514356071735296"
-         ],
-         "state": "New York",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
-         "city": "New York City",
-         "name": "NYPD beat people with batons",
-         "date": "2020-05-30",
-         "date_text": "May 30th"
-      },
-      {
-         "links": [
-            "https://twitter.com/ZachReports/status/1266557305107202049",
-            "https://twitter.com/BTSsavedmylife9/status/1266754310161006594"
-         ],
-         "state": "New York",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
-         "city": "New York City",
-         "name": "Cop shoves a guy into a metal fence",
-         "date": "2020-05-30",
-         "date_text": "May 30th"
-      },
-      {
-         "links": [
-            "https://twitter.com/crankberries/status/1266584559245803522",
-            "https://twitter.com/greg_doucette/status/1266850004720812032"
-         ],
-         "state": "New York",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
-         "city": "New York City",
-         "name": "Cop shoving a person to the ground towards metal trash bins",
-         "date": "2020-05-30",
-         "date_text": "May 30th"
-      },
-      {
-         "links": [
-            "https://twitter.com/pgarapon/status/1266885414016688134",
-            "https://twitter.com/mkultranews/status/1266893237450498048"
-         ],
-         "state": "New York",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
-         "city": "New York City",
-         "name": "NYPD rams protesters",
-         "date": "2020-05-31",
-         "date_text": "May 31st"
-      },
-      {
-         "links": [
-            "https://twitter.com/theactivistTati/status/1266889419858075649"
-         ],
-         "state": "New York",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
-         "city": "New York City",
-         "name": "Police assault protesters",
-         "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ny-rochester-3"
       },
       {
          "links": [
@@ -877,7 +930,8 @@
          "city": "New York City",
          "name": "Police shove woman to the ground, inducing a seizure",
          "date": "2020-05-29",
-         "date_text": "May 29th"
+         "date_text": "May 29th",
+         "id": "ny-newyorkcity-12"
       },
       {
          "links": [
@@ -888,29 +942,72 @@
          "city": "New York City",
          "name": "Police drive by man and hit him with car door",
          "date": "2020-05-29",
-         "date_text": "May 29th"
+         "date_text": "May 29th",
+         "id": "ny-newyorkcity-13"
       },
       {
          "links": [
-            "https://twitter.com/zellnor4ny/status/1266802303807500288"
+            "https://www.cityandstateny.com/articles/politics/news-politics/even-black-lawmakers-get-pepper-sprayed.html",
+            "https://twitter.com/GwynneFitz/status/1266522692326428672"
          ],
          "state": "New York",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
          "city": "New York City",
-         "name": "State senator pepper sprayed",
-         "date": "2020-05-31",
-         "date_text": "May 31st"
+         "name": "Member of the New York State Assembly pepper-sprayed",
+         "date": "2020-05-29",
+         "date_text": "May 29th",
+         "id": "ny-newyorkcity-17"
       },
       {
          "links": [
-            "https://www.reddit.com/r/2020PoliceBrutality/comments/gu2u28/more_documented_aggression_in_flatbush_brooklyn/"
+            "https://twitter.com/Stoney_Holiday/status/1266616250685444096",
+            "https://www.instagram.com/p/CAzSOtGlKQY/"
          ],
          "state": "New York",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
          "city": "New York City",
-         "name": "Protesters with hands up assaulted by police",
-         "date": "2020-05-31",
-         "date_text": "May 31st"
+         "name": "Police officer throws man against police car",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "ny-newyorkcity-5"
+      },
+      {
+         "links": [
+            "https://twitter.com/j0ncampbell/status/1266514356071735296"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "NYPD beat people with batons",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "ny-newyorkcity-7"
+      },
+      {
+         "links": [
+            "https://twitter.com/ZachReports/status/1266557305107202049",
+            "https://twitter.com/BTSsavedmylife9/status/1266754310161006594"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "Cop shoves a guy into a metal fence",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "ny-newyorkcity-8"
+      },
+      {
+         "links": [
+            "https://twitter.com/crankberries/status/1266584559245803522",
+            "https://twitter.com/greg_doucette/status/1266850004720812032"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "Cop shoving a person to the ground towards metal trash bins",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "ny-newyorkcity-9"
       },
       {
          "links": [
@@ -922,18 +1019,93 @@
          "city": "New York City",
          "name": "Huffpost reporter is arrested by NYPD",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "ny-newyorkcity-16"
       },
       {
          "links": [
-            "https://twitter.com/GwynneFitz/status/1266522692326428672"
+            "https://twitter.com/_doreenpt/status/1266994439039455232"
          ],
          "state": "New York",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
          "city": "New York City",
-         "name": "Member of the New York State Assembly pepper-sprayed",
-         "date": "",
-         "date_text": ""
+         "name": "Police pull off protesters mask to pepper spray him",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "ny-newyorkcity-6"
+      },
+      {
+         "links": [
+            "https://twitter.com/pgarapon/status/1266885414016688134",
+            "https://twitter.com/mkultranews/status/1266893237450498048"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "NYPD rams protesters",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "ny-newyorkcity-10"
+      },
+      {
+         "links": [
+            "https://twitter.com/theactivistTati/status/1266889419858075649"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "Police assault protesters",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "ny-newyorkcity-11"
+      },
+      {
+         "links": [
+            "https://twitter.com/zellnor4ny/status/1266802303807500288"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "State senator pepper sprayed",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "ny-newyorkcity-14"
+      },
+      {
+         "links": [
+            "https://www.reddit.com/r/2020PoliceBrutality/comments/gu2u28/more_documented_aggression_in_flatbush_brooklyn/"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "Protesters with hands up assaulted by police",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "ny-newyorkcity-15"
+      },
+      {
+         "links": [
+            "https://twitter.com/tylergabriel_/status/1267287516345925632"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "Police injure journalist",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "ny-newyorkcity-24"
+      },
+      {
+         "links": [
+            "https://wapo.st/2Mx7WY6",
+            "https://www.washingtonpost.com/national/protests-police-brutality-video/2020/06/05/a9e66568-a768-11ea-b473-04905b1af82b_story.html"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "Officers beat man until his face and belongings are bloody",
+         "date": "2020-05-31",
+         "date_text": "May 31"
       },
       {
          "links": [
@@ -944,7 +1116,33 @@
          "city": "New York City",
          "name": "Officer threatens protestors with what appears to be a handgun",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "ny-newyorkcity-18"
+      },
+      {
+         "links": [
+            "https://twitter.com/jhermann/status/1268043720399691776",
+            "https://twitter.com/altochulo/status/1268018561571840000"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "Police officer body slams protestor",
+         "date": "2020-06-02",
+         "date_text": "June 2nd",
+         "id": "ny-newyorkcity-4"
+      },
+      {
+         "links": [
+            "https://www.lgbtqnation.com/2020/06/cops-beat-lgbtq-protestors-leaving-demonstration-stonewall-inn/"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "Police beat protesters leaving Stonewall Inn solidarity protest",
+         "date": "2020-06-02",
+         "date_text": "June 2nd",
+         "id": "ny-newyorkcity-19"
       },
       {
          "links": [
@@ -955,8 +1153,9 @@
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
          "city": "New York City",
          "name": "Officers beat man with batons",
-         "date": "",
-         "date_text": ""
+         "date": "2020-06-02",
+         "date_text": "(Believed to be) June 2nd",
+         "id": "ny-newyorkcity-20"
       },
       {
          "links": [
@@ -968,7 +1167,8 @@
          "city": "New York City",
          "name": "Man walking his bike beaten by officers with batons",
          "date": "2020-06-03",
-         "date_text": "June 3rd"
+         "date_text": "June 3rd",
+         "id": "ny-newyorkcity-21"
       },
       {
          "links": [
@@ -979,7 +1179,44 @@
          "city": "New York City",
          "name": "NYPD Officers hit and knock down a protestor and a journalist",
          "date": "2020-06-04",
-         "date_text": "June 4th"
+         "date_text": "June 4th",
+         "id": "ny-newyorkcity-22"
+      },
+      {
+         "links": [
+            "https://twitter.com/sa0un/status/1268933117827571714"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "Officers arrest cyclists; a man who questions police is clubbed in the neck",
+         "date": "2020-06-04",
+         "date_text": "June 4th",
+         "id": "ny-newyorkcity-25"
+      },
+      {
+         "links": [
+            "https://twitter.com/AndomForNY/status/1269065176814358529"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "NYPD pushes crowd into tight space and attacks several with batons",
+         "date": "2020-06-05",
+         "date_text": "June 5th",
+         "id": "ny-newyorkcity-23"
+      },
+      {
+         "links": [
+            "https://twitter.com/joeguillen/status/1266563974658744321"
+         ],
+         "state": "Michigan",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Michigan.md",
+         "city": "Detroit",
+         "name": "Officer charges through other officers to attack a protestor who is backing away",
+         "date": "2020-05-29",
+         "date_text": "May 29th",
+         "id": "mi-detroit-4"
       },
       {
          "links": [
@@ -990,7 +1227,8 @@
          "city": "Detroit",
          "name": "Police shove and scream at men walking down the street",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "mi-detroit-1"
       },
       {
          "links": [
@@ -1002,7 +1240,8 @@
          "city": "Detroit",
          "name": "Police pepperspray reporter holding up media badge",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "mi-detroit-2"
       },
       {
          "links": [
@@ -1013,18 +1252,8 @@
          "city": "Detroit",
          "name": "Police shoot rubber bullets at reporters",
          "date": "2020-05-30",
-         "date_text": "May 30th"
-      },
-      {
-         "links": [
-            "https://twitter.com/joeguillen/status/1266563974658744321"
-         ],
-         "state": "Michigan",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Michigan.md",
-         "city": "Detroit",
-         "name": "Officer charges through other officers to attack a protestor who is backing away",
-         "date": "2020-05-29",
-         "date_text": "May 29th"
+         "date_text": "May 30th",
+         "id": "mi-detroit-3"
       },
       {
          "links": [
@@ -1037,7 +1266,8 @@
          "city": "Grand Rapids",
          "name": "Police spray unarmed man with pepperspray and shoot him in the face with a teargas canister",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "mi-grandrapids-5"
       },
       {
          "links": [
@@ -1049,7 +1279,8 @@
          "city": "Kalamazoo",
          "name": "Police fire tear gas at prone protesters",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "mi-kalamazoo-6"
       },
       {
          "links": [
@@ -1063,7 +1294,8 @@
          "city": "Kalamazoo",
          "name": "Police fire tear gas at peaceful protesters",
          "date": "2020-06-02",
-         "date_text": "June 2nd ~7:30pm EDT"
+         "date_text": "June 2nd ~7:30pm EDT",
+         "id": "mi-kalamazoo-7"
       },
       {
          "links": [
@@ -1074,7 +1306,8 @@
          "city": "",
          "name": "Compilation of incidents",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "tbd-tbd-1"
       },
       {
          "links": [
@@ -1085,7 +1318,8 @@
          "city": "",
          "name": "Officer beats a protestor while pinning him on the ground",
          "date": "",
-         "date_text": ""
+         "date_text": "",
+         "id": "tbd-tbd-2"
       },
       {
          "links": [
@@ -1096,7 +1330,8 @@
          "city": "Memphis",
          "name": "Police swarm a woman without provocation",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "tn-memphis-1"
       },
       {
          "links": [
@@ -1108,7 +1343,8 @@
          "city": "St. Johnsbury",
          "name": "Police shove a protesting woman down a set of concrete steps.",
          "date": "2020-06-03",
-         "date_text": "June 3rd"
+         "date_text": "June 3rd",
+         "id": "vt-stjohnsbury-1"
       },
       {
          "links": [
@@ -1119,7 +1355,8 @@
          "city": "Seattle",
          "name": "Officer pins protestor by pushing his knee into his neck",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "wa-seattle-1"
       },
       {
          "links": [
@@ -1130,7 +1367,8 @@
          "city": "Seattle",
          "name": "Police beat unarmed man on the ground",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "wa-seattle-2"
       },
       {
          "links": [
@@ -1141,7 +1379,8 @@
          "city": "Seattle",
          "name": "Police indiscriminately pepper spray peaceful protesters",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "wa-seattle-3"
       },
       {
          "links": [
@@ -1152,7 +1391,47 @@
          "city": "Seattle",
          "name": "Police pepper spray young child",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "wa-seattle-4"
+      },
+      {
+         "links": [
+            "https://www.reddit.com/r/Seattle/comments/gu3qq1/cop_just_casually_tosses_tear_gas_at_my_feet_like/",
+            "https://www.google.ca/maps/@47.6117535,-122.3363867,3a,75y,340.76h,98.03t/data="
+         ],
+         "state": "Washington",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington.md",
+         "city": "Seattle",
+         "name": "Police throw tear gas at peaceful protestors",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "wa-seattle-8"
+      },
+      {
+         "links": [
+            "https://twitter.com/EDDIFUL/status/1267338642617364481",
+            "https://www.reddit.com/r/PublicFreakout/comments/gv9g5n/the_police_were_spotted_instigating_violence/",
+            "https://peertube.live/videos/watch/9e9323af-3ea1-4d3c-856d-a7f0a66688e7"
+         ],
+         "state": "Washington",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington.md",
+         "city": "Seattle",
+         "name": "Police officer pulls protestor to the ground unprovoked",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "wa-seattle-6"
+      },
+      {
+         "links": [
+            "https://twitter.com/The_Stepover/status/1267237940184231936"
+         ],
+         "state": "Washington",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington.md",
+         "city": "Seattle",
+         "name": "Law enforcement officers throw flashbangs into peaceful crowd",
+         "date": "2020-05-31",
+         "date_text": "(Believed to be) May 31st",
+         "id": "wa-seattle-7"
       },
       {
          "links": [
@@ -1164,7 +1443,8 @@
          "city": "Seattle",
          "name": "Police initiate violence",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "wa-seattle-9"
       },
       {
          "links": [
@@ -1175,7 +1455,8 @@
          "city": "Seattle",
          "name": "Police strike active newscrew with flashbang",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "wa-seattle-10"
       },
       {
          "links": [
@@ -1186,31 +1467,8 @@
          "city": "Seattle",
          "name": "Officers deploy flashbangs and pepper spray peaceful protesters",
          "date": "2020-06-02",
-         "date_text": "June 2nd"
-      },
-      {
-         "links": [
-            "https://www.reddit.com/r/PublicFreakout/comments/gv9g5n/the_police_were_spotted_instigating_violence/",
-            "https://peertube.live/videos/watch/9e9323af-3ea1-4d3c-856d-a7f0a66688e7"
-         ],
-         "state": "Washington",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington.md",
-         "city": "Seattle",
-         "name": "Police officer pulls protestor to the ground unprovoked",
-         "date": "2020-06-02",
-         "date_text": "June 2nd"
-      },
-      {
-         "links": [
-            "https://twitter.com/nataliealund/status/1266877181164089349",
-            "https://twitter.com/WFPLNews/status/1266923468102262784"
-         ],
-         "state": "Kentucky",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Kentucky.md",
-         "city": "Louisville",
-         "name": "Police smashing water bottles",
-         "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "June 2nd",
+         "id": "wa-seattle-5"
       },
       {
          "links": [
@@ -1223,18 +1481,8 @@
          "city": "Louisville",
          "name": "Police shoot rubber bullets at reporter",
          "date": "2020-05-30",
-         "date_text": "May 30th"
-      },
-      {
-         "links": [
-            "https://reddit.com/r/PublicFreakout/comments/gutezm/multiple_kentucky_state_police_troopers_tackled/"
-         ],
-         "state": "Kentucky",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Kentucky.md",
-         "city": "Louisville",
-         "name": "Louisville police swarm and beat a man screaming on the ground",
-         "date": "2020-06-01",
-         "date_text": "Believed to be June 1st"
+         "date_text": "May 30th",
+         "id": "ky-louisville-2"
       },
       {
          "links": [
@@ -1246,7 +1494,21 @@
          "city": "Louisville",
          "name": "Young woman shot in the head by a rubber bullet",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "ky-louisville-4"
+      },
+      {
+         "links": [
+            "https://twitter.com/nataliealund/status/1266877181164089349",
+            "https://twitter.com/WFPLNews/status/1266923468102262784"
+         ],
+         "state": "Kentucky",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Kentucky.md",
+         "city": "Louisville",
+         "name": "Police smashing water bottles",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "ky-louisville-1"
       },
       {
          "links": [
@@ -1257,7 +1519,20 @@
          "city": "Louisville",
          "name": "Police shoot at cars in traffic from overpass",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ky-louisville-5"
+      },
+      {
+         "links": [
+            "https://reddit.com/r/PublicFreakout/comments/gutezm/multiple_kentucky_state_police_troopers_tackled/"
+         ],
+         "state": "Kentucky",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Kentucky.md",
+         "city": "Louisville",
+         "name": "Louisville police swarm and beat a man screaming on the ground",
+         "date": "2020-06-01",
+         "date_text": "Believed to be June 1st",
+         "id": "ky-louisville-3"
       },
       {
          "links": [
@@ -1272,7 +1547,8 @@
          "city": "Louisville",
          "name": "Restaurant owner shot and killed",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "ky-louisville-6"
       },
       {
          "links": [
@@ -1283,7 +1559,8 @@
          "city": "Louisville",
          "name": "Protestors in St. Matthews shot with pepper rounds",
          "date": "2020-06-03",
-         "date_text": "June 3rd"
+         "date_text": "June 3rd",
+         "id": "ky-louisville-7"
       },
       {
          "links": [
@@ -1296,7 +1573,8 @@
          "city": "Charleston",
          "name": "Police Individually Target Peaceful Protestor and Arrest Him",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "sc-charleston-1"
       },
       {
          "links": [
@@ -1311,6 +1589,18 @@
       },
       {
          "links": [
+            "https://www.cnn.com/2020/06/05/us/atlanta-police-body-slam-woman/index.html"
+         ],
+         "state": "Georgia",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Georgia.md",
+         "city": "Atlanta",
+         "name": "Officer body slams woman onto ground",
+         "date": "2020-05-29",
+         "date_text": "May 29th",
+         "id": "ga-atlanta-1"
+      },
+      {
+         "links": [
             "https://twitter.com/ava/status/1266797973834395648?s=20"
          ],
          "state": "Georgia",
@@ -1318,7 +1608,8 @@
          "city": "Atlanta",
          "name": "Officer shoves a woman with his bike",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "ga-atlanta-2"
       },
       {
          "links": [
@@ -1332,7 +1623,8 @@
          "city": "Atlanta",
          "name": "Cops pull people out of their car, taze them",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "ga-atlanta-3"
       },
       {
          "links": [
@@ -1344,7 +1636,8 @@
          "city": "Lawrenceville",
          "name": "Man tased in back for speaking up after man on ground is punched in face by cop",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "ga-lawrenceville-4"
       },
       {
          "links": [
@@ -1355,7 +1648,8 @@
          "city": "Fort Lauderdale",
          "name": "Police Shove a woman down to her knees",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "fl-fortlauderdale-1"
       },
       {
          "links": [
@@ -1366,7 +1660,8 @@
          "city": "Fort Lauderdale",
          "name": "Law enforcement shoot a woman in the head",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "fl-fortlauderdale-2"
       },
       {
          "links": [
@@ -1377,7 +1672,8 @@
          "city": "Miami",
          "name": "Man tackled to ground after speaking to police",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "fl-miami-3"
       },
       {
          "links": [
@@ -1388,7 +1684,21 @@
          "city": "Orlando",
          "name": "Police use excessive force during an arrest",
          "date": "2020-06-02",
-         "date_text": "June 2nd"
+         "date_text": "June 2nd",
+         "id": "fl-orlando-4"
+      },
+      {
+         "links": [
+            "https://twitter.com/greg_doucette/status/1269017349727928320",
+            "https://www.google.com/maps/place/29+W+South+St,+Orlando,+FL+32801,+USA/@28.5384293,-81.3797504,20z/data="
+         ],
+         "state": "Florida",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Florida.md",
+         "city": "Orlando",
+         "name": "Police fire on protesters outside city hall",
+         "date": "",
+         "date_text": "Date unknown",
+         "id": "fl-orlando-5"
       },
       {
          "links": [
@@ -1402,7 +1712,8 @@
          "city": "Tampa",
          "name": "One woman is pinned to the ground and another is pepper-sprayed",
          "date": "2020-06-04",
-         "date_text": "June 4th"
+         "date_text": "June 4th",
+         "id": "fl-tampa-6"
       },
       {
          "links": [
@@ -1414,7 +1725,8 @@
          "city": "Fargo",
          "name": "Police using selective enforcement on black individuals",
          "date": "2020-06-03",
-         "date_text": "June 3rd"
+         "date_text": "June 3rd",
+         "id": "nd-fargo-1"
       },
       {
          "links": [
@@ -1425,31 +1737,48 @@
          "city": "Madison",
          "name": "Officer pepper-sprays protestor walking backwards with arms raised",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "wi-madison-1"
+      },
+      {
+         "links": [
+            "http://www.milwaukeeindependent.com/articles/milwaukee-common-council-calls-investigation-use-knee-police-restrain-protestor/",
+            "https://old.reddit.com/r/gifs/comments/gxptyo/june_2_2020_milwaukee_police_punch_and_knee/",
+            "https://www.google.ca/maps/place/N+6th+St+%26+W+Vliet+St,+Milwaukee,+WI+53205,+USA/@43.0483922,-87.9188126,3a,75y,1.17h,90t/data="
+         ],
+         "state": "Wisconsin",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Wisconsin.md",
+         "city": "Milwaukee",
+         "name": "Police restrain man using knee on neck",
+         "date": "2020-06-02",
+         "date_text": "June 2nd"
+      },
+      {
+         "links": [
+            "https://www.facebook.com/1462345700/posts/10220863688809651"
+         ],
+         "state": "Minnesota",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
+         "city": "Minneapolis",
+         "name": "Police shoot flashbang grenades into crowd",
+         "date": "2020-05-26",
+         "date_text": "believed to be May 26th or 27th",
+         "id": "mn-minneapolis-14"
       },
       {
          "links": [
             "https://twitter.com/MichaelAdams317/status/1266945268567678976",
             "https://twitter.com/rsdaza/status/1267200011659554824",
-            "https://twitter.com/MichaelAdams317/status/1267203751913422849"
+            "https://twitter.com/MichaelAdams317/status/1267203751913422849",
+            "https://www.vice.com/en_us/article/y3zd7g/i-told-riot-cops-im-a-journalist-they-forced-me-to-the-ground-and-pepper-sprayed-me-in-the-face"
          ],
          "state": "Minnesota",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
          "city": "Minneapolis",
          "name": "Police storm gas station, attacking reporters who show press badges",
          "date": "2020-05-30",
-         "date_text": "May 30th"
-      },
-      {
-         "links": [
-            "https://twitter.com/tkerssen/status/1266921821653385225"
-         ],
-         "state": "Minnesota",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
-         "city": "Minneapolis",
-         "name": "Police shoot at a woman on her porch",
-         "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 30th",
+         "id": "mn-minneapolis-1"
       },
       {
          "links": [
@@ -1461,7 +1790,8 @@
          "city": "Minneapolis",
          "name": "Police drive by spraying",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "mn-minneapolis-3"
       },
       {
          "links": [
@@ -1472,7 +1802,8 @@
          "city": "Minneapolis",
          "name": "CNN Reporter arrested",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "mn-minneapolis-4"
       },
       {
          "links": [
@@ -1483,7 +1814,58 @@
          "city": "Minneapolis",
          "name": "WCCO photojournalist arrested",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "mn-minneapolis-5"
+      },
+      {
+         "links": [
+            "https://mobile.twitter.com/chadloder/status/1266962631887224837"
+         ],
+         "state": "Minnesota",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
+         "city": "Minneapolis",
+         "name": "CNN crew shot at with rubber bullets and tear gas while live on air",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "mn-minneapolis-15"
+      },
+      {
+         "links": [
+            "https://twitter.com/greg_doucette/status/1267118696960528386"
+         ],
+         "state": "Minnesota",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
+         "city": "Minneapolis",
+         "name": "Police shoot rubber bullets and teargas at an MSNBC reporter",
+         "date": "2020-05-30",
+         "date_text": "believed to be May 30th",
+         "id": "mn-minneapolis-16"
+      },
+      {
+         "links": [
+            "https://www.srf.ch/play/tv/news-clip/video/schweizer-journalisten-werden-mit-gummischrot-attackiert?id=67d44dd8-f16e-4db0-b690-799ab827956a&startTime=9",
+            "https://www.srf.ch/news/international/pressefreiheit-unter-beschuss-schweizer-journalisten-in-den-usa-von-polizei-attackiert",
+            "https://www.swissinfo.ch/eng/minneapolis-protests-_rubber-bullets-shot-at-swiss-journalists-by-us-police-/45808806"
+         ],
+         "state": "Minnesota",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
+         "city": "Minneapolis",
+         "name": "Swiss journalists shot at with rubber bullets by police",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "mn-minneapolis-17"
+      },
+      {
+         "links": [
+            "https://twitter.com/tkerssen/status/1266921821653385225"
+         ],
+         "state": "Minnesota",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
+         "city": "Minneapolis",
+         "name": "Police shoot at a woman on her porch",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "mn-minneapolis-2"
       },
       {
          "links": [
@@ -1495,7 +1877,8 @@
          "city": "Minneapolis",
          "name": "LA-Times employee recounts getting shot",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "mn-minneapolis-6"
       },
       {
          "links": [
@@ -1506,7 +1889,8 @@
          "city": "Minneapolis",
          "name": "Reporter shares his experience",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "mn-minneapolis-7"
       },
       {
          "links": [
@@ -1519,7 +1903,8 @@
          "city": "Minneapolis",
          "name": "Police slashes tires",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "mn-minneapolis-8"
       },
       {
          "links": [
@@ -1531,7 +1916,8 @@
          "city": "Minneapolis",
          "name": "CBS news crew shot with rubber bullets",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "mn-minneapolis-9"
       },
       {
          "links": [
@@ -1542,7 +1928,8 @@
          "city": "Minneapolis",
          "name": "Police throw flashbangs at reporter",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "mn-minneapolis-10"
       },
       {
          "links": [
@@ -1553,7 +1940,8 @@
          "city": "Minneapolis",
          "name": "Police blind a reporter with rubber bullet",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "mn-minneapolis-11"
       },
       {
          "links": [
@@ -1564,7 +1952,8 @@
          "city": "Minneapolis",
          "name": "Police shoot Reuters reporters with rubber bullets",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "mn-minneapolis-12"
       },
       {
          "links": [
@@ -1575,40 +1964,8 @@
          "city": "Minneapolis",
          "name": "Police shoot at, threaten to arrest reporter",
          "date": "2020-05-31",
-         "date_text": "May 31st"
-      },
-      {
-         "links": [
-            "https://www.facebook.com/1462345700/posts/10220863688809651"
-         ],
-         "state": "Minnesota",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
-         "city": "Minneapolis",
-         "name": "Police shoot flashbang grenades into crowd",
-         "date": "2020-05-26",
-         "date_text": "believed to be May 26th or 27th"
-      },
-      {
-         "links": [
-            "https://mobile.twitter.com/chadloder/status/1266962631887224837"
-         ],
-         "state": "Minnesota",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
-         "city": "Minneapolis",
-         "name": "CNN crew shot at with rubber bullets and tear gas while live on air",
-         "date": "2020-05-30",
-         "date_text": "May 30th"
-      },
-      {
-         "links": [
-            "https://twitter.com/greg_doucette/status/1267118696960528386"
-         ],
-         "state": "Minnesota",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
-         "city": "Minneapolis",
-         "name": "Police shoot rubber bullets and teargas at an MSNBC reporter",
-         "date": "2020-05-30",
-         "date_text": "believed to be May 30th"
+         "date_text": "May 31st",
+         "id": "mn-minneapolis-13"
       },
       {
          "links": [
@@ -1619,7 +1976,8 @@
          "city": "Minneapolis",
          "name": "Police stop SUV to driveby pepperspray protesters through window",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "mn-minneapolis-18"
       },
       {
          "links": [
@@ -1630,7 +1988,8 @@
          "city": "Minneapolis",
          "name": "Patient care assistant reports being shot with rubber bullets while treating injured protestors",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "mn-minneapolis-19"
       },
       {
          "links": [
@@ -1642,7 +2001,8 @@
          "city": "Minneapolis",
          "name": "Journalists pepper sprayed and hit with flashbangs and batons",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "mn-minneapolis-20"
       },
       {
          "links": [
@@ -1653,7 +2013,8 @@
          "city": "Charlotte",
          "name": "Law enforcement close on protesters from both sides with pepper bullets, tear gas, and flashbangs",
          "date": "2020-06-02",
-         "date_text": "June 2nd"
+         "date_text": "June 2nd",
+         "id": "nc-charlotte-1"
       },
       {
          "links": [
@@ -1667,7 +2028,8 @@
          "city": "Asheville",
          "name": "Police surround approved medical station and destroy supplies",
          "date": "2020-06-02",
-         "date_text": "June 2nd"
+         "date_text": "June 2nd",
+         "id": "nc-asheville-2"
       },
       {
          "links": [
@@ -1678,7 +2040,8 @@
          "city": "Raleigh",
          "name": "Police shoot to intimidate a business owner on his property",
          "date": "2020-06-02",
-         "date_text": "June 2nd"
+         "date_text": "June 2nd",
+         "id": "nc-raleigh-3"
       },
       {
          "links": [
@@ -1689,7 +2052,8 @@
          "city": "Fort Wayne",
          "name": "Police pepper spray protesters attempting to record them",
          "date": "2020-05-29",
-         "date_text": "May 29th"
+         "date_text": "May 29th",
+         "id": "in-fortwayne-1"
       },
       {
          "links": [
@@ -1700,7 +2064,8 @@
          "city": "Fort Wayne",
          "name": "Police tear gas peaceful protesters",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "in-fortwayne-2"
       },
       {
          "links": [
@@ -1711,7 +2076,8 @@
          "city": "Fort Wayne",
          "name": "Toddler teargassed by police",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "in-fortwayne-3"
       },
       {
          "links": [
@@ -1724,7 +2090,8 @@
          "city": "Fort Wayne",
          "name": "Protester hit in the face with a gas cannister",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "in-fortwayne-4"
       },
       {
          "links": [
@@ -1735,10 +2102,12 @@
          "city": "Indianapolis",
          "name": "Police confiscate medical supplies from medical station",
          "date": "2020-05-29",
-         "date_text": "May 29th"
+         "date_text": "May 29th",
+         "id": "in-indianapolis-5"
       },
       {
          "links": [
+            "https://www.washingtonpost.com/national/protests-police-brutality-video/2020/06/05/a9e66568-a768-11ea-b473-04905b1af82b_story.html",
             "https://www.reddit.com/r/PublicFreakout/comments/guffju/indianapolis_police_on_women_rights/",
             "https://twitter.com/greg_doucette/status/1268391718086422528"
          ],
@@ -1747,7 +2116,8 @@
          "city": "Indianapolis",
          "name": "Police beat woman with batons and shoot pepper balls, shove another to the ground",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "in-indianapolis-6"
       },
       {
          "links": [
@@ -1759,7 +2129,21 @@
          "city": "Lafayette",
          "name": "Officer drops tear gas into peaceful protest without warning",
          "date": "2020-05-31",
-         "date_text": "Possibly May 31st"
+         "date_text": "Possibly May 31st",
+         "id": "in-lafayette-7"
+      },
+      {
+         "links": [
+            "https://www.reddit.com/r/Eugene/comments/gurr9r/police_shoot_projectile_from_moving_vehicle_hit/",
+            "https://streamable.com/9h2tk3"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Eugene",
+         "name": "Officer shoots projectile from moving vehicle",
+         "date": "2020-06-01",
+         "date_text": "June 1st",
+         "id": "or-eugene-1"
       },
       {
          "links": [
@@ -1771,7 +2155,8 @@
          "city": "Portland",
          "name": "Police violently break up peaceful protest",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "or-portland-2"
       },
       {
          "links": [
@@ -1782,7 +2167,8 @@
          "city": "Portland",
          "name": "Officer pepper-sprays protestor",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "or-portland-3"
       },
       {
          "links": [
@@ -1793,7 +2179,8 @@
          "city": "Portland",
          "name": "Police appear to tear-gas a homeless camp",
          "date": "2020-06-02",
-         "date_text": "June 2nd"
+         "date_text": "June 2nd",
+         "id": "or-portland-4"
       },
       {
          "links": [
@@ -1804,7 +2191,8 @@
          "city": "Portland",
          "name": "Police deploy shoot teargas/flashbang grenade into a crowd",
          "date": "2020-06-02",
-         "date_text": "June 2nd"
+         "date_text": "June 2nd",
+         "id": "or-portland-5"
       },
       {
          "links": [
@@ -1815,7 +2203,20 @@
          "city": "Portland",
          "name": "Police launch teargas into a crowd",
          "date": "2020-06-02",
-         "date_text": "June 2nd"
+         "date_text": "June 2nd",
+         "id": "or-portland-6"
+      },
+      {
+         "links": [
+            "https://twitter.com/chadloder/status/1269526243138928642"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Officer attacks photographer with baton and pepper sprays him",
+         "date": "2020-06-06",
+         "date_text": "June 6th",
+         "id": "or-portland-7"
       },
       {
          "links": [
@@ -1826,7 +2227,8 @@
          "city": "Boston",
          "name": "Police beat an innocent man crossing the street with batons.",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ma-boston-1"
       },
       {
          "links": [
@@ -1837,7 +2239,8 @@
          "city": "Cincinnati",
          "name": "Police disperse peaceful protest with tear gas, flash bangs and pepper bullets",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "oh-cincinnati-1"
       },
       {
          "links": [
@@ -1848,7 +2251,8 @@
          "city": "Cincinnati",
          "name": "First hand account of police violently dispersing crowds",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "oh-cincinnati-2"
       },
       {
          "links": [
@@ -1859,7 +2263,8 @@
          "city": "Cleveland",
          "name": "Officer swings baton at protesters, beats one who is trying to keep crowd back",
          "date": "2020-05-30",
-         "date_text": "believed to be May 30th"
+         "date_text": "believed to be May 30th",
+         "id": "oh-cleveland-1"
       },
       {
          "links": [
@@ -1870,7 +2275,8 @@
          "city": "Columbus",
          "name": "Cop hits a protestor in the face, escalates to whole crowd being pepper sprayed",
          "date": "2020-05-29",
-         "date_text": "May 29th"
+         "date_text": "May 29th",
+         "id": "oh-columbus-3"
       },
       {
          "links": [
@@ -1884,7 +2290,8 @@
          "city": "Columbus",
          "name": "Congresswoman Joyce Beatty reportedly sprayed with \"mace or pepper spray\"",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "oh-columbus-4"
       },
       {
          "links": [
@@ -1895,7 +2302,8 @@
          "city": "Columbus",
          "name": "Peaceful protester sprayed in the face with mace",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "oh-columbus-5"
       },
       {
          "links": [
@@ -1906,7 +2314,8 @@
          "city": "Columbus",
          "name": "Police pepperspray protesters for chanting",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "oh-columbus-6"
       },
       {
          "links": [
@@ -1918,7 +2327,8 @@
          "city": "Columbus",
          "name": "Police pepper-spray a medic",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "oh-columbus-7"
       },
       {
          "links": [
@@ -1930,7 +2340,8 @@
          "city": "Columbus",
          "name": "Police mace an innocent woman",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "oh-columbus-8"
       },
       {
          "links": [
@@ -1941,7 +2352,8 @@
          "city": "Columbus",
          "name": "Police intimidating campus protesters by driving car towards them",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "oh-columbus-9"
       },
       {
          "links": [
@@ -1953,7 +2365,8 @@
          "city": "Columbus",
          "name": "Police pepper spray two kneeling protesters",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "oh-columbus-10"
       },
       {
          "links": [
@@ -1966,7 +2379,8 @@
          "city": "Columbus",
          "name": "Police pepper spray African-American photographer",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "oh-columbus-11"
       },
       {
          "links": [
@@ -1977,7 +2391,8 @@
          "city": "Columbus",
          "name": "Police pepperspray sitting protesters",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "oh-columbus-12"
       },
       {
          "links": [
@@ -1989,7 +2404,8 @@
          "city": "Columbus",
          "name": "Woman holding a sign is shot with rubber bullets",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "oh-columbus-13"
       },
       {
          "links": [
@@ -2001,7 +2417,8 @@
          "city": "Columbus",
          "name": "Protestors kept in a courtyard with no bathroom breaks, water, or food, for nine hours",
          "date": "2020-05-31",
-         "date_text": "May 31st-June 1st"
+         "date_text": "May 31st-June 1st",
+         "id": "oh-columbus-14"
       },
       {
          "links": [
@@ -2014,7 +2431,8 @@
          "city": "Columbus",
          "name": "Police push and pepper spray reporters from The Lantern newspaper",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "oh-columbus-15"
       },
       {
          "links": [
@@ -2027,7 +2445,8 @@
          "city": "Columbus",
          "name": "Officer refuses to give diabetic arrestee her insulin back",
          "date": "2020-06-02",
-         "date_text": "June 2nd"
+         "date_text": "June 2nd",
+         "id": "oh-columbus-16"
       },
       {
          "links": [
@@ -2040,7 +2459,8 @@
          "city": "Austin",
          "name": "Police critically injure 20 year old black protester during protests against police violence",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "tx-austin-1"
       },
       {
          "links": [
@@ -2051,7 +2471,8 @@
          "city": "Austin",
          "name": "Police assault protesters",
          "date": "2020-05-30",
-         "date_text": "(believed to be) May 30th"
+         "date_text": "(believed to be) May 30th",
+         "id": "tx-austin-2"
       },
       {
          "links": [
@@ -2066,7 +2487,8 @@
          "city": "Austin",
          "name": "Police shoot non-violent protestor in the head",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "tx-austin-3"
       },
       {
          "links": [
@@ -2079,7 +2501,8 @@
          "city": "Austin",
          "name": "Police use tear gas & rubber bullets on protesters",
          "date": "2020-05-30",
-         "date_text": "May 30th @ ~3pm"
+         "date_text": "May 30th @ ~3pm",
+         "id": "tx-austin-4"
       },
       {
          "links": [
@@ -2090,7 +2513,8 @@
          "city": "Austin",
          "name": "Police open fire on crowd with rubber bullets",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "tx-austin-5"
       },
       {
          "links": [
@@ -2103,7 +2527,8 @@
          "city": "Austin",
          "name": "Police open fire on crowd after a protester throws water on them",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "tx-austin-6"
       },
       {
          "links": [
@@ -2115,7 +2540,8 @@
          "city": "Austin",
          "name": "Police spray a man in the face while he stands still ~3 feet away from them.",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "tx-austin-7"
       },
       {
          "links": [
@@ -2128,7 +2554,8 @@
          "city": "Austin",
          "name": "Police fire upon protesters seeking medical help",
          "date": "2020-06-02",
-         "date_text": "June 2nd"
+         "date_text": "June 2nd",
+         "id": "tx-austin-8"
       },
       {
          "links": [
@@ -2140,18 +2567,21 @@
          "city": "Baytown",
          "name": "Police officer tackles and knees man on the ground",
          "date": "2020-06-02",
-         "date_text": "June 2nd"
+         "date_text": "June 2nd",
+         "id": "tx-baytown-9"
       },
       {
          "links": [
-            "https://twitter.com/vikthewild/status/1266538354939756544"
+            "https://twitter.com/vikthewild/status/1266538354939756544",
+            "https://abc13.com/hpd-uns-over-girl-police-on-horse-tramples-protester-george-floyd/6223240/"
          ],
          "state": "Texas",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Texas.md",
          "city": "Houston",
          "name": "Police trample protester with horse",
          "date": "2020-05-29",
-         "date_text": "May 29th"
+         "date_text": "May 29th",
+         "id": "tx-houston-10"
       },
       {
          "links": [
@@ -2162,7 +2592,8 @@
          "city": "Houston",
          "name": "Officers shove a woman to the pavement",
          "date": "2020-05-29",
-         "date_text": "May 29th"
+         "date_text": "May 29th",
+         "id": "tx-houston-11"
       },
       {
          "links": [
@@ -2175,7 +2606,8 @@
          "city": "Dallas",
          "name": "Police shoot unarmed woman in the face with a rubber bullet",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "tx-dallas-12"
       },
       {
          "links": [
@@ -2186,7 +2618,21 @@
          "city": "Dallas",
          "name": "Police use flashbangs and tear gas on protestors",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "tx-dallas-13"
+      },
+      {
+         "links": [
+            "https://www.reddit.com/r/PublicFreakout/comments/gx9a5n/these_protests_took_place_on_june_2nd_in_dallas/",
+            "https://www.google.com/maps/place/Margaret+Hunt+Hill+Bridge,+Dallas,+TX,+USA/@32.781075,-96.8186896,15z/data="
+         ],
+         "state": "Texas",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Texas.md",
+         "city": "Dallas",
+         "name": "Police maneuver protestors onto bridge and fire tear gas and rubber bullets",
+         "date": "2020-06-02",
+         "date_text": "June 2nd",
+         "id": "tx-dallas-14"
       },
       {
          "links": [
@@ -2198,7 +2644,8 @@
          "city": "San Antonio",
          "name": "Police shoot man filming them with what were allegedly rubber bullets",
          "date": "2020-05-31",
-         "date_text": "(believed to be) May 31st"
+         "date_text": "(believed to be) May 31st",
+         "id": "tx-sanantonio-15"
       },
       {
          "links": [
@@ -2209,7 +2656,8 @@
          "city": "Omaha",
          "name": "Police Mace, shoot pepper bullets at protesters sitting on the ground",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "ne-omaha-1"
       },
       {
          "links": [
@@ -2220,7 +2668,8 @@
          "city": "Omaha",
          "name": "Peaceful protestors arrested for breaking curfew",
          "date": "2020-06-01",
-         "date_text": "June 1"
+         "date_text": "June 1",
+         "id": "ne-omaha-2"
       },
       {
          "links": [
@@ -2232,7 +2681,8 @@
          "city": "DC",
          "name": "Riot Police rams shield into BBC cameraman",
          "date": "2020-05-31",
-         "date_text": "May 31"
+         "date_text": "May 31",
+         "id": "dc-dc-1"
       },
       {
          "links": [
@@ -2250,7 +2700,8 @@
          "city": "DC",
          "name": "Australian news crew and protestors attacked by police",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "dc-dc-2"
       },
       {
          "links": [
@@ -2265,7 +2716,8 @@
          "city": "DC",
          "name": "Protestors are quickly and violently pushed out of Lafayette Square",
          "date": "2020-06-01",
-         "date_text": "June 1"
+         "date_text": "June 1",
+         "id": "dc-dc-3"
       },
       {
          "links": [
@@ -2276,7 +2728,8 @@
          "city": "DC",
          "name": "Officer fires tear gas cannister at protestor's head",
          "date": "",
-         "date_text": ""
+         "date_text": "",
+         "id": "dc-dc-4"
       },
       {
          "links": [
@@ -2287,7 +2740,28 @@
          "city": "DC",
          "name": "Police violence outside the White House",
          "date": "2020-06-01",
+         "date_text": "June 1st",
+         "id": "dc-dc-5"
+      },
+      {
+         "links": [
+            "https://twitter.com/suckmyunicornD/status/1267767217392934917",
+            "https://dcist.com/story/20/06/02/dupont-dc-home-protest-rahul-dubey/"
+         ],
+         "state": "Washington DC",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington DC.md",
+         "city": "DC",
+         "name": "Man who sheltered protestors discusses law enforcement officers shooting tear gas into his house",
+         "date": "2020-06-01",
          "date_text": "June 1st"
+      },
+      {
+         "links": [
+            "https://twitter.com/WestofHereFox/status/1267615709791731713"
+         ],
+         "state": "Washington DC",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington DC.md",
+         "city": "DC"
       },
       {
          "links": [
@@ -2298,7 +2772,8 @@
          "city": "Huntsville",
          "name": "Protester falls and is stepped on",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "al-huntsville-1"
       },
       {
          "links": [
@@ -2309,7 +2784,8 @@
          "city": "Huntsville",
          "name": "Police officer pepper sprays protestors for no reason",
          "date": "2020-06-03",
-         "date_text": "June 3rd"
+         "date_text": "June 3rd",
+         "id": "al-huntsville-2"
       },
       {
          "links": [
@@ -2320,7 +2796,8 @@
          "city": "Huntsville",
          "name": "Police tear gas reporters",
          "date": "2020-06-03",
-         "date_text": "June 3rd"
+         "date_text": "June 3rd",
+         "id": "al-huntsville-3"
       },
       {
          "links": [
@@ -2331,7 +2808,20 @@
          "city": "Huntsville",
          "name": "Police preemptively tear gas peaceful protestors",
          "date": "2020-06-03",
-         "date_text": "June 3rd"
+         "date_text": "June 3rd",
+         "id": "al-huntsville-4"
+      },
+      {
+         "links": [
+            "https://twitter.com/LUVRGRLLANI/status/1266866301001179136"
+         ],
+         "state": "Illinois",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Illinois.md",
+         "city": "Chicago",
+         "name": "Protester shot in head with rubber bullet",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "il-chicago-2"
       },
       {
          "links": [
@@ -2342,7 +2832,8 @@
          "city": "Chicago",
          "name": "Police harass and assault John Cusack",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "il-chicago-3"
       },
       {
          "links": [
@@ -2355,7 +2846,8 @@
          "city": "Chicago",
          "name": "Police pull black women out of the car and throw them to the ground",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "il-chicago-4"
       },
       {
          "links": [
@@ -2366,7 +2858,20 @@
          "city": "Chicago",
          "name": "Police pepperspray reporter for recording",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "il-chicago-5"
+      },
+      {
+         "links": [
+            "https://news.wttw.com/2020/06/05/police-board-president-officers-struck-me-5-times-their-batons-during-protest"
+         ],
+         "state": "Illinois",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Illinois.md",
+         "city": "Chicago",
+         "name": "Cops hit Chicago Police Board President",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "il-chicago-6"
       },
       {
          "links": [
@@ -2378,7 +2883,20 @@
          "city": "Chicago",
          "name": "Video showing CPD officer punching protester in Uptown under investigation",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "il-chicago-7"
+      },
+      {
+         "links": [
+            "https://twitter.com/BLMChi/status/1267486699321544704"
+         ],
+         "state": "Illinois",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Illinois.md",
+         "city": "Chicago",
+         "name": "CPD chase down protester on TV",
+         "date": "2020-06-01",
+         "date_text": "June 1st",
+         "id": "il-chicago-8"
       },
       {
          "links": [
@@ -2390,7 +2908,8 @@
          "city": "Colorado Springs",
          "name": "Multiple cops pin man to ground while repeatedly punching him",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "co-coloradosprings-1"
       },
       {
          "links": [
@@ -2401,7 +2920,8 @@
          "city": "Denver",
          "name": "Reporter shot with multiple pepper balls",
          "date": "2020-05-28",
-         "date_text": "May 28th"
+         "date_text": "May 28th",
+         "id": "co-denver-2"
       },
       {
          "links": [
@@ -2414,7 +2934,8 @@
          "city": "Denver",
          "name": "Police pepperspray people trying to record",
          "date": "2020-05-29",
-         "date_text": "May 29th"
+         "date_text": "May 29th",
+         "id": "co-denver-3"
       },
       {
          "links": [
@@ -2425,7 +2946,8 @@
          "city": "Denver",
          "name": "Denver law enforcement shoot at reporters",
          "date": "2020-05-29",
-         "date_text": "May 29th"
+         "date_text": "May 29th",
+         "id": "co-denver-4"
       },
       {
          "links": [
@@ -2436,7 +2958,8 @@
          "city": "Denver",
          "name": "Denver SWAT shoot at woman trying to stop armored car",
          "date": "2020-05-29",
-         "date_text": "May 29th"
+         "date_text": "May 29th",
+         "id": "co-denver-5"
       },
       {
          "links": [
@@ -2449,7 +2972,8 @@
          "city": "Denver",
          "name": "Police throw reporter into fire",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "co-denver-6"
       },
       {
          "links": [
@@ -2460,7 +2984,8 @@
          "city": "Denver",
          "name": "Police tear gas and shoot protestors",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "co-denver-7"
       },
       {
          "links": [
@@ -2471,7 +2996,8 @@
          "city": "Denver",
          "name": "Denver law enforcement shoot at reporter standing on the sidewalk",
          "date": "2020-05-30",
-         "date_text": "May 30th"
+         "date_text": "May 30th",
+         "id": "co-denver-8"
       },
       {
          "links": [
@@ -2482,7 +3008,8 @@
          "city": "Denver",
          "name": "Police fire pepper balls at car with pregnant woman",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "co-denver-9"
       },
       {
          "links": [
@@ -2493,7 +3020,8 @@
          "city": "Denver",
          "name": "Police officer fires at protestor while driving away",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "co-denver-10"
       },
       {
          "links": [
@@ -2505,7 +3033,8 @@
          "city": "Denver",
          "name": "Police pepper sprays peaceful protestor and fires tear gas on crowd",
          "date": "2020-05-31",
-         "date_text": "Believed to be May 31st or June 1st"
+         "date_text": "Believed to be May 31st or June 1st",
+         "id": "co-denver-11"
       },
       {
          "links": [
@@ -2516,7 +3045,8 @@
          "city": "Denver",
          "name": "Police shoot protester from behind with tear gas canister",
          "date": "2020-06-02",
-         "date_text": "June 2nd"
+         "date_text": "June 2nd",
+         "id": "co-denver-12"
       },
       {
          "links": [
@@ -2527,7 +3057,20 @@
          "city": "Denver",
          "name": "Police tackle group of peaceful protesters",
          "date": "2020-06-04",
-         "date_text": "June 4th"
+         "date_text": "June 4th",
+         "id": "co-denver-13"
+      },
+      {
+         "links": [
+            "https://twitter.com/tristanshields/status/1266994214878932993"
+         ],
+         "state": "Virginia",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Virginia.md",
+         "city": "Manassas",
+         "name": "Officers pepper-spray Virginia state delegate peacefully protesting",
+         "date": "",
+         "date_text": "",
+         "id": "va-manassas-1"
       },
       {
          "links": [
@@ -2540,13 +3083,15 @@
          "city": "Richmond",
          "name": "Officer sprays a man watching from his balcony",
          "date": "2020-05-31",
-         "date_text": "May 31st"
+         "date_text": "May 31st",
+         "id": "va-richmond-1"
       },
       {
          "links": [
             "https://twitter.com/i/status/1267650345947271176",
             "https://twitter.com/i/status/1267613150112858116",
             "https://twitter.com/i/status/1267601158534815745",
+            "https://twitter.com/myVPM/status/1267605983641075712",
             "https://www.youtube.com/watch?v=LG_HMghyQZc"
          ],
          "state": "Virginia",
@@ -2554,7 +3099,8 @@
          "city": "Richmond",
          "name": "Tear gas fired at peaceful protest",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "va-richmond-2"
       },
       {
          "links": [
@@ -2565,7 +3111,8 @@
          "city": "Richmond",
          "name": "Officer spits on detained protestor",
          "date": "2020-06-01",
-         "date_text": "June 1st"
+         "date_text": "June 1st",
+         "id": "va-richmond-3"
       },
       {
          "links": [
@@ -2578,7 +3125,8 @@
          "city": "New Orleans",
          "name": "Police throw tear-gas at protestors on a bridge.",
          "date": "2020-06-03",
-         "date_text": "June 3rd"
+         "date_text": "June 3rd",
+         "id": "la-neworleans-1"
       }
    ]
 }
