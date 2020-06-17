@@ -8,3 +8,4 @@ See original repository for latest data:
 ## Snapshot Location
 * `2020PB/police-brutality` - https://raw.githubusercontent.com/2020PB/police-brutality/data_build/all-locations.json
 * `949mac/846-backend` - https://api.846policebrutality.com/api/incidents
+* `949mac/846-backend` with evidence - https://api.846policebrutality.com/api/incidents?include=evidence

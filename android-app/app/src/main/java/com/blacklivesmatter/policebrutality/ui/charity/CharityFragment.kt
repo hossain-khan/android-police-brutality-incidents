@@ -48,6 +48,7 @@ class CharityFragment : Fragment() {
             startActivity(IntentBuilder.build(requireContext(), charity.org_url))
         }, donateNowCallback = { donateCharity ->
             viewModel.onCharitySelected(donateCharity)
+            analytics.logEvent(Analytics.ACTION_CHARITY_DONATE)
             startActivity(IntentBuilder.build(requireContext(), donateCharity.donate_url))
         })
         adapter.submitList(emptyList())
@@ -97,6 +98,7 @@ class CharityFragment : Fragment() {
         when (item.itemId) {
             R.id.toolbar_menu_donate_info -> {
                 Timber.d("Show disclaimer")
+                analytics.logEvent(Analytics.ACTION_CHARITY_DONATE_INFO)
                 MaterialAlertDialogBuilder(requireContext())
                     .setIcon(R.drawable.ic_outline_warn_info_24)
                     .setTitle(R.string.title_dialog_disclaimer)
