@@ -35,6 +35,18 @@ import com.google.gson.annotations.SerializedName
  * Charitable or non-profit organization that helps for #BlackLivesMatter or #PoliceBrutality causes.
  *
  * NOTE: Currently list of charity is bundled with [CHARITY_DATA_FILENAME] JSON file.
+ *
+ * Example object:
+ * ```
+ *  {
+ *    "name": "Black Lives Matter",
+ *    "description": "Black Lives Matter was founded in the wake of Trayvon Martin's murder back in 2013 ......",
+ *    "org_url": "https://blacklivesmatter.com/",
+ *    "donate_url": "https://secure.actblue.com/donate/ms_blm_homepage_2019",
+ *    "logo_url": "https://blacklivesmatter.com/wp-content/themes/blm/dist/images/logo-black-lives-matter.png",
+ *    "item_weight": 10
+ *  }
+ * ```
  */
 @Keep
 @Entity(tableName = "charity")
@@ -44,5 +56,6 @@ data class CharityOrg(
     @SerializedName("name") @ColumnInfo(name = "name") val name: String = "",
     @SerializedName("description") @ColumnInfo(name = "description") val description: String = "",
     @SerializedName("donate_url") @ColumnInfo(name = "donate_url") val donate_url: String = "",
+    @SerializedName("logo_url") @ColumnInfo(name = "logo_url") val logo_url: String? = null,
     @SerializedName("item_weight") @ColumnInfo(name = "item_weight") val item_weight: Int = 100
 )

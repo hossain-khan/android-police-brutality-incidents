@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 5,
-    "identityHash": "5906e2885f8456575fda3313816e8ac9",
+    "identityHash": "a7e21f2cefc896210c812560eff26d9f",
     "entities": [
       {
         "tableName": "incidents",
@@ -77,7 +77,7 @@
       },
       {
         "tableName": "charity",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`org_url` TEXT NOT NULL, `name` TEXT NOT NULL, `description` TEXT NOT NULL, `donate_url` TEXT NOT NULL, `item_weight` INTEGER NOT NULL, PRIMARY KEY(`org_url`))",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`org_url` TEXT NOT NULL, `name` TEXT NOT NULL, `description` TEXT NOT NULL, `donate_url` TEXT NOT NULL, `logo_url` TEXT, `item_weight` INTEGER NOT NULL, PRIMARY KEY(`org_url`))",
         "fields": [
           {
             "fieldPath": "org_url",
@@ -104,6 +104,12 @@
             "notNull": true
           },
           {
+            "fieldPath": "logo_url",
+            "columnName": "logo_url",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
             "fieldPath": "item_weight",
             "columnName": "item_weight",
             "affinity": "INTEGER",
@@ -123,7 +129,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '5906e2885f8456575fda3313816e8ac9')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'a7e21f2cefc896210c812560eff26d9f')"
     ]
   }
 }

@@ -4,6 +4,7 @@
     "description": "Black Lives Matter was founded in the wake of Trayvon Martin's murder back in 2013, and has been fighting for structural, community-based change ever since, advocating for an end to the violence and injustice inflicted on Black people in the US. It's necessary, hard work, and I'm proud to support it.",
     "org_url": "https://blacklivesmatter.com/",
     "donate_url": "https://secure.actblue.com/donate/ms_blm_homepage_2019",
+    "logo_url": "https://blacklivesmatter.com/wp-content/themes/blm/dist/images/logo-black-lives-matter.png",
     "item_weight": 10
   },
   {
@@ -11,6 +12,7 @@
     "description": "The Equal Justice Initiative is committed to ending mass incarceration and excessive punishment in the United States, to challenging racial and economic injustice, and to protecting basic human rights for the most vulnerable people in American society.",
     "org_url": "https://eji.org/",
     "donate_url": "https://support.eji.org/give/153413/#!/donation/checkout",
+    "logo_url": "https://s12982.pcdn.co/wp-content/uploads/2016/03/logo-eji.png",
     "item_weight": 100
   },
   {
@@ -18,6 +20,7 @@
     "description": "This group, founded in 2015, is dedicated to police reform and works with a 10-point plan aimed at reducing violence. It's always been an important cause but feels especially urgent now.",
     "org_url": "https://www.joincampaignzero.org/",
     "donate_url": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZHQKRGV7JHCWC&source=url",
+    "logo_url": "https://images.squarespace-cdn.com/content/55ad38b1e4b0185f0285195f/1440197605570-XCCX6CPRMS9RT8WVLG1F/CampaignZero.png?format=500w&content-type=image%2Fpng",
     "item_weight": 100
   },
   {
@@ -25,6 +28,7 @@
     "description": "The NAACP’s Legal Defense and Educational Fund uses litigation, advocacy, and public education to work towards racial justice and equality for all Americans. The organization is fighting to protect voting rights, reform the criminal justice system, and improve equal access to education, among other civil rights causes. In donating, you can pick where your money is directed (for example, towards police reform, education, or voting rights) or simply choose 'Where it’s needed most.' Right now, the organizationis specifically fighting for the arrests of the other three officers involved in George Floyd’s murder—as the nonprofit said in a recent Instagram post, 'Partial justice is not justice at all.",
     "org_url": "https://www.naacpldf.org/",
     "donate_url": "https://org2.salsalabs.com/o/6857/p/salsa/donation/common/public/?donate_page_KEY=15780&_ga=2.74359510.534011183.1592338970-1909650139.1591900549",
+    "logo_url": "https://www.naacpldf.org/wp-content/uploads/ldf-logo.jpg",
     "item_weight": 100
   },
   {
@@ -32,6 +36,7 @@
     "description": "The Bail Project is a national fund that helps pay bail for people in need (including protesters). After a client's case ends, the bail is repaid back into the fund and recycled to help additional clients, so your donation is passed on.",
     "org_url": "https://bailproject.org/",
     "donate_url": "https://secure.givelively.org/donate/the-bail-project",
+    "logo_url": "https://bailproject.org/wp-content/uploads/2017/11/bsd_bailproject_social_avatar.png",
     "item_weight": 100
   },
   {
@@ -39,6 +44,7 @@
     "description": "The ACLU dares to create a more perfect union — beyond one person, party, or side. Our mission is to realize this promise of the United States Constitution for all and expand the reach of its guarantees.",
     "org_url": "https://www.aclu.org/",
     "donate_url": "https://www.aclu.org/donate-aclu?ms_aff=NAT&initms_aff=NAT&ms=web_horiz_nav_hp&initms=web_horiz_nav_hp&ms_chan=web&initms_chan=web",
+    "logo_url": "https://www.everythinglubbock.com/wp-content/uploads/sites/35/2020/02/AP608556312461-e1582680622956.jpg?w=800&h=550&crop=1",
     "item_weight": 100
   },
   {
@@ -46,6 +52,7 @@
     "description": "Color Of Change is the nation’s largest online racial justice organization. We help people respond effectively to injustice in the world around us. As a national online force driven by 1.7 million members, we move decision-makers in corporations and government to create a more human and less hostile world for Black people in America.",
     "org_url": "https://colorofchange.org/",
     "donate_url": "https://secure.actblue.com/contribute/page/support-us?refcode=coc_website_popup",
+    "logo_url": "https://colorofchange.org/wp-content/themes/colorofchangecom/images/logo.png",
     "item_weight": 100
   },
   {
@@ -53,6 +60,7 @@
     "description": "The Loveland Foundation, started by Rachel Cargle, is a nonprofit that provides financial assistance for Black women and girls seeking mental health support. I also purchased Cargle’s lecture series Unpacking White Feminism to learn more about the history of feminism and race.",
     "org_url": "https://thelovelandfoundation.org/",
     "donate_url": "https://www.flipcause.com/secure/cause_pdetails/Njg4MzE=",
+    "logo_url": "https://secureservercdn.net/160.153.137.99/r0c.b2f.myftpupload.com/wp-content/uploads/2020/01/loveland-logo-white-768x565.png",
     "item_weight": 100
   },
   {
@@ -60,6 +68,7 @@
     "description": "Communities United Against Police Brutality, which operates a crisis hotline where people can report abuse; offers legal, medical, and psychological resource referrals; and engages in political action against police brutality.",
     "org_url": "https://www.cuapb.org/",
     "donate_url": "https://www.cuapb.org/donatecuapb",
+    "logo_url": "https://uaptsd.files.wordpress.com/2014/10/oct22.jpg",
     "item_weight": 100
   }
 ]
