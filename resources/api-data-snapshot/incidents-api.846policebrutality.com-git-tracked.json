@@ -1,6 +1,76 @@
 {
    "data": [
       {
+         "id": "5cb79c40-ab50-11ea-ae99-55de99ddd965",
+         "pb_id": "de-dover-1",
+         "state": "Delaware",
+         "city": "Dover",
+         "date": "2020-06-09T00:00:00.000000Z",
+         "title": "USA Today journalist arrested",
+         "description": null,
+         "links": [
+            "https:\/\/www.usatoday.com\/story\/news\/nation\/2020\/06\/09\/george-floyd-protests-usa-today-network-reporter-arrested-delaware\/5331163002\/",
+            "https:\/\/v.redd.it\/u78faokca3451"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "39.1581680",
+            "long": "-75.5243682"
+         }
+      },
+      {
+         "id": "5ec9ba70-ab43-11ea-8036-7b63ada9d6c5",
+         "pb_id": "nc-wilmington-1",
+         "state": "North Carolina",
+         "city": "Wilmington",
+         "date": "2020-06-03T00:00:00.000000Z",
+         "title": "Police kneel to lure protestors closer before firing",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/greg_doucette\/status\/1268047376008216576",
+            "https:\/\/twitter.com\/greg_doucette\/status\/1268047092079112198"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "34.2103894",
+            "long": "-77.8868117"
+         }
+      },
+      {
+         "id": "692ac9e0-ab15-11ea-8de6-bf747d02c563",
+         "pb_id": "ny-newyorkcity-29",
+         "state": "New York",
+         "city": "New York City",
+         "date": "2020-05-31T00:00:00.000000Z",
+         "title": "NYPD denies 6th amendment rights to protestors",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/GoodCallNYC\/status\/1267128759951523846"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "40.7127753",
+            "long": "-74.0059728"
+         }
+      },
+      {
+         "id": "6d9c7e20-aac2-11ea-9e30-45773d542db2",
+         "pb_id": "mn-minneapolis-27",
+         "state": "Minnesota",
+         "city": "Minneapolis",
+         "date": "2020-05-30T00:00:00.000000Z",
+         "title": "Camera man shot by police",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/brianstelter\/status\/1266910826797113347"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "44.9777530",
+            "long": "-93.2650108"
+         }
+      },
+      {
          "id": "7b044f80-a9d6-11ea-823c-cb6b88d56860",
          "pb_id": "ar-bentonville-1",
          "state": "Arkansas",
@@ -1279,15 +1349,12 @@
          "pb_id": "pa-philadelphia-9",
          "state": "Pennsylvania",
          "city": "Philadelphia",
-         "date": "2020-06-01T00:00:00.000000Z",
-         "title": "Police shove protestors and strike man across the face with a baton",
+         "date": "2020-05-31T00:00:00.000000Z",
+         "title": "Police fire tear gas down empty streets",
          "description": null,
          "links": [
-            "https:\/\/www.inquirer.com\/news\/philadelphia-police-beating-temple-student-evan-gorski-protest-20200604.html",
-            "https:\/\/twitter.com\/greg_doucette\/status\/1268766216161763328",
-            "https:\/\/twitter.com\/Peopledelphia\/status\/1267588991655784448",
-            "https:\/\/www.inquirer.com\/news\/philadelphia-police-beating-temple-student-joseph-bologna-protest-20200605.html",
-            "https:\/\/whyy.org\/articles\/philly-police-commander-videotaped-beating-protesters-linked-to-narcotics-scandal-misconduct\/"
+            "https:\/\/twitter.com\/cynthiaschemmer\/status\/1267199590987714560",
+            "https:\/\/twitter.com\/greg_doucette\/status\/1267859272639164416"
          ],
          "data": null,
          "geocoding": {
@@ -2566,7 +2633,8 @@
          "title": "Law enforcement shoot a woman in the head",
          "description": null,
          "links": [
-            "https:\/\/www.miamiherald.com\/news\/local\/community\/broward\/article243193481.html"
+            "https:\/\/www.miamiherald.com\/news\/local\/community\/broward\/article243193481.html",
+            "https:\/\/twitter.com\/MrEvanRoss\/status\/1270440535518560256"
          ],
          "data": null,
          "geocoding": {
@@ -2814,10 +2882,12 @@
          "state": "Minnesota",
          "city": "Minneapolis",
          "date": "2020-05-30T00:00:00.000000Z",
-         "title": "Police shoot rubber bullets and teargas at an MSNBC reporter",
+         "title": "Swiss journalists shot at with rubber bullets by police",
          "description": null,
          "links": [
-            "https:\/\/twitter.com\/greg_doucette\/status\/1267118696960528386"
+            "https:\/\/www.srf.ch\/play\/tv\/news-clip\/video\/schweizer-journalisten-werden-mit-gummischrot-attackiert?id=67d44dd8-f16e-4db0-b690-799ab827956a&startTime=9",
+            "https:\/\/www.srf.ch\/news\/international\/pressefreiheit-unter-beschuss-schweizer-journalisten-in-den-usa-von-polizei-attackiert",
+            "https:\/\/www.swissinfo.ch\/eng\/minneapolis-protests-_rubber-bullets-shot-at-swiss-journalists-by-us-police-\/45808806"
          ],
          "data": null,
          "geocoding": {
@@ -2830,13 +2900,11 @@
          "pb_id": "mn-minneapolis-17",
          "state": "Minnesota",
          "city": "Minneapolis",
-         "date": "2020-05-30T00:00:00.000000Z",
-         "title": "Swiss journalists shot at with rubber bullets by police",
+         "date": "2020-05-31T00:00:00.000000Z",
+         "title": "Police stop SUV to driveby pepperspray protesters through window",
          "description": null,
          "links": [
-            "https:\/\/www.srf.ch\/play\/tv\/news-clip\/video\/schweizer-journalisten-werden-mit-gummischrot-attackiert?id=67d44dd8-f16e-4db0-b690-799ab827956a&startTime=9",
-            "https:\/\/www.srf.ch\/news\/international\/pressefreiheit-unter-beschuss-schweizer-journalisten-in-den-usa-von-polizei-attackiert",
-            "https:\/\/www.swissinfo.ch\/eng\/minneapolis-protests-_rubber-bullets-shot-at-swiss-journalists-by-us-police-\/45808806"
+            "https:\/\/twitter.com\/keycodez\/status\/1267235529311113216\/video\/1"
          ],
          "data": null,
          "geocoding": {
@@ -3012,10 +3080,10 @@
          "state": "Minnesota",
          "city": "Minneapolis",
          "date": "2020-05-31T00:00:00.000000Z",
-         "title": "Police stop SUV to driveby pepperspray protesters through window",
+         "title": "Patient care assistant reports being shot with rubber bullets while treating injured protestors",
          "description": null,
          "links": [
-            "https:\/\/twitter.com\/keycodez\/status\/1267235529311113216\/video\/1"
+            "https:\/\/mobile.twitter.com\/chadloder\/status\/1266957030285127687"
          ],
          "data": null,
          "geocoding": {
@@ -3029,10 +3097,11 @@
          "state": "Minnesota",
          "city": "Minneapolis",
          "date": "2020-05-31T00:00:00.000000Z",
-         "title": "Patient care assistant reports being shot with rubber bullets while treating injured protestors",
+         "title": "Journalists pepper sprayed and hit with flashbangs and batons",
          "description": null,
          "links": [
-            "https:\/\/mobile.twitter.com\/chadloder\/status\/1266957030285127687"
+            "https:\/\/twitter.com\/edouphoto\/status\/1267958349477249024",
+            "https:\/\/www.facebook.com\/356074941105769\/posts\/3020200918026478\/"
          ],
          "data": null,
          "geocoding": {
@@ -3045,12 +3114,11 @@
          "pb_id": "mn-minneapolis-20",
          "state": "Minnesota",
          "city": "Minneapolis",
-         "date": "2020-05-31T00:00:00.000000Z",
-         "title": "Journalists pepper sprayed and hit with flashbangs and batons",
+         "date": "2020-05-30T00:00:00.000000Z",
+         "title": "Continuation of gas station event; Awaijane family told to go inside gas station, they comply and seek shelter inside, police then shoot rubber bullets and tear gas inside the building",
          "description": null,
          "links": [
-            "https:\/\/twitter.com\/edouphoto\/status\/1267958349477249024",
-            "https:\/\/www.facebook.com\/356074941105769\/posts\/3020200918026478\/"
+            "https:\/\/youtu.be\/46qWpv-yFE8?t=268"
          ],
          "data": null,
          "geocoding": {
@@ -4873,6 +4941,23 @@
          }
       },
       {
+         "id": "7b5e9770-ab2b-11ea-a1e0-5b419679353e",
+         "pb_id": "ca-sanjose-5",
+         "state": "California",
+         "city": "San Jose",
+         "date": "2020-05-29T00:00:00.000000Z",
+         "title": "Man struck by rubber bullet and explosive device",
+         "description": null,
+         "links": [
+            "https:\/\/www.youtube.com\/watch?v=89mUHzu3480"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "37.3382082",
+            "long": "-121.8863286"
+         }
+      },
+      {
          "id": "b4128070-aa88-11ea-88d1-75d1628631ff",
          "pb_id": "ar-littlerock-1",
          "state": "Arkansas",
@@ -5162,7 +5247,7 @@
          "state": "California",
          "city": "Sacramento",
          "date": "2020-06-01T00:00:00.000000Z",
-         "title": "Sacramento law enforcement shoot shoot protesters and then announce their assembly unlawful",
+         "title": "Sacramento law enforcement shoot protesters and then announce their assembly is unlawful",
          "description": null,
          "links": [
             "https:\/\/www.facebook.com\/danny.garza.167\/videos\/10222535335080905\/"
@@ -5292,7 +5377,8 @@
          "links": [
             "https:\/\/twitter.com\/greg_doucette\/status\/1269267786792144898",
             "https:\/\/abc7news.com\/man-who-trains-san-jose-police-about-bias-severely-injured-by-riot-gun-during-protest\/6234212\/",
-            "https:\/\/www.latimes.com\/california\/story\/2020-06-06\/community-organizer-shot-by-rubber-bullet-during-protest"
+            "https:\/\/www.latimes.com\/california\/story\/2020-06-06\/community-organizer-shot-by-rubber-bullet-during-protest",
+            "https:\/\/www.fox23.com\/news\/trending\/george-floyd-protests-san-jose-police-fire-rubber-bullets-own-bias-trainer-rupture-his-testicle\/K5HUBNAHTJERPBKA2CVC2B5LRU\/"
          ],
          "data": null,
          "geocoding": {
@@ -6037,11 +6123,12 @@
          "pb_id": "mn-minneapolis-21",
          "state": "Minnesota",
          "city": "Minneapolis",
-         "date": "2020-05-30T00:00:00.000000Z",
-         "title": "Continuation of gas station event; Awaijane family told to go inside gas station, they comply and seek shelter inside, police then shoot rubber bullets and tear gas inside the building",
+         "date": "2020-05-26T00:00:00.000000Z",
+         "title": "Police hit press in neck and head with wooden baton",
          "description": null,
          "links": [
-            "https:\/\/youtu.be\/46qWpv-yFE8?t=268"
+            "https:\/\/youtu.be\/XAa5xb6JitI?t=5982",
+            "https:\/\/gfycat.com\/distinctsecretgrasshopper-minneapolis-protest-police-acab"
          ],
          "data": null,
          "geocoding": {
@@ -6700,11 +6787,11 @@
          "pb_id": "ny-newyorkcity-27",
          "state": "New York",
          "city": "New York City",
-         "date": "2020-05-31T00:00:00.000000Z",
-         "title": "NYPD denies 6th amendment rights to protestors",
+         "date": "2020-05-30T00:00:00.000000Z",
+         "title": "High-ranking NYPD officer shoves protestors with plastic barricade",
          "description": null,
          "links": [
-            "https:\/\/twitter.com\/GoodCallNYC\/status\/1267128759951523846"
+            "https:\/\/twitter.com\/letsgomathias\/status\/1266903135303450631"
          ],
          "data": null,
          "geocoding": {
@@ -6834,6 +6921,26 @@
          "geocoding": {
             "lat": "39.7392358",
             "long": "-104.9902510"
+         }
+      },
+      {
+         "id": "e42fbce0-aac0-11ea-9704-61ba52b8c55e",
+         "pb_id": "ok-oklahomacity-2",
+         "state": "Oklahoma",
+         "city": "Oklahoma City",
+         "date": "2020-05-30T00:00:00.000000Z",
+         "title": "Law enforcement uses tear-gas several times",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/benfelder_okc\/status\/1266950330161532928",
+            "https:\/\/twitter.com\/benfelder_okc\/status\/1266956993669017600",
+            "https:\/\/twitter.com\/benfelder_okc\/status\/1266963119160594432",
+            "https:\/\/twitter.com\/benfelder_okc\/status\/1266966743404236800"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "35.4675602",
+            "long": "-97.5164276"
          }
       }
    ],
