@@ -8,7 +8,7 @@
     <string name="title_incidents_on_date">Incidents on %s</string>
     <string name="title_report_new_incident">Report Incident</string>
     <string name="title_more_info_and_sources">Additional Resources</string>
-    <string name="title_donate_for_cause" tools:ignore="DuplicateStrings">Donate</string>
+    <string name="title_donate_for_cause">Donate for Cause</string>
     <string name="title_filter_incidents_by_date">Filter incident by specific date</string>
     <string name="title_dialog_disclaimer">DISCLAIMER</string>
 
