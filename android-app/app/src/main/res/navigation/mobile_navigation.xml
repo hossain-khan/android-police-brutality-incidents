@@ -78,9 +78,19 @@
     <!-- ========================================================= -->
 
     <fragment
+        android:id="@+id/navigation_menu_donate"
+        android:name="com.blacklivesmatter.policebrutality.ui.charity.CharityFragment"
+        android:label="@string/title_donate_for_cause"
+        tools:layout="@layout/fragment_charity_donate" />
+
+    <!-- ========================================================= -->
+    <!-- ======== End of report incident navigation block ======== -->
+    <!-- ========================================================= -->
+
+    <fragment
         android:id="@+id/navigation_menu_more_info"
         android:name="com.blacklivesmatter.policebrutality.ui.moreinfo.MoreInfoFragment"
-        android:label="@string/title_report_new_incident"
+        android:label="@string/title_more_info_and_sources"
         tools:layout="@layout/fragment_more_info" />
 
     <!-- =================================================== -->
