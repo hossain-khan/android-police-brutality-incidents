@@ -1,0 +1,46 @@
+name: Firebase App Distribution
+# Job to automatically distribute app for release build when it gets merged into `master`
+
+on:
+  push:
+    branches:
+      # https://help.github.com/en/actions/reference/events-that-trigger-workflows
+      # Trigger the workflow on push only for the master branch for Firebase App Distribution
+     - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./android-app
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+
+    # Save gradle cache between runs, see https://github.com/actions/cache/blob/master/examples.md#java---gradle
+    # Include hashFiles so that cache does continue to grow with old dependencies in it.
+    - name: Copy gradle cache
+      uses: actions/cache@v2
+      with:
+        path: ~/.gradle/caches
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+        restore-keys: |
+          ${{ runner.os }}-gradle-
+
+    # https://firebase.google.com/docs/app-distribution/android/distribute-gradle#step_4_distribute_your_app_to_testers
+    - name: Firebase App Distribute
+      env: # https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      run: ./gradlew assembleRelease appDistributionUploadRelease
+
+    - name: Archive APK
+      uses: actions/upload-artifact@v1
+      with:
+          name: app-release
+          path: android-app/app/build/outputs/apk/release/app-release.apk
