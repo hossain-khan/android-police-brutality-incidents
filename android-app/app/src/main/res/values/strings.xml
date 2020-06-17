@@ -32,7 +32,7 @@
     <string name="message_incident_refresh_fail">Sorry, we are unable to refresh new incidents data at the moment. Please try again later.</string>
     <string name="message_share_confirmation">Share this incident with %1$s external link(s)?</string>
     <string name="message_share_incident_capability">Did you know, you can share a incident details by just tapping on the item from the list?</string>
-    <string name="message_charity_donation_landing_first_time_info">Consider helping the cause, every $ helps.\nTap on the (i) info icon to learn more.</string>
+    <string name="message_charity_donation_landing_first_time_info">Consider helping the cause, every $ helps. Tap on the (i) info icon to learn more.</string>
 
     <!-- Content description for accessibility -->
     <string name="content_description_fist_icon">Justice for George Floyd protest fist image icon</string>
@@ -79,7 +79,7 @@
 
     <string name="message_report_incident_external_link_info">NOTE: This opens link on your browser app. You will need GitHub account to report incident in the &#8216;2020PB/police-brutality&#8217; GitHub repository.</string>
     <string name="info_message_about_app_background"><![CDATA[This app is developed to provide easy access to police brutality incidents that happened during protest for George Floyd\'s murder.\n\nThe app is open-source and available for contribution. If you find issue you can report it at bit.ly/PB2020App]]></string>
-    <string name="info_message_about_app_credits"><![CDATA[The app is actively maintained by following people:\n • Hossain Khan (hossain.dev)\n\nArt work used:\n • Fist Icon - bit.ly/2AnXZd6 (License: Public)\n • Graffiti mural honoring George Floyd by munshots - bit.ly/3dRj524 (License: Public)\n • Font Awesome Icons (License: CC BY 4.0)]]></string>
+    <string name="info_message_about_app_credits"><![CDATA[The app is actively maintained by following people:\n • Hossain Khan (hossain.dev)\n\nArtwork Credits:\n • Credits and links for images and icons used in the app can be found at https://bit.ly/PB2020AppCredits]]></string>
     <string name="app_splash_subtitle_about_cause">… a collection of Police brutality incidents during George Floyd protests ✊</string>
     <string name="share_android_app_with_friends_body_title">Check this Android app that shows all the reported Police brutality incidents during protests for George Floyd\'s murder.</string>
     <string name="share_android_app_with_friends_body_content">Hey, check this Android app out, it provides access to all the reported police brutality incidents that happened following the murder of George Floyd on May 25th, 2020.
