@@ -1,6 +1,7 @@
 package com.blacklivesmatter.policebrutality.ui.charity
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.DiffUtil
@@ -9,8 +10,9 @@ import com.blacklivesmatter.policebrutality.data.model.CharityOrg
 import com.blacklivesmatter.policebrutality.databinding.ListItemCharityOrgBinding
 import com.blacklivesmatter.policebrutality.ui.common.DataBoundListAdapter
 
-class CharityListAdapter(
-    private val itemClickCallback: ((CharityOrg) -> Unit)?
+class CharityListAdapter constructor(
+    private val itemClickCallback: ((CharityOrg) -> Unit),
+    private val donateNowCallback: ((CharityOrg) -> Unit)
 ) : DataBoundListAdapter<CharityOrg, ListItemCharityOrgBinding>(
     diffCallback = object : DiffUtil.ItemCallback<CharityOrg>() {
         override fun areItemsTheSame(oldItem: CharityOrg, newItem: CharityOrg): Boolean {
@@ -29,11 +31,21 @@ class CharityListAdapter(
             parent, false
         )
 
-        binding.root.setOnClickListener {
+        val itemCallbackFunction: (v: View) -> Unit = {
             binding.data?.let {
-                itemClickCallback?.invoke(it)
+                itemClickCallback.invoke(it)
             }
         }
+
+        binding.root.setOnClickListener(itemCallbackFunction)
+        binding.charityLearnMoreButton.setOnClickListener(itemCallbackFunction)
+
+        binding.charityDonateNowButton.setOnClickListener {
+            binding.data?.let {
+                donateNowCallback.invoke(it)
+            }
+        }
+
         return binding
     }
 

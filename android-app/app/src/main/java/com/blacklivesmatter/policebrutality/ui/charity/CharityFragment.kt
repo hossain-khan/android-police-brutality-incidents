@@ -15,6 +15,7 @@ import com.blacklivesmatter.policebrutality.R
 import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.databinding.FragmentCharityDonateBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
+import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 import javax.inject.Inject
@@ -37,10 +38,13 @@ class CharityFragment : Fragment() {
         // This required to participate in providing toolbar menu on the host activity
         (requireActivity() as AppCompatActivity).setSupportActionBar(viewDataBinding.toolbar)
 
-        adapter = CharityListAdapter { charity ->
-            Timber.d("Tapped on charity $charity")
-            analytics.logSelectItem(Analytics.CONTENT_TYPE_CHARITY, charity.org_url, charity.name)
-        }
+        adapter = CharityListAdapter(itemClickCallback = { charity ->
+            viewModel.onCharitySelected(charity)
+            startActivity(IntentBuilder.build(requireContext(), charity.org_url))
+        }, donateNowCallback = { donateCharity ->
+            viewModel.onCharitySelected(donateCharity)
+            startActivity(IntentBuilder.build(requireContext(), donateCharity.donate_url))
+        })
         adapter.submitList(emptyList())
 
         viewDataBinding.content.recyclerView.setHasFixedSize(false)

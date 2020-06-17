@@ -30,4 +30,8 @@ class CharityViewModel @ViewModelInject constructor(
             _charityList.postValue(charities)
         }
     }
+
+    fun onCharitySelected(charity: CharityOrg) {
+        analytics.logSelectItem(Analytics.CONTENT_TYPE_CHARITY, charity.org_url, charity.name)
+    }
 }
