@@ -29,7 +29,7 @@
     "org_url": "https://www.naacpldf.org/",
     "donate_url": "https://org2.salsalabs.com/o/6857/p/salsa/donation/common/public/?donate_page_KEY=15780&_ga=2.74359510.534011183.1592338970-1909650139.1591900549",
     "logo_url": "https://pb2020-77946.web.app/logos/ldf.jpg",
-    "item_weight": 100
+    "item_weight": 120
   },
   {
     "name": "The Bail Project",
@@ -53,7 +53,7 @@
     "org_url": "https://colorofchange.org/",
     "donate_url": "https://secure.actblue.com/contribute/page/support-us?refcode=coc_website_popup",
     "logo_url": "https://pb2020-77946.web.app/logos/coc.png",
-    "item_weight": 100
+    "item_weight": 70
   },
   {
     "name": "The Loveland Foundation",
@@ -61,7 +61,7 @@
     "org_url": "https://thelovelandfoundation.org/",
     "donate_url": "https://www.flipcause.com/secure/cause_pdetails/Njg4MzE=",
     "logo_url": "https://pb2020-77946.web.app/logos/loveland-white.png",
-    "item_weight": 100
+    "item_weight": 80
   },
   {
     "name": "Communities United Against Police Brutality",
@@ -70,5 +70,21 @@
     "donate_url": "https://www.cuapb.org/donatecuapb",
     "logo_url": "https://pb2020-77946.web.app/logos/cuapb.jpg",
     "item_weight": 100
+  },
+  {
+    "name": "Committee to Protect Journalists",
+    "description": "The Committee to Protect Journalists is an independent, nonprofit organization that promotes press freedom worldwide. We defend the right of journalists to report the news safely and without fear of reprisal.",
+    "org_url": "https://cpj.org/",
+    "donate_url": "https://cpj.org/donate",
+    "logo_url": "https://pb2020-77946.web.app/logos/cpj.png",
+    "item_weight": 150
+  },
+  {
+    "name": "National Bail Fund Network",
+    "description": "The National Bail Fund Network is made up of over sixty community bail and bond funds across the country. We regularly update this listing of community bail funds that are freeing people by paying bail/bond and are also fighting to abolish the money bail system and pretrial detention.",
+    "org_url": "https://www.communityjusticeexchange.org/nbfn-directory",
+    "donate_url": "https://www.communityjusticeexchange.org/donate",
+    "logo_url": "https://pb2020-77946.web.app/logos/nbfn.jpg",
+    "item_weight": 150
   }
 ]
