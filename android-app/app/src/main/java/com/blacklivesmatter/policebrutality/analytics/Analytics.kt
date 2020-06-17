@@ -14,12 +14,14 @@ interface Analytics {
         const val SCREEN_INCIDENT_DATE_FILTER = "FilterIncidentsByDate"
         const val SCREEN_MORE_INFO = "MoreInformation"
         const val SCREEN_ABOUT_APP = "AboutApplication"
+        const val SCREEN_CHARITY_ORGANIZATIONS = "CharityOrganizations"
 
         const val ACTION_INCIDENT_REFRESH = "RefreshIncidents"
         const val ACTION_INCIDENT_REPORT_NEW = "MakeIncidentReport"
         const val ACTION_SHARE_APP = "ShareApplication"
 
         const val CONTENT_TYPE_LOCATION = "TypeLocation"
+        const val CONTENT_TYPE_CHARITY = "TypeCharity"
         const val CONTENT_TYPE_INCIDENT = "TypeIncident"
         const val CONTENT_TYPE_INCIDENT_SHARE = "TypeShareIncident"
         const val CONTENT_TYPE_HASHTAG = "TypeHashtag"

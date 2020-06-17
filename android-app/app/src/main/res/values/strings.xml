@@ -7,13 +7,15 @@
     <string name="title_incidents_on_date">Incidents on %s</string>
     <string name="title_report_new_incident">Report Incident</string>
     <string name="title_more_info_and_sources">Additional Resources</string>
+    <string name="title_donate_for_cause" tools:ignore="DuplicateStrings">Donate</string>
     <string name="title_filter_incidents_by_date">Filter incident by specific date</string>
 
     <!-- Menu Titles -->
     <string name="menu_title_brutality_incidents">Incidents</string>
     <string name="menu_title_report_new_incident">Report</string>
-    <string name="menu_title_more_info_and_sources">Info</string>
-    <string name="menu_title_donate_to_charity">Donate</string>
+    <string name="menu_title_more_info_and_sources" tools:ignore="DuplicateStrings">Info</string>
+    <string name="menu_title_donate_to_charity" tools:ignore="DuplicateStrings">Donate</string>
+    <string name="menu_title_donate_disclaimer_info" tools:ignore="DuplicateStrings">Info</string>
     <string name="menu_title_about_app" tools:ignore="DuplicateStrings">About App</string>
     <string name="menu_title_share_app">Share App</string>
     <string name="menu_title_date_filter">Filter by Date</string>
@@ -32,6 +34,7 @@
     <!-- Content description for accessibility -->
     <string name="content_description_fist_icon">Justice for George Floyd protest fist image icon</string>
     <string name="content_description_george_floyd_graffiti_image">george floyd graffiti</string>
+    <string name="content_description_donate_for_cause_image">Donate to support the cause</string>
     <string name="content_description_go_back_to_prev_screen">Go back to previous screen</string>
 
     <!-- Labels, Button CTA and so on -->
