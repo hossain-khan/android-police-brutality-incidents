@@ -12,7 +12,8 @@ Various resources related to this application.
 * Fist Icon 1 - https://commons.wikimedia.org/wiki/File:Fist_.svg
 * Fist Icon 2 - https://commons.wikimedia.org/wiki/File:Fist.svg
 * Graffiti mural honoring George Floyd - https://unsplash.com/photos/_vAC0je-hKo
-* Icons - https://github.com/FortAwesome/Font-Awesome
+* Font Awesome Icons - https://github.com/FortAwesome/Font-Awesome
+* Material Design Icons - https://github.com/google/material-design-icons
 * USA Map Icon - https://svgsilh.com/image/1674031.html
 * All hands together - https://unsplash.com/photos/lbLgFFlADrY
 * Protest - https://unsplash.com/photos/ILpe0MpOYww
