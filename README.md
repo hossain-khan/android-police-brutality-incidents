@@ -18,31 +18,26 @@ If you want to try the app as it is being developed, you can get the latest Andr
 The objective of the app is to be front-end of the data that is collected and exposed by [police-brutality](https://github.com/2020PB/police-brutality) repository.
 This allows people to easily access data on the go, and allow them to easily report new incident.
 
-
-## Technical Details
-
-Here are some technical details about the app.
-
-
-### Features
+### Key Features
 
 Some of the key features based on data available though API is
 
-* Browse content by area (eg. State, City)
-* Browse content by date
-* Show embeded content in app
-* Cache content locally
+* Browse reported incidents by area (eg. State)
+* Filter reported incidents by date
+* Sync latest incidents from server though API
+* Visit external links of related to incidents via native app, or web browser
+* Allows the user to share a single incident with all the associated information
+* Allows user to report incident by opening official incident report form
+* Shows list of reknown charitable organizations that work for `#BlackLivesMatter` or in related area
+* Allows the users to explore more about charities or donate to them
+* Provides bit more information about the `/r/2020PoliceBrutality` reddit community with social links
+* Allows the user to copy popular hash tags
+* Provides app's information with option to share with friends and family
 
-Advanced feature
-* Cache content on central server to avoid loading data from 3rd pary services
+## Technical Details
 
+Technical details about the Android app can be found at [android-app/README](https://github.com/amardeshbd/android-police-brutality-incidents/blob/develop/android-app/README.md).
 
-### Architecture
-
-Essentially, the app should follow standard guidelines from Google. 
-Currently following key features are being used.
-
-* MVVM, Dagger2, Room, Architecture Components and other JetPack libraries.
 
 ### Preview
 
