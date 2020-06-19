@@ -5,7 +5,9 @@ import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -14,7 +16,8 @@ import timber.log.Timber
  * View model for [LauncherActivity].
  */
 class LauncherViewModel @ViewModelInject constructor(
-    private val preferences: SharedPreferences
+    private val preferences: SharedPreferences,
+    private val repository: IncidentRepository
 ) : ViewModel() {
     companion object {
         private const val SPLASH_SCREEN_DELAY_FIRST_TIME_MS = 3500L
@@ -29,6 +32,14 @@ class LauncherViewModel @ViewModelInject constructor(
 
     private val _launcherTimeoutEvent = LiveEvent<NavigationEvent>()
     val launcherTimeoutEvent: LiveData<NavigationEvent> = _launcherTimeoutEvent
+
+    init {
+        viewModelScope.launch(Dispatchers.IO) {
+            // Seed the database with bundled data as soon as app loads
+            val totalIncidents = repository.totalIncidents()
+            Timber.d("Requested to seed database, currently has $totalIncidents incidents.")
+        }
+    }
 
     fun countDownSplash() {
         viewModelScope.launch {
