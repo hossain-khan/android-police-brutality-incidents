@@ -30,7 +30,7 @@ interface IncidentDao {
     fun getIncidentsByDate(timestamp: Long): LiveData<List<Incident>>
 
     @Query("SELECT COUNT(id) FROM incidents")
-    fun getTotalRecords(): LiveData<Int>
+    suspend fun getTotalRecords(): Int
 
     @Query("SELECT COUNT(*) as count FROM incidents where DATE(date) = DATE(DATETIME(:timestamp, 'unixepoch'))")
     fun getTotalIncidentsOnDate(timestamp: Long): LiveData<Int>
