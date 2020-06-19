@@ -215,6 +215,24 @@
          }
       },
       {
+         "id": "48af12a0-b0e1-11ea-bca4-9755d29e5a35",
+         "pb_id": "in-indianapolis-3",
+         "state": "Indiana",
+         "city": "Indianapolis",
+         "date": "2020-05-31T00:00:00.000000Z",
+         "title": "Police tear gas peaceful protest, including worshipping congregation",
+         "description": null,
+         "links": [
+            "https:\/\/www.theindychannel.com\/news\/local-news\/police-apologize-after-non-violent-protesters-tear-gassed-on-monument-circle",
+            "https:\/\/twitter.com\/greg_doucette\/status\/1268404518326276096"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "0.0000000",
+            "long": "0.0000000"
+         }
+      },
+      {
          "id": "581d2e60-af4a-11ea-ae4f-8741c6a15146",
          "pb_id": "al-hoover-1",
          "state": "Alabama",
@@ -4631,7 +4649,8 @@
          "description": null,
          "links": [
             "https:\/\/twitter.com\/The_Stepover\/status\/1267236742278463488",
-            "https:\/\/twitter.com\/eavu__\/status\/1267260549814870016"
+            "https:\/\/twitter.com\/eavu__\/status\/1267260549814870016",
+            "https:\/\/twitter.com\/samjwc\/status\/1267355060666654720"
          ],
          "data": null,
          "geocoding": {
@@ -6598,6 +6617,24 @@
             "https:\/\/twitter.com\/_40lucks\/status\/1268771676688441345",
             "https:\/\/twitter.com\/greg_doucette\/status\/1269787866797936640",
             "https:\/\/twitter.com\/greg_doucette\/status\/1269788200630996993"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "0.0000000",
+            "long": "0.0000000"
+         }
+      },
+      {
+         "id": "fc094830-b0e1-11ea-91a9-958a647a910f",
+         "pb_id": "nv-lasvegas-5",
+         "state": "Nevada",
+         "city": "Las Vegas",
+         "date": "2020-06-01T00:00:00.000000Z",
+         "title": "Police jump out of car to shove protestors",
+         "description": null,
+         "links": [
+            "https:\/\/www.tiktok.com\/@lord.vizi\/video\/6833826921755741445",
+            "https:\/\/www.tiktok.com\/@lord.vizi\/video\/6833963763486461190"
          ],
          "data": null,
          "geocoding": {
