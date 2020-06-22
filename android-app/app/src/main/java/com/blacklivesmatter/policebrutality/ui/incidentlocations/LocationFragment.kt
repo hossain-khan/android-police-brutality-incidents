@@ -198,6 +198,7 @@ class LocationFragment : Fragment() {
             .setCalendarConstraints(
                 CalendarConstraints.Builder()
                     .setStart(the846Day.timeInMillis)
+                    .setOpenAt(the846Day.timeInMillis)
                     .setEnd(System.currentTimeMillis())
                     .setValidator(CompositeDateValidator.allOf(validators))
                     .build()

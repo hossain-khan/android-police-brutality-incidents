@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Also use 25% increased spacing for larger devices -->
+    <dimen name="view_spacing_xxlarge">40dp</dimen>
+    <dimen name="view_spacing_xlarge">30dp</dimen>
+    <dimen name="view_spacing_larger">20dp</dimen>
+    <dimen name="view_spacing_large">15dp</dimen>
+    <dimen name="view_spacing_medium">10dp</dimen>
+    <dimen name="view_spacing_small">5dp</dimen>
+</resources>
