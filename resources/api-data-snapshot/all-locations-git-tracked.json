@@ -1,7 +1,7 @@
 {
    "edit_at": "https://github.com/2020PB/police-brutality",
    "help": "ask @ubershmekel on twitter",
-   "updated_at": "2020-06-19T12:40:57.728450+00:00",
+   "updated_at": "2020-06-22T13:42:12.793753+00:00",
    "data": [
       {
          "links": [
@@ -250,6 +250,18 @@
          "date": "2020-06-03",
          "date_text": "June 3rd",
          "id": "nd-fargo-1"
+      },
+      {
+         "links": [
+            "https://www.al.com/news/birmingham/2020/06/two-reporters-taken-into-custody-after-covering-birmingham-protest.html"
+         ],
+         "state": "Alabama",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Alabama.md",
+         "city": "Birmingham",
+         "name": "Police arrest two reporters",
+         "date": "2020-06-03",
+         "date_text": "June 3",
+         "id": "al-birmingham-1"
       },
       {
          "links": [
@@ -745,7 +757,9 @@
       },
       {
          "links": [
-            "https://twitter.com/JasonRileyWDRB/status/1272965516286705665"
+            "https://twitter.com/JasonRileyWDRB/status/1272965516286705665",
+            "https://twitter.com/greg_doucette/status/1273127612546678786",
+            "https://www.instagram.com/p/CBleLePnpR_/"
          ],
          "state": "Kentucky",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Kentucky.md",
@@ -757,7 +771,9 @@
       },
       {
          "links": [
-            "https://twitter.com/kenjiboijoi/status/1272708377349668864"
+            "https://twitter.com/kenjiboijoi/status/1272708377349668864",
+            "https://drive.google.com/file/d/1p6FDE2y_T9bi_D3iakcnzOkS9vQIex5k/view?usp=sharing",
+            "https://www.buzzfeednews.com/article/amberjamieson/louisville-shot-fired-security-guard-video"
          ],
          "state": "Kentucky",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Kentucky.md",
@@ -2287,7 +2303,8 @@
       },
       {
          "links": [
-            "https://www.reddit.com/r/PublicFreakout/comments/gttdkj/cop_driving_into_crowds_of_protestors/"
+            "https://www.reddit.com/r/PublicFreakout/comments/gttdkj/cop_driving_into_crowds_of_protestors/",
+            "https://tuckbot.tv/#/watch/gttdkj"
          ],
          "state": "California",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
@@ -2903,9 +2920,20 @@
       },
       {
          "links": [
-            "https://www.facebook.com/damicedsota.thespiritflow/videos/10216865788705633/UzpfSTEwMDAxMTAzODkyNjEwMzpWSzoyNjczNDU4ODUyOTMzODE2/?multi_permalinks=2673458852933816%2C2673043962975305%2C2672351053044596%2C2672352373044464%2C2672353659711002&notif_id=1590031733032682&notif_t=group_activity",
             "https://youtu.be/XAa5xb6JitI?t=5982",
             "https://gfycat.com/distinctsecretgrasshopper-minneapolis-protest-police-acab"
+         ],
+         "state": "Minnesota",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
+         "city": "Minneapolis",
+         "name": "Police hit press in neck and head with wooden baton",
+         "date": "2020-05-26",
+         "date_text": "May 26th",
+         "id": "mn-minneapolis-21"
+      },
+      {
+         "links": [
+            "https://www.facebook.com/damicedsota.thespiritflow/videos/10216865788705633/UzpfSTEwMDAxMTAzODkyNjEwMzpWSzoyNjczNDU4ODUyOTMzODE2/"
          ],
          "state": "Minnesota",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
@@ -3046,6 +3074,31 @@
       },
       {
          "links": [
+            "https://www.youtube.com/watch?v=gfb_zJiMTFU"
+         ],
+         "state": "Minnesota",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
+         "city": "Minneapolis",
+         "name": "Medics talk about police destroying tent and slashing tires.",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "mn-minneapolis-25"
+      },
+      {
+         "links": [
+            "https://twitter.com/val_ebertz/status/1266975058230235137",
+            "https://twitter.com/Jeff_Wagner4/status/1266933139303268353"
+         ],
+         "state": "Minnesota",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
+         "city": "Minneapolis",
+         "name": "Law enforcement officers slash car tires.",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "mn-minneapolis-29"
+      },
+      {
+         "links": [
             "https://twitter.com/tkerssen/status/1266921821653385225"
          ],
          "state": "Minnesota",
@@ -3073,12 +3126,15 @@
       {
          "links": [
             "https://twitter.com/JaredGoyette/status/1266961243476299778",
-            "https://twitter.com/RyanFaircloth/status/1266967500383834114"
+            "https://twitter.com/RyanFaircloth/status/1266967500383834114",
+            "https://twitter.com/RyanFaircloth/status/1266977223568961536",
+            "https://pressfreedomtracker.us/all-incidents/minneapolis-reporter-injured-broken-glass-after-nonlethal-round-shatters-car-window/",
+            "https://www.twincities.com/2020/05/30/journalists-report-being-fired-on-gassed-in-minneapolis-george-floyd-protests/"
          ],
          "state": "Minnesota",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
          "city": "Minneapolis",
-         "name": "Reporter shares his experience",
+         "name": "Reporter's car window broken by police projectile",
          "date": "2020-05-31",
          "date_text": "May 31st",
          "id": "mn-minneapolis-7"
@@ -3971,7 +4027,8 @@
          "links": [
             "https://twitter.com/NEO_Scan/status/1266848874163027970",
             "https://www.cleveland.com/court-justice/2020/06/cleveland-police-gave-order-for-george-floyd-protesters-to-disperse-legal-observers-witnesses-said-no-one-heard-it.html",
-            "https://twitter.com/AntonioAlan216/status/1266877225707745280"
+            "https://twitter.com/AntonioAlan216/status/1266877225707745280",
+            "https://www.cleveland.com/court-justice/2020/06/man-who-lost-eye-to-police-fired-bean-bag-round-during-clevelands-george-floyd-protests-i-did-not-deserve-this.html"
          ],
          "state": "Ohio",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Ohio.md",
@@ -4562,6 +4619,19 @@
       },
       {
          "links": [
+            "https://pittsburgh.cbslocal.com/2020/06/03/protester-hopes-cell-phone-video-clears-his-name/",
+            "https://twitter.com/greg_doucette/status/1270149233673469957"
+         ],
+         "state": "Pennsylvania",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Pennsylvania.md",
+         "city": "Pittsburgh",
+         "name": "Police tear-gas, shoot and arrest protestor confused by contradicting police instructions",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "pa-pittsburgh-3"
+      },
+      {
+         "links": [
             "https://www.youtube.com/watch?v=TxHxU6nhzzQ",
             "https://twitter.com/PaulaReedWard/status/1268547369618026503",
             "https://www.post-gazette.com/news/crime-courts/2020/06/03/East-Liberty-protest-Abigail-Rubio-says-Pittsburgh-police-intimidated-video/stories/202006030158"
@@ -4570,15 +4640,16 @@
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Pennsylvania.md",
          "city": "Pittsburgh",
          "name": "Officer pepper-sprays a woman who is on her knees with her hands up",
-         "date": "",
-         "date_text": "",
+         "date": "2020-06-01",
+         "date_text": "June 1st",
          "id": "pa-pittsburgh-1"
       },
       {
          "links": [
             "https://www.reddit.com/r/pittsburgh/comments/guzshz/police_declaring_an_unlawful_assembly_against_a/",
             "https://www.facebook.com/BenjaminKFerris/posts/3091613010894973",
-            "https://twitter.com/gautamyadav818/status/1267606317893550080"
+            "https://twitter.com/gautamyadav818/status/1267606317893550080",
+            "https://www.facebook.com/shawn.green.311/videos/2935858916468885/"
          ],
          "state": "Pennsylvania",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Pennsylvania.md",
@@ -4587,6 +4658,19 @@
          "date": "2020-06-01",
          "date_text": "June 1st",
          "id": "pa-pittsburgh-2"
+      },
+      {
+         "links": [
+            "https://twitter.com/messiest_headd/status/1267816842413740034",
+            "https://twitter.com/stabpossum/status/1268203842174361600"
+         ],
+         "state": "Pennsylvania",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Pennsylvania.md",
+         "city": "Pittsburgh",
+         "name": "Police pepper spray two kneeling protestors",
+         "date": "2020-06-01",
+         "date_text": "June 1st",
+         "id": "pa-pittsburgh-4"
       },
       {
          "links": [
