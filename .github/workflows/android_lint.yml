@@ -36,3 +36,9 @@ jobs:
 
     - name: Android Lint
       run: ./gradlew lint
+
+    - name: Archive Lint Results
+      uses: actions/upload-artifact@v1
+      with:
+          name: app-debug
+          path: android-app/app/build/reports

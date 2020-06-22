@@ -80,7 +80,7 @@ android {
     lintOptions { // https://developer.android.com/studio/write/lint.html
         checkAllWarnings true
         warningsAsErrors true
-        ignore 'GradleDependency', 'NewerVersionAvailable', 'UnusedIds'
+        ignore 'GradleDependency', 'NewerVersionAvailable', 'UnusedIds', 'InvalidPackage' /* https://github.com/Kotlin/kotlinx.coroutines/issues/2004 */
     }
 }
 
