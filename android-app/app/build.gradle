@@ -80,7 +80,7 @@ android {
     lintOptions { // https://developer.android.com/studio/write/lint.html
         checkAllWarnings true
         warningsAsErrors true
-        ignore 'GradleDependency', 'NewerVersionAvailable', 'UnusedIds'
+        ignore 'GradleDependency', 'NewerVersionAvailable', 'UnusedIds', 'InvalidPackage' /* https://github.com/Kotlin/kotlinx.coroutines/issues/2004 */
     }
 }
 
@@ -113,9 +113,8 @@ dependencies {
     implementation "androidx.room:room-ktx:$rootProject.roomVersion"
     kapt "androidx.room:room-compiler:$rootProject.roomVersion"
 
-    // Glide - image loading
-    kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
-    implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    // Coil - image loading
+    implementation "io.coil-kt:coil:0.11.0"
 
     // Google Gson for JSON
     implementation "com.google.code.gson:gson:2.8.6"

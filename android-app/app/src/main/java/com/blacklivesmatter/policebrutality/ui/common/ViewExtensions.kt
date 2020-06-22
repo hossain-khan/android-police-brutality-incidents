@@ -3,13 +3,11 @@ package com.blacklivesmatter.policebrutality.ui.common
 import android.annotation.SuppressLint
 import android.view.View
 import androidx.annotation.IdRes
-import androidx.appcompat.widget.AppCompatImageView
 import androidx.databinding.BindingAdapter
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.NavHostFragment
 import com.blacklivesmatter.policebrutality.BuildConfig
-import com.bumptech.glide.Glide
 import timber.log.Timber
 
 /**
@@ -59,19 +57,5 @@ fun Fragment.navigateTo(@IdRes sourceFragmentId: Int, destinationAction: NavDire
             this,
             this.resources.getResourceName(destinationAction.actionId)
         )
-    }
-}
-
-/**
- * Loads the image view wil provided url.
- */
-@BindingAdapter("imageUrl")
-fun AppCompatImageView.loadImage(imageUrl: String?) {
-    if (imageUrl.isNullOrEmpty()) {
-        // do nothing
-    } else {
-        Glide.with(this.context)
-            .load(imageUrl)
-            .into(this)
     }
 }
