@@ -26,16 +26,20 @@ package com.blacklivesmatter.policebrutality.ui.extensions
 
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.databinding.BindingAdapter
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
+import coil.api.load
+import coil.size.Scale
 
+/**
+ * Loads the image view wil provided url.
+ */
 @BindingAdapter("imageUrl")
-fun loadImage(imageView: AppCompatImageView, url: String?) {
-    if (!url.isNullOrEmpty()) {
-        Glide.with(imageView)
-            .load(url)
-            .fitCenter()
-            .transition(DrawableTransitionOptions.withCrossFade())
-            .into(imageView)
+fun AppCompatImageView.loadImage(imageUrl: String?) {
+    if (imageUrl.isNullOrEmpty()) {
+        // do nothing
+    } else {
+        this.load(imageUrl) {
+            crossfade(true)
+            scale(Scale.FIT)
+        }
     }
 }
