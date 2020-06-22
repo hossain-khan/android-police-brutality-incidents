@@ -40,5 +40,5 @@ jobs:
     - name: Archive Lint Results
       uses: actions/upload-artifact@v1
       with:
-          name: app-debug
+          name: lint-reports
           path: android-app/app/build/reports
