@@ -1,5 +1,6 @@
 package com.blacklivesmatter.policebrutality.config
 
+import com.blacklivesmatter.policebrutality.data.AppDatabase
 import org.threeten.bp.OffsetDateTime
 import org.threeten.bp.ZoneOffset
 
@@ -20,15 +21,22 @@ val THE_846_DAY: OffsetDateTime = OffsetDateTime.of(
     /* nanoOfSecond */ 0, ZoneOffset.of("-5")
 )
 
+/**
+ * Database name for storing incidents locally.
+ * See [AppDatabase].
+ */
 const val DATABASE_NAME = "incidents-db"
 
 /**
- * Fallback data file incidents
+ * Fallback data file incidents, used to preload [AppDatabase].
  */
 const val INCIDENT_DATA_FILENAME = "all_locations_fallback.json"
 
 /**
- * Bundled charity list data
+ * Bundled charity list data.
+ *
+ * See following links for sources:
+ * - https://github.com/amardeshbd/android-police-brutality-incidents/tree/develop/resources#source-for-charitable-organization
  */
 const val CHARITY_DATA_FILENAME = "donate_for_cause.json"
 

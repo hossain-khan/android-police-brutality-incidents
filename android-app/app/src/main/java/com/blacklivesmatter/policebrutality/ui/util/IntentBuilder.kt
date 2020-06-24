@@ -17,15 +17,22 @@ object IntentBuilder {
     private const val APP_ID_FACEBOOK = "com.facebook.katana"
     private const val APP_ID_INSTAGRAM = "com.instagram.android"
     private const val APP_ID_REDDIT = "com.reddit.frontpage"
+    private const val APP_ID_TIKTOK = "com.zhiliaoapp.musically"
     private const val APP_ID_TWITTER = "com.twitter.android"
     private const val APP_ID_YOUTUBE = "com.google.android.youtube"
 
+    private const val MIME_TYPE_TEXT = "text/plain"
+
     /**
      * Map of URI authority(domain) to Android App ID
+     *
+     * Also see [LinkTransformer.socialIcons].
      */
     private val appIdMap = mapOf<String, String>(
         "www.instagram.com" to APP_ID_INSTAGRAM,
         "www.facebook.com" to APP_ID_FACEBOOK,
+        "m.facebook.com" to APP_ID_FACEBOOK,
+        "www.tiktok.com" to APP_ID_TIKTOK,
         "twitter.com" to APP_ID_TWITTER,
         "mobile.twitter.com" to APP_ID_TWITTER,
         "youtu.be" to APP_ID_YOUTUBE,
@@ -87,7 +94,7 @@ ${incident.links.joinToString(separator = " \n * ", prefix = " * ")}
             action = Intent.ACTION_SEND
             putExtra(Intent.EXTRA_TEXT, shareBodyText)
             putExtra(Intent.EXTRA_SUBJECT, shareContentTitle)
-            type = "text/plain"
+            type = MIME_TYPE_TEXT
         }
 
         val shareIntent = Intent.createChooser(sendIntent, null)
@@ -107,7 +114,7 @@ ${incident.links.joinToString(separator = " \n * ", prefix = " * ")}
                     resources.getString(R.string.hash_tag_policebrutality)
                 )
             )
-            type = "text/plain"
+            type = MIME_TYPE_TEXT
         }
 
         val shareAppIntent = Intent.createChooser(sendIntent, null)
