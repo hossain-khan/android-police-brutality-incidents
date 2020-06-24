@@ -11,6 +11,7 @@ object LinkTransformer {
     private val socialIcons = mapOf(
         "www.instagram.com" to R.drawable.ic_web_instagram,
         "www.facebook.com" to R.drawable.ic_web_facebook,
+        "m.facebook.com" to R.drawable.ic_web_facebook,
         "twitter.com" to R.drawable.ic_web_twitter,
         "mobile.twitter.com" to R.drawable.ic_web_twitter,
         "youtu.be" to R.drawable.ic_web_youtube,
@@ -43,9 +44,12 @@ object LinkTransformer {
     fun toLinkInfo(link: String): LinkInfo {
         val linkUri = Uri.parse(link)
 
+        // Remove various sub-domain prefixes
+        val regex = "^(www\\.|old\\.|v\\.|mobile\\.|vm\\.|i\\.|m\\.)".toRegex()
+
         return LinkInfo(
             sourceLink = link,
-            name = linkUri.authority?.replace("www.", "") ?: "External Link",
+            name = linkUri.authority?.replace(regex, "") ?: "External Link",
             iconResId = socialIcons.getValue(linkUri.authority.toString())
         )
     }
