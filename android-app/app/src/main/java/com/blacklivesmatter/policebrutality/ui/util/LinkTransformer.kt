@@ -7,6 +7,8 @@ import com.blacklivesmatter.policebrutality.data.model.LinkInfo
 object LinkTransformer {
     /**
      * Convenience map to get drawable resource icon for respective web domain name.
+     *
+     * Also see [IntentBuilder.appIdMap].
      */
     private val socialIcons = mapOf(
         "www.instagram.com" to R.drawable.ic_web_instagram,
@@ -14,6 +16,7 @@ object LinkTransformer {
         "m.facebook.com" to R.drawable.ic_web_facebook,
         "twitter.com" to R.drawable.ic_web_twitter,
         "mobile.twitter.com" to R.drawable.ic_web_twitter,
+        "www.tiktok.com" to R.drawable.ic_web_tiktok,
         "youtu.be" to R.drawable.ic_web_youtube,
         "www.youtube.com" to R.drawable.ic_web_youtube,
         "v.redd.it" to R.drawable.ic_web_reddit,
