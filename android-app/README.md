@@ -8,7 +8,7 @@ Essentially, the app should follow standard guidelines from Google.
 
 Currently following key features are being used.
 
-* MVVM, Dagger2, Room, Architecture Components and other JetPack libraries.
+* MVVM, Dagger Hilt, Room, Navigation, WorkManager, Retrofit2, Architecture Components and other JetPack libraries.
 
 See [app/build.gradle](https://github.com/amardeshbd/android-police-brutality-incidents/blob/develop/android-app/app/build.gradle#L87) for library dependency.
 
