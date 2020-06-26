@@ -1,6 +1,7 @@
 package com.blacklivesmatter.policebrutality.ui.charity
 
 import android.content.SharedPreferences
+import androidx.core.content.edit
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
@@ -10,6 +11,7 @@ import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.blacklivesmatter.policebrutality.analytics.Analytics
+import com.blacklivesmatter.policebrutality.config.PREF_KEY_CHARITY_LIST_DISCLAIMER_INFO_SHOWN
 import com.blacklivesmatter.policebrutality.data.CharityDao
 import com.blacklivesmatter.policebrutality.data.model.CharityOrg
 import kotlinx.coroutines.Dispatchers
@@ -21,10 +23,6 @@ class CharityViewModel @ViewModelInject constructor(
     private val analytics: Analytics,
     private val preferences: SharedPreferences
 ) : ViewModel(), LifecycleObserver {
-    companion object {
-        private const val PREF_KEY_CHARITY_LIST_DISCLAIMER_INFO_SHOWN = "preference_key_charity_disclaimer_shown"
-    }
-
     private val _shouldShowCharityDisclaimerInfoMessage = MutableLiveData<Unit>()
     val shouldShowCharityDisclaimerInfoMessage: LiveData<Unit> = _shouldShowCharityDisclaimerInfoMessage
 
@@ -40,7 +38,7 @@ class CharityViewModel @ViewModelInject constructor(
         val isMessageShown = preferences.getBoolean(PREF_KEY_CHARITY_LIST_DISCLAIMER_INFO_SHOWN, false)
         if (isMessageShown.not()) {
             Timber.d("User has launched app for first time, show charity message.")
-            preferences.edit().putBoolean(PREF_KEY_CHARITY_LIST_DISCLAIMER_INFO_SHOWN, true).apply()
+            preferences.edit { putBoolean(PREF_KEY_CHARITY_LIST_DISCLAIMER_INFO_SHOWN, true) }
             _shouldShowCharityDisclaimerInfoMessage.value = Unit
         } else {
             Timber.d("Not first time app launch, don't show charity message.")
