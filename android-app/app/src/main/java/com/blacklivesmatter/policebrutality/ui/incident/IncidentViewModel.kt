@@ -1,12 +1,14 @@
 package com.blacklivesmatter.policebrutality.ui.incident
 
 import android.content.SharedPreferences
+import androidx.core.content.edit
 import androidx.databinding.ObservableField
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.blacklivesmatter.policebrutality.config.PREF_KEY_SHARE_CAPABILITY_REMINDER_SHOWN
 import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
@@ -16,10 +18,6 @@ class IncidentViewModel @ViewModelInject constructor(
     private val incidentRepository: IncidentRepository,
     private val preferences: SharedPreferences
 ) : ViewModel() {
-    companion object {
-        private const val PREF_KEY_SHARE_CAPABILITY_REMINDER_SHOWN = "preference_key_share_incident_guide_shown"
-    }
-
     internal val selectedState = ObservableField("")
 
     private val _incidents = MediatorLiveData<List<Incident>>()
@@ -45,7 +43,7 @@ class IncidentViewModel @ViewModelInject constructor(
         val isMessageShown = preferences.getBoolean(PREF_KEY_SHARE_CAPABILITY_REMINDER_SHOWN, false)
         if (isMessageShown.not()) {
             Timber.d("User has launched app for first time, show share capability message.")
-            preferences.edit().putBoolean(PREF_KEY_SHARE_CAPABILITY_REMINDER_SHOWN, true).apply()
+            preferences.edit { putBoolean(PREF_KEY_SHARE_CAPABILITY_REMINDER_SHOWN, true) }
             _shouldShowShareCapabilityMessage.value = Unit
         } else {
             Timber.d("Not first time app launch, don't show share capability message.")
