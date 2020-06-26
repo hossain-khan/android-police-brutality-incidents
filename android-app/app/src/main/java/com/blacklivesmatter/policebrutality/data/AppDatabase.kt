@@ -9,7 +9,7 @@ import com.blacklivesmatter.policebrutality.data.model.Incident
 /**
  * The Room database for this app
  */
-@Database(entities = [Incident::class, CharityOrg::class], version = 5, exportSchema = true)
+@Database(entities = [Incident::class, CharityOrg::class], version = 6, exportSchema = true)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun incidentDao(): IncidentDao
