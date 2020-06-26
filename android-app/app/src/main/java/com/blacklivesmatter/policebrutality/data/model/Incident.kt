@@ -51,7 +51,7 @@ data class Incident(
     @SerializedName("city") @ColumnInfo(name = "city") val city: String? = "",
     @SerializedName("title") @ColumnInfo(name = "name") val name: String? = "",
     @SerializedName("date") @ColumnInfo(name = "date") val date: OffsetDateTime? = null,
-    @SerializedName("geocoding") @ColumnInfo(name = "geocoding") val geocoding: GeoCoding,
+    @SerializedName("geocoding") @ColumnInfo(name = "geocoding") val geocoding: GeoCoding?,
     @SerializedName("links") @ColumnInfo(name = "links") val links: List<String> = emptyList()
 ) {
     @Ignore
