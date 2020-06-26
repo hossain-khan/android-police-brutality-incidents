@@ -7,8 +7,7 @@ Android client app for https://github.com/2020PB/police-brutality (Repository co
 </p>
 
 ### Early BETA Testing 🚧
-If you want to try the app as it is being developed, you can get the latest Android APK in 2 different ways:
-* GitHub Releases - See [current release](https://github.com/amardeshbd/android-police-brutality-incidents/releases) with APK bundled with it.
+If you want to try the app as it is being developed, you can get the latest Android buid via Firebase:
 * Firebase App Distribution - Subscribe to new updates via email. Use this [open-beta testing](https://appdistribution.firebase.dev/i/5d2cb8359305f7e7) process. The invite email will be sent on next release, not immediately.
 
 > NOTE: App will be available in Google Play in few days after it's reviewed and approved.
