@@ -50,6 +50,9 @@ class LocationFragment : Fragment() {
             vm = viewModel
         }
 
+        // Observes fragment lifecycle events to handle lifecycle specific events
+        lifecycle.addObserver(viewModel)
+
         // This required to participate in providing toolbar menu on the host activity
         (requireActivity() as AppCompatActivity).setSupportActionBar(viewDataBinding.toolbar)
 

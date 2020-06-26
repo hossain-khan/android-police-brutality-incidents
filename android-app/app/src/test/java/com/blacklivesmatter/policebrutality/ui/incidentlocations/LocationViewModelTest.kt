@@ -24,21 +24,30 @@
 
 package com.blacklivesmatter.policebrutality.ui.incidentlocations
 
+import android.content.SharedPreferences
+import androidx.core.content.edit
 import androidx.lifecycle.Observer
 import com.blacklivesmatter.policebrutality.analytics.Analytics
+import com.blacklivesmatter.policebrutality.config.INCIDENT_DATA_AUTO_REFRESH_DAYS
+import com.blacklivesmatter.policebrutality.config.PREF_KEY_LAST_UPDATED_TIMESTAMP_EPOCH_SECONDS
 import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.test.BaseTest
+import com.blacklivesmatter.policebrutality.test.FakeSharedPreferences
 import com.blacklivesmatter.policebrutality.test.MockLifecycleOwner
 import com.blacklivesmatter.policebrutality.test.mock
 import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel.RefreshEvent
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.`when`
 import org.mockito.Mockito.any
 import org.mockito.Mockito.times
 import org.mockito.Mockito.verify
+import org.threeten.bp.LocalDateTime
+import org.threeten.bp.ZoneOffset
 
 @ExperimentalCoroutinesApi
 class LocationViewModelTest : BaseTest() {
@@ -47,12 +56,13 @@ class LocationViewModelTest : BaseTest() {
     private val analytics: Analytics = mock()
     private val lifecycleOwner = MockLifecycleOwner()
     private val liveDataObserver: Observer<RefreshEvent> = mock()
+    private val preferences: SharedPreferences = FakeSharedPreferences().preferences
 
     private lateinit var sut: LocationViewModel
 
     @Before
     fun setUp() {
-        sut = LocationViewModel(incidentRepository, analytics)
+        sut = LocationViewModel(incidentRepository, analytics, preferences)
     }
 
     @Test
@@ -76,5 +86,27 @@ class LocationViewModelTest : BaseTest() {
         sut.onRefreshIncidentsRequested()
 
         verify(incidentRepository, times(1)).getIncidentsCoroutine()
+    }
+
+    @Test
+    fun `shouldRequestLatestData - given data is fresh - does not requests latest incidents`() {
+        val timestampNow = LocalDateTime.now().minusDays(1L).toEpochSecond(ZoneOffset.UTC)
+        preferences.edit(true) {
+            putLong(PREF_KEY_LAST_UPDATED_TIMESTAMP_EPOCH_SECONDS, timestampNow)
+        }
+
+        assertFalse(sut.shouldRequestLatestData())
+    }
+
+    @Test
+    fun `shouldRequestLatestData - given data is stale - requests for latest incidents`() {
+        val staleTimestamp = LocalDateTime.now()
+            .minusDays(INCIDENT_DATA_AUTO_REFRESH_DAYS.toLong() + 2) // Plus extra days
+            .toEpochSecond(ZoneOffset.UTC)
+        preferences.edit(true) {
+            putLong(PREF_KEY_LAST_UPDATED_TIMESTAMP_EPOCH_SECONDS, staleTimestamp)
+        }
+
+        assertTrue(sut.shouldRequestLatestData())
     }
 }
