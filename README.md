@@ -24,6 +24,7 @@ Some of the key features based on data available though API is
 * Browse reported incidents by area (eg. State)
 * Filter reported incidents by date
 * Sync latest incidents from server though API
+* Auto update latest incidents if it hasn't been updated for a while
 * Visit external links of related to incidents via native app, or web browser
 * Allows the user to share a single incident with all the associated information
 * Allows user to report incident by opening official incident report form
