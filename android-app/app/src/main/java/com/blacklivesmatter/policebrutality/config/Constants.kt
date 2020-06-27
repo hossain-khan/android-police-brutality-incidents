@@ -1,5 +1,6 @@
 package com.blacklivesmatter.policebrutality.config
 
+import com.blacklivesmatter.policebrutality.data.AppDatabase
 import org.threeten.bp.OffsetDateTime
 import org.threeten.bp.ZoneOffset
 
@@ -20,15 +21,22 @@ val THE_846_DAY: OffsetDateTime = OffsetDateTime.of(
     /* nanoOfSecond */ 0, ZoneOffset.of("-5")
 )
 
+/**
+ * Database name for storing incidents locally.
+ * See [AppDatabase].
+ */
 const val DATABASE_NAME = "incidents-db"
 
 /**
- * Fallback data file incidents
+ * Fallback data file incidents, used to preload [AppDatabase].
  */
 const val INCIDENT_DATA_FILENAME = "all_locations_fallback.json"
 
 /**
- * Bundled charity list data
+ * Bundled charity list data.
+ *
+ * See following links for sources:
+ * - https://github.com/amardeshbd/android-police-brutality-incidents/tree/develop/resources#source-for-charitable-organization
  */
 const val CHARITY_DATA_FILENAME = "donate_for_cause.json"
 
@@ -37,6 +45,11 @@ const val CHARITY_DATA_FILENAME = "donate_for_cause.json"
  */
 const val REPORT_INCIDENT_WEB_URL = "https://github.com/2020PB/police-brutality/issues/new?" +
         "assignees=&labels=Incident+report&template=incident-report.md&title=Incident+in+CITY%2C+STATE"
+
+/**
+ * Number of days after when the incident data will auto refresh.
+ */
+const val INCIDENT_DATA_AUTO_REFRESH_DAYS = 14
 
 /*
  * Relevant Links taken from https://www.reddit.com/r/2020PoliceBrutality/comments/gwxgsa/i_just_wanted_to_take_a_moment_to_share_with_you/
@@ -54,3 +67,10 @@ const val PB_LINK_INSTAGRAM = "https://www.instagram.com/r2020policebrutality"
 const val PB_LINK_TWITTER = "https://twitter.com/2020police"
 const val PB_LINK_WEB = "https://2020policebrutality.netlify.app/"
 const val PB_LINK_REDDIT = "https://www.reddit.com/r/2020PoliceBrutality/"
+
+//
+// Shared preference keys
+//
+const val PREF_KEY_LAST_UPDATED_TIMESTAMP_EPOCH_SECONDS = "preference_key_last_updated_timestamp"
+const val PREF_KEY_CHARITY_LIST_DISCLAIMER_INFO_SHOWN = "preference_key_charity_disclaimer_shown"
+const val PREF_KEY_SHARE_CAPABILITY_REMINDER_SHOWN = "preference_key_share_incident_guide_shown"

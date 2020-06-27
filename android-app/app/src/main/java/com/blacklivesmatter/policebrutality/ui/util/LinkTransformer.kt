@@ -7,12 +7,16 @@ import com.blacklivesmatter.policebrutality.data.model.LinkInfo
 object LinkTransformer {
     /**
      * Convenience map to get drawable resource icon for respective web domain name.
+     *
+     * Also see [IntentBuilder.appIdMap].
      */
     private val socialIcons = mapOf(
         "www.instagram.com" to R.drawable.ic_web_instagram,
         "www.facebook.com" to R.drawable.ic_web_facebook,
+        "m.facebook.com" to R.drawable.ic_web_facebook,
         "twitter.com" to R.drawable.ic_web_twitter,
         "mobile.twitter.com" to R.drawable.ic_web_twitter,
+        "www.tiktok.com" to R.drawable.ic_web_tiktok,
         "youtu.be" to R.drawable.ic_web_youtube,
         "www.youtube.com" to R.drawable.ic_web_youtube,
         "v.redd.it" to R.drawable.ic_web_reddit,
@@ -43,9 +47,12 @@ object LinkTransformer {
     fun toLinkInfo(link: String): LinkInfo {
         val linkUri = Uri.parse(link)
 
+        // Remove various sub-domain prefixes
+        val regex = "^(www\\.|old\\.|v\\.|mobile\\.|vm\\.|i\\.|m\\.)".toRegex()
+
         return LinkInfo(
             sourceLink = link,
-            name = linkUri.authority?.replace("www.", "") ?: "External Link",
+            name = linkUri.authority?.replace(regex, "") ?: "External Link",
             iconResId = socialIcons.getValue(linkUri.authority.toString())
         )
     }
