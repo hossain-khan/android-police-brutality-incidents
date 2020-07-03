@@ -1,7 +1,7 @@
 {
     "edit_at": "https://github.com/2020PB/police-brutality",
     "help": "ask @ubershmekel on twitter",
-    "updated_at": "2020-06-28T20:24:58.886089+00:00",
+    "updated_at": "2020-07-03T14:43:19.510164+00:00",
     "data": [
         {
             "links": [
@@ -533,6 +533,86 @@
             "date": "2020-06-11",
             "date_text": "June 11th",
             "id": "wa-seattle-20"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.reddit.com/r/PublicFreakout/comments/hjln90/seattle_police_department_retaking_the_13th/",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/greg_doucette/status/1278565827747471361",
+                    "text": ""
+                }
+            ],
+            "state": "Washington",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington.md",
+            "city": "Seattle",
+            "description": "Footage shows police line approaching scattered peaceful protestors. Police snatch and grab to make rough arrests. When protestors attempt to intervene they are shoved, struck with batons, and pepper sprayed.",
+            "tags": [
+                "arrest",
+                "pepper-spray",
+                "spray",
+                "shove",
+                "strike",
+                "baton"
+            ],
+            "name": "Police strike and pepper spray protestors while marching on 13th Precinct",
+            "date": "2020-07-01",
+            "date_text": "July 1st",
+            "id": "wa-seattle-21"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/greg_doucette/status/1278544686546911232",
+                    "text": ""
+                },
+                {
+                    "url": "https://clips.twitch.tv/LittleProtectiveDillAsianGlow",
+                    "text": ""
+                }
+            ],
+            "state": "Washington",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington.md",
+            "city": "Seattle",
+            "description": "As police prepare to clear CHOP, a protestor asks a question. Police then target him. He flees. Numerous police officers chase him, tackle him and kneel on his neck to arrest him.",
+            "tags": [
+                "arrest",
+                "tackle",
+                "knee",
+                "knee-on-kneck"
+            ],
+            "name": "Police arrest protestor during CHAZ/CHOP clearing",
+            "date": "2020-07-01",
+            "date_text": "July 1st",
+            "id": "wa-seattle-22"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/sre_li/status/1278856204018565120",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/1stRoundFinish/status/1278854169743388672",
+                    "text": ""
+                }
+            ],
+            "state": "Washington",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington.md",
+            "city": "Seattle",
+            "description": "Video shows bicycle cops fast approaching a group of protesters who are just outside an area cordoned off with police tape, presumably because they considered one or more of them to have crossed the boundary. Without warning, the cops tackle two protesters to the ground. Someone can be heard shouting \"get your knee off their neck!\" One of the videos clearly shows an officer placing his knee on the neck of one of the individuals.",
+            "tags": [
+                "arrest",
+                "tackle",
+                "knee",
+                "knee-on-kneck"
+            ],
+            "name": "Officers tackle protesters, put a knee on least one of their necks",
+            "date": "2020-07-02",
+            "date_text": "July 2nd",
+            "id": "wa-seattle-23"
         },
         {
             "links": [
@@ -1228,6 +1308,34 @@
         {
             "links": [
                 {
+                    "url": "https://twitter.com/randomjhovall/status/1267309502845669376",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/randomjhovall/status/1272076416348291072",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/greg_doucette/status/1272386250058727425",
+                    "text": ""
+                }
+            ],
+            "state": "Texas",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Texas.md",
+            "city": "Austin",
+            "description": "A protestor was shot in the face with a bean bag round on May 31st. She was hospitalized and underwent surgery. She states that she has suffered nerve damage in her face as a result.\n\nFootage in the third link shows the victim seated on the ground with a round stuck in her face. She is responsive and speaking with those around her. Several protest medics attend to her.",
+            "tags": [
+                "shoot",
+                "bean-bag"
+            ],
+            "name": "Woman shot in face with bean bag",
+            "date": "2020-05-31",
+            "date_text": "May 31st",
+            "id": "tx-austin-13"
+        },
+        {
+            "links": [
+                {
                     "url": "https://www.reddit.com/r/2020PoliceBrutality/comments/gvjjwg/volunteer_medics_advised_by_police_to_bring_a/",
                     "text": ""
                 },
@@ -1256,6 +1364,29 @@
         {
             "links": [
                 {
+                    "url": "https://twitter.com/NacioMartinez/status/1269787142269607936",
+                    "text": ""
+                }
+            ],
+            "state": "Texas",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Texas.md",
+            "city": "Austin",
+            "description": "Footage shows police kicking aside musician's gear. He falls off his stool and is held to the ground. One officer kneels on him. He does not appear to resist at any point. Several protestors can be heard shouting, \"Get your knee off his head,\" but the footage is obscured by the officers.",
+            "tags": [
+                "arrest",
+                "shove",
+                "property-destruction",
+                "knee",
+                "knee-on-kneck"
+            ],
+            "name": "Police violently arrest drummer",
+            "date": "2020-06-07",
+            "date_text": "June 7th",
+            "id": "tx-austin-14"
+        },
+        {
+            "links": [
+                {
                     "url": "https://www.youtube.com/watch?v=Thrvojgme5I",
                     "text": ""
                 },
@@ -1277,6 +1408,28 @@
             "date": "2020-06-12",
             "date_text": "June 12th",
             "id": "tx-austin-11"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/AltUniverseWash/status/1277104706222002177",
+                    "text": ""
+                }
+            ],
+            "state": "Texas",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Texas.md",
+            "city": "Austin",
+            "description": "Police detained a protestor for allegedly striking a barricade with a skateboard. He is shown behind a police bike line with four officers holding him on the ground. One officer punches him repeatedly.",
+            "tags": [
+                "punch",
+                "strike",
+                "arrest",
+                "knee"
+            ],
+            "name": "Police punch arrestee on ground",
+            "date": "2020-06-27",
+            "date_text": "June 27th",
+            "id": "tx-austin-12"
         },
         {
             "links": [
@@ -1589,6 +1742,41 @@
         {
             "links": [
                 {
+                    "url": "https://www.youtube.com/watch?v=Jkj3EfktVkM",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.youtube.com/watch?v=MeIV1kSsPZg",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.youtube.com/watch?v=rq_2YSLn4FE",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.youtube.com/watch?v=-kuD_naCPzo",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.chattanoogan.com/2020/5/31/409849/Protestors-Face-Off-With-Law.aspx",
+                    "text": ""
+                }
+            ],
+            "state": "Tennessee",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Tennessee.md",
+            "city": "Chattanooga",
+            "description": "Footage from the first link shows two protestors attempting to remove a sign strung between two lampposts on a mezzanine. The lampposts fall over during this process. Then at 00:40, officers rush out of the building, seizing protestors.\n\nThe second clip shows officers with rifles making arrests on the mezzanine. Officers then pull what appear to be service pistols and point them at protestors. More officers step out of the building onto the mezzanine and take the staircase. Protestors and police face each other at the foot of the stairs. Protestors begin chanting.\n\nThe third clip shows police dropping tear gas canisters from the mezzanine. Protestors flee.\n\nThe fourth clip shows protestors attempt to recover their belongings while police launch more tear gas. Protestors flee to the far sidewalk as police move into the street.\n\nAn article from the Chattanoogan states Sheriffs threw the tear gas, not Chattanooga police.",
+            "tags": [
+                ""
+            ],
+            "name": "Sheriffs tear gas crowd after accidental vandalism",
+            "date": "2020-05-31",
+            "date_text": "May 31st",
+            "id": "tn-chattanooga-1"
+        },
+        {
+            "links": [
+                {
                     "url": "https://twitter.com/Desi_Stennett/status/1266996885824380929",
                     "text": ""
                 }
@@ -1636,6 +1824,112 @@
             "date": "2020-05-31",
             "date_text": "May 31st",
             "id": "tn-murfreesboro-1"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/brotherjones_/status/1275520373472268292",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/brotherjones_/status/1275539159030140929",
+                    "text": ""
+                }
+            ],
+            "state": "Tennessee",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Tennessee.md",
+            "city": "Murfreesboro",
+            "description": "Police shut down a protestor station on Capitol Hill in Nashville, confiscating food, water, medical supplies, personal belongings and signs. Caption states that police shoved protestors trying to keep hold of their belongings.",
+            "tags": [
+                "property-destruction",
+                "abuse-of-power",
+                "threaten"
+            ],
+            "name": "Police confiscate protestor supplies",
+            "date": "2020-06-23",
+            "date_text": "June 23rd",
+            "id": "tn-nashville-1"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/brotherjones_/status/1276133377863749637",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/brotherjones_/status/1276139027612291073",
+                    "text": ""
+                }
+            ],
+            "state": "Tennessee",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Tennessee.md",
+            "city": "Murfreesboro",
+            "description": "In an early morning raid, Nashville police confiscated water, food and other supplies shared among protestors. In addition, officers harassed resting protestors, threatening to take their belongings and arrest them.",
+            "tags": [
+                "property-destruction",
+                "abuse-of-power",
+                "threaten"
+            ],
+            "name": "Police confiscate protestor supplies",
+            "date": "2020-06-25",
+            "date_text": "June 25th",
+            "id": "tn-nashville-2"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/TheTNHoller/status/1276713817284792324",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/brotherjones_/status/1276767990449668096",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.reddit.com/r/2020PoliceBrutality/comments/hgxoaj/i_screen_recorded_this_off_fb_last_night_june/",
+                    "text": ""
+                },
+                {
+                    "url": "https://imgur.com/a/ULAxpXi",
+                    "text": ""
+                }
+            ],
+            "state": "Tennessee",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Tennessee.md",
+            "city": "Murfreesboro",
+            "description": "Justin Jones, a prominent activist in Nashville, was arrested on June 26th for taking a step too far on public property. Officers states at that point he was considered trespassing.\n\nHe states he was charged with \"criminal trespassing\" and \"inciting a riot,\" although the incitement charge was later dropped.\n\nProtestors believe Jones was targeted because of his prominence in the protests.",
+            "tags": [
+                "arrest",
+                "abuse-of-power"
+            ],
+            "name": "Police target activist leader",
+            "date": "2020-06-26",
+            "date_text": "June 26th",
+            "id": "tn-nashville-3"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/brotherjones_/status/1277580136284651521",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/brotherjones_/status/1277694340534546433",
+                    "text": ""
+                }
+            ],
+            "state": "Tennessee",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Tennessee.md",
+            "city": "Murfreesboro",
+            "description": "Justin Jones, a prominent activist in Nashville, states that protestors were arrested around 6:30 AM on June 29th and charged with \"camping on state property.\" Protestors had no intention of camping.\n\nHe also shows footage of extremely tight zip-ties, stating that an arrestee has suffered ongoing numbness in their hands since release.",
+            "tags": [
+                "arrest",
+                "abuse-of-power"
+            ],
+            "name": "Police arrest protestors on questionable charges, harm protestors with zip ties",
+            "date": "2020-06-29",
+            "date_text": "June 29th",
+            "id": "tn-nashville-4"
         },
         {
             "links": [
@@ -3253,6 +3547,133 @@
         {
             "links": [
                 {
+                    "url": "https://twitter.com/elielcruz/status/1277346244952817669",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/MartiGCummings/status/1277347982548111363",
+                    "text": ""
+                },
+                {
+                    "url": "https://mobile.twitter.com/justinaflash/status/1277371937744916480",
+                    "text": ""
+                },
+                {
+                    "url": "https://mobile.twitter.com/jonnaerikaaa/status/1277367208310685696",
+                    "text": ""
+                },
+                {
+                    "url": "https://mobile.twitter.com/agrayphoto/status/1277362250920099840",
+                    "text": ""
+                },
+                {
+                    "url": "https://mobile.twitter.com/garrettmireles/status/1277371641996206089",
+                    "text": "Covered badge"
+                },
+                {
+                    "url": "https://mobile.twitter.com/chayesmatthew/status/1277336251239145473",
+                    "text": "Pepper-sprayed officer; motorcycles"
+                }
+            ],
+            "state": "New York",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+            "city": "New York City",
+            "description": "The NYC queer liberation march occupied streets around Washington Square Park. Police arrived and forcefully moved protestors off the streets, beginning by shoving protestors and by striking them with batons. Police escalated to using pepper-spray. Police made several arrests.\n\nAdditional footage shows police shoving protestors walking along both the street and sidewalk.\n\nImages of an arrest show multiple officers (including one white-shirted officer, denoting a rank of at least Sergeant) with black masking tape covering their badge numbers.\n\nFootage also shows an officer who was pepper-sprayed by another officer. That footage additionally shows officers on motorcycles forcing their way through the crowd.",
+            "tags": [
+                "shove",
+                "baton",
+                "strike",
+                "beat",
+                "arrest",
+                "pepper-spray",
+                "spray",
+                "lgbtq+",
+                "hide-badges",
+                "arrest",
+                "vehicle."
+            ],
+            "name": "Police escalate to violence at Queer Liberation March",
+            "date": "2020-06-28",
+            "date_text": "June 28th",
+            "id": "ny-newyorkcity-49"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/greg_doucette/status/1277636698806116352",
+                    "text": ""
+                }
+            ],
+            "state": "New York",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+            "city": "New York City",
+            "description": "Footage shows a protestor with a bicycle standing behind a police van. An officer walks over and shoves him to the ground with his baton.",
+            "tags": [
+                "shove",
+                "baton",
+                "strike"
+            ],
+            "name": "Police shove bicyclist to the ground",
+            "date": "2020-06-28",
+            "date_text": "June 28th",
+            "id": "ny-newyorkcity-51"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/GaelicSteel/status/1277344251970494469",
+                    "text": ""
+                }
+            ],
+            "state": "New York",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+            "city": "New York City",
+            "description": "At part of the Pride March, protestors gathered inside the park, a pedestrian & bike only zone. Footage shows crowd chanting \"Shame\" as 3 police officers make their way through the crowd. One officer appears to shove his way through. As he exits the crowd, he continues to shove protestors who are standing idly by. The other two officers walk him away, appearing to try and calm him down.",
+            "tags": [
+                "shove",
+                "push"
+            ],
+            "name": "Police shove their way through crowd",
+            "date": "2020-06-28",
+            "date_text": "June 28th",
+            "id": "ny-newyorkcity-52"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/JoshuaPotash/status/1277987893248655361",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/deanospameano/status/1277902165542043653",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/NelStamp/status/1277985126228557825",
+                    "text": ""
+                }
+            ],
+            "state": "New York",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+            "city": "New York City",
+            "description": "Hundreds of people have been camping out near NYC City Hall for the last week in anticipation of a budget vote. NYPD were sent on June 30th, the day of the vote, to disperse protestors. Footage shows violent arrests.\n\nIn particular, police manhandle already zip-tied protestor. The protestor stumbles, apparently struggling to remain conscious. Protestors shout at police to seek medical treatment for him. Another protestor comes to intervene. He is summarily punched, choked, shoved and struck with a baton by multiple officers.\n\nThe second clip shows arrest warning if protestors step on streets.\n\nThe third clip shows police shoving protestors on the sidewalk with their batons.\n\nIn addition, multiple clips show officers without badges or with black electrical tape covering their badge numbers.",
+            "tags": [
+                "shove",
+                "baton",
+                "strike",
+                "beat",
+                "arrest",
+                "choke",
+                "hide-badges"
+            ],
+            "name": "Police violently arrest protestors camped out for budget vote",
+            "date": "2020-06-30",
+            "date_text": "June 30th",
+            "id": "ny-newyorkcity-50"
+        },
+        {
+            "links": [
+                {
                     "url": "https://twitter.com/bleeezyy_/status/1266894195865931778",
                     "text": ""
                 }
@@ -3454,7 +3875,7 @@
             "city": "Florissant",
             "description": "A resident's door bell camera captures a officer running over a man, who is heard screaming \"I don't have anything\" and attempting to escape after getting hit. The officer kicks the man while he is down once and then hits him again with his forearm.\n\nLater updates note that the victim has taken to the hospital and the officer has been suspended. There is no body cam footage because the officer was not wearing one at the time. There is also no dash-cam footage.",
             "tags": [
-                "vehivle",
+                "vehicle",
                 "drive",
                 "kick",
                 "strike",
@@ -3466,6 +3887,54 @@
             "date": "2020-06-02",
             "date_text": "June 2nd",
             "id": "mo-florissant-1"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/NassimBnchabane/status/1277054826858323969",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/theMARCHstl/status/1277129811245359104",
+                    "text": ""
+                },
+                {
+                    "url": "https://photos.google.com/share/AF1QipOr_banJbIy1zUzs7rrCC9y664etyqDFjDlxAEdtDNweyuf7CnEQQlMpUXA0aU-xw/photo/AF1QipNFR-GR4frZPlo3vhGFwO_4uPBljOgyllYce3GP?key=azVZQUNIakFDMFVtbDhCS3BPaTlMWXBjd1R0RzN3",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/search4swag/status/1277059423966507008",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/search4swag/status/1277059423966507008",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/NassimBnchabane/status/1277056390314541056",
+                    "text": ""
+                }
+            ],
+            "state": "Missouri",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Missouri.md",
+            "city": "Florissant",
+            "description": "Protestors gathered in the parking lot of a Florissant police station. Officers declared the assembly unlawful and began to push protestors from the lawn into the parking lot. Officers used shields & batons to strike and shove protestors. Numerous protestors were arrested. Footage shows one arrested protestor hurled violently to the ground. Footage also shows police targeting individuals taking photos and video on the side of the protests; these individuals were pushed back among the protestors as well. Additionally, multiple witnesses state protestors with megaphones were targeted.\n\nPolice continued to push protestors into the road. Filmers state that police maced them. Protestors responded by splashing police with water and throwing empty water bottles.\n\nPolice continued to snag protestors and arrest them.",
+            "tags": [
+                "shield",
+                "baton",
+                "push",
+                "shove",
+                "strike",
+                "arrest",
+                "mace",
+                "pepper-spray",
+                "spray",
+                "throw"
+            ],
+            "name": "Police push protestors off lawn",
+            "date": "2020-06-27",
+            "date_text": "June 27th",
+            "id": "mo-florissant-2"
         },
         {
             "links": [
@@ -4027,6 +4496,10 @@
                 {
                     "url": "https://www.newsobserver.com/news/local/article243114301.html",
                     "text": ""
+                },
+                {
+                    "url": "https://twitter.com/vizjourno/status/1266954106998009857",
+                    "text": ""
                 }
             ],
             "state": "North Carolina",
@@ -4035,7 +4508,9 @@
             "description": "Around 7pm on May 30th, Raleigh police fired tear gas and pepper spray into a peaceful protest. Footage shows protestors surprised at the escalation and turning to flee, as well as multiple protestors hit directly by projectiles. In addition, the article claims police targeted both protestors and journalists with rubber bullets. The escalation did then incite some protestors to return fire with rocks, fireworks, and police tear gas canisters.",
             "tags": [
                 "tear-gas",
-                "tear-gas-canister"
+                "tear-gas-canister",
+                "journalist",
+                "rubber-bullets"
             ],
             "name": "Police fire tear gas at peaceful protests",
             "date": "2020-05-30",
@@ -4287,12 +4762,24 @@
                 {
                     "url": "https://www.reddit.com/r/PublicFreakout/comments/gvdl01/they_secluded_him_behind_a_wall_and_looked_around/",
                     "text": ""
+                },
+                {
+                    "url": "https://laist.com/2020/06/10/los_angeles_deputies_compton_video_violent_arrest_dalvin_price.php",
+                    "text": ""
+                },
+                {
+                    "url": "https://ktla.com/news/local-news/violent-arrest-caught-on-camera-in-compton/",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.google.com/maps/@33.9038142,-118.2141026,3a,75y,255.55h,58.86t/data=!3m6!1e1!3m4!1sDJvjgZKDPB56Yw1A5Ovb6A!2e0!7i16384!8i8192",
+                    "text": "Street View"
                 }
             ],
             "state": "California",
             "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
             "city": "Compton",
-            "description": "Two police offers have someone pinned to the ground and proceed to kneel on their head/neck, punch and kick them. A third officer joins them, also striking the person.\n\n[Location determined via Google Streetview](https://www.google.com/maps/@33.9038142,-118.2141026,3a,75y,255.55h,58.86t/data=!3m6!1e1!3m4!1sDJvjgZKDPB56Yw1A5Ovb6A!2e0!7i16384!8i8192)\n\n[This Reddit comment asserts these police are members of the LASD.](https://www.reddit.com/r/PublicFreakout/comments/gvdl01/they_secluded_him_behind_a_wall_and_looked_around/fsolupz/)",
+            "description": "Two police offers have someone pinned to the ground and proceed to kneel on their head/neck, punch and kick them. A third officer joins them, also striking the person. The beating continues until a woman yells \"why are y'all beating him?\"",
             "tags": [
                 "beat",
                 "conceal",
@@ -4304,8 +4791,8 @@
                 "inhumane-treatment"
             ],
             "name": "Police beat person on the ground",
-            "date": "2020-06-01",
-            "date_text": "(believed to be) June 1st",
+            "date": "2020-05-31",
+            "date_text": "May 31st",
             "id": "ca-compton-1"
         },
         {
@@ -4466,6 +4953,67 @@
         {
             "links": [
                 {
+                    "url": "https://www.tiktok.com/@scottmbark/video/6833632749052628230",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.tiktok.com/@scottmbark/video/6833477841808657669",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/hagh_sadegh/status/1276177550339907585",
+                    "text": ""
+                }
+            ],
+            "state": "California",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+            "city": "Long Beach",
+            "description": "A crowd of protestors is chanting peacefully. A shot is fired offscreen and a woman screams. Footage shows the woman clutching her bleeding hand. The caption states her finger was \"cut off.\" The crowd becomes agitated and police respond with tear gas.",
+            "tags": [
+                "shoot",
+                "projectile",
+                "tear-gas"
+            ],
+            "name": "Woman struck in finger by projectile; police quell crowd with tear gas",
+            "date": "2020-06-01",
+            "date_text": "June 1st",
+            "id": "ca-longbeach-2"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/greg_doucette/status/1268052132252602368",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/andrewcurryla/status/1266906677820833793",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/andrewcurryla/status/1266905784585052160",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.google.com/maps/@34.071154,-118.3583053,3a,60y,332.25h,94.01t/data=!3m6!1e1!3m4!1sBMaXVOuAN0T9coL-PijVSA!2e0!7i16384!8i8192",
+                    "text": "Street View"
+                }
+            ],
+            "state": "California",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+            "city": "Los Angeles",
+            "description": "Footage shows a protestor sitting on the curb. They are bleeding from a wound to the head. Other protestors are attempting to treat them. Greg Doucette says that, per the journalist who submitted the video, police shot first, then gave the dispersal order.\n\nAdditional footage (link 3) shows other protestors with wounds from riot rounds.",
+            "tags": [
+                "shoot",
+                "projectiles"
+            ],
+            "name": "Protestor shot in head",
+            "date": "2020-05-30",
+            "date_text": "(believed to be) May 30th",
+            "id": "ca-losangeles-30"
+        },
+        {
+            "links": [
+                {
                     "url": "https://www.reddit.com/r/2020PoliceBrutality/comments/gxjk67/reposted_wo_officer_name_footage_of_lapd_at_last/",
                     "text": ""
                 }
@@ -4590,6 +5138,64 @@
             "date": "2020-05-30",
             "date_text": "May 30th",
             "id": "ca-losangeles-24"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.instagram.com/p/CA20QYJgaU6/",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.instagram.com/p/CA1U9L9g_LD/",
+                    "text": ""
+                },
+                {
+                    "url": "https://laist.com/2020/06/11/uninsured_protesters_free_medical_aid_la_doctor.php",
+                    "text": ""
+                },
+                {
+                    "url": "https://losangeles.cbslocal.com/video/4578194-protester-deon-jones-describes-being-shot-with-rubber-bullet-by-police/",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.foxla.com/news/i-felt-like-i-was-on-the-timeline-to-my-death-local-man-speaks-out-after-weekend-protest-ends-in-violence",
+                    "text": ""
+                }
+            ],
+            "state": "California",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+            "city": "Los Angeles",
+            "description": "Activist and former White House and congressional staffer Deon Jones was hit in the face with a rubber bullet, fracturing two bones and nearly costing him one eye. Jones also alleges assorted other misconduct, reminiscent of incidents CA-LosAngeles-19, CA-LosAngeles32, and CA-SantaMonica-2",
+            "tags": [
+                "shoot",
+                "projectiles"
+            ],
+            "name": "Los Angeles law enforcement hit protester in the face with rubber bullet",
+            "date": "2020-05-30",
+            "date_text": "May 30th",
+            "id": "ca-losangeles-33"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.reddit.com/r/2020PoliceBrutality/comments/h7q97a/using_mace_to_direct_protestors_through_teargas/",
+                    "text": ""
+                }
+            ],
+            "state": "California",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+            "city": "Los Angeles",
+            "description": "Footage shows a peaceful protest opposite a police line. Around 50 seconds, police fire tear gas behind protestors, trapping them between tear gas and the police line. Police tell protestors to move, but protestors insist they cannot leave because of the gas behind them. Around 1:40, police then pepper spray protestors, forcing them to retreat into the tear gas.",
+            "tags": [
+                "tear-gas",
+                "mace",
+                "pepper-spray",
+                "spray"
+            ],
+            "name": "Riot police fire tear gas at peaceful protest, then use mace to corral protestors",
+            "date": "2020-05-30",
+            "date_text": "May 30th",
+            "id": "ca-losangeles-34"
         },
         {
             "links": [
@@ -5179,22 +5785,25 @@
         {
             "links": [
                 {
-                    "url": "https://twitter.com/greg_doucette/status/1268052132252602368",
+                    "url": "https://twitter.com/le_maria21/status/1277801107033481216",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/le_maria21/status/1277800993984413696",
                     "text": ""
                 }
             ],
             "state": "California",
             "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
-            "city": "Los Angeles",
-            "description": "Footage shows a protestor sitting on the curb. They are bleeding from a wound to the head. Other protestors are attempting to treat them.\n\nCaption states that the journalist who submitted the video says the protestor was shot in the head, then police gave a dispersal order.",
+            "city": "Norco",
+            "description": "A man wearing a shirt with two SS lightning bolts harasses a filming BLM protestor. He and another counter-protestor call her a bitch repeatedly, then slaps the phone out of her hand. Police state they did not see the incident, although the link shows clearly that an officer is standing next to them. The officer is joined by another. They stand between the groups of protestors and tell the BLM protestors to keep moving. The woman says she needs to find her phone and the officer says they have to come back for it later.\n\nIn addition, the second link shows this individual having assaulted protestors on multiple occasions without repercussion.",
             "tags": [
-                "shoot",
-                "projectiles"
+                "abuse-of-power"
             ],
-            "name": "Protestor shot in head",
-            "date": "",
-            "date_text": "Date Unknown",
-            "id": "ca-losangeles-30"
+            "name": "Woman struck by white supremacist while police look on",
+            "date": "2020-06-29",
+            "date_text": "June 29th",
+            "id": "ca-norco-1"
         },
         {
             "links": [
@@ -5785,21 +6394,63 @@
                 {
                     "url": "https://jalopnik.com/cop-in-armored-truck-tells-peaceful-protesters-if-you-1843886752",
                     "text": ""
+                },
+                {
+                    "url": "https://abc7news.com/walnut-creek-curfew-tonight-protest-in-today-looting-protests/6231856/",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.kron4.com/news/bay-area/as-protests-remain-mostly-peaceful-walnut-creek-considers-extending-curfew/",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.ktvu.com/news/walnut-creek-police-says-mutual-aid-officer-did-not-say-what-many-thought-they-heard",
+                    "text": ""
                 }
             ],
             "state": "California",
             "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
             "city": "Walnut Creek",
-            "description": "In this video, an armored law enforcement vehicle tells protestors blocking a highway to disperse over megaphone. It sounds like the operator is saying \"if you do not move, you will be dead,\" but video later released by the police department seems to show that the operator instead said \"if you do not move, you will be gassed.\" The protesters do not move; the officers deploy tear gas.",
+            "description": "In this video, an armored law enforcement vehicle tells protestors blocking a highway to disperse over megaphone. It sounds like the operator is saying \"if you do not move, you will be dead,\" but video later released by the police department seems to show that the operator instead said \"if you do not move, you will be gassed.\" The protesters do not move; the officers deploy tear gas, coating the highway in dense, opaque clouds of blinding fog. Vehicles are seen waiting to continue on their way; it is unclear whether these vehicles attempted to navigate the clouds of tear gas. (Note: Jalopnik reports that this happened on June 2; however, protests consistent with the video were only reported on June 1, and other sources place the video on June 1.)",
             "tags": [
                 "threaten",
                 "tear-gas",
                 "vehicle"
             ],
-            "name": "Armored law enforcement vehicle threatens protestors",
-            "date": "2020-06-02",
-            "date_text": "June 2nd",
+            "name": "Armored law enforcement vehicle threatens protestors, deploys tear gas on highway",
+            "date": "2020-06-01",
+            "date_text": "June 1st",
             "id": "ca-walnutcreek-1"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.mercurynews.com/2020/06/06/protester-recounts-getting-attacked-by-police-dogs-tear-gassed-at-walnut-creek-demonstration/",
+                    "text": ""
+                },
+                {
+                    "url": "https://sanfrancisco.cbslocal.com/2020/06/17/walnut-creek-police-discuss-protest-response-critics-not-impressed/",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.ktvu.com/news/walnut-creek-police-says-mutual-aid-officer-did-not-say-what-many-thought-they-heard",
+                    "text": ""
+                }
+            ],
+            "state": "California",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+            "city": "Walnut Creek",
+            "description": "Police threw tear gas at protesters blocking a roadway in an effort to disperse them. One protester, Joseph Malott, allegedly threw a tear gas canister back at police. Police arrested him for (per Mercury News) \u201cassaulting a police officer with a deadly weapon.\u201d During the arrest, Malott was bitten and scratched repeatedly by a police dog, leaving bite marks and scratches all over his back and a wound on his leg which required 10 stitches. During the arrest, he says he was slammed against a fence then thrown to the ground, and recalls thinking \u201cwhen are they going to take the dogs off me?\u201d",
+            "tags": [
+                "arrest",
+                "tear-gas",
+                "tear-gas-canister",
+                "dog"
+            ],
+            "name": "Police arrest man using excessive force, dogs",
+            "date": "2020-06-01",
+            "date_text": "June 1st",
+            "id": "ca-walnutcreek-3"
         },
         {
             "links": [
@@ -5844,6 +6495,46 @@
             "date": "2020-06-09",
             "date_text": "June 9th",
             "id": "de-dover-1"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.reddit.com/r/PublicFreakout/comments/hew8sz/dover_nurse_gets_tackled_and_arrested_by_cops_for/",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.youtube.com/watch?v=oXh2Qr2Enbo",
+                    "text": ""
+                },
+                {
+                    "url": "https://dsp.delaware.gov/2020/06/10/delaware-state-police-investigating-disorderly-group-resulting-in-several-arrests-camden/",
+                    "text": ""
+                },
+                {
+                    "url": "https://doverpolice.org/2020/06/10/dover-police-statement-regarding-june-9th-actions-with-delaware-state-police/",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.delawareonline.com/story/news/2020/06/10/delaware-officials-denounce-arrests-george-floyd-protesters-near-dover/5332891002/",
+                    "text": ""
+                }
+            ],
+            "state": "Delaware",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Delaware.md",
+            "city": "Dover",
+            "description": "The first two minutes of footage show police making a series of violent arrests: they throw protestors to the ground, strike them and kneel on them. At the end of the footage, an officer approaches the filmer, throws her to the ground, and arrests her.\n\nDover PD is investigating the use of force incident.",
+            "tags": [
+                "arrest",
+                "tackle",
+                "shove",
+                "push",
+                "knee",
+                "strike"
+            ],
+            "name": "Police make violent arrests; arrest woman filming",
+            "date": "2020-06-09",
+            "date_text": "June 9th",
+            "id": "de-dover-2"
         },
         {
             "links": [
@@ -6131,6 +6822,27 @@
         {
             "links": [
                 {
+                    "url": "https://www.tiktok.com/@gonzalosanchez75/video/6833934911506746629",
+                    "text": ""
+                }
+            ],
+            "state": "Illinois",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Illinois.md",
+            "city": "Chicago",
+            "description": "Footage shows a protestor on a bicycle who was blocking the street. As he is moving out of the way, police continue to push him on the side, hindering his balance. One officer slaps his phone out of his hand.",
+            "tags": [
+                "push",
+                "shove",
+                "property-destruction"
+            ],
+            "name": "Police push protestor on bike, slap phone out of his hand",
+            "date": "2020-06-02",
+            "date_text": "June 2nd",
+            "id": "il-chicago-13"
+        },
+        {
+            "links": [
+                {
                     "url": "https://twitter.com/TomSchuba/status/1268312957752160257",
                     "text": ""
                 }
@@ -6150,6 +6862,30 @@
             "date": "2020-06-03",
             "date_text": "(Believed to be) June 3rd",
             "id": "il-chicago-9"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.tiktok.com/@sarahsoch/video/6834688359969918214",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/punishmegrant/status/1268966252707487745",
+                    "text": ""
+                }
+            ],
+            "state": "Illinois",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Illinois.md",
+            "city": "Chicago",
+            "description": "Footage pans over a line of cops, none of whom have badges. The crowd is chanting, \"Where's your badges?\"",
+            "tags": [
+                "hide-badges",
+                "abuse-of-power"
+            ],
+            "name": "Police seen without badges",
+            "date": "2020-06-04",
+            "date_text": "(Believed to be) June 4th",
+            "id": "il-chicago-14"
         },
         {
             "links": [
@@ -6877,6 +7613,46 @@
         {
             "links": [
                 {
+                    "url": "https://twitter.com/chadloder/status/1277360969228771329",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "Images show aftermath of protestor who was shot in the eye with a Stinger rubber pellet. Additional screencap shows instruction for proper use state that it is necessary to keep trajectory low to avoid striking above the breast line - this suggests a misuse of riot rounds by officers.",
+            "tags": [
+                "shoot",
+                "rubber-bullets"
+            ],
+            "name": "Man shot in eye with stinger pellet",
+            "date": "2020-06-26",
+            "date_text": "June 26th",
+            "id": "or-portland-31"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/greg_doucette/status/1277685523595788290",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "Footage shows protestors gathered outside a building with plywood walls erected. Filmer states that police have barricaded themselves behind the plywood walls. Around 30 seconds, a small window opens in the barricade. Police launch multiple explosives at the crowd from this window.",
+            "tags": [
+                "explosive",
+                "projectile"
+            ],
+            "name": "Police fire explosives from behind barricade",
+            "date": "2020-06-26",
+            "date_text": "June 26th",
+            "id": "or-portland-40"
+        },
+        {
+            "links": [
+                {
                     "url": "https://www.reddit.com/r/ThatsInsane/comments/hgr2ld/cops_gone_crazyportlandpolice_has_finally_lost/",
                     "text": ""
                 },
@@ -6904,6 +7680,352 @@
             "date": "2020-06-27",
             "date_text": "June 27th",
             "id": "or-portland-30"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/hungrybowtie/status/1277125125934964736",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/hungrybowtie/status/1277125535483588609",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/hungrybowtie/status/1277125859040563200",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "Footage shows police slowly retreating from protestors. Protestors remain in place. Police fire tear gas continually throughout their retreat.",
+            "tags": [
+                "tear-gas"
+            ],
+            "name": "Police tear gas protestors for no evident reason",
+            "date": "2020-06-28",
+            "date_text": "June 28th",
+            "id": "or-portland-35"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/hungrybowtie/status/1277156963449593856",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "Footage shows a protestor spray-painting a building. Another protestor with a skateboard passes by. Police burst out of the door. The spray-painter flees. Police grab the protestor with the skateboard, ripping the board out of his hands and striking him repeatedly. Other protestors intervene and push the officers back into the building.",
+            "tags": [
+                "beat",
+                "strike",
+                "property-destruction"
+            ],
+            "name": "Police beat wrong person for vandalism",
+            "date": "2020-06-28",
+            "date_text": "June 28th",
+            "id": "or-portland-32"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/hungrybowtie/status/1277159562563317760",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/hungrybowtie/status/1277160091041447937",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/hungrybowtie/status/1277167952798691329",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/hungrybowtie/status/1277168538575204352",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "Footage shows riot police charging at a handful of protestors walking away. Several of these protestors are shoved, thrown to the ground or tackled. Police arrest a handful of these protestors.",
+            "tags": [
+                "push",
+                "shove",
+                "throw",
+                "tackle",
+                "arrest"
+            ],
+            "name": "Riot police charge, tackle and arrest protestors",
+            "date": "2020-06-28",
+            "date_text": "June 28th",
+            "id": "or-portland-33"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/hungrybowtie/status/1277169298000105473",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "Footage shows three officers with riot guns outside a building. An empty water bottle is thrown. It falls well short of the officers. All three fire into the crowd in different directions, collectively punishing the protestors for a thrown water bottle.",
+            "tags": [
+                "shoot",
+                "projectile"
+            ],
+            "name": "Police retaliate to thrown water bottle with excessive force",
+            "date": "2020-06-28",
+            "date_text": "June 28th",
+            "id": "or-portland-34"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/1misanthrophile/status/1277340069867601920",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "In footage from the night of June 28th, police charge protestors while declaring an unlawful assembly. An officer repeatedly strikes the filmer in an apparent effort to knock the phone out of his hands.",
+            "tags": [
+                "strike",
+                "push",
+                "shove"
+            ],
+            "name": "Police charge crowd; shove multiple protestors",
+            "date": "2020-06-28",
+            "date_text": "June 28th",
+            "id": "or-portland-37"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/1misanthrophile/status/1277340657648984064",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "Footage shows a police line advancing towards protestors. A protestor is walking backwards with his hands up, speaking to police. An officer shoves him, then a second maces him.",
+            "tags": [
+                "push",
+                "shove",
+                "pepper-spray",
+                "spray",
+                "mace"
+            ],
+            "name": "Police shove and mace protestor with hands up",
+            "date": "2020-06-28",
+            "date_text": "June 28th",
+            "id": "or-portland-36"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/defendpdx/status/1277905587771039744",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/defendpdx/status/1277899405568339974",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/kmahoneylaw/status/1277906443094511616",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "After an empty water bottle was thrown, police fired foam rounds into a crowd, striking a journalist on the hip.",
+            "tags": [
+                "shoot",
+                "foam-bullets"
+            ],
+            "name": "Journalist shot with foam round",
+            "date": "2020-06-29",
+            "date_text": "June 29th",
+            "id": "or-portland-38"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/PredatorFiles/status/1277933736441479170",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/i/web/status/1277909390159306752",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "Footage shows a handful of protestors talking to police on the sidewalk. After a few seconds, officers take down a protestor. Another officer charges across the street to tackle other protestors gathered on the sidewalk.\n\nPolice then fan out across the street. Around 1:30, a protestor is seen lying on the ground behind the police line. A second protestor goes to help them up. Police shove this protestor to the ground.\n\nProtestors shout that at least one of these individuals is press. A later tweet by a journalist corroborates this charge.",
+            "tags": [
+                "shove",
+                "tackle",
+                "knee",
+                "journalist"
+            ],
+            "name": "Police shove, tackle and kneel on protestors",
+            "date": "2020-06-29",
+            "date_text": "June 29th",
+            "id": "or-portland-39"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.reddit.com/r/2020PoliceBrutality/comments/hjdh39/portland_or_police_mace_beat_and_shoot_rubber/",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/defendpdx/status/1278192323575218176",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "Full footage shows police pushing protestors east under dispersal order from LRAD speaker. Protestors move slowly and walk backwards. Two officers then shove protestors with their batons. Another protestor steps in between them and is pepper-sprayed.\n\nFootage then shows police attempting to tear banner out of the hands of protestors obeying dispersal instructions. Another officer runs over and shoots protestors repeatedly from a range of less than five feet. Guidelines for riot rounds are for use at 10-30 yards.",
+            "tags": [
+                "shoot",
+                "projectile",
+                "property-destruction",
+                "baton",
+                "shove",
+                "strike",
+                "pepper-spray",
+                "spray"
+            ],
+            "name": "Police pepper-spray, strike and shoot protestors at point-blank range",
+            "date": "2020-06-30",
+            "date_text": "June 30th",
+            "id": "or-portland-41"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.pscp.tv/w/1lPKqLgBrBWxb",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/PNWResistance/status/1278247639708913664",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.reddit.com/r/Portland/comments/hj5m28/cory_elia_press_arrested_while_livestreaming_last/",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/PredatorFiles/status/1278270595235344385",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "Footage shows police pushing protestors east under direction of a dispersal order. After a scuffle with police around 1:30, the filmer recognizes an officer.\n\nThen for several minutes, police argue with him about his presence and whether he as a journalist is allowed on the scene.\n\nAt 5:20, the filmer asks an officer for his number. The officer shows the number on his helmet and the filmer then identifies him. The officer then ignores him. At 6:15, a second officer approaches. He and the recognized officer then arrest the journalist.\n\nHe has allegedly been charged with assault of a police officer, interference with a police officer, resisting arrest and disorderly conduct. A screenshot of his charges is included in the 4th link.",
+            "tags": [
+                "journalist",
+                "threaten",
+                "arrest"
+            ],
+            "name": "Reporter arrested after identifying officer",
+            "date": "2020-06-30",
+            "date_text": "June 30th",
+            "id": "or-portland-42"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.reddit.com/r/PublicFreakout/comments/hj42i3/portland_police_fire_cs_gas_at_protestors/",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "In the span of approximately 30 seconds, police fire about a dozen tear gas canisters at a crowd of protestors. A handful of canisters are thrown back, but the vast majority of protestors flee as police continue to fire.",
+            "tags": [
+                "tear-gas"
+            ],
+            "name": "Police fire tear gas at protestors",
+            "date": "2020-06-30",
+            "date_text": "June 30th",
+            "id": "or-portland-43"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.reddit.com/r/PublicFreakout/comments/hjb863/portland_police_removing_journalists_press_badge/",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "Footage shows police arresting a member of the press. Her hands are cuffed behind her back. She coughs and vomits, allegedly from tear gas exposure. Police remove her press badge and search her. She states that police are taking cash from her back right pocket. Protestors shout that police are laughing, but it is not audible in the footage.",
+            "tags": [
+                "tear-gas",
+                "journalist",
+                "arrest",
+                "abuse-of-power"
+            ],
+            "name": "Police arrest journalist",
+            "date": "2020-06-30",
+            "date_text": "June 30th",
+            "id": "or-portland-44"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/KohzKah/status/1278578914613288961",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "Around 2:30 in the morning on July 2nd, footage shows police shooting at protestors (off-screen). The filmer states that protestors are chanting and occasionally throwing water bottles. No water bottles are seen as police shoot in spurts throughout the video.",
+            "tags": [
+                "shoot",
+                "projectile"
+            ],
+            "name": "Police shoot protestors",
+            "date": "2020-07-02",
+            "date_text": "July 2nd",
+            "id": "or-portland-46"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/PredatorFiles/status/1278635513746870276",
+                    "text": ""
+                }
+            ],
+            "state": "Oregon",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+            "city": "Portland",
+            "description": "Footage shows a streamer approaching the boarded-up justice center. Without warning, shots can be heard and the streamer, with a handful of other protestors, flees to the opposite side of the street. Police continue to fire.\n\nJournalist states they were hit by \"some kind of pepper shrapnel,\" suggesting the police were firing pepper balls.",
+            "tags": [
+                "shoot",
+                "journalist",
+                "pepper-ball"
+            ],
+            "name": "Journalist shot by police",
+            "date": "2020-07-02",
+            "date_text": "July 2nd",
+            "id": "or-portland-45"
         },
         {
             "links": [
@@ -6969,9 +8091,33 @@
                 "pepper-spray"
             ],
             "name": "Officer pepper-sprays protestor walking backwards with arms raised",
-            "date": "2020-05-31",
-            "date_text": "May 31st",
+            "date": "2020-05-30",
+            "date_text": "May 30th",
             "id": "wi-madison-1"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.tiktok.com/@michelle_but_not_obama/video/6833371052198857990",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/shadow_roses1/status/1268246561798205442",
+                    "text": ""
+                }
+            ],
+            "state": "Wisconsin",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Wisconsin.md",
+            "city": "Madison",
+            "description": "A group of protestors are standing on a road paved over for pedestrian-only traffic. The protestors have their hands up. Police approach and pepper spray the protestors.\n\nThe journalist filming is told he is not allowed to remain, despite identifying himself as press.",
+            "tags": [
+                "pepper-spray",
+                "journalist"
+            ],
+            "name": "Police pepper spray protestors with hands up",
+            "date": "2020-05-30",
+            "date_text": "May 30th",
+            "id": "wi-madison02"
         },
         {
             "links": [
@@ -7669,6 +8815,25 @@
         {
             "links": [
                 {
+                    "url": "https://www.tiktok.com/@montygeer/video/6840314007954509062",
+                    "text": ""
+                }
+            ],
+            "state": "Minnesota",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
+            "city": "Minneapolis",
+            "description": "Footage shows a woman sitting on the ground, after allegedly having been maced. She is then kicked over by an officer.",
+            "tags": [
+                "kick"
+            ],
+            "name": "Woman kicked in head",
+            "date": "",
+            "date_text": "Date Unknown",
+            "id": "mn-minneapolis-30"
+        },
+        {
+            "links": [
+                {
                     "url": "https://twitter.com/joeguillen/status/1266563974658744321",
                     "text": ""
                 }
@@ -7852,6 +9017,25 @@
             "date": "2020-06-02",
             "date_text": "June 2nd",
             "id": "mi-detroit-8"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/DJEazyTwist/status/1277430912653950976",
+                    "text": ""
+                }
+            ],
+            "state": "Michigan",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Michigan.md",
+            "city": "Detroit",
+            "description": "A police cruiser begins to drive into a line of protestors. Protestors continue to move. The vehicle accelerates repeatedly, knocking several people over. At the end of the footage, the vehicle accelerates, knocking a protestor onto the hood, and drives away.",
+            "tags": [
+                "vehicle"
+            ],
+            "name": "Police run over protestors",
+            "date": "2020-06-28",
+            "date_text": "June 28th",
+            "id": "mi-detroit-9"
         },
         {
             "links": [
@@ -8529,6 +9713,14 @@
                 {
                     "url": "https://twitter.com/woznyphoto/status/1276865711835623424",
                     "text": ""
+                },
+                {
+                    "url": "https://twitter.com/DomicoPhillips/status/1276723211879755777",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/nilsrva/status/1276752643528982530",
+                    "text": ""
                 }
             ],
             "state": "Virginia",
@@ -8548,6 +9740,42 @@
         {
             "links": [
                 {
+                    "url": "https://twitter.com/rva_charlie/status/1276739841951248384",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/rva_charlie/status/1276740854410027008",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/rva_charlie/status/1276740309171437568",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/rva_charlie/status/1276741883516071938",
+                    "text": ""
+                },
+                {
+                    "url": "https://augustafreepress.com/city-of-richmond-richmond-pd-virginia-state-police-sued-over-actions-in-protests/",
+                    "text": ""
+                }
+            ],
+            "state": "Virginia",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Virginia.md",
+            "city": "Richmond",
+            "description": "Around midnight on June 26th, an attorney recounts his experience with Richmond police at a staging area in the parking lot of a Whole Foods. The attorney states the parking lot was open, there were no signs, and there was no trespassing order given.\n\nHe states that he was told to leave. Then, when he tried to photograph the officer, he was yanked out of his car and arrested. Image shows marks left by zip ties. He states that eventually he was released with a summons.\n\nA few days earlier, the attorney had helped arrestees file a suit against the Richmond Police Department.",
+            "tags": [
+                "arrest",
+                "abuse-of-power"
+            ],
+            "name": "Attorney arrested for photographing police staging area",
+            "date": "2020-06-26",
+            "date_text": "June 26th",
+            "id": "va-richmond-13"
+        },
+        {
+            "links": [
+                {
                     "url": "https://twitter.com/thickliljawn/status/1267239498083110913",
                     "text": ""
                 },
@@ -8558,12 +9786,20 @@
                 {
                     "url": "https://www.miamiherald.com/news/local/crime/article243234261.html",
                     "text": ""
+                },
+                {
+                    "url": "https://www.sun-sentinel.com/local/broward/fort-lauderdale/fl-ne-officer-shoved-protestor-charged-battery-steven-pohorence-20200630-wqyatvgu6fc4hdtnsvmtlhe7be-story.html",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.nbcnews.com/news/us-news/fort-lauderdale-officer-who-pushed-over-kneeling-protester-video-charged-n1232606",
+                    "text": ""
                 }
             ],
             "state": "Florida",
             "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Florida.md",
             "city": "Fort Lauderdale",
-            "description": "It is seen in the video that while the people were protesting, a few cops tried dispersing them, and shoved a woman to her knees, and later hit her on the head.\n\nMiami Herald later reports the officer has a history of drawing his weapon and using force. He has been suspended.",
+            "description": "It is seen in the video that while the people were protesting, a few cops tried dispersing them, and shoved a woman to her knees, and later hit her on the head.\n\nMiami Herald later reports the officer has a history of drawing his weapon and using force. He has been suspended.\n\nA more recent update states that the officer has been charged with battery.",
             "tags": [
                 "shove"
             ],
@@ -8599,6 +9835,34 @@
             "date": "2020-05-31",
             "date_text": "May 31st",
             "id": "fl-fortlauderdale-2"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.youtube.com/watch?v=JJx9NgTe8Ns",
+                    "text": "Bodycam video released by FLPD"
+                },
+                {
+                    "url": "https://www.miamiherald.com/news/local/community/broward/article243932047.html",
+                    "text": ""
+                }
+            ],
+            "state": "Florida",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Florida.md",
+            "city": "Fort Lauderdale",
+            "description": "Body cam video released by Fort Lauderdale PD on Youtube shows police laughing and joking after shooting protesters with rubber bullets and tear gas. They are speaking candidly to one another because they mistakenly believe their cams are in \"standby\" mode and not recording. Policing experts who reviewed the footage say that the behavior is unprofessional and that the officers felt \"comfortable about talking about turning the camera off.\" At 2:55, a cop can be heard saying \"if you need it, give me a target.\" The Miami Herald quotes a retired Lieutenant Colonel as commenting, \"If you're not seeing a threat, why are you asking for a threat? That would almost lead you to believe that they were indiscriminately firing.\"",
+            "tags": [
+                "shoot",
+                "rubber-bullets",
+                "tear-gas",
+                "abuse-of-power",
+                "body-cam",
+                "incitement"
+            ],
+            "name": "Police laugh and joke when they think their body cams are off",
+            "date": "2020-05-31",
+            "date_text": "May 31st",
+            "id": "fl-fortlauderdale-3"
         },
         {
             "links": [
@@ -8643,6 +9907,50 @@
             "date": "2020-05-31",
             "date_text": "May 31st",
             "id": "fl-miami-1"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/inaminorkey/status/1277070049518465032",
+                    "text": "9:00 round"
+                },
+                {
+                    "url": "https://twitter.com/inaminorkey/status/1277078077303132160",
+                    "text": "9:09 round"
+                }
+            ],
+            "state": "Florida",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Florida.md",
+            "city": "Miami",
+            "description": "A group of protestors blocked highway 395 in Miami. Police deployed tear gas at 9:00 pm and 9:09 PM to clear protestors.\n\nIn the 9:00 PM round, the filmer can be heard saying, \"They're smoke bombs. No, they're not. They're tear gas.\" The filmer then flees with other protestors. Footage then shows a woman screaming and in sufficient pain that another protestor is needed to carry her away quickly.\n\nAround 9:09 PM, protestors gathered on the highway on-ramp. Police then, without warning, fired another round of tear gas, forcing protestors to flee. The caption states multiple protestors were shot with rubber bullets, but no shots can be heard in this footage.",
+            "tags": [
+                "tear-gas"
+            ],
+            "name": "Police deployed two rounds of tear gas against peaceful protestors",
+            "date": "2020-06-27",
+            "date_text": "June 27th",
+            "id": "fl-miami-2"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/Concerned407/status/1268339148131307524",
+                    "text": ""
+                }
+            ],
+            "state": "Florida",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Florida.md",
+            "city": "Orlando",
+            "description": "Footage shows police charging at protestors and tackling one to the ground. Several officers join to support. The crowd becomes agitated. Police release the tackled individual, then pepper-spray him and another peaceful protestor. Police continue to discharge pepper spray and force away protestors trying to aid victims.",
+            "tags": [
+                "tackle",
+                "pepper-spray",
+                "spray"
+            ],
+            "name": "Police tackle & pepper spray peaceful protestors",
+            "date": "2020-06-01",
+            "date_text": "June 1st",
+            "id": "or-orlando-5"
         },
         {
             "links": [
@@ -8719,6 +10027,10 @@
                     "text": ""
                 },
                 {
+                    "url": "https://twitter.com/Concerned407/status/1276277655545905152",
+                    "text": ""
+                },
+                {
                     "url": "https://www.google.com/maps/place/29+W+South+St,+Orlando,+FL+32801,+USA/@28.5384293,-81.3797504,20z/data=!4m5!3m4!1s0x88e77b01dadbb26d:0x1a303f1fe28f7d51!8m2!3d28.5384616!4d-81.3801581",
                     "text": "Location on Google Maps"
                 }
@@ -8726,16 +10038,19 @@
             "state": "Florida",
             "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Florida.md",
             "city": "Orlando",
-            "description": "Police open fire on protesters outside of city hall with tear gas, flashbangs, and apparently rubber bullets.",
+            "description": "Police open fire on protesters outside of city hall with tear gas, flashbangs, and apparently rubber bullets.\n\nAdditional footage shows the incident was instigated when officers shoved a protestor. The protestor then fled. Officers tackled another protestor on the sidewalk, then began firing riot control rounds.",
             "tags": [
                 "shoot",
                 "tear-gas",
                 "flashbangs",
-                "rubber-bullets"
+                "rubber-bullets",
+                "shove",
+                "push",
+                "tackle"
             ],
             "name": "Police fire on protesters outside city hall",
-            "date": "",
-            "date_text": "Date unknown",
+            "date": "2020-06-02",
+            "date_text": "June 2nd",
             "id": "fl-orlando-2"
         },
         {
@@ -9805,6 +11120,30 @@
         {
             "links": [
                 {
+                    "url": "https://twitter.com/aaron_rigg/status/1267814008859443202",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/aaron_rigg/status/1267649768668495878",
+                    "text": ""
+                }
+            ],
+            "state": "Ohio",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Ohio.md",
+            "city": "Columbus",
+            "description": "Two squad cars full of police arrive at an intersection, sirens wailing. Police get out and start pepper-spraying people. Notably, there are two people on a fire escape who look like they may be treating two others for pepper-spray or tear gas exposure. Police pepper-spray them. Police later pepper spray one a second time, as she's in the process of retreating and rinsing her eyes with milk due to the first pepper spray exposure.",
+            "tags": [
+                "pepper-spray",
+                "spray"
+            ],
+            "name": "Police casually pepper spray passers by",
+            "date": "2020-06-01",
+            "date_text": "(believed to be) June 1st",
+            "id": "oh-columbus-22"
+        },
+        {
+            "links": [
+                {
                     "url": "https://www.thelantern.com/2020/06/columbus-mayor-police-chief-address-protest-policing-pepper-spray-of-lantern-journalists/",
                     "text": ""
                 },
@@ -9861,6 +11200,32 @@
             "date": "2020-06-05",
             "date_text": "June 5th",
             "id": "oh-columbus-18"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.tiktok.com/@frecklesandstitches/video/6835226979596340485",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/TrekkieByBirth/status/1276719505528492033",
+                    "text": ""
+                }
+            ],
+            "state": "Ohio",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Ohio.md",
+            "city": "Columbus",
+            "description": "Footage shows two police SUVs accelerating past the police line, knocking over a trash can in the process. They pull up next to protestors and jump out of the car. Police from the vehicles and on the street charge protestors, tackle them, and arrest them. Police appear to kneel on protestors while making arrests.",
+            "tags": [
+                "vehicle",
+                "tackle",
+                "arrest",
+                "knee"
+            ],
+            "name": "Police drive up to protestors, jump out and tackle them",
+            "date": "2020-06-06",
+            "date_text": "(Believed to be) June 6th",
+            "id": "oh-columbus-24"
         },
         {
             "links": [
@@ -9937,6 +11302,33 @@
             "date": "2020-06-21",
             "date_text": "June 21st",
             "id": "oh-columbus-21"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/greg_doucette/status/1277660155354796033",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.instagram.com/tv/CCAZGCWjqG1",
+                    "text": ""
+                }
+            ],
+            "state": "Ohio",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Ohio.md",
+            "city": "Columbus",
+            "description": "Footage shows a protestor seated on the edge of the road. An officer drags the protestor into the street and forces her to lay down to arrest. As other protestors express frustration, another officer runs over, lifts a protestor off the ground and slams her on her back. Police kneel on both protestors to make arrests.\n\nThe second clip is a lengthy (53 minute) account from the original filmer.",
+            "tags": [
+                "arrest",
+                "push",
+                "shove",
+                "throw",
+                "knee"
+            ],
+            "name": "Police drag seated protestor, body slam a second",
+            "date": "2020-06-29",
+            "date_text": "June 29th",
+            "id": "oh-columbus-23"
         },
         {
             "links": [
@@ -10521,40 +11913,6 @@
         {
             "links": [
                 {
-                    "url": "https://twitter.com/rawsmedia/status/1275671784554221574",
-                    "text": ""
-                },
-                {
-                    "url": "https://twitter.com/rawsmedia/status/1275673321959497729",
-                    "text": ""
-                },
-                {
-                    "url": "https://twitter.com/rawsmedia/status/1275675725358600192",
-                    "text": ""
-                },
-                {
-                    "url": "https://twitter.com/rawsmedia/status/1275688665486897152",
-                    "text": ""
-                }
-            ],
-            "state": "Washington DC",
-            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington DC.md",
-            "city": "DC",
-            "description": "Multiple videos from Raws media show police use of pepper spray, flashbangs and tear gas to disperse small, peaceful protests.\n\nProtestors appear to have erected small barricades in the streets using traffic cones and planters. Police fire on protestors at range with flashbangs and tear gas. Then in a later video, police line can be seen chanting, \"Move back,\" while spraying pepper spray.",
-            "tags": [
-                "pepper-spray",
-                "spray",
-                "tear-gas",
-                "flashbangs"
-            ],
-            "name": "Police use pepper spray, flashbangs and tear gas to disperse protest",
-            "date": "2020-06-23",
-            "date_text": "June 23rd",
-            "id": "dc-dc-18"
-        },
-        {
-            "links": [
-                {
                     "url": "https://twitter.com/wyattreed13/status/1275623256406581251",
                     "text": ""
                 }
@@ -10616,6 +11974,68 @@
             "date": "2020-06-23",
             "date_text": "June 23rd",
             "id": "dc-dc-22"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/rawsmedia/status/1275671784554221574",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/rawsmedia/status/1275673321959497729",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/rawsmedia/status/1275675725358600192",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/rawsmedia/status/1275688665486897152",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.youtube.com/watch?v=aC1udgaUzDI",
+                    "text": ""
+                }
+            ],
+            "state": "Washington DC",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington DC.md",
+            "city": "DC",
+            "description": "Multiple videos from Raws media show police use of pepper spray, flashbangs and tear gas to disperse small, peaceful protests.\n\nProtestors appear to have erected small barricades in the streets using traffic cones and planters. Police fire on protestors at range with flashbangs and tear gas. Then in a later video, police line can be seen chanting, \"Move back,\" while spraying pepper spray.\n\nThe second clip from Raws shows protestors attempting to treat a fellow protestor who was injured in the first round of violence.\n\nAdditional footage posted on Youtube shows similar events. Around 4 minutes, this footage also shows police pushing a man on crutches and harassing him to move faster. Protestors attempting to help the man on crutches are assaulted.",
+            "tags": [
+                "pepper-spray",
+                "spray",
+                "tear-gas",
+                "flashbangs",
+                "shove",
+                "push",
+                "strike",
+                "person-with-disability"
+            ],
+            "name": "Police use pepper spray, flashbangs and tear gas to disperse protest",
+            "date": "2020-06-23",
+            "date_text": "June 23rd",
+            "id": "dc-dc-18"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/FordFischer/status/1277457274395676672",
+                    "text": ""
+                }
+            ],
+            "state": "Washington DC",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington DC.md",
+            "city": "DC",
+            "description": "Footage from late on June 27th, police charge a protestor walking away from them. She is grabbed by multiple officers, both on bike and on foot. The police then arrest her. She drops several water bottles out of her hands. Protestors state she was passing out water bottles to thirsty protesors.",
+            "tags": [
+                "arrest",
+                "abuse-of-power"
+            ],
+            "name": "Police target protestor handing out water",
+            "date": "2020-06-27",
+            "date_text": "June 27th",
+            "id": "dc-dc-24"
         },
         {
             "links": [
@@ -10957,8 +12377,65 @@
             ],
             "name": "Police kneel on man who says \"I can't breathe\", officer yells profanities back",
             "date": "2020-06-03",
-            "date_text": "believed to be June 3rd",
+            "date_text": "(Believed to be) June 3rd",
             "id": "pa-philadelphia-6"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://vimeo.com/428917635",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.reddit.com/r/PublicFreakout/comments/hbaove/philadelphia_police_threaten_unicorn_riot/",
+                    "text": ""
+                },
+                {
+                    "url": "https://unicornriot.ninja/2020/philadelphia-police-threaten-unicorn-riot-reporter-after-vigilante-assault/",
+                    "text": ""
+                }
+            ],
+            "state": "Pennsylvania",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Pennsylvania.md",
+            "city": "Philadelphia",
+            "description": "A reporter from Unicorn Riot showed up at a pro-Columbus rally at a statue of Christopher Columbus in Philadelphia. He is harassed, threatened and assaulted by members of the rally. In addition, an article published by Unicorn Riot states that members of the rally slashed the journalist's tires.  After several minutes, police intervene to push protestors back, but make no arrests. They appear to say nothing more to members of the rally than, \"Leave him alone.\"\n\nThe reporter continues to film from a distance.\n\nAround 6:20, the journalist is assaulted again by a man who says he doesn't want the journalist to film.\n\nShortly after, the journalist is told by the officer that he has been warned 3 times to leave. The journalist insists he is here to film. The officer states that the journalist is inciting a riot and should be mindful of the curfew time.",
+            "tags": [
+                "journalist",
+                "abuse-of-power"
+            ],
+            "name": "Reporter is harassed and assaulted by pro-Columbus supporters; police tell reporter to leave the scene",
+            "date": "2020-06-13",
+            "date_text": "June 13th",
+            "id": "pa-philadelphia-11"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://twitter.com/samanthamelamed/status/1275522909604372481",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/samanthamelamed/status/1275523337716973570",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/samanthamelamed/status/1275524750316535810",
+                    "text": ""
+                }
+            ],
+            "state": "Pennsylvania",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Pennsylvania.md",
+            "city": "Philadelphia",
+            "description": "A reporter recounts on Twitter that she was arrested despite telling an officer she was a reporter. She states she was zip-tied, mocked and then dragged backwards down two flights of stairs to a detention area. She states that later an officer came and asked, \"Are you Samantha?\" When she confirmed her name, she was released.\n\nFootage shows first-person video leading up to her arrest. It includes her clear identification, with press badge, as a reporter.",
+            "tags": [
+                "journalist",
+                "arrest",
+                "abuse-of-power"
+            ],
+            "name": "Counter-Terrorism Unit detains reporter",
+            "date": "2020-06-23",
+            "date_text": "June 23rd",
+            "id": "pa-philadelphia-12"
         },
         {
             "links": [
@@ -11291,6 +12768,49 @@
             "date": "2020-05-31",
             "date_text": "Possibly May 31st",
             "id": "in-lafayette-1"
+        },
+        {
+            "links": [
+                {
+                    "url": "https://www.reddit.com/r/Bad_Cop_No_Donut/comments/hhfrh8/062820_musicians_in_aurora_colorado_honoring/",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.reddit.com/r/2020PoliceBrutality/comments/hhh6fe/aurora_co_during_a_vigil_with_live_violinists_for/",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/ekbates4/status/1277104647690280961",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/Ezret/status/1277451145418469376",
+                    "text": ""
+                },
+                {
+                    "url": "https://twitter.com/jessiedesigngir/status/1277126019246260224",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.reddit.com/r/Denver/comments/hh5dbp/protestors_for_elijah_mcclain_threatened_with/",
+                    "text": ""
+                }
+            ],
+            "state": "Colorado",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Colorado.md",
+            "city": "Aurora",
+            "description": "On June 27th, citizens of Aurora held a violin vigil in honor of Elijah McClain. Footage shows several violinists around a fountain and a small crowd of people scattered through the park, most sitting on picnic blankets or the grass.\n\nAurora police arrived in riot gear to disperse the vigil. When participants refused, riot police beat them with batons and pepper-sprayed them.",
+            "tags": [
+                "strike",
+                "beat",
+                "baton",
+                "pepper-spray",
+                "spray"
+            ],
+            "name": "Aurora police violently disperse violin vigil",
+            "date": "2020-06-27",
+            "date_text": "June 27th",
+            "id": "co-aurora-1"
         },
         {
             "links": [
@@ -11781,6 +13301,26 @@
         {
             "links": [
                 {
+                    "url": "https://twitter.com/wisenoons/status/1274743833410994176",
+                    "text": ""
+                }
+            ],
+            "state": "Colorado",
+            "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Colorado.md",
+            "city": "Denver",
+            "description": "Footage shows a protestor following police direction across a road. He stops to ask why police moved him off the sidewalk into the road and are now telling him he cannot be on the road. Officers do not respond. Protestor continues to ask. Another officer approaches and discharges pepper spray without warning.",
+            "tags": [
+                "pepper-spray",
+                "spray"
+            ],
+            "name": "Police pepper spray protestor with hands up",
+            "date": "2020-06-21",
+            "date_text": "(Believed to be) June 21st",
+            "id": "co-denver-20"
+        },
+        {
+            "links": [
+                {
                     "url": "https://twitter.com/courtenay_roche/status/1267653137969623040",
                     "text": ""
                 },
@@ -12182,24 +13722,30 @@
         {
             "links": [
                 {
-                    "url": "https://twitter.com/track4life_bry/status/1268313958479532034",
+                    "url": "https://twitter.com/greg_doucette/status/1275254514501799939",
+                    "text": ""
+                },
+                {
+                    "url": "https://www.live5news.com/2020/06/23/police-make-one-arrest-during-monday-night-calhoun-statue-protests/",
                     "text": ""
                 }
             ],
             "state": "South Carolina",
             "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/South Carolina.md",
-            "city": "Location Unknown",
-            "description": "A man is arrested by police, who force him on the ground and begin punching him for over a minute.",
+            "city": "Charleston",
+            "description": "A protest and counter-protest between BLM supporters and statue supporters. Groups shouted at one another but stayed separate. After the protest, BLM supporters marched down the street followed by police.\n\nFootage shows violence during the arrest of a protestor as 3 police officers wearing hoods that resemble balaclavas. They tackle the protestor to the ground. One officer then kneels on his back to make the arrest. A fourth officer in a patrol uniform comes to assist. The man is seen bleeding from the face. The masked officers do not appear to be wearing badges.\n\nPolice charged him with disobeying a lawful order and resisting arrest.",
             "tags": [
                 "arrest",
                 "shove",
-                "punch",
-                "beat"
+                "strike",
+                "beat",
+                "tackle",
+                "hide-badges"
             ],
-            "name": "Police Assault Suspect on Ground During Arrest",
-            "date": "2020-06-03",
-            "date_text": "June 3rd",
-            "id": "sc-unknown-1"
+            "name": "Police violently arrest protestor",
+            "date": "2020-06-22",
+            "date_text": "June 22nd",
+            "id": "sc-charleston-3"
         },
         {
             "links": [

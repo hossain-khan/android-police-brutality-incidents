@@ -55,7 +55,8 @@
             "https:\/\/twitter.com\/rawsmedia\/status\/1275671784554221574",
             "https:\/\/twitter.com\/rawsmedia\/status\/1275673321959497729",
             "https:\/\/twitter.com\/rawsmedia\/status\/1275675725358600192",
-            "https:\/\/twitter.com\/rawsmedia\/status\/1275688665486897152"
+            "https:\/\/twitter.com\/rawsmedia\/status\/1275688665486897152",
+            "https:\/\/www.youtube.com\/watch?v=aC1udgaUzDI"
          ],
          "data": null,
          "geocoding": {
@@ -186,6 +187,47 @@
          }
       },
       {
+         "id": "0a4a4880-bcde-11ea-a2b6-8148c0383941",
+         "pb_id": "wa-seattle-23",
+         "state": "Washington",
+         "city": "Seattle",
+         "date": "2020-07-02T00:00:00.000000Z",
+         "title": "Officers tackle protesters, put a knee on least one of their necks",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/sre_li\/status\/1278856204018565120",
+            "https:\/\/twitter.com\/1stRoundFinish\/status\/1278854169743388672"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "47.6062095",
+            "long": "-122.3320708"
+         }
+      },
+      {
+         "id": "0c4951a0-ba2d-11ea-a9c2-915b96840c2b",
+         "pb_id": "ny-newyorkcity-49",
+         "state": "New York",
+         "city": "New York City",
+         "date": "2020-06-28T00:00:00.000000Z",
+         "title": "Police escalate to violence at Queer Liberation March",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/elielcruz\/status\/1277346244952817669",
+            "https:\/\/twitter.com\/MartiGCummings\/status\/1277347982548111363",
+            "https:\/\/mobile.twitter.com\/justinaflash\/status\/1277371937744916480",
+            "https:\/\/mobile.twitter.com\/jonnaerikaaa\/status\/1277367208310685696",
+            "https:\/\/mobile.twitter.com\/agrayphoto\/status\/1277362250920099840",
+            "https:\/\/mobile.twitter.com\/garrettmireles\/status\/1277371641996206089",
+            "https:\/\/mobile.twitter.com\/chayesmatthew\/status\/1277336251239145473"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "40.7127753",
+            "long": "-74.0059728"
+         }
+      },
+      {
          "id": "0c8ef440-b801-11ea-9fe9-91e686de6c4f",
          "pb_id": "ca-losangeles-28",
          "state": "California",
@@ -259,11 +301,14 @@
          "pb_id": "ca-losangeles-30",
          "state": "California",
          "city": "Los Angeles",
-         "date": "1900-01-01T00:00:00.000000Z",
+         "date": "2020-05-30T00:00:00.000000Z",
          "title": "Protestor shot in head",
          "description": null,
          "links": [
-            "https:\/\/twitter.com\/greg_doucette\/status\/1268052132252602368"
+            "https:\/\/twitter.com\/greg_doucette\/status\/1268052132252602368",
+            "https:\/\/twitter.com\/andrewcurryla\/status\/1266906677820833793",
+            "https:\/\/twitter.com\/andrewcurryla\/status\/1266905784585052160",
+            "https:\/\/www.google.com\/maps\/@34.071154,-118.3583053,3a,60y,332.25h,94.01t\/data=!3m6!1e1!3m4!1sBMaXVOuAN0T9coL-PijVSA!2e0!7i16384!8i8192"
          ],
          "data": null,
          "geocoding": {
@@ -341,6 +386,77 @@
          }
       },
       {
+         "id": "1c19b2c0-bc8f-11ea-96cf-cd8c8b27ee95",
+         "pb_id": "wa-seattle-21",
+         "state": "Washington",
+         "city": "Seattle",
+         "date": "2020-07-01T00:00:00.000000Z",
+         "title": "Police strike and pepper spray protestors while marching on 13th Precinct",
+         "description": null,
+         "links": [
+            "https:\/\/www.reddit.com\/r\/PublicFreakout\/comments\/hjln90\/seattle_police_department_retaking_the_13th\/",
+            "https:\/\/twitter.com\/greg_doucette\/status\/1278565827747471361"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "47.6062095",
+            "long": "-122.3320708"
+         }
+      },
+      {
+         "id": "1c1b9040-bc8f-11ea-a6cc-2b473f125586",
+         "pb_id": "wa-seattle-22",
+         "state": "Washington",
+         "city": "Seattle",
+         "date": "2020-07-01T00:00:00.000000Z",
+         "title": "Police arrest protestor during CHAZ\/CHOP clearing",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/greg_doucette\/status\/1278544686546911232",
+            "https:\/\/clips.twitch.tv\/LittleProtectiveDillAsianGlow"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "47.6062095",
+            "long": "-122.3320708"
+         }
+      },
+      {
+         "id": "1c27a1a0-bcdb-11ea-8302-276b394057a7",
+         "pb_id": "fl-fortlauderdale-3",
+         "state": "Florida",
+         "city": "Fort Lauderdale",
+         "date": "2020-05-31T00:00:00.000000Z",
+         "title": "Police laugh and joke when they think their body cams are off",
+         "description": null,
+         "links": [
+            "https:\/\/www.youtube.com\/watch?v=JJx9NgTe8Ns",
+            "https:\/\/www.miamiherald.com\/news\/local\/community\/broward\/article243932047.html"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "26.1224386",
+            "long": "-80.1373174"
+         }
+      },
+      {
+         "id": "1d8e10b0-bc8f-11ea-b513-1f9986ad9c32",
+         "pb_id": "co-denver-20",
+         "state": "Colorado",
+         "city": "Denver",
+         "date": "2020-06-21T00:00:00.000000Z",
+         "title": "Police pepper spray protestor with hands up",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/wisenoons\/status\/1274743833410994176"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "39.7392358",
+            "long": "-104.9902510"
+         }
+      },
+      {
          "id": "22035e90-b0d5-11ea-b535-bf95ae94d6bf",
          "pb_id": "va-richmond-6",
          "state": "Virginia",
@@ -393,6 +509,46 @@
          }
       },
       {
+         "id": "295566d0-bc93-11ea-b849-b928a980ac79",
+         "pb_id": "tn-chattanooga-1",
+         "state": "Tennessee",
+         "city": "Chattanooga",
+         "date": "2020-05-31T00:00:00.000000Z",
+         "title": "Sheriffs tear gas crowd after accidental vandalism",
+         "description": null,
+         "links": [
+            "https:\/\/www.youtube.com\/watch?v=Jkj3EfktVkM",
+            "https:\/\/www.youtube.com\/watch?v=MeIV1kSsPZg",
+            "https:\/\/www.youtube.com\/watch?v=rq_2YSLn4FE",
+            "https:\/\/www.youtube.com\/watch?v=-kuD_naCPzo",
+            "https:\/\/www.chattanoogan.com\/2020\/5\/31\/409849\/Protestors-Face-Off-With-Law.aspx"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "35.0456297",
+            "long": "-85.3096801"
+         }
+      },
+      {
+         "id": "2b4556a0-ba41-11ea-863a-2759e1fe1721",
+         "pb_id": "pa-philadelphia-11",
+         "state": "Pennsylvania",
+         "city": "Philadelphia",
+         "date": "2020-06-13T00:00:00.000000Z",
+         "title": "Reporter is harassed and assaulted by pro-Columbus supporters; police tell reporter to leave the scene",
+         "description": null,
+         "links": [
+            "https:\/\/vimeo.com\/428917635",
+            "https:\/\/www.reddit.com\/r\/PublicFreakout\/comments\/hbaove\/philadelphia_police_threaten_unicorn_riot\/",
+            "https:\/\/unicornriot.ninja\/2020\/philadelphia-police-threaten-unicorn-riot-reporter-after-vigilante-assault\/"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "39.9525839",
+            "long": "-75.1652215"
+         }
+      },
+      {
          "id": "2d23c860-b8bf-11ea-bd76-d3af0d475a05",
          "pb_id": "wa-olympia-1",
          "state": "Washington",
@@ -407,6 +563,24 @@
          "geocoding": {
             "lat": "47.0378741",
             "long": "-122.9006951"
+         }
+      },
+      {
+         "id": "35a3f5a0-ba52-11ea-bea8-c1833e533074",
+         "pb_id": "wi-madison02",
+         "state": "Wisconsin",
+         "city": "Madison",
+         "date": "2020-05-30T00:00:00.000000Z",
+         "title": "Police pepper spray protestors with hands up",
+         "description": null,
+         "links": [
+            "https:\/\/www.tiktok.com\/@michelle_but_not_obama\/video\/6833371052198857990",
+            "https:\/\/twitter.com\/shadow_roses1\/status\/1268246561798205442"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "43.0730517",
+            "long": "-89.4012302"
          }
       },
       {
@@ -457,6 +631,115 @@
             "https:\/\/twitter.com\/DonovanFarley\/status\/1276447833244065793",
             "https:\/\/twitter.com\/ProudBulba\/status\/1276458402034548737",
             "https:\/\/twitter.com\/ghostmobpdx\/status\/1276462936941187074"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "364396c0-bc7e-11ea-a37d-63703406dbcb",
+         "pb_id": "pa-philadelphia-12",
+         "state": "Pennsylvania",
+         "city": "Philadelphia",
+         "date": "2020-06-23T00:00:00.000000Z",
+         "title": "Counter-Terrorism Unit detains reporter",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/samanthamelamed\/status\/1275522909604372481",
+            "https:\/\/twitter.com\/samanthamelamed\/status\/1275523337716973570",
+            "https:\/\/twitter.com\/samanthamelamed\/status\/1275524750316535810"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "39.9525839",
+            "long": "-75.1652215"
+         }
+      },
+      {
+         "id": "36569210-ba2c-11ea-a5d9-1b2d5c495022",
+         "pb_id": "or-portland-31",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-26T00:00:00.000000Z",
+         "title": "Man shot in eye with stinger pellet",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/chadloder\/status\/1277360969228771329"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "36590d70-ba2c-11ea-adb7-b954864c0ac7",
+         "pb_id": "or-portland-35",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-28T00:00:00.000000Z",
+         "title": "Police tear gas protestors for no evident reason",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/hungrybowtie\/status\/1277125125934964736",
+            "https:\/\/twitter.com\/hungrybowtie\/status\/1277125535483588609",
+            "https:\/\/twitter.com\/hungrybowtie\/status\/1277125859040563200"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "365b80d0-ba2c-11ea-84e3-6b7c61d99819",
+         "pb_id": "or-portland-32",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-28T00:00:00.000000Z",
+         "title": "Police beat wrong person for vandalism",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/hungrybowtie\/status\/1277156963449593856"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "365ca940-ba2c-11ea-9147-3797bf5a9c6a",
+         "pb_id": "or-portland-33",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-28T00:00:00.000000Z",
+         "title": "Riot police charge, tackle and arrest protestors",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/hungrybowtie\/status\/1277159562563317760",
+            "https:\/\/twitter.com\/hungrybowtie\/status\/1277160091041447937",
+            "https:\/\/twitter.com\/hungrybowtie\/status\/1277167952798691329",
+            "https:\/\/twitter.com\/hungrybowtie\/status\/1277168538575204352"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "365fb380-ba2c-11ea-bb01-f11d441e0b23",
+         "pb_id": "or-portland-34",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-28T00:00:00.000000Z",
+         "title": "Police retaliate to thrown water bottle with excessive force",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/hungrybowtie\/status\/1277169298000105473"
          ],
          "data": null,
          "geocoding": {
@@ -1555,6 +1838,70 @@
          }
       },
       {
+         "id": "43081d60-ba30-11ea-b9c5-0b2b9dd21158",
+         "pb_id": "mo-florissant-2",
+         "state": "Missouri",
+         "city": "Florissant",
+         "date": "2020-06-27T00:00:00.000000Z",
+         "title": "Police push protestors off lawn",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/NassimBnchabane\/status\/1277054826858323969",
+            "https:\/\/twitter.com\/theMARCHstl\/status\/1277129811245359104",
+            "https:\/\/photos.google.com\/share\/AF1QipOr_banJbIy1zUzs7rrCC9y664etyqDFjDlxAEdtDNweyuf7CnEQQlMpUXA0aU-xw\/photo\/AF1QipNFR-GR4frZPlo3vhGFwO_4uPBljOgyllYce3GP?key=azVZQUNIakFDMFVtbDhCS3BPaTlMWXBjd1R0RzN3",
+            "https:\/\/twitter.com\/search4swag\/status\/1277059423966507008",
+            "https:\/\/twitter.com\/search4swag\/status\/1277059423966507008",
+            "https:\/\/twitter.com\/NassimBnchabane\/status\/1277056390314541056"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "38.7892170",
+            "long": "-90.3226140"
+         }
+      },
+      {
+         "id": "435c4f00-ba30-11ea-82cf-9908c76c5771",
+         "pb_id": "de-dover-2",
+         "state": "Delaware",
+         "city": "Dover",
+         "date": "2020-06-09T00:00:00.000000Z",
+         "title": "Police make violent arrests; arrest woman filming",
+         "description": null,
+         "links": [
+            "https:\/\/www.reddit.com\/r\/PublicFreakout\/comments\/hew8sz\/dover_nurse_gets_tackled_and_arrested_by_cops_for\/",
+            "https:\/\/www.youtube.com\/watch?v=oXh2Qr2Enbo",
+            "https:\/\/dsp.delaware.gov\/2020\/06\/10\/delaware-state-police-investigating-disorderly-group-resulting-in-several-arrests-camden\/",
+            "https:\/\/doverpolice.org\/2020\/06\/10\/dover-police-statement-regarding-june-9th-actions-with-delaware-state-police\/",
+            "https:\/\/www.delawareonline.com\/story\/news\/2020\/06\/10\/delaware-officials-denounce-arrests-george-floyd-protesters-near-dover\/5332891002\/"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "39.1581680",
+            "long": "-75.5243682"
+         }
+      },
+      {
+         "id": "43c15ae0-ba30-11ea-beee-fd6e976889d6",
+         "pb_id": "va-richmond-13",
+         "state": "Virginia",
+         "city": "Richmond",
+         "date": "2020-06-26T00:00:00.000000Z",
+         "title": "Attorney arrested for photographing police staging area",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/rva_charlie\/status\/1276739841951248384",
+            "https:\/\/twitter.com\/rva_charlie\/status\/1276740854410027008",
+            "https:\/\/twitter.com\/rva_charlie\/status\/1276740309171437568",
+            "https:\/\/twitter.com\/rva_charlie\/status\/1276741883516071938",
+            "https:\/\/augustafreepress.com\/city-of-richmond-richmond-pd-virginia-state-police-sued-over-actions-in-protests\/"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "37.5407246",
+            "long": "-77.4360481"
+         }
+      },
+      {
          "id": "45b2bf40-ad1b-11ea-8608-a1635bbd0d4e",
          "pb_id": "fl-tampa-2",
          "state": "Florida",
@@ -1661,6 +2008,24 @@
          }
       },
       {
+         "id": "48c86360-baf3-11ea-a054-7f47b141dc0b",
+         "pb_id": "oh-columbus-22",
+         "state": "Ohio",
+         "city": "Columbus",
+         "date": "2020-06-01T00:00:00.000000Z",
+         "title": "Police casually pepper spray passers by",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/aaron_rigg\/status\/1267814008859443202",
+            "https:\/\/twitter.com\/aaron_rigg\/status\/1267649768668495878"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "39.9611755",
+            "long": "-82.9987942"
+         }
+      },
+      {
          "id": "4d012300-b887-11ea-aab0-f9aefe65179c",
          "pb_id": "or-portland-25",
          "state": "Oregon",
@@ -1675,6 +2040,23 @@
          "geocoding": {
             "lat": "45.5051064",
             "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "540d7ee0-ba40-11ea-88ca-0fddba7cd4fe",
+         "pb_id": "ca-losangeles-34",
+         "state": "California",
+         "city": "Los Angeles",
+         "date": "2020-05-30T00:00:00.000000Z",
+         "title": "Riot police fire tear gas at peaceful protest, then use mace to corral protestors",
+         "description": null,
+         "links": [
+            "https:\/\/www.reddit.com\/r\/2020PoliceBrutality\/comments\/h7q97a\/using_mace_to_direct_protestors_through_teargas\/"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "34.0522342",
+            "long": "-118.2436849"
          }
       },
       {
@@ -1697,6 +2079,27 @@
          }
       },
       {
+         "id": "5a38d740-ba06-11ea-b0e4-9fa397d23f90",
+         "pb_id": "ca-losangeles-33",
+         "state": "California",
+         "city": "Los Angeles",
+         "date": "2020-05-30T00:00:00.000000Z",
+         "title": "Los Angeles law enforcement hit protester in the face with rubber bullet",
+         "description": null,
+         "links": [
+            "https:\/\/www.instagram.com\/p\/CA20QYJgaU6\/",
+            "https:\/\/www.instagram.com\/p\/CA1U9L9g_LD\/",
+            "https:\/\/laist.com\/2020\/06\/11\/uninsured_protesters_free_medical_aid_la_doctor.php",
+            "https:\/\/losangeles.cbslocal.com\/video\/4578194-protester-deon-jones-describes-being-shot-with-rubber-bullet-by-police\/",
+            "https:\/\/www.foxla.com\/news\/i-felt-like-i-was-on-the-timeline-to-my-death-local-man-speaks-out-after-weekend-protest-ends-in-violence"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "34.0522342",
+            "long": "-118.2436849"
+         }
+      },
+      {
          "id": "5a5c2290-af3d-11ea-b679-018ccbeba76c",
          "pb_id": "sc-charleston-2",
          "state": "South Carolina",
@@ -1711,6 +2114,25 @@
          "geocoding": {
             "lat": "32.7764749",
             "long": "-79.9310512"
+         }
+      },
+      {
+         "id": "5a601f70-ba06-11ea-9221-d9d3da6be1f6",
+         "pb_id": "ca-walnutcreek-3",
+         "state": "California",
+         "city": "Walnut Creek",
+         "date": "2020-06-01T00:00:00.000000Z",
+         "title": "Police arrest man using excessive force, dogs",
+         "description": null,
+         "links": [
+            "https:\/\/www.mercurynews.com\/2020\/06\/06\/protester-recounts-getting-attacked-by-police-dogs-tear-gassed-at-walnut-creek-demonstration\/",
+            "https:\/\/sanfrancisco.cbslocal.com\/2020\/06\/17\/walnut-creek-police-discuss-protest-response-critics-not-impressed\/",
+            "https:\/\/www.ktvu.com\/news\/walnut-creek-police-says-mutual-aid-officer-did-not-say-what-many-thought-they-heard"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "37.9100783",
+            "long": "-122.0651819"
          }
       },
       {
@@ -3982,7 +4404,8 @@
          "title": "Police fire tear gas at peaceful protests",
          "description": null,
          "links": [
-            "https:\/\/www.newsobserver.com\/news\/local\/article243114301.html"
+            "https:\/\/www.newsobserver.com\/news\/local\/article243114301.html",
+            "https:\/\/twitter.com\/vizjourno\/status\/1266954106998009857"
          ],
          "data": null,
          "geocoding": {
@@ -4088,11 +4511,14 @@
          "pb_id": "ca-compton-1",
          "state": "California",
          "city": "Compton",
-         "date": "2020-06-01T00:00:00.000000Z",
+         "date": "2020-05-31T00:00:00.000000Z",
          "title": "Police beat person on the ground",
          "description": null,
          "links": [
-            "https:\/\/www.reddit.com\/r\/PublicFreakout\/comments\/gvdl01\/they_secluded_him_behind_a_wall_and_looked_around\/"
+            "https:\/\/www.reddit.com\/r\/PublicFreakout\/comments\/gvdl01\/they_secluded_him_behind_a_wall_and_looked_around\/",
+            "https:\/\/laist.com\/2020\/06\/10\/los_angeles_deputies_compton_video_violent_arrest_dalvin_price.php",
+            "https:\/\/ktla.com\/news\/local-news\/violent-arrest-caught-on-camera-in-compton\/",
+            "https:\/\/www.google.com\/maps\/@33.9038142,-118.2141026,3a,75y,255.55h,58.86t\/data=!3m6!1e1!3m4!1sDJvjgZKDPB56Yw1A5Ovb6A!2e0!7i16384!8i8192"
          ],
          "data": null,
          "geocoding": {
@@ -4926,12 +5352,15 @@
          "pb_id": "ca-walnutcreek-1",
          "state": "California",
          "city": "Walnut Creek",
-         "date": "2020-06-02T00:00:00.000000Z",
-         "title": "Armored law enforcement vehicle threatens protestors",
+         "date": "2020-06-01T00:00:00.000000Z",
+         "title": "Armored law enforcement vehicle threatens protestors, deploys tear gas on highway",
          "description": null,
          "links": [
             "https:\/\/www.instagram.com\/p\/CA7KMc9pX5S\/",
-            "https:\/\/jalopnik.com\/cop-in-armored-truck-tells-peaceful-protesters-if-you-1843886752"
+            "https:\/\/jalopnik.com\/cop-in-armored-truck-tells-peaceful-protesters-if-you-1843886752",
+            "https:\/\/abc7news.com\/walnut-creek-curfew-tonight-protest-in-today-looting-protests\/6231856\/",
+            "https:\/\/www.kron4.com\/news\/bay-area\/as-protests-remain-mostly-peaceful-walnut-creek-considers-extending-curfew\/",
+            "https:\/\/www.ktvu.com\/news\/walnut-creek-police-says-mutual-aid-officer-did-not-say-what-many-thought-they-heard"
          ],
          "data": null,
          "geocoding": {
@@ -5927,7 +6356,9 @@
          "links": [
             "https:\/\/twitter.com\/thickliljawn\/status\/1267239498083110913",
             "https:\/\/www.reddit.com\/r\/PublicFreakout\/comments\/gubleh\/officer_gets_confronted_by_another_officer_for\/",
-            "https:\/\/www.miamiherald.com\/news\/local\/crime\/article243234261.html"
+            "https:\/\/www.miamiherald.com\/news\/local\/crime\/article243234261.html",
+            "https:\/\/www.sun-sentinel.com\/local\/broward\/fort-lauderdale\/fl-ne-officer-shoved-protestor-charged-battery-steven-pohorence-20200630-wqyatvgu6fc4hdtnsvmtlhe7be-story.html",
+            "https:\/\/www.nbcnews.com\/news\/us-news\/fort-lauderdale-officer-who-pushed-over-kneeling-protester-video-charged-n1232606"
          ],
          "data": null,
          "geocoding": {
@@ -5993,11 +6424,12 @@
          "pb_id": "fl-orlando-2",
          "state": "Florida",
          "city": "Orlando",
-         "date": "1900-01-01T00:00:00.000000Z",
+         "date": "2020-06-02T00:00:00.000000Z",
          "title": "Police fire on protesters outside city hall",
          "description": null,
          "links": [
             "https:\/\/twitter.com\/greg_doucette\/status\/1269017349727928320",
+            "https:\/\/twitter.com\/Concerned407\/status\/1276277655545905152",
             "https:\/\/www.google.com\/maps\/place\/29+W+South+St,+Orlando,+FL+32801,+USA\/@28.5384293,-81.3797504,20z\/data=!4m5!3m4!1s0x88e77b01dadbb26d:0x1a303f1fe28f7d51!8m2!3d28.5384616!4d-81.3801581"
          ],
          "data": null,
@@ -6309,7 +6741,7 @@
          "pb_id": "wi-madison-1",
          "state": "Wisconsin",
          "city": "Madison",
-         "date": "2020-05-31T00:00:00.000000Z",
+         "date": "2020-05-30T00:00:00.000000Z",
          "title": "Officer pepper-sprays protestor walking backwards with arms raised",
          "description": null,
          "links": [
@@ -7462,13 +7894,11 @@
          "pb_id": "il-chicago-13",
          "state": "Illinois",
          "city": "Chicago",
-         "date": "2020-05-31T00:00:00.000000Z",
-         "title": "Officers are missing badges",
+         "date": "2020-06-02T00:00:00.000000Z",
+         "title": "Police push protestor on bike, slap phone out of his hand",
          "description": null,
          "links": [
-            "https:\/\/twitter.com\/CHICAGOCREATUR1\/status\/1268607315902697478",
-            "https:\/\/twitter.com\/helllucinate\/status\/1267237866935136258",
-            "https:\/\/twitter.com\/trashrascal\/status\/1268669040312147969"
+            "https:\/\/www.tiktok.com\/@gonzalosanchez75\/video\/6833934911506746629"
          ],
          "data": null,
          "geocoding": {
@@ -7813,6 +8243,28 @@
          }
       },
       {
+         "id": "a051db80-b99b-11ea-86b0-614f30cf7442",
+         "pb_id": "co-aurora-1",
+         "state": "Colorado",
+         "city": "Aurora",
+         "date": "2020-06-27T00:00:00.000000Z",
+         "title": "Aurora police violently disperse violin vigil",
+         "description": null,
+         "links": [
+            "https:\/\/www.reddit.com\/r\/Bad_Cop_No_Donut\/comments\/hhfrh8\/062820_musicians_in_aurora_colorado_honoring\/",
+            "https:\/\/www.reddit.com\/r\/2020PoliceBrutality\/comments\/hhh6fe\/aurora_co_during_a_vigil_with_live_violinists_for\/",
+            "https:\/\/twitter.com\/ekbates4\/status\/1277104647690280961",
+            "https:\/\/twitter.com\/Ezret\/status\/1277451145418469376",
+            "https:\/\/twitter.com\/jessiedesigngir\/status\/1277126019246260224",
+            "https:\/\/www.reddit.com\/r\/Denver\/comments\/hh5dbp\/protestors_for_elijah_mcclain_threatened_with\/"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "39.7294319",
+            "long": "-104.8319195"
+         }
+      },
+      {
          "id": "a3c32e10-b8bd-11ea-b954-07d5c65b47ef",
          "pb_id": "wa-seattle-20",
          "state": "Washington",
@@ -7991,6 +8443,41 @@
          }
       },
       {
+         "id": "ada1cf60-bc95-11ea-89c1-0762bdc775c3",
+         "pb_id": "ca-norco-1",
+         "state": "California",
+         "city": "Norco",
+         "date": "2020-06-29T00:00:00.000000Z",
+         "title": "Woman struck by white supremacist while police look on",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/le_maria21\/status\/1277801107033481216",
+            "https:\/\/twitter.com\/le_maria21\/status\/1277800993984413696"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "33.9311257",
+            "long": "-117.5486610"
+         }
+      },
+      {
+         "id": "b5b3ff80-baf9-11ea-9e6a-8364280ac4b8",
+         "pb_id": "or-orlando-5",
+         "state": "Florida",
+         "city": "Orlando",
+         "date": "2020-06-01T00:00:00.000000Z",
+         "title": "Police tackle & pepper spray peaceful protestors",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/Concerned407\/status\/1268339148131307524"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "28.5383355",
+            "long": "-81.3792365"
+         }
+      },
+      {
          "id": "b74a4d80-b8c0-11ea-aa91-df818f779003",
          "pb_id": "nc-raleigh-8",
          "state": "North Carolina",
@@ -8052,7 +8539,9 @@
          "title": "Police shove and pepper-spray protestor",
          "description": null,
          "links": [
-            "https:\/\/twitter.com\/woznyphoto\/status\/1276865711835623424"
+            "https:\/\/twitter.com\/woznyphoto\/status\/1276865711835623424",
+            "https:\/\/twitter.com\/DomicoPhillips\/status\/1276723211879755777",
+            "https:\/\/twitter.com\/nilsrva\/status\/1276752643528982530"
          ],
          "data": null,
          "geocoding": {
@@ -8150,6 +8639,58 @@
          }
       },
       {
+         "id": "bb46c8e0-ba47-11ea-93da-49f7f328172b",
+         "pb_id": "il-chicago-14",
+         "state": "Illinois",
+         "city": "Chicago",
+         "date": "2020-06-04T00:00:00.000000Z",
+         "title": "Police seen without badges",
+         "description": null,
+         "links": [
+            "https:\/\/www.tiktok.com\/@sarahsoch\/video\/6834688359969918214",
+            "https:\/\/twitter.com\/punishmegrant\/status\/1268966252707487745"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "41.8781136",
+            "long": "-87.6297982"
+         }
+      },
+      {
+         "id": "bb5fffb0-ba47-11ea-885f-13335b4721fb",
+         "pb_id": "or-portland-37",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-28T00:00:00.000000Z",
+         "title": "Police charge crowd; shove multiple protestors",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/1misanthrophile\/status\/1277340069867601920"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "bb610e40-ba47-11ea-ba69-2baf13ec7581",
+         "pb_id": "or-portland-36",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-28T00:00:00.000000Z",
+         "title": "Police shove and mace protestor with hands up",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/1misanthrophile\/status\/1277340657648984064"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
          "id": "bbe2d890-b7e2-11ea-92a3-09433d6f26d3",
          "pb_id": "ca-losangeles-25",
          "state": "California",
@@ -8216,6 +8757,40 @@
          "geocoding": {
             "lat": "28.5383355",
             "long": "-81.3792365"
+         }
+      },
+      {
+         "id": "c210bb70-bc9e-11ea-81a2-cfb4bac56c8c",
+         "pb_id": "ny-newyorkcity-51",
+         "state": "New York",
+         "city": "New York City",
+         "date": "2020-06-28T00:00:00.000000Z",
+         "title": "Police shove bicyclist to the ground",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/greg_doucette\/status\/1277636698806116352"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "40.7127753",
+            "long": "-74.0059728"
+         }
+      },
+      {
+         "id": "c211bac0-bc9e-11ea-b38f-45ff837d7f7f",
+         "pb_id": "ny-newyorkcity-52",
+         "state": "New York",
+         "city": "New York City",
+         "date": "2020-06-28T00:00:00.000000Z",
+         "title": "Police shove their way through crowd",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/GaelicSteel\/status\/1277344251970494469"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "40.7127753",
+            "long": "-74.0059728"
          }
       },
       {
@@ -8337,6 +8912,189 @@
          "geocoding": {
             "lat": "38.9071923",
             "long": "-77.0368707"
+         }
+      },
+      {
+         "id": "d2518e60-bb0d-11ea-a133-59f14a0c2792",
+         "pb_id": "tx-austin-13",
+         "state": "Texas",
+         "city": "Austin",
+         "date": "2020-05-31T00:00:00.000000Z",
+         "title": "Woman shot in face with bean bag",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/randomjhovall\/status\/1267309502845669376",
+            "https:\/\/twitter.com\/randomjhovall\/status\/1272076416348291072",
+            "https:\/\/twitter.com\/greg_doucette\/status\/1272386250058727425"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "30.2671530",
+            "long": "-97.7430608"
+         }
+      },
+      {
+         "id": "d254c050-bb0d-11ea-8f8e-67747aec8301",
+         "pb_id": "tx-austin-14",
+         "state": "Texas",
+         "city": "Austin",
+         "date": "2020-06-07T00:00:00.000000Z",
+         "title": "Police violently arrest drummer",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/NacioMartinez\/status\/1269787142269607936"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "30.2671530",
+            "long": "-97.7430608"
+         }
+      },
+      {
+         "id": "d261eeb0-bb0d-11ea-8453-d7f485df0555",
+         "pb_id": "tn-nashville-1",
+         "state": "Tennessee",
+         "city": "Murfreesboro",
+         "date": "2020-06-23T00:00:00.000000Z",
+         "title": "Police confiscate protestor supplies",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/brotherjones_\/status\/1275520373472268292",
+            "https:\/\/twitter.com\/brotherjones_\/status\/1275539159030140929"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "35.8456213",
+            "long": "-86.3902700"
+         }
+      },
+      {
+         "id": "d2636700-bb0d-11ea-b184-8b648f970e24",
+         "pb_id": "tn-nashville-2",
+         "state": "Tennessee",
+         "city": "Murfreesboro",
+         "date": "2020-06-25T00:00:00.000000Z",
+         "title": "Police confiscate protestor supplies",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/brotherjones_\/status\/1276133377863749637",
+            "https:\/\/twitter.com\/brotherjones_\/status\/1276139027612291073"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "35.8456213",
+            "long": "-86.3902700"
+         }
+      },
+      {
+         "id": "d264c430-bb0d-11ea-94f0-9d19ed2f5b23",
+         "pb_id": "tn-nashville-3",
+         "state": "Tennessee",
+         "city": "Murfreesboro",
+         "date": "2020-06-26T00:00:00.000000Z",
+         "title": "Police target activist leader",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/TheTNHoller\/status\/1276713817284792324",
+            "https:\/\/twitter.com\/brotherjones_\/status\/1276767990449668096",
+            "https:\/\/www.reddit.com\/r\/2020PoliceBrutality\/comments\/hgxoaj\/i_screen_recorded_this_off_fb_last_night_june\/",
+            "https:\/\/imgur.com\/a\/ULAxpXi"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "35.8456213",
+            "long": "-86.3902700"
+         }
+      },
+      {
+         "id": "d2671940-bb0d-11ea-8b20-615a6f2b5fd6",
+         "pb_id": "tn-nashville-4",
+         "state": "Tennessee",
+         "city": "Murfreesboro",
+         "date": "2020-06-29T00:00:00.000000Z",
+         "title": "Police arrest protestors on questionable charges, harm protestors with zip ties",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/brotherjones_\/status\/1277580136284651521",
+            "https:\/\/twitter.com\/brotherjones_\/status\/1277694340534546433"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "35.8456213",
+            "long": "-86.3902700"
+         }
+      },
+      {
+         "id": "d298a340-bb0d-11ea-93f3-a90a1d6a739f",
+         "pb_id": "ny-newyorkcity-50",
+         "state": "New York",
+         "city": "New York City",
+         "date": "2020-06-30T00:00:00.000000Z",
+         "title": "Police violently arrest protestors camped out for budget vote",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/JoshuaPotash\/status\/1277987893248655361",
+            "https:\/\/twitter.com\/deanospameano\/status\/1277902165542043653",
+            "https:\/\/twitter.com\/NelStamp\/status\/1277985126228557825"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "40.7127753",
+            "long": "-74.0059728"
+         }
+      },
+      {
+         "id": "d31c21a0-bb0d-11ea-9570-811a01e49abd",
+         "pb_id": "or-portland-38",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-29T00:00:00.000000Z",
+         "title": "Journalist shot with foam round",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/defendpdx\/status\/1277905587771039744",
+            "https:\/\/twitter.com\/defendpdx\/status\/1277899405568339974",
+            "https:\/\/twitter.com\/kmahoneylaw\/status\/1277906443094511616"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "d31ef140-bb0d-11ea-9fde-d373b87d4771",
+         "pb_id": "or-portland-39",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-29T00:00:00.000000Z",
+         "title": "Police shove, tackle and kneel on protestors",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/PredatorFiles\/status\/1277933736441479170",
+            "https:\/\/twitter.com\/i\/web\/status\/1277909390159306752"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "d33b0060-bb0d-11ea-b391-fb097596cb1c",
+         "pb_id": "mn-minneapolis-30",
+         "state": "Minnesota",
+         "city": "Minneapolis",
+         "date": "1900-01-01T00:00:00.000000Z",
+         "title": "Woman kicked in head",
+         "description": null,
+         "links": [
+            "https:\/\/www.tiktok.com\/@montygeer\/video\/6840314007954509062"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "44.9777530",
+            "long": "-93.2650108"
          }
       },
       {
@@ -8479,6 +9237,42 @@
          }
       },
       {
+         "id": "d7c04e40-bc94-11ea-bb7c-1dba6a848af7",
+         "pb_id": "oh-columbus-24",
+         "state": "Ohio",
+         "city": "Columbus",
+         "date": "2020-06-06T00:00:00.000000Z",
+         "title": "Police drive up to protestors, jump out and tackle them",
+         "description": null,
+         "links": [
+            "https:\/\/www.tiktok.com\/@frecklesandstitches\/video\/6835226979596340485",
+            "https:\/\/twitter.com\/TrekkieByBirth\/status\/1276719505528492033"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "39.9611755",
+            "long": "-82.9987942"
+         }
+      },
+      {
+         "id": "d7c4ee10-bc94-11ea-8c63-7d9aeecf2f17",
+         "pb_id": "oh-columbus-23",
+         "state": "Ohio",
+         "city": "Columbus",
+         "date": "2020-06-29T00:00:00.000000Z",
+         "title": "Police drag seated protestor, body slam a second",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/greg_doucette\/status\/1277660155354796033",
+            "https:\/\/www.instagram.com\/tv\/CCAZGCWjqG1"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "39.9611755",
+            "long": "-82.9987942"
+         }
+      },
+      {
          "id": "d84f7d70-b59e-11ea-a48e-cbdc84a3860c",
          "pb_id": "tx-elpaso-1",
          "state": "Texas",
@@ -8510,6 +9304,165 @@
          "geocoding": {
             "lat": "29.7604267",
             "long": "-95.3698028"
+         }
+      },
+      {
+         "id": "dcb547b0-bca6-11ea-beb9-49cb955a61a1",
+         "pb_id": "or-portland-40",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-26T00:00:00.000000Z",
+         "title": "Police fire explosives from behind barricade",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/greg_doucette\/status\/1277685523595788290"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "dcbd5610-bca6-11ea-8ac2-1b84e81d7b92",
+         "pb_id": "or-portland-41",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-30T00:00:00.000000Z",
+         "title": "Police pepper-spray, strike and shoot protestors at point-blank range",
+         "description": null,
+         "links": [
+            "https:\/\/www.reddit.com\/r\/2020PoliceBrutality\/comments\/hjdh39\/portland_or_police_mace_beat_and_shoot_rubber\/",
+            "https:\/\/twitter.com\/defendpdx\/status\/1278192323575218176"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "dcbee400-bca6-11ea-8951-f7cc84207e66",
+         "pb_id": "or-portland-42",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-30T00:00:00.000000Z",
+         "title": "Reporter arrested after identifying officer",
+         "description": null,
+         "links": [
+            "https:\/\/www.pscp.tv\/w\/1lPKqLgBrBWxb",
+            "https:\/\/twitter.com\/PNWResistance\/status\/1278247639708913664",
+            "https:\/\/www.reddit.com\/r\/Portland\/comments\/hj5m28\/cory_elia_press_arrested_while_livestreaming_last\/",
+            "https:\/\/twitter.com\/PredatorFiles\/status\/1278270595235344385"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "dcc14250-bca6-11ea-9e77-43cd0f947246",
+         "pb_id": "or-portland-43",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-30T00:00:00.000000Z",
+         "title": "Police fire tear gas at protestors",
+         "description": null,
+         "links": [
+            "https:\/\/www.reddit.com\/r\/PublicFreakout\/comments\/hj42i3\/portland_police_fire_cs_gas_at_protestors\/"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "dcc22a60-bca6-11ea-acc4-e99f2bba3f12",
+         "pb_id": "or-portland-44",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-06-30T00:00:00.000000Z",
+         "title": "Police arrest journalist",
+         "description": null,
+         "links": [
+            "https:\/\/www.reddit.com\/r\/PublicFreakout\/comments\/hjb863\/portland_police_removing_journalists_press_badge\/"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "dcc31b90-bca6-11ea-ac68-a55ee96ce513",
+         "pb_id": "or-portland-46",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-07-02T00:00:00.000000Z",
+         "title": "Police shoot protestors",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/KohzKah\/status\/1278578914613288961"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "dcc406a0-bca6-11ea-aafa-e3ed2ddf78a6",
+         "pb_id": "or-portland-45",
+         "state": "Oregon",
+         "city": "Portland",
+         "date": "2020-07-02T00:00:00.000000Z",
+         "title": "Journalist shot by police",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/PredatorFiles\/status\/1278635513746870276"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "45.5051064",
+            "long": "-122.6750261"
+         }
+      },
+      {
+         "id": "dcfae580-bca6-11ea-9557-273e09c56c93",
+         "pb_id": "fl-miami-2",
+         "state": "Florida",
+         "city": "Miami",
+         "date": "2020-06-27T00:00:00.000000Z",
+         "title": "Police deployed two rounds of tear gas against peaceful protestors",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/inaminorkey\/status\/1277070049518465032",
+            "https:\/\/twitter.com\/inaminorkey\/status\/1277078077303132160"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "25.7616798",
+            "long": "-80.1917902"
+         }
+      },
+      {
+         "id": "dd644730-bca6-11ea-8e4b-1954565adf61",
+         "pb_id": "sc-charleston-3",
+         "state": "South Carolina",
+         "city": "Charleston",
+         "date": "2020-06-22T00:00:00.000000Z",
+         "title": "Police violently arrest protestor",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/greg_doucette\/status\/1275254514501799939",
+            "https:\/\/www.live5news.com\/2020\/06\/23\/police-make-one-arrest-during-monday-night-calhoun-statue-protests\/"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "32.7764749",
+            "long": "-79.9310512"
          }
       },
       {
@@ -8656,6 +9609,40 @@
          }
       },
       {
+         "id": "e2b5a8a0-ba2d-11ea-a8fa-99514b6dc62c",
+         "pb_id": "tx-austin-12",
+         "state": "Texas",
+         "city": "Austin",
+         "date": "2020-06-27T00:00:00.000000Z",
+         "title": "Police punch arrestee on ground",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/AltUniverseWash\/status\/1277104706222002177"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "30.2671530",
+            "long": "-97.7430608"
+         }
+      },
+      {
+         "id": "e3805c70-ba2d-11ea-9f87-55604e8ee1f4",
+         "pb_id": "mi-detroit-9",
+         "state": "Michigan",
+         "city": "Detroit",
+         "date": "2020-06-28T00:00:00.000000Z",
+         "title": "Police run over protestors",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/DJEazyTwist\/status\/1277430912653950976"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "42.3314270",
+            "long": "-83.0457538"
+         }
+      },
+      {
          "id": "e64acb80-b021-11ea-86a9-0bcfae9e78cd",
          "pb_id": "ny-newyorkcity-36",
          "state": "New York",
@@ -8730,6 +9717,42 @@
          "geocoding": {
             "lat": "40.7127753",
             "long": "-74.0059728"
+         }
+      },
+      {
+         "id": "f0314720-ba31-11ea-bc78-554a73532b68",
+         "pb_id": "ca-longbeach-2",
+         "state": "California",
+         "city": "Long Beach",
+         "date": "2020-06-01T00:00:00.000000Z",
+         "title": "Woman struck in finger by projectile; police quell crowd with tear gas",
+         "description": null,
+         "links": [
+            "https:\/\/www.tiktok.com\/@scottmbark\/video\/6833632749052628230",
+            "https:\/\/www.tiktok.com\/@scottmbark\/video\/6833477841808657669",
+            "https:\/\/twitter.com\/hagh_sadegh\/status\/1276177550339907585"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "33.7700504",
+            "long": "-118.1937395"
+         }
+      },
+      {
+         "id": "f44cbf10-ba3d-11ea-ab31-a7ccff941b97",
+         "pb_id": "dc-dc-24",
+         "state": "Washington DC",
+         "city": "DC",
+         "date": "2020-06-27T00:00:00.000000Z",
+         "title": "Police target protestor handing out water",
+         "description": null,
+         "links": [
+            "https:\/\/twitter.com\/FordFischer\/status\/1277457274395676672"
+         ],
+         "data": null,
+         "geocoding": {
+            "lat": "38.9071923",
+            "long": "-77.0368707"
          }
       },
       {

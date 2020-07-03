@@ -1,7 +1,7 @@
 {
    "edit_at": "https://github.com/2020PB/police-brutality",
    "help": "ask @ubershmekel on twitter",
-   "updated_at": "2020-06-28T20:24:58.886089+00:00",
+   "updated_at": "2020-07-03T14:43:19.510164+00:00",
    "data": [
       {
          "links": [
@@ -279,6 +279,45 @@
          "date": "2020-06-11",
          "date_text": "June 11th",
          "id": "wa-seattle-20"
+      },
+      {
+         "links": [
+            "https://www.reddit.com/r/PublicFreakout/comments/hjln90/seattle_police_department_retaking_the_13th/",
+            "https://twitter.com/greg_doucette/status/1278565827747471361"
+         ],
+         "state": "Washington",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington.md",
+         "city": "Seattle",
+         "name": "Police strike and pepper spray protestors while marching on 13th Precinct",
+         "date": "2020-07-01",
+         "date_text": "July 1st",
+         "id": "wa-seattle-21"
+      },
+      {
+         "links": [
+            "https://twitter.com/greg_doucette/status/1278544686546911232",
+            "https://clips.twitch.tv/LittleProtectiveDillAsianGlow"
+         ],
+         "state": "Washington",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington.md",
+         "city": "Seattle",
+         "name": "Police arrest protestor during CHAZ/CHOP clearing",
+         "date": "2020-07-01",
+         "date_text": "July 1st",
+         "id": "wa-seattle-22"
+      },
+      {
+         "links": [
+            "https://twitter.com/sre_li/status/1278856204018565120",
+            "https://twitter.com/1stRoundFinish/status/1278854169743388672"
+         ],
+         "state": "Washington",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington.md",
+         "city": "Seattle",
+         "name": "Officers tackle protesters, put a knee on least one of their necks",
+         "date": "2020-07-02",
+         "date_text": "July 2nd",
+         "id": "wa-seattle-23"
       },
       {
          "links": [
@@ -608,6 +647,20 @@
       },
       {
          "links": [
+            "https://twitter.com/randomjhovall/status/1267309502845669376",
+            "https://twitter.com/randomjhovall/status/1272076416348291072",
+            "https://twitter.com/greg_doucette/status/1272386250058727425"
+         ],
+         "state": "Texas",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Texas.md",
+         "city": "Austin",
+         "name": "Woman shot in face with bean bag",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "tx-austin-13"
+      },
+      {
+         "links": [
             "https://www.reddit.com/r/2020PoliceBrutality/comments/gvjjwg/volunteer_medics_advised_by_police_to_bring_a/",
             "https://www.reddit.com/r/PublicFreakout/comments/gwbbjs/protestor_is_shot_in_head_with_rubber_bullet/",
             "http://www.thebatt.com/opinion/opinion-his-name-is-justin-howell/article_93a79c44-a5b6-11ea-aa54-ebc0da33cc35.html?fbclid=IwAR11FqXr9dRCKo-ohfeBoO9FdYFRG2uon0nqAkxKO5gZuL_-4EzgukAGcBs"
@@ -622,6 +675,18 @@
       },
       {
          "links": [
+            "https://twitter.com/NacioMartinez/status/1269787142269607936"
+         ],
+         "state": "Texas",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Texas.md",
+         "city": "Austin",
+         "name": "Police violently arrest drummer",
+         "date": "2020-06-07",
+         "date_text": "June 7th",
+         "id": "tx-austin-14"
+      },
+      {
+         "links": [
             "https://www.youtube.com/watch?v=Thrvojgme5I",
             "https://www.reddit.com/r/Bad_Cop_No_Donut/comments/hc58jg/austin_police_are_investigating_a_use_of_force/"
          ],
@@ -632,6 +697,18 @@
          "date": "2020-06-12",
          "date_text": "June 12th",
          "id": "tx-austin-11"
+      },
+      {
+         "links": [
+            "https://twitter.com/AltUniverseWash/status/1277104706222002177"
+         ],
+         "state": "Texas",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Texas.md",
+         "city": "Austin",
+         "name": "Police punch arrestee on ground",
+         "date": "2020-06-27",
+         "date_text": "June 27th",
+         "id": "tx-austin-12"
       },
       {
          "links": [
@@ -802,6 +879,22 @@
       },
       {
          "links": [
+            "https://www.youtube.com/watch?v=Jkj3EfktVkM",
+            "https://www.youtube.com/watch?v=MeIV1kSsPZg",
+            "https://www.youtube.com/watch?v=rq_2YSLn4FE",
+            "https://www.youtube.com/watch?v=-kuD_naCPzo",
+            "https://www.chattanoogan.com/2020/5/31/409849/Protestors-Face-Off-With-Law.aspx"
+         ],
+         "state": "Tennessee",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Tennessee.md",
+         "city": "Chattanooga",
+         "name": "Sheriffs tear gas crowd after accidental vandalism",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "tn-chattanooga-1"
+      },
+      {
+         "links": [
             "https://twitter.com/Desi_Stennett/status/1266996885824380929"
          ],
          "state": "Tennessee",
@@ -825,6 +918,60 @@
          "date": "2020-05-31",
          "date_text": "May 31st",
          "id": "tn-murfreesboro-1"
+      },
+      {
+         "links": [
+            "https://twitter.com/brotherjones_/status/1275520373472268292",
+            "https://twitter.com/brotherjones_/status/1275539159030140929"
+         ],
+         "state": "Tennessee",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Tennessee.md",
+         "city": "Murfreesboro",
+         "name": "Police confiscate protestor supplies",
+         "date": "2020-06-23",
+         "date_text": "June 23rd",
+         "id": "tn-nashville-1"
+      },
+      {
+         "links": [
+            "https://twitter.com/brotherjones_/status/1276133377863749637",
+            "https://twitter.com/brotherjones_/status/1276139027612291073"
+         ],
+         "state": "Tennessee",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Tennessee.md",
+         "city": "Murfreesboro",
+         "name": "Police confiscate protestor supplies",
+         "date": "2020-06-25",
+         "date_text": "June 25th",
+         "id": "tn-nashville-2"
+      },
+      {
+         "links": [
+            "https://twitter.com/TheTNHoller/status/1276713817284792324",
+            "https://twitter.com/brotherjones_/status/1276767990449668096",
+            "https://www.reddit.com/r/2020PoliceBrutality/comments/hgxoaj/i_screen_recorded_this_off_fb_last_night_june/",
+            "https://imgur.com/a/ULAxpXi"
+         ],
+         "state": "Tennessee",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Tennessee.md",
+         "city": "Murfreesboro",
+         "name": "Police target activist leader",
+         "date": "2020-06-26",
+         "date_text": "June 26th",
+         "id": "tn-nashville-3"
+      },
+      {
+         "links": [
+            "https://twitter.com/brotherjones_/status/1277580136284651521",
+            "https://twitter.com/brotherjones_/status/1277694340534546433"
+         ],
+         "state": "Tennessee",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Tennessee.md",
+         "city": "Murfreesboro",
+         "name": "Police arrest protestors on questionable charges, harm protestors with zip ties",
+         "date": "2020-06-29",
+         "date_text": "June 29th",
+         "id": "tn-nashville-4"
       },
       {
          "links": [
@@ -1644,6 +1791,62 @@
       },
       {
          "links": [
+            "https://twitter.com/elielcruz/status/1277346244952817669",
+            "https://twitter.com/MartiGCummings/status/1277347982548111363",
+            "https://mobile.twitter.com/justinaflash/status/1277371937744916480",
+            "https://mobile.twitter.com/jonnaerikaaa/status/1277367208310685696",
+            "https://mobile.twitter.com/agrayphoto/status/1277362250920099840",
+            "https://mobile.twitter.com/garrettmireles/status/1277371641996206089",
+            "https://mobile.twitter.com/chayesmatthew/status/1277336251239145473"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "Police escalate to violence at Queer Liberation March",
+         "date": "2020-06-28",
+         "date_text": "June 28th",
+         "id": "ny-newyorkcity-49"
+      },
+      {
+         "links": [
+            "https://twitter.com/greg_doucette/status/1277636698806116352"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "Police shove bicyclist to the ground",
+         "date": "2020-06-28",
+         "date_text": "June 28th",
+         "id": "ny-newyorkcity-51"
+      },
+      {
+         "links": [
+            "https://twitter.com/GaelicSteel/status/1277344251970494469"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "Police shove their way through crowd",
+         "date": "2020-06-28",
+         "date_text": "June 28th",
+         "id": "ny-newyorkcity-52"
+      },
+      {
+         "links": [
+            "https://twitter.com/JoshuaPotash/status/1277987893248655361",
+            "https://twitter.com/deanospameano/status/1277902165542043653",
+            "https://twitter.com/NelStamp/status/1277985126228557825"
+         ],
+         "state": "New York",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/New York.md",
+         "city": "New York City",
+         "name": "Police violently arrest protestors camped out for budget vote",
+         "date": "2020-06-30",
+         "date_text": "June 30th",
+         "id": "ny-newyorkcity-50"
+      },
+      {
+         "links": [
             "https://twitter.com/bleeezyy_/status/1266894195865931778"
          ],
          "state": "New York",
@@ -1755,6 +1958,23 @@
          "date": "2020-06-02",
          "date_text": "June 2nd",
          "id": "mo-florissant-1"
+      },
+      {
+         "links": [
+            "https://twitter.com/NassimBnchabane/status/1277054826858323969",
+            "https://twitter.com/theMARCHstl/status/1277129811245359104",
+            "https://photos.google.com/share/AF1QipOr_banJbIy1zUzs7rrCC9y664etyqDFjDlxAEdtDNweyuf7CnEQQlMpUXA0aU-xw/photo/AF1QipNFR-GR4frZPlo3vhGFwO_4uPBljOgyllYce3GP?key=azVZQUNIakFDMFVtbDhCS3BPaTlMWXBjd1R0RzN3",
+            "https://twitter.com/search4swag/status/1277059423966507008",
+            "https://twitter.com/search4swag/status/1277059423966507008",
+            "https://twitter.com/NassimBnchabane/status/1277056390314541056"
+         ],
+         "state": "Missouri",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Missouri.md",
+         "city": "Florissant",
+         "name": "Police push protestors off lawn",
+         "date": "2020-06-27",
+         "date_text": "June 27th",
+         "id": "mo-florissant-2"
       },
       {
          "links": [
@@ -2030,7 +2250,8 @@
       },
       {
          "links": [
-            "https://www.newsobserver.com/news/local/article243114301.html"
+            "https://www.newsobserver.com/news/local/article243114301.html",
+            "https://twitter.com/vizjourno/status/1266954106998009857"
          ],
          "state": "North Carolina",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/North Carolina.md",
@@ -2163,14 +2384,17 @@
       },
       {
          "links": [
-            "https://www.reddit.com/r/PublicFreakout/comments/gvdl01/they_secluded_him_behind_a_wall_and_looked_around/"
+            "https://www.reddit.com/r/PublicFreakout/comments/gvdl01/they_secluded_him_behind_a_wall_and_looked_around/",
+            "https://laist.com/2020/06/10/los_angeles_deputies_compton_video_violent_arrest_dalvin_price.php",
+            "https://ktla.com/news/local-news/violent-arrest-caught-on-camera-in-compton/",
+            "https://www.google.com/maps/@33.9038142,-118.2141026,3a,75y,255.55h,58.86t/data=!3m6!1e1!3m4!1sDJvjgZKDPB56Yw1A5Ovb6A!2e0!7i16384!8i8192"
          ],
          "state": "California",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
          "city": "Compton",
          "name": "Police beat person on the ground",
-         "date": "2020-06-01",
-         "date_text": "(believed to be) June 1st",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
          "id": "ca-compton-1"
       },
       {
@@ -2262,6 +2486,35 @@
       },
       {
          "links": [
+            "https://www.tiktok.com/@scottmbark/video/6833632749052628230",
+            "https://www.tiktok.com/@scottmbark/video/6833477841808657669",
+            "https://twitter.com/hagh_sadegh/status/1276177550339907585"
+         ],
+         "state": "California",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+         "city": "Long Beach",
+         "name": "Woman struck in finger by projectile; police quell crowd with tear gas",
+         "date": "2020-06-01",
+         "date_text": "June 1st",
+         "id": "ca-longbeach-2"
+      },
+      {
+         "links": [
+            "https://twitter.com/greg_doucette/status/1268052132252602368",
+            "https://twitter.com/andrewcurryla/status/1266906677820833793",
+            "https://twitter.com/andrewcurryla/status/1266905784585052160",
+            "https://www.google.com/maps/@34.071154,-118.3583053,3a,60y,332.25h,94.01t/data=!3m6!1e1!3m4!1sBMaXVOuAN0T9coL-PijVSA!2e0!7i16384!8i8192"
+         ],
+         "state": "California",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+         "city": "Los Angeles",
+         "name": "Protestor shot in head",
+         "date": "2020-05-30",
+         "date_text": "(believed to be) May 30th",
+         "id": "ca-losangeles-30"
+      },
+      {
+         "links": [
             "https://www.reddit.com/r/2020PoliceBrutality/comments/gxjk67/reposted_wo_officer_name_footage_of_lapd_at_last/"
          ],
          "state": "California",
@@ -2325,6 +2578,34 @@
          "date": "2020-05-30",
          "date_text": "May 30th",
          "id": "ca-losangeles-24"
+      },
+      {
+         "links": [
+            "https://www.instagram.com/p/CA20QYJgaU6/",
+            "https://www.instagram.com/p/CA1U9L9g_LD/",
+            "https://laist.com/2020/06/11/uninsured_protesters_free_medical_aid_la_doctor.php",
+            "https://losangeles.cbslocal.com/video/4578194-protester-deon-jones-describes-being-shot-with-rubber-bullet-by-police/",
+            "https://www.foxla.com/news/i-felt-like-i-was-on-the-timeline-to-my-death-local-man-speaks-out-after-weekend-protest-ends-in-violence"
+         ],
+         "state": "California",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+         "city": "Los Angeles",
+         "name": "Los Angeles law enforcement hit protester in the face with rubber bullet",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "ca-losangeles-33"
+      },
+      {
+         "links": [
+            "https://www.reddit.com/r/2020PoliceBrutality/comments/h7q97a/using_mace_to_direct_protestors_through_teargas/"
+         ],
+         "state": "California",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+         "city": "Los Angeles",
+         "name": "Riot police fire tear gas at peaceful protest, then use mace to corral protestors",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "ca-losangeles-34"
       },
       {
          "links": [
@@ -2616,15 +2897,16 @@
       },
       {
          "links": [
-            "https://twitter.com/greg_doucette/status/1268052132252602368"
+            "https://twitter.com/le_maria21/status/1277801107033481216",
+            "https://twitter.com/le_maria21/status/1277800993984413696"
          ],
          "state": "California",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
-         "city": "Los Angeles",
-         "name": "Protestor shot in head",
-         "date": "",
-         "date_text": "Date Unknown",
-         "id": "ca-losangeles-30"
+         "city": "Norco",
+         "name": "Woman struck by white supremacist while police look on",
+         "date": "2020-06-29",
+         "date_text": "June 29th",
+         "id": "ca-norco-1"
       },
       {
          "links": [
@@ -2939,15 +3221,32 @@
       {
          "links": [
             "https://www.instagram.com/p/CA7KMc9pX5S/",
-            "https://jalopnik.com/cop-in-armored-truck-tells-peaceful-protesters-if-you-1843886752"
+            "https://jalopnik.com/cop-in-armored-truck-tells-peaceful-protesters-if-you-1843886752",
+            "https://abc7news.com/walnut-creek-curfew-tonight-protest-in-today-looting-protests/6231856/",
+            "https://www.kron4.com/news/bay-area/as-protests-remain-mostly-peaceful-walnut-creek-considers-extending-curfew/",
+            "https://www.ktvu.com/news/walnut-creek-police-says-mutual-aid-officer-did-not-say-what-many-thought-they-heard"
          ],
          "state": "California",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
          "city": "Walnut Creek",
-         "name": "Armored law enforcement vehicle threatens protestors",
-         "date": "2020-06-02",
-         "date_text": "June 2nd",
+         "name": "Armored law enforcement vehicle threatens protestors, deploys tear gas on highway",
+         "date": "2020-06-01",
+         "date_text": "June 1st",
          "id": "ca-walnutcreek-1"
+      },
+      {
+         "links": [
+            "https://www.mercurynews.com/2020/06/06/protester-recounts-getting-attacked-by-police-dogs-tear-gassed-at-walnut-creek-demonstration/",
+            "https://sanfrancisco.cbslocal.com/2020/06/17/walnut-creek-police-discuss-protest-response-critics-not-impressed/",
+            "https://www.ktvu.com/news/walnut-creek-police-says-mutual-aid-officer-did-not-say-what-many-thought-they-heard"
+         ],
+         "state": "California",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/California.md",
+         "city": "Walnut Creek",
+         "name": "Police arrest man using excessive force, dogs",
+         "date": "2020-06-01",
+         "date_text": "June 1st",
+         "id": "ca-walnutcreek-3"
       },
       {
          "links": [
@@ -2973,6 +3272,22 @@
          "date": "2020-06-09",
          "date_text": "June 9th",
          "id": "de-dover-1"
+      },
+      {
+         "links": [
+            "https://www.reddit.com/r/PublicFreakout/comments/hew8sz/dover_nurse_gets_tackled_and_arrested_by_cops_for/",
+            "https://www.youtube.com/watch?v=oXh2Qr2Enbo",
+            "https://dsp.delaware.gov/2020/06/10/delaware-state-police-investigating-disorderly-group-resulting-in-several-arrests-camden/",
+            "https://doverpolice.org/2020/06/10/dover-police-statement-regarding-june-9th-actions-with-delaware-state-police/",
+            "https://www.delawareonline.com/story/news/2020/06/10/delaware-officials-denounce-arrests-george-floyd-protesters-near-dover/5332891002/"
+         ],
+         "state": "Delaware",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Delaware.md",
+         "city": "Dover",
+         "name": "Police make violent arrests; arrest woman filming",
+         "date": "2020-06-09",
+         "date_text": "June 9th",
+         "id": "de-dover-2"
       },
       {
          "links": [
@@ -3121,6 +3436,18 @@
       },
       {
          "links": [
+            "https://www.tiktok.com/@gonzalosanchez75/video/6833934911506746629"
+         ],
+         "state": "Illinois",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Illinois.md",
+         "city": "Chicago",
+         "name": "Police push protestor on bike, slap phone out of his hand",
+         "date": "2020-06-02",
+         "date_text": "June 2nd",
+         "id": "il-chicago-13"
+      },
+      {
+         "links": [
             "https://twitter.com/TomSchuba/status/1268312957752160257"
          ],
          "state": "Illinois",
@@ -3130,6 +3457,19 @@
          "date": "2020-06-03",
          "date_text": "(Believed to be) June 3rd",
          "id": "il-chicago-9"
+      },
+      {
+         "links": [
+            "https://www.tiktok.com/@sarahsoch/video/6834688359969918214",
+            "https://twitter.com/punishmegrant/status/1268966252707487745"
+         ],
+         "state": "Illinois",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Illinois.md",
+         "city": "Chicago",
+         "name": "Police seen without badges",
+         "date": "2020-06-04",
+         "date_text": "(Believed to be) June 4th",
+         "id": "il-chicago-14"
       },
       {
          "links": [
@@ -3523,6 +3863,30 @@
       },
       {
          "links": [
+            "https://twitter.com/chadloder/status/1277360969228771329"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Man shot in eye with stinger pellet",
+         "date": "2020-06-26",
+         "date_text": "June 26th",
+         "id": "or-portland-31"
+      },
+      {
+         "links": [
+            "https://twitter.com/greg_doucette/status/1277685523595788290"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Police fire explosives from behind barricade",
+         "date": "2020-06-26",
+         "date_text": "June 26th",
+         "id": "or-portland-40"
+      },
+      {
+         "links": [
             "https://www.reddit.com/r/ThatsInsane/comments/hgr2ld/cops_gone_crazyportlandpolice_has_finally_lost/",
             "https://www.youtube.com/watch?v=IGW5CpU2C6s",
             "https://www.reddit.com/r/2020PoliceBrutality/comments/hhf7to/portlandpolice_attack_handful_of_protestors/"
@@ -3534,6 +3898,186 @@
          "date": "2020-06-27",
          "date_text": "June 27th",
          "id": "or-portland-30"
+      },
+      {
+         "links": [
+            "https://twitter.com/hungrybowtie/status/1277125125934964736",
+            "https://twitter.com/hungrybowtie/status/1277125535483588609",
+            "https://twitter.com/hungrybowtie/status/1277125859040563200"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Police tear gas protestors for no evident reason",
+         "date": "2020-06-28",
+         "date_text": "June 28th",
+         "id": "or-portland-35"
+      },
+      {
+         "links": [
+            "https://twitter.com/hungrybowtie/status/1277156963449593856"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Police beat wrong person for vandalism",
+         "date": "2020-06-28",
+         "date_text": "June 28th",
+         "id": "or-portland-32"
+      },
+      {
+         "links": [
+            "https://twitter.com/hungrybowtie/status/1277159562563317760",
+            "https://twitter.com/hungrybowtie/status/1277160091041447937",
+            "https://twitter.com/hungrybowtie/status/1277167952798691329",
+            "https://twitter.com/hungrybowtie/status/1277168538575204352"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Riot police charge, tackle and arrest protestors",
+         "date": "2020-06-28",
+         "date_text": "June 28th",
+         "id": "or-portland-33"
+      },
+      {
+         "links": [
+            "https://twitter.com/hungrybowtie/status/1277169298000105473"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Police retaliate to thrown water bottle with excessive force",
+         "date": "2020-06-28",
+         "date_text": "June 28th",
+         "id": "or-portland-34"
+      },
+      {
+         "links": [
+            "https://twitter.com/1misanthrophile/status/1277340069867601920"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Police charge crowd; shove multiple protestors",
+         "date": "2020-06-28",
+         "date_text": "June 28th",
+         "id": "or-portland-37"
+      },
+      {
+         "links": [
+            "https://twitter.com/1misanthrophile/status/1277340657648984064"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Police shove and mace protestor with hands up",
+         "date": "2020-06-28",
+         "date_text": "June 28th",
+         "id": "or-portland-36"
+      },
+      {
+         "links": [
+            "https://twitter.com/defendpdx/status/1277905587771039744",
+            "https://twitter.com/defendpdx/status/1277899405568339974",
+            "https://twitter.com/kmahoneylaw/status/1277906443094511616"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Journalist shot with foam round",
+         "date": "2020-06-29",
+         "date_text": "June 29th",
+         "id": "or-portland-38"
+      },
+      {
+         "links": [
+            "https://twitter.com/PredatorFiles/status/1277933736441479170",
+            "https://twitter.com/i/web/status/1277909390159306752"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Police shove, tackle and kneel on protestors",
+         "date": "2020-06-29",
+         "date_text": "June 29th",
+         "id": "or-portland-39"
+      },
+      {
+         "links": [
+            "https://www.reddit.com/r/2020PoliceBrutality/comments/hjdh39/portland_or_police_mace_beat_and_shoot_rubber/",
+            "https://twitter.com/defendpdx/status/1278192323575218176"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Police pepper-spray, strike and shoot protestors at point-blank range",
+         "date": "2020-06-30",
+         "date_text": "June 30th",
+         "id": "or-portland-41"
+      },
+      {
+         "links": [
+            "https://www.pscp.tv/w/1lPKqLgBrBWxb",
+            "https://twitter.com/PNWResistance/status/1278247639708913664",
+            "https://www.reddit.com/r/Portland/comments/hj5m28/cory_elia_press_arrested_while_livestreaming_last/",
+            "https://twitter.com/PredatorFiles/status/1278270595235344385"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Reporter arrested after identifying officer",
+         "date": "2020-06-30",
+         "date_text": "June 30th",
+         "id": "or-portland-42"
+      },
+      {
+         "links": [
+            "https://www.reddit.com/r/PublicFreakout/comments/hj42i3/portland_police_fire_cs_gas_at_protestors/"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Police fire tear gas at protestors",
+         "date": "2020-06-30",
+         "date_text": "June 30th",
+         "id": "or-portland-43"
+      },
+      {
+         "links": [
+            "https://www.reddit.com/r/PublicFreakout/comments/hjb863/portland_police_removing_journalists_press_badge/"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Police arrest journalist",
+         "date": "2020-06-30",
+         "date_text": "June 30th",
+         "id": "or-portland-44"
+      },
+      {
+         "links": [
+            "https://twitter.com/KohzKah/status/1278578914613288961"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Police shoot protestors",
+         "date": "2020-07-02",
+         "date_text": "July 2nd",
+         "id": "or-portland-46"
+      },
+      {
+         "links": [
+            "https://twitter.com/PredatorFiles/status/1278635513746870276"
+         ],
+         "state": "Oregon",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Oregon.md",
+         "city": "Portland",
+         "name": "Journalist shot by police",
+         "date": "2020-07-02",
+         "date_text": "July 2nd",
+         "id": "or-portland-45"
       },
       {
          "links": [
@@ -3569,9 +4113,22 @@
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Wisconsin.md",
          "city": "Madison",
          "name": "Officer pepper-sprays protestor walking backwards with arms raised",
-         "date": "2020-05-31",
-         "date_text": "May 31st",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
          "id": "wi-madison-1"
+      },
+      {
+         "links": [
+            "https://www.tiktok.com/@michelle_but_not_obama/video/6833371052198857990",
+            "https://twitter.com/shadow_roses1/status/1268246561798205442"
+         ],
+         "state": "Wisconsin",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Wisconsin.md",
+         "city": "Madison",
+         "name": "Police pepper spray protestors with hands up",
+         "date": "2020-05-30",
+         "date_text": "May 30th",
+         "id": "wi-madison02"
       },
       {
          "links": [
@@ -3929,6 +4486,18 @@
       },
       {
          "links": [
+            "https://www.tiktok.com/@montygeer/video/6840314007954509062"
+         ],
+         "state": "Minnesota",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Minnesota.md",
+         "city": "Minneapolis",
+         "name": "Woman kicked in head",
+         "date": "",
+         "date_text": "Date Unknown",
+         "id": "mn-minneapolis-30"
+      },
+      {
+         "links": [
             "https://twitter.com/joeguillen/status/1266563974658744321"
          ],
          "state": "Michigan",
@@ -4026,6 +4595,18 @@
          "date": "2020-06-02",
          "date_text": "June 2nd",
          "id": "mi-detroit-8"
+      },
+      {
+         "links": [
+            "https://twitter.com/DJEazyTwist/status/1277430912653950976"
+         ],
+         "state": "Michigan",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Michigan.md",
+         "city": "Detroit",
+         "name": "Police run over protestors",
+         "date": "2020-06-28",
+         "date_text": "June 28th",
+         "id": "mi-detroit-9"
       },
       {
          "links": [
@@ -4358,7 +4939,9 @@
       },
       {
          "links": [
-            "https://twitter.com/woznyphoto/status/1276865711835623424"
+            "https://twitter.com/woznyphoto/status/1276865711835623424",
+            "https://twitter.com/DomicoPhillips/status/1276723211879755777",
+            "https://twitter.com/nilsrva/status/1276752643528982530"
          ],
          "state": "Virginia",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Virginia.md",
@@ -4370,9 +4953,27 @@
       },
       {
          "links": [
+            "https://twitter.com/rva_charlie/status/1276739841951248384",
+            "https://twitter.com/rva_charlie/status/1276740854410027008",
+            "https://twitter.com/rva_charlie/status/1276740309171437568",
+            "https://twitter.com/rva_charlie/status/1276741883516071938",
+            "https://augustafreepress.com/city-of-richmond-richmond-pd-virginia-state-police-sued-over-actions-in-protests/"
+         ],
+         "state": "Virginia",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Virginia.md",
+         "city": "Richmond",
+         "name": "Attorney arrested for photographing police staging area",
+         "date": "2020-06-26",
+         "date_text": "June 26th",
+         "id": "va-richmond-13"
+      },
+      {
+         "links": [
             "https://twitter.com/thickliljawn/status/1267239498083110913",
             "https://www.reddit.com/r/PublicFreakout/comments/gubleh/officer_gets_confronted_by_another_officer_for/",
-            "https://www.miamiherald.com/news/local/crime/article243234261.html"
+            "https://www.miamiherald.com/news/local/crime/article243234261.html",
+            "https://www.sun-sentinel.com/local/broward/fort-lauderdale/fl-ne-officer-shoved-protestor-charged-battery-steven-pohorence-20200630-wqyatvgu6fc4hdtnsvmtlhe7be-story.html",
+            "https://www.nbcnews.com/news/us-news/fort-lauderdale-officer-who-pushed-over-kneeling-protester-video-charged-n1232606"
          ],
          "state": "Florida",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Florida.md",
@@ -4398,6 +4999,19 @@
       },
       {
          "links": [
+            "https://www.youtube.com/watch?v=JJx9NgTe8Ns",
+            "https://www.miamiherald.com/news/local/community/broward/article243932047.html"
+         ],
+         "state": "Florida",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Florida.md",
+         "city": "Fort Lauderdale",
+         "name": "Police laugh and joke when they think their body cams are off",
+         "date": "2020-05-31",
+         "date_text": "May 31st",
+         "id": "fl-fortlauderdale-3"
+      },
+      {
+         "links": [
             "https://twitter.com/joiahhh/status/1266914558519775235"
          ],
          "state": "Florida",
@@ -4419,6 +5033,31 @@
          "date": "2020-05-31",
          "date_text": "May 31st",
          "id": "fl-miami-1"
+      },
+      {
+         "links": [
+            "https://twitter.com/inaminorkey/status/1277070049518465032",
+            "https://twitter.com/inaminorkey/status/1277078077303132160"
+         ],
+         "state": "Florida",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Florida.md",
+         "city": "Miami",
+         "name": "Police deployed two rounds of tear gas against peaceful protestors",
+         "date": "2020-06-27",
+         "date_text": "June 27th",
+         "id": "fl-miami-2"
+      },
+      {
+         "links": [
+            "https://twitter.com/Concerned407/status/1268339148131307524"
+         ],
+         "state": "Florida",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Florida.md",
+         "city": "Orlando",
+         "name": "Police tackle & pepper spray peaceful protestors",
+         "date": "2020-06-01",
+         "date_text": "June 1st",
+         "id": "or-orlando-5"
       },
       {
          "links": [
@@ -4460,14 +5099,15 @@
       {
          "links": [
             "https://twitter.com/greg_doucette/status/1269017349727928320",
+            "https://twitter.com/Concerned407/status/1276277655545905152",
             "https://www.google.com/maps/place/29+W+South+St,+Orlando,+FL+32801,+USA/@28.5384293,-81.3797504,20z/data=!4m5!3m4!1s0x88e77b01dadbb26d:0x1a303f1fe28f7d51!8m2!3d28.5384616!4d-81.3801581"
          ],
          "state": "Florida",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Florida.md",
          "city": "Orlando",
          "name": "Police fire on protesters outside city hall",
-         "date": "",
-         "date_text": "Date unknown",
+         "date": "2020-06-02",
+         "date_text": "June 2nd",
          "id": "fl-orlando-2"
       },
       {
@@ -5036,6 +5676,19 @@
       },
       {
          "links": [
+            "https://twitter.com/aaron_rigg/status/1267814008859443202",
+            "https://twitter.com/aaron_rigg/status/1267649768668495878"
+         ],
+         "state": "Ohio",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Ohio.md",
+         "city": "Columbus",
+         "name": "Police casually pepper spray passers by",
+         "date": "2020-06-01",
+         "date_text": "(believed to be) June 1st",
+         "id": "oh-columbus-22"
+      },
+      {
+         "links": [
             "https://www.thelantern.com/2020/06/columbus-mayor-police-chief-address-protest-policing-pepper-spray-of-lantern-journalists/",
             "https://twitter.com/TheLantern/status/1267644471317090305",
             "https://twitter.com/maevewalsh27/status/1267646128289447939"
@@ -5060,6 +5713,19 @@
          "date": "2020-06-05",
          "date_text": "June 5th",
          "id": "oh-columbus-18"
+      },
+      {
+         "links": [
+            "https://www.tiktok.com/@frecklesandstitches/video/6835226979596340485",
+            "https://twitter.com/TrekkieByBirth/status/1276719505528492033"
+         ],
+         "state": "Ohio",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Ohio.md",
+         "city": "Columbus",
+         "name": "Police drive up to protestors, jump out and tackle them",
+         "date": "2020-06-06",
+         "date_text": "(Believed to be) June 6th",
+         "id": "oh-columbus-24"
       },
       {
          "links": [
@@ -5098,6 +5764,19 @@
          "date": "2020-06-21",
          "date_text": "June 21st",
          "id": "oh-columbus-21"
+      },
+      {
+         "links": [
+            "https://twitter.com/greg_doucette/status/1277660155354796033",
+            "https://www.instagram.com/tv/CCAZGCWjqG1"
+         ],
+         "state": "Ohio",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Ohio.md",
+         "city": "Columbus",
+         "name": "Police drag seated protestor, body slam a second",
+         "date": "2020-06-29",
+         "date_text": "June 29th",
+         "id": "oh-columbus-23"
       },
       {
          "links": [
@@ -5397,21 +6076,6 @@
       },
       {
          "links": [
-            "https://twitter.com/rawsmedia/status/1275671784554221574",
-            "https://twitter.com/rawsmedia/status/1275673321959497729",
-            "https://twitter.com/rawsmedia/status/1275675725358600192",
-            "https://twitter.com/rawsmedia/status/1275688665486897152"
-         ],
-         "state": "Washington DC",
-         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington DC.md",
-         "city": "DC",
-         "name": "Police use pepper spray, flashbangs and tear gas to disperse protest",
-         "date": "2020-06-23",
-         "date_text": "June 23rd",
-         "id": "dc-dc-18"
-      },
-      {
-         "links": [
             "https://twitter.com/wyattreed13/status/1275623256406581251"
          ],
          "state": "Washington DC",
@@ -5446,6 +6110,34 @@
          "date": "2020-06-23",
          "date_text": "June 23rd",
          "id": "dc-dc-22"
+      },
+      {
+         "links": [
+            "https://twitter.com/rawsmedia/status/1275671784554221574",
+            "https://twitter.com/rawsmedia/status/1275673321959497729",
+            "https://twitter.com/rawsmedia/status/1275675725358600192",
+            "https://twitter.com/rawsmedia/status/1275688665486897152",
+            "https://www.youtube.com/watch?v=aC1udgaUzDI"
+         ],
+         "state": "Washington DC",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington DC.md",
+         "city": "DC",
+         "name": "Police use pepper spray, flashbangs and tear gas to disperse protest",
+         "date": "2020-06-23",
+         "date_text": "June 23rd",
+         "id": "dc-dc-18"
+      },
+      {
+         "links": [
+            "https://twitter.com/FordFischer/status/1277457274395676672"
+         ],
+         "state": "Washington DC",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Washington DC.md",
+         "city": "DC",
+         "name": "Police target protestor handing out water",
+         "date": "2020-06-27",
+         "date_text": "June 27th",
+         "id": "dc-dc-24"
       },
       {
          "links": [
@@ -5609,8 +6301,36 @@
          "city": "Philadelphia",
          "name": "Police kneel on man who says \"I can't breathe\", officer yells profanities back",
          "date": "2020-06-03",
-         "date_text": "believed to be June 3rd",
+         "date_text": "(Believed to be) June 3rd",
          "id": "pa-philadelphia-6"
+      },
+      {
+         "links": [
+            "https://vimeo.com/428917635",
+            "https://www.reddit.com/r/PublicFreakout/comments/hbaove/philadelphia_police_threaten_unicorn_riot/",
+            "https://unicornriot.ninja/2020/philadelphia-police-threaten-unicorn-riot-reporter-after-vigilante-assault/"
+         ],
+         "state": "Pennsylvania",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Pennsylvania.md",
+         "city": "Philadelphia",
+         "name": "Reporter is harassed and assaulted by pro-Columbus supporters; police tell reporter to leave the scene",
+         "date": "2020-06-13",
+         "date_text": "June 13th",
+         "id": "pa-philadelphia-11"
+      },
+      {
+         "links": [
+            "https://twitter.com/samanthamelamed/status/1275522909604372481",
+            "https://twitter.com/samanthamelamed/status/1275523337716973570",
+            "https://twitter.com/samanthamelamed/status/1275524750316535810"
+         ],
+         "state": "Pennsylvania",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Pennsylvania.md",
+         "city": "Philadelphia",
+         "name": "Counter-Terrorism Unit detains reporter",
+         "date": "2020-06-23",
+         "date_text": "June 23rd",
+         "id": "pa-philadelphia-12"
       },
       {
          "links": [
@@ -5782,6 +6502,23 @@
          "date": "2020-05-31",
          "date_text": "Possibly May 31st",
          "id": "in-lafayette-1"
+      },
+      {
+         "links": [
+            "https://www.reddit.com/r/Bad_Cop_No_Donut/comments/hhfrh8/062820_musicians_in_aurora_colorado_honoring/",
+            "https://www.reddit.com/r/2020PoliceBrutality/comments/hhh6fe/aurora_co_during_a_vigil_with_live_violinists_for/",
+            "https://twitter.com/ekbates4/status/1277104647690280961",
+            "https://twitter.com/Ezret/status/1277451145418469376",
+            "https://twitter.com/jessiedesigngir/status/1277126019246260224",
+            "https://www.reddit.com/r/Denver/comments/hh5dbp/protestors_for_elijah_mcclain_threatened_with/"
+         ],
+         "state": "Colorado",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Colorado.md",
+         "city": "Aurora",
+         "name": "Aurora police violently disperse violin vigil",
+         "date": "2020-06-27",
+         "date_text": "June 27th",
+         "id": "co-aurora-1"
       },
       {
          "links": [
@@ -6041,6 +6778,18 @@
       },
       {
          "links": [
+            "https://twitter.com/wisenoons/status/1274743833410994176"
+         ],
+         "state": "Colorado",
+         "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/Colorado.md",
+         "city": "Denver",
+         "name": "Police pepper spray protestor with hands up",
+         "date": "2020-06-21",
+         "date_text": "(Believed to be) June 21st",
+         "id": "co-denver-20"
+      },
+      {
+         "links": [
             "https://twitter.com/courtenay_roche/status/1267653137969623040",
             "https://twitter.com/yagirlbrookie09/status/1267647898365427714",
             "https://www.4029tv.com/article/bentonville-police-deploy-tear-gas-on-protesters/32736629#"
@@ -6250,15 +6999,16 @@
       },
       {
          "links": [
-            "https://twitter.com/track4life_bry/status/1268313958479532034"
+            "https://twitter.com/greg_doucette/status/1275254514501799939",
+            "https://www.live5news.com/2020/06/23/police-make-one-arrest-during-monday-night-calhoun-statue-protests/"
          ],
          "state": "South Carolina",
          "edit_at": "https://github.com/2020PB/police-brutality/blob/master/reports/South Carolina.md",
-         "city": "Location Unknown",
-         "name": "Police Assault Suspect on Ground During Arrest",
-         "date": "2020-06-03",
-         "date_text": "June 3rd",
-         "id": "sc-unknown-1"
+         "city": "Charleston",
+         "name": "Police violently arrest protestor",
+         "date": "2020-06-22",
+         "date_text": "June 22nd",
+         "id": "sc-charleston-3"
       },
       {
          "links": [
