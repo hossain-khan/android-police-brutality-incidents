@@ -17,4 +17,6 @@
     <dimen name="view_spacing_large">12dp</dimen>
     <dimen name="view_spacing_medium">8dp</dimen>
     <dimen name="view_spacing_small">4dp</dimen>
+
+    <dimen name="google_map_height" descrption="Incident location map height. Width is match parent">240dp</dimen>
 </resources>

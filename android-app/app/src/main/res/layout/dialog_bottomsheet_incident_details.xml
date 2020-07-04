@@ -51,7 +51,7 @@
         <FrameLayout
             android:id="@+id/incident_map_container"
             android:layout_width="0dp"
-            android:layout_height="240dp"
+            android:layout_height="@dimen/google_map_height"
             android:layout_marginTop="@dimen/view_spacing_medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
