@@ -22,6 +22,7 @@ class KeystoreUtil {
             keystoreProperties['keyPassword'] = 'android'
             keystoreProperties['storeFile'] = '../keystore/debug.keystore'
             keystoreProperties['storePassword'] = 'android'
+            keystoreProperties['mapsApiKey'] = 'not-available'
         }
 
         return keystoreProperties

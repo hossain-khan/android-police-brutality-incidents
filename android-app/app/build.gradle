@@ -36,6 +36,7 @@ android {
         }
 
         resValue("string", "app_version_name", "v${versionName}")
+        resValue("string", "maps_api_key", keystoreProperties['mapsApiKey'])
     }
 
     signingConfigs {
@@ -140,7 +141,14 @@ dependencies {
     // debugImplementation because LeakCanary should only run in debug builds.
     debugImplementation "com.squareup.leakcanary:leakcanary-android:2.4"
 
-    // Unit testing
+    // Google Maps SDK to show incident location
+    // https://developers.google.com/maps/documentation/android-sdk/start
+    // https://developers.google.com/android/guides/releases
+    implementation "com.google.android.gms:play-services-maps:17.0.0"
+
+    // -------------------------
+    // Unit testing libraries
+    // -------------------------
     testImplementation "junit:junit:$rootProject.junitVersion"
     testImplementation "androidx.test:core:1.2.0"
     testImplementation "androidx.arch.core:core-testing:2.1.0" // Test helpers for LiveData
