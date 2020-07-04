@@ -68,6 +68,11 @@ data class Incident(
             } ?: unknownDateText
         }
 
+    /**
+     * Validates if given geocoding data is usable and valid coordinates.
+     *
+     * DEV NOTE: Based on app usage, it seems like ~all the data is valid. Not sure if we need this validation.
+     */
     val hasValidGeocodingData: Boolean
         get() {
             val lat: Double? = geocoding?.lat?.toDoubleOrNull()
