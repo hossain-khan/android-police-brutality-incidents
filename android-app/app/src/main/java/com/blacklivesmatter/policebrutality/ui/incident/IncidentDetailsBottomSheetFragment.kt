@@ -102,6 +102,10 @@ class IncidentDetailsBottomSheetFragment : BottomSheetDialogFragment() {
 
         mapFragment.getMapAsync { googleMap ->
             Timber.d("Google map is ready")
+            binding.mapLoadingIndicator.apply {
+                cancelAnimation()
+                visibility = View.GONE
+            }
 
             googleMap.uiSettings.apply {
                 isMapToolbarEnabled = false

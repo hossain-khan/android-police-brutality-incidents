@@ -54,6 +54,8 @@
                 app:layout_constraintEnd_toEndOf="@id/guideline_end"
                 app:layout_constraintStart_toStartOf="@id/guideline_start"
                 app:layout_constraintTop_toTopOf="parent"
+                app:mapIconIfAvailable="@{incident}"
+                tools:drawableEnd="@drawable/ic_outline_pin_drop"
                 tools:text="Police brutality incident title from different states. This can be long and multile. It should not truncate." />
 
             <com.google.android.material.textview.MaterialTextView

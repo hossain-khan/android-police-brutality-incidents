@@ -28,6 +28,9 @@ import androidx.appcompat.widget.AppCompatImageView
 import androidx.databinding.BindingAdapter
 import coil.api.load
 import coil.size.Scale
+import com.blacklivesmatter.policebrutality.R
+import com.blacklivesmatter.policebrutality.data.model.Incident
+import com.google.android.material.textview.MaterialTextView
 
 /**
  * Loads the image view wil provided url.
@@ -41,5 +44,17 @@ fun AppCompatImageView.loadImage(imageUrl: String?) {
             crossfade(true)
             scale(Scale.FIT)
         }
+    }
+}
+
+@BindingAdapter("mapIconIfAvailable")
+fun MaterialTextView.showMapIconIfLocationAvailable(incident: Incident) {
+    if (incident.hasValidGeocodingData) {
+        setCompoundDrawablesRelativeWithIntrinsicBounds(
+            /* start */ 0,
+            /* top */ 0,
+            /* end */ R.drawable.ic_outline_pin_drop,
+            /* bottom */ 0
+        )
     }
 }
