@@ -36,7 +36,7 @@ android {
         }
 
         resValue("string", "app_version_name", "v${versionName}")
-        resValue("string", "maps_api_key", keystoreProperties['mapsApiKey'])
+        resValue("string", "maps_api_key", System.getenv("GMAP_API_KEY") ?: keystoreProperties['mapsApiKey'])
     }
 
     signingConfigs {
@@ -62,8 +62,8 @@ android {
             signingConfig signingConfigs.config
 
             firebaseAppDistribution {
-                releaseNotes="Latest release notes at https://github.com/amardeshbd/android-police-brutality-incidents/releases"
-                groups="lli-devs"
+                releaseNotes = "Latest release notes at https://github.com/amardeshbd/android-police-brutality-incidents/releases"
+                groups = "lli-devs"
             }
         }
         debug {
@@ -81,7 +81,10 @@ android {
     lintOptions { // https://developer.android.com/studio/write/lint.html
         checkAllWarnings true
         warningsAsErrors true
-        ignore 'GradleDependency', 'NewerVersionAvailable', 'UnusedIds', 'InvalidPackage' /* https://github.com/Kotlin/kotlinx.coroutines/issues/2004 */
+        ignore 'GradleDependency',
+                'NewerVersionAvailable',
+                'UnusedIds',
+                'InvalidPackage' /* https://github.com/Kotlin/kotlinx.coroutines/issues/2004 */
     }
 }
 
