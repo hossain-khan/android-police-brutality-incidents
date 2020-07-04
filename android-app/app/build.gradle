@@ -101,7 +101,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
     implementation "androidx.cardview:cardview:$rootProject.cardViewVersion"
     implementation "androidx.preference:preference-ktx:$rootProject.preferenceVersion"
-    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-rc01"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
     // Firebase
     implementation "com.google.firebase:firebase-analytics-ktx:$rootProject.firebaseAnalyticsVersion"
@@ -148,6 +148,10 @@ dependencies {
     // https://developers.google.com/maps/documentation/android-sdk/start
     // https://developers.google.com/android/guides/releases
     implementation "com.google.android.gms:play-services-maps:17.0.0"
+
+    // Lottie - for better UX animations
+    // https://github.com/airbnb/lottie-android
+    implementation "com.airbnb.android:lottie:3.4.1"
 
     // -------------------------
     // Unit testing libraries

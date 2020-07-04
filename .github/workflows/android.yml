@@ -34,6 +34,8 @@ jobs:
           ${{ runner.os }}-gradle-
 
     - name: Build with Gradle
+      env: # https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
+        FIREBASE_TOKEN: ${{ secrets.GMAP_API_KEY }}
       run: ./gradlew assembleDebug
 
     - name: Archive APK
