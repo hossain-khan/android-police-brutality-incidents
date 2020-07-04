@@ -18,7 +18,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:background="#dfd">
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/dialog_title"
@@ -70,7 +71,7 @@
 
         <Space
             android:layout_width="0dp"
-            android:layout_height="20dp"
+            android:layout_height="@dimen/view_spacing_large"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/incident_map_container" />

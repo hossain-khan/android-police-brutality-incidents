@@ -24,6 +24,7 @@
 
 package com.blacklivesmatter.policebrutality.ui.incident
 
+import android.content.res.Resources
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -31,10 +32,19 @@ import android.view.ViewGroup
 import com.blacklivesmatter.policebrutality.R
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.databinding.DialogBottomsheetIncidentDetailsBinding
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.GoogleMapOptions
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MapStyleOptions
+import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import timber.log.Timber
 
+/**
+ * Incident details fragment that allows to see map and share the incident.
+ */
 class IncidentDetailsBottomSheetFragment : BottomSheetDialogFragment() {
     companion object {
         const val FRAGMENT_TAG = "IncidentDetailsBottomSheetFragment"
@@ -71,13 +81,61 @@ class IncidentDetailsBottomSheetFragment : BottomSheetDialogFragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        val mapFragment = SupportMapFragment()
+        if (selectedIncident.hasValidGeocodingData.not()) {
+            Timber.d("The incident %s does not have geocoding, not showing map.", selectedIncident.incident_id)
+            return
+        }
+
+        val options = GoogleMapOptions().apply {
+            liteMode(true)
+        }
+
+        val mapFragment = SupportMapFragment.newInstance(options)
         childFragmentManager.beginTransaction()
             .add(R.id.incident_map_container, mapFragment, "MAP")
             .commit()
 
-        mapFragment.getMapAsync {
+        mapFragment.getMapAsync { googleMap ->
             Timber.d("Google map is ready")
+
+            googleMap.uiSettings.apply {
+                isMapToolbarEnabled = false
+            }
+
+            applyMapStyle(googleMap)
+
+            // Add a marker for the incident and move the camera
+            val incidentLocation = selectedIncident.toLatLng()
+            googleMap.addMarker(MarkerOptions().position(incidentLocation).title(selectedIncident.name))
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(incidentLocation, 13f))
         }
     }
+
+    /**
+     * Styles the map in dark mode.
+     * - https://developers.google.com/maps/documentation/android-sdk/styling
+     * - https://mapstyle.withgoogle.com/
+     */
+    private fun applyMapStyle(map: GoogleMap) {
+        try {
+            // Customise the styling of the base map using a JSON object defined
+            // in a raw resource file.
+            val success: Boolean = map.setMapStyle(
+                MapStyleOptions.loadRawResourceStyle(
+                    requireContext(), R.raw.google_maps_style
+                )
+            )
+            if (!success) {
+                Timber.e("Style parsing failed.")
+            }
+        } catch (e: Resources.NotFoundException) {
+            Timber.e(e, "Can't find style. Error: ")
+        }
+    }
+
+    /**
+     * Extension to convert geocoding data to Google's [LatLng].
+     * We can use `!!` because data has been validated in [Incident.hasValidGeocodingData].
+     */
+    private fun Incident.toLatLng(): LatLng = LatLng(geocoding!!.lat!!.toDouble(), geocoding.long!!.toDouble())
 }
