@@ -101,7 +101,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
     implementation "androidx.cardview:cardview:$rootProject.cardViewVersion"
     implementation "androidx.preference:preference-ktx:$rootProject.preferenceVersion"
-    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-rc01"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
     // Firebase
     implementation "com.google.firebase:firebase-analytics-ktx:$rootProject.firebaseAnalyticsVersion"
