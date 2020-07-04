@@ -34,7 +34,6 @@ class IncidentsFragment : Fragment() {
     private lateinit var viewDataBinding: FragmentIncidentsBinding
     private val navArgs: IncidentsFragmentArgs by navArgs()
     private lateinit var adapter: IncidentsAdapter
-    private lateinit var bottomSheetShareDialog: IncidentDetailsBottomSheetFragment
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         viewDataBinding = FragmentIncidentsBinding.inflate(inflater, container, false).apply {
@@ -79,9 +78,8 @@ class IncidentsFragment : Fragment() {
         })
 
         viewModel.shareIncident.observeKotlin(viewLifecycleOwner) { incident ->
-            if (bottomSheetShareDialog.isVisible) {
-                bottomSheetShareDialog.dismiss()
-            }
+            dismissDetailsDialogIfShowing()
+
             analytics.logSelectItem(CONTENT_TYPE_INCIDENT_SHARE, incident.id, incident.incident_id ?: "---")
             startActivity(IntentBuilder.share(incident))
         }
@@ -109,10 +107,17 @@ class IncidentsFragment : Fragment() {
         Timber.d("User tapped on the incident item. Show details and allow sharing.")
 
         val dialog = IncidentDetailsBottomSheetFragment()
-        bottomSheetShareDialog = dialog
         dialog.setData(viewModel, incident)
+        dialog.show(childFragmentManager, IncidentDetailsBottomSheetFragment.FRAGMENT_TAG)
+    }
 
-        dialog.show(childFragmentManager, "DIALOG")
+    private fun dismissDetailsDialogIfShowing() {
+        val dialog = childFragmentManager.findFragmentByTag(IncidentDetailsBottomSheetFragment.FRAGMENT_TAG)
+        if (dialog != null && dialog is IncidentDetailsBottomSheetFragment) {
+            if (dialog.isVisible) {
+                dialog.dismiss()
+            }
+        }
     }
 
     /**
