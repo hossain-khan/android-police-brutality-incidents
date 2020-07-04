@@ -13,8 +13,10 @@ class KeystoreUtil {
 
         // Loads the keystore.properties file into the keystoreProperties object.
         if (keystorePropertiesFile.exists()) {
+            println("[INFO] Using release keystore for app signing.")
             keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
         } else {
+            println("[WARNING] Using debug keystore for app signing.")
             // For CI builds, use debug cert to pass it.
             // https://developer.android.com/studio/publish/app-signing#debug-mode
             // https://coderwall.com/p/r09hoq/android-generate-release-debug-keystores
