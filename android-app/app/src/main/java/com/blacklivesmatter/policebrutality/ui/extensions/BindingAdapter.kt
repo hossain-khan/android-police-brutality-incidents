@@ -47,11 +47,10 @@ fun AppCompatImageView.loadImage(imageUrl: String?) {
     }
 }
 
-
 @BindingAdapter("mapIconIfAvailable")
 fun MaterialTextView.showMapIconIfLocationAvailable(incident: Incident) {
     if (incident.hasValidGeocodingData) {
-        this.setCompoundDrawablesRelativeWithIntrinsicBounds(
+        setCompoundDrawablesRelativeWithIntrinsicBounds(
             /* start */ 0,
             /* top */ 0,
             /* end */ R.drawable.ic_outline_pin_drop,
