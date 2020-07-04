@@ -97,7 +97,7 @@ data class Incident(
          * Validates if give geo coordinates is within USA geo bounds defined in [UsaGeoBounds].
          */
         internal fun within(lat: Double, long: Double): Boolean {
-            return (lat in bottom..top) && (long in left..right)
+            return lat in bottom..top && long in left..right
         }
     }
 }
