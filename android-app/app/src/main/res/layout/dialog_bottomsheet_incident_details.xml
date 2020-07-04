@@ -59,14 +59,15 @@
             tools:background="#cad">
 
             <!-- Placeholder for loading icon -->
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/map_loading_indicator"
+                android:layout_width="@dimen/google_map_loading_indicator_size"
+                android:layout_height="@dimen/google_map_loading_indicator_size"
                 android:layout_gravity="center"
-                android:contentDescription="@null"
-                android:src="@drawable/ic_fist_raised"
-                android:visibility="visible"
-                tools:visibility="visible" />
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/lottie_bouncy_mapmaker_loading"
+                tools:background="#7d7" />
         </FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
