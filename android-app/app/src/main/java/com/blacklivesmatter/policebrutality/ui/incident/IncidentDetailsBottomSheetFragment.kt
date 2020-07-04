@@ -28,11 +28,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.blacklivesmatter.policebrutality.R
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.databinding.DialogBottomsheetIncidentDetailsBinding
+import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import timber.log.Timber
 
 class IncidentDetailsBottomSheetFragment : BottomSheetDialogFragment() {
+    companion object {
+        const val FRAGMENT_TAG = "IncidentDetailsBottomSheetFragment"
+    }
 
     private lateinit var incidentViewModel: IncidentViewModel
     private lateinit var selectedIncident: Incident
@@ -60,5 +66,18 @@ class IncidentDetailsBottomSheetFragment : BottomSheetDialogFragment() {
             data = selectedIncident
         }
         return binding.root
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        val mapFragment = SupportMapFragment()
+        childFragmentManager.beginTransaction()
+            .add(R.id.incident_map_container, mapFragment, "MAP")
+            .commit()
+
+        mapFragment.getMapAsync {
+            Timber.d("Google map is ready")
+        }
     }
 }
