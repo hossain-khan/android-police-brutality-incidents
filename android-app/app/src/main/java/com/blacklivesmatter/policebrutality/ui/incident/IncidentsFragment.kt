@@ -14,11 +14,9 @@ import com.blacklivesmatter.policebrutality.R
 import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.analytics.Analytics.Companion.CONTENT_TYPE_INCIDENT_SHARE
 import com.blacklivesmatter.policebrutality.data.model.Incident
-import com.blacklivesmatter.policebrutality.databinding.DialogBottomsheetIncidentDetailsBinding
 import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentsBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
 import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
-import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
@@ -36,7 +34,6 @@ class IncidentsFragment : Fragment() {
     private lateinit var viewDataBinding: FragmentIncidentsBinding
     private val navArgs: IncidentsFragmentArgs by navArgs()
     private lateinit var adapter: IncidentsAdapter
-    private lateinit var bottomSheetShareDialog: BottomSheetDialog
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         viewDataBinding = FragmentIncidentsBinding.inflate(inflater, container, false).apply {
@@ -81,9 +78,8 @@ class IncidentsFragment : Fragment() {
         })
 
         viewModel.shareIncident.observeKotlin(viewLifecycleOwner) { incident ->
-            if (bottomSheetShareDialog.isShowing) {
-                bottomSheetShareDialog.dismiss()
-            }
+            dismissDetailsDialogIfShowing()
+
             analytics.logSelectItem(CONTENT_TYPE_INCIDENT_SHARE, incident.id, incident.incident_id ?: "---")
             startActivity(IntentBuilder.share(incident))
         }
@@ -109,18 +105,19 @@ class IncidentsFragment : Fragment() {
 
     private fun showIncidentDetailsForSharing(incident: Incident) {
         Timber.d("User tapped on the incident item. Show details and allow sharing.")
-        val context = context ?: return
 
-        val incidentBinding = DialogBottomsheetIncidentDetailsBinding.inflate(layoutInflater, null, false).apply {
-            lifecycleOwner = this@IncidentsFragment
-            data = incident // Allows in future to use data binding to provide more info in bottom sheet dialog
-            vm = viewModel
+        val dialog = IncidentDetailsBottomSheetFragment()
+        dialog.setData(viewModel, incident)
+        dialog.show(childFragmentManager, IncidentDetailsBottomSheetFragment.FRAGMENT_TAG)
+    }
+
+    private fun dismissDetailsDialogIfShowing() {
+        val dialog = childFragmentManager.findFragmentByTag(IncidentDetailsBottomSheetFragment.FRAGMENT_TAG)
+        if (dialog != null && dialog is IncidentDetailsBottomSheetFragment) {
+            if (dialog.isVisible) {
+                dialog.dismiss()
+            }
         }
-
-        bottomSheetShareDialog = BottomSheetDialog(context)
-        bottomSheetShareDialog.setContentView(incidentBinding.root)
-        bottomSheetShareDialog.dismissWithAnimation = true
-        bottomSheetShareDialog.show()
     }
 
     /**

@@ -67,4 +67,12 @@ data class Incident(
                 }
             } ?: unknownDateText
         }
+
+    val hasValidGeocodingData: Boolean
+        get() {
+            return geocoding?.lat != null &&
+                    geocoding.long != null &&
+                    geocoding.lat.toFloatOrNull() != null &&
+                    geocoding.long.toFloatOrNull() != null
+        }
 }

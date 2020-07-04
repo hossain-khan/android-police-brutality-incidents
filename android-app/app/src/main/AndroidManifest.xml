@@ -44,6 +44,15 @@
             android:authorities="${applicationId}.workmanager-init"
             android:exported="false"
             tools:node="remove" />
+
+        <!--
+            Google Maps SDK for showing incident location
+            * https://developers.google.com/maps/documentation/android-sdk/get-api-key
+            * https://console.cloud.google.com/google/maps-apis/metrics?project=goggle-maps-demo
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key" />
     </application>
 
 </manifest>
