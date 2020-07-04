@@ -62,7 +62,7 @@ class IncidentDetailsBottomSheetFragment : BottomSheetDialogFragment() {
      * - If we don't make parcelable and pass incident ID, then we are waiting extra for database to get info by ID
      * - DI is not used to keep it simple as this dialog is very short lived.
      *
-     * In other words! this is a HACK! and won't survive configuration change
+     * In other words! this is a HACK! and won't survive configuration change (see [onStop] for workaround ;-)
      */
     fun setData(viewModel: IncidentViewModel, incident: Incident) {
         incidentViewModel = viewModel
@@ -76,6 +76,11 @@ class IncidentDetailsBottomSheetFragment : BottomSheetDialogFragment() {
             data = selectedIncident
         }
         return binding.root
+    }
+
+    override fun onStop() {
+        super.onStop()
+        dismissAllowingStateLoss()
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
