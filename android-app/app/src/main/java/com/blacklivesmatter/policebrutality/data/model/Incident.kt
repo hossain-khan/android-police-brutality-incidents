@@ -70,9 +70,29 @@ data class Incident(
 
     val hasValidGeocodingData: Boolean
         get() {
+            val lat: Double? = geocoding?.lat?.toDoubleOrNull()
+            val long: Double? = geocoding?.long?.toDoubleOrNull()
             return geocoding?.lat != null &&
                     geocoding.long != null &&
-                    geocoding.lat.toFloatOrNull() != null &&
-                    geocoding.long.toFloatOrNull() != null
+                    lat != null &&
+                    long != null &&
+                    UsaGeoBounds.within(lat, long)
         }
+
+    /**
+     * http://en.wikipedia.org/wiki/Extreme_points_of_the_United_States
+     */
+    private object UsaGeoBounds {
+        private const val left: Double = -124.7844079 // west long
+        private const val right: Double = -66.9513812 // east long
+        private const val top: Double = 49.3457868 // north lat
+        private const val bottom: Double = 24.7433195 // south lat
+
+        /**
+         * Validates if give geo coordinates is within USA geo bounds defined in [UsaGeoBounds].
+         */
+        internal fun within(lat: Double, long: Double): Boolean {
+            return (lat in bottom..top) && (long in left..right)
+        }
+    }
 }
