@@ -61,8 +61,10 @@
     <string name="hash_tags_for_blacklivesmatter">#BlackLivesMatter\n#JusticeForGeorgeFloyd\n#PoliceBrutality</string>
 
     <!-- Other string resrouces -->
-    <string name="total_reported_incident_for_location" tools:ignore="PluralsCandidate">Total %d reported incidents.</string>
-    <string name="incident_location_at_display_text" description="Example: at Denver, Colorado">at %1$s, %2$s</string>
+    <string name="total_reported_incident_for_location" tools:ignore="PluralsCandidate">Total %d reported incidents</string>
+    <string name="last_reported_incident_status" tools:ignore="PluralsCandidate">Last incident <![CDATA[<big><b>%1$d</b></big>]]> days ago on %2$s</string>
+    <string name="incident_location_at_city_state_display_text" description="Example: at Denver, Colorado">at %1$s, %2$s</string>
+    <string name="incident_location_at_city_display_text" description="Example: at Denver">at %1$s</string>
     <string name="incident_source_background"><![CDATA[All the reported incidents are part of initiative taken by subreddit \"r/2020PoliceBrutality\" found at www.reddit.com/r/2020PoliceBrutality \n\nThis subreddit exists to document the violence committed by law enforcement on peaceful protesters during the protests & riots of 2020 following the murder of George Floyd. \n\nThese incidents are documented on Github at github.com/2020PB/police-brutality with further information. If you would like to contribute to this repository, please check the contribution guide at the repository.]]></string>
 
     <!--

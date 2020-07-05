@@ -5,6 +5,8 @@
 
     <data>
 
+        <import type="android.text.Html" />
+
         <variable
             name="data"
             type="com.blacklivesmatter.policebrutality.data.model.LocationIncidents" />
@@ -72,11 +74,24 @@
                 android:layout_marginTop="@dimen/list_item_vertical_margin"
                 android:layout_marginEnd="@dimen/view_spacing_medium"
                 android:text="@{@string/total_reported_incident_for_location(data.totalIncidents)}"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/last_report_status"
                 app:layout_constraintEnd_toStartOf="@+id/total_incidents_number"
                 app:layout_constraintStart_toStartOf="@id/guideline_start"
                 app:layout_constraintTop_toBottomOf="@+id/name"
                 tools:text="Total 13 reported incidents." />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/last_report_status"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/view_spacing_medium"
+                android:text="@{Html.fromHtml(@string/last_reported_incident_status(data.daysSinceReport, data.lastReportedOn))}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/total_incidents_number"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/total_incidents"
+                tools:text="Last incident 5 days ago on July 13th" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>

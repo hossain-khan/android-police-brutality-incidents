@@ -13,4 +13,7 @@ See https://developer.android.com/training/multiscreen/screensizes
 <resources>
     <dimen name="activity_horizontal_margin">64dp</dimen>
     <dimen name="activity_vertical_margin">64dp</dimen>
+
+    <dimen name="google_map_height" descrption="Incident location map height. Width is match parent">340dp</dimen>
+    <dimen name="google_map_loading_indicator_size" descrption="Animation icon size, half of map height">160dp</dimen>
 </resources>

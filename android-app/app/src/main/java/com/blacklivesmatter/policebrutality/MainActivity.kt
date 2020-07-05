@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
+        // https://developer.android.com/guide/navigation/navigation-ui#bottom_navigation
         val navController = findNavController(R.id.nav_host_fragment)
         navView.setupWithNavController(navController)
     }

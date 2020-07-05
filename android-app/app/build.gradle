@@ -11,7 +11,11 @@ plugins {
     id 'com.google.firebase.crashlytics'
     id 'org.jlleitschuh.gradle.ktlint'
     id 'com.google.firebase.appdistribution'
+    id 'jacoco'
 }
+
+apply from: "$project.rootDir/buildScripts/jacoco-task.gradle"
+
 def keystoreProperties = KeystoreUtil.buildProperties(rootProject)
 
 android {
@@ -22,8 +26,8 @@ android {
         applicationId "com.blacklivesmatter.policebrutality"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
-        versionCode 10
-        versionName "2.3"
+        versionCode 11
+        versionName "2.4"
 
         resConfigs "en"
 
@@ -36,6 +40,7 @@ android {
         }
 
         resValue("string", "app_version_name", "v${versionName}")
+        resValue("string", "maps_api_key", System.getenv("GMAP_API_KEY") ?: keystoreProperties['mapsApiKey'])
     }
 
     signingConfigs {
@@ -61,11 +66,14 @@ android {
             signingConfig signingConfigs.config
 
             firebaseAppDistribution {
-                releaseNotes="Latest release notes at https://github.com/amardeshbd/android-police-brutality-incidents/releases"
-                groups="lli-devs"
+                releaseNotes = "Latest release notes at https://github.com/amardeshbd/android-police-brutality-incidents/releases"
+                groups = "lli-devs"
             }
         }
         debug {
+            debug {
+                testCoverageEnabled true
+            }
             signingConfig signingConfigs.config
         }
     }
@@ -80,7 +88,10 @@ android {
     lintOptions { // https://developer.android.com/studio/write/lint.html
         checkAllWarnings true
         warningsAsErrors true
-        ignore 'GradleDependency', 'NewerVersionAvailable', 'UnusedIds', 'InvalidPackage' /* https://github.com/Kotlin/kotlinx.coroutines/issues/2004 */
+        ignore 'GradleDependency',
+                'NewerVersionAvailable',
+                'UnusedIds',
+                'InvalidPackage' /* https://github.com/Kotlin/kotlinx.coroutines/issues/2004 */
     }
 }
 
@@ -95,11 +106,9 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.lifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
-    implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"
-    implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
     implementation "androidx.cardview:cardview:$rootProject.cardViewVersion"
     implementation "androidx.preference:preference-ktx:$rootProject.preferenceVersion"
-    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-rc01"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
     // Firebase
     implementation "com.google.firebase:firebase-analytics-ktx:$rootProject.firebaseAnalyticsVersion"
@@ -142,7 +151,18 @@ dependencies {
     // debugImplementation because LeakCanary should only run in debug builds.
     debugImplementation "com.squareup.leakcanary:leakcanary-android:2.4"
 
-    // Unit testing
+    // Google Maps SDK to show incident location
+    // https://developers.google.com/maps/documentation/android-sdk/start
+    // https://developers.google.com/android/guides/releases
+    implementation "com.google.android.gms:play-services-maps:17.0.0"
+
+    // Lottie - for better UX animations
+    // https://github.com/airbnb/lottie-android
+    implementation "com.airbnb.android:lottie:3.4.1"
+
+    // -------------------------
+    // Unit testing libraries
+    // -------------------------
     testImplementation "junit:junit:$rootProject.junitVersion"
     testImplementation "androidx.test:core:1.2.0"
     testImplementation "androidx.arch.core:core-testing:2.1.0" // Test helpers for LiveData

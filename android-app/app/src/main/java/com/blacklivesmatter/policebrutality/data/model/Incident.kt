@@ -3,13 +3,10 @@ package com.blacklivesmatter.policebrutality.data.model
 import androidx.annotation.Keep
 import androidx.room.ColumnInfo
 import androidx.room.Entity
-import androidx.room.Ignore
 import androidx.room.PrimaryKey
-import com.blacklivesmatter.policebrutality.config.THE_846_DAY
+import com.blacklivesmatter.policebrutality.ui.extensions.toDateText
 import com.google.gson.annotations.SerializedName
 import org.threeten.bp.OffsetDateTime
-import org.threeten.bp.format.DateTimeFormatter
-import org.threeten.bp.format.FormatStyle
 
 /**
  * An example data exposed from JSON response.
@@ -54,17 +51,39 @@ data class Incident(
     @SerializedName("geocoding") @ColumnInfo(name = "geocoding") val geocoding: GeoCoding?,
     @SerializedName("links") @ColumnInfo(name = "links") val links: List<String> = emptyList()
 ) {
-    @Ignore
-    private val unknownDateText = "Unknown Date"
-
     val dateText: String
+        get() = date.toDateText()
+
+    /**
+     * Validates if given geocoding data is usable and valid coordinates.
+     *
+     * DEV NOTE: Based on app usage, it seems like ~all the data is valid. Not sure if we need this validation.
+     */
+    val hasValidGeocodingData: Boolean
         get() {
-            return date?.let { incidentDate ->
-                if (incidentDate.isBefore(THE_846_DAY)) {
-                    return@let unknownDateText
-                } else {
-                    return@let incidentDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG))
-                }
-            } ?: unknownDateText
+            val lat: Double? = geocoding?.lat?.toDoubleOrNull()
+            val long: Double? = geocoding?.long?.toDoubleOrNull()
+            return geocoding?.lat != null &&
+                    geocoding.long != null &&
+                    lat != null &&
+                    long != null &&
+                    UsaGeoBounds.within(lat, long)
         }
+
+    /**
+     * http://en.wikipedia.org/wiki/Extreme_points_of_the_United_States
+     */
+    private object UsaGeoBounds {
+        private const val left: Double = -124.7844079 // west long
+        private const val right: Double = -66.9513812 // east long
+        private const val top: Double = 49.3457868 // north lat
+        private const val bottom: Double = 24.7433195 // south lat
+
+        /**
+         * Validates if give geo coordinates is within USA geo bounds defined in [UsaGeoBounds].
+         */
+        internal fun within(lat: Double, long: Double): Boolean {
+            return lat in bottom..top && long in left..right
+        }
+    }
 }
