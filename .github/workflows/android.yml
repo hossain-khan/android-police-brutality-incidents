@@ -35,7 +35,7 @@ jobs:
 
     - name: Build with Gradle
       env: # https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
-        GMAP_API_KEY: ${{ secrets.GMAP_API_KEY }}
+        GMAP_API_KEY: ${{ secrets.GMAP_API_KEY }} # NOTE: Firebase App Dist CI also uses same config
       run: ./gradlew assembleDebug
 
     - name: Archive APK
