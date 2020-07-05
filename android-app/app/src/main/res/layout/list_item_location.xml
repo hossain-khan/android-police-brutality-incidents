@@ -5,6 +5,8 @@
 
     <data>
 
+        <import type="android.text.Html" />
+
         <variable
             name="data"
             type="com.blacklivesmatter.policebrutality.data.model.LocationIncidents" />
@@ -83,9 +85,8 @@
                 style="@style/TextAppearance.MaterialComponents.Caption"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/view_spacing_smaller"
                 android:layout_marginEnd="@dimen/view_spacing_medium"
-                android:text="@{@string/last_reported_incident_status(data.daysSinceReport, data.lastReportedOn)}"
+                android:text="@{Html.fromHtml(@string/last_reported_incident_status(data.daysSinceReport, data.lastReportedOn))}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/total_incidents_number"
                 app:layout_constraintStart_toStartOf="@id/guideline_start"
