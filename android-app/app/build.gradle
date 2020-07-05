@@ -11,7 +11,11 @@ plugins {
     id 'com.google.firebase.crashlytics'
     id 'org.jlleitschuh.gradle.ktlint'
     id 'com.google.firebase.appdistribution'
+    id 'jacoco'
 }
+
+apply from: "$project.rootDir/buildScripts/jacoco-task.gradle"
+
 def keystoreProperties = KeystoreUtil.buildProperties(rootProject)
 
 android {
@@ -67,6 +71,9 @@ android {
             }
         }
         debug {
+            debug {
+                testCoverageEnabled true
+            }
             signingConfig signingConfigs.config
         }
     }
