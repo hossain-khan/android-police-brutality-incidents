@@ -19,7 +19,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:showIn="@layout/fragment_more_info">
 
         <androidx.constraintlayout.widget.Guideline
@@ -156,8 +156,10 @@
             android:layout_width="96dp"
             android:layout_height="128dp"
             android:layout_marginTop="@dimen/view_spacing_xlarge"
+            android:layout_marginBottom="?attr/actionBarSize"
             android:contentDescription="@string/content_description_fist_icon"
             android:tint="?colorOnSurface"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline_end"
             app:layout_constraintStart_toStartOf="@+id/guideline_start"
             app:layout_constraintTop_toBottomOf="@+id/popular_hash_tags_container"
