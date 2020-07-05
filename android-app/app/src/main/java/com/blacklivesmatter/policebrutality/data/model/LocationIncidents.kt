@@ -21,7 +21,7 @@ data class LocationIncidents constructor(
         get() = totalIncidents.toString().trim()
 
     val lastReportedOn: String
-        get() = lastReportedDate.toDateText()
+        get() = lastReportedDate.toDateText("MMM d")
 
     val daysSinceReport: Int
         get() = lastReportedDate.daysSinceToday()

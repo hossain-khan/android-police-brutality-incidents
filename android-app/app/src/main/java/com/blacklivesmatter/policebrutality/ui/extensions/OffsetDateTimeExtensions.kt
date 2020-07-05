@@ -30,6 +30,7 @@ import org.threeten.bp.Duration
 import org.threeten.bp.OffsetDateTime
 import org.threeten.bp.format.DateTimeFormatter
 import org.threeten.bp.format.FormatStyle
+import java.util.Locale
 
 private const val unknownDateText = "Unknown Date"
 
@@ -43,6 +44,18 @@ fun OffsetDateTime?.toDateText() = this?.let { incidentDate ->
         return@let incidentDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG))
     }
 } ?: unknownDateText
+
+/**
+ * Extension to convert [OffsetDateTime] to human readable code using [datePattern]
+ * used in [DateTimeFormatter.ofPattern]
+ */
+fun OffsetDateTime?.toDateText(datePattern: String) = this?.let { incidentDate ->
+    if (incidentDate.isBefore(THE_846_DAY)) {
+        return@let "-" // Return short default value for custom pattern
+    } else {
+        return@let incidentDate.format(DateTimeFormatter.ofPattern(datePattern, Locale.US))
+    }
+} ?: "-"
 
 fun OffsetDateTime?.daysSinceToday(): Int {
     if (this == null) {

@@ -21,8 +21,8 @@ interface IncidentDao {
     fun getIncidents(): LiveData<List<Incident>>
 
     @Query(
-        """SELECT incidents.state, COUNT(*) as total_incidents, MAX(incidents.date) AS last_reported_date 
-        FROM incidents 
+        """SELECT incidents.state, COUNT(*) as total_incidents, MAX(incidents.date) AS last_reported_date
+        FROM incidents
         GROUP BY state ORDER BY state ASC"""
     )
     fun getUniqueStates(): LiveData<List<LocationIncidents>>
