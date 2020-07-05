@@ -26,8 +26,8 @@ android {
         applicationId "com.blacklivesmatter.policebrutality"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
-        versionCode 10
-        versionName "2.3"
+        versionCode 11
+        versionName "2.4"
 
         resConfigs "en"
 
