@@ -1,0 +1,53 @@
+name: Code Coverage
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./android-app
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+
+    # Save gradle cache between runs, see https://github.com/actions/cache/blob/master/examples.md#java---gradle
+    # Include hashFiles so that cache does continue to grow with old dependencies in it.
+    - name: Copy gradle cache
+      uses: actions/cache@v2
+      with:
+        path: ~/.gradle/caches
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+        restore-keys: |
+          ${{ runner.os }}-gradle-
+
+    - name: Generate Jacoco Report
+      run: ./gradlew clean testDebugUnitTestCoverage
+
+    - name: Archive Results
+      uses: actions/upload-artifact@v1
+      with:
+          name: coverage-reports
+          path: android-app/app/build/reports
+
+    # Uploads the coverage report to codecov.io
+    # https://docs.codecov.io/docs/codecov-yaml
+    # https://github.com/codecov/codecov-action
+    - name: Upload Code Coverage
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+        file: android-app/app/build/reports/jacoco/testDebugUnitTestCoverage/testDebugUnitTestCoverage.xml # optional
+        flags: unittests # optional
+        name: codecov-umbrella # optional
+        fail_ci_if_error: false # optional (default = false)
