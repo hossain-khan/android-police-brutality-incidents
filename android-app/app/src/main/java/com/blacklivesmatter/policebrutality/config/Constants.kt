@@ -15,11 +15,17 @@ import org.threeten.bp.ZoneOffset
  * - https://en.wikipedia.org/wiki/George_Floyd
  * - https://en.wikipedia.org/wiki/8%E2%80%B246%E2%80%B3 (aka 8′46″)
  */
-val THE_846_DAY: OffsetDateTime = OffsetDateTime.of(
-    /* year */ 2020, /* month */ 5, /* dayOfMonth */ 25,
-    /* hour */ 8, /* minute */ 19, /* second */ 0,
-    /* nanoOfSecond */ 0, ZoneOffset.of("-5")
-)
+val THE_846_DAY: OffsetDateTime by lazy {
+    OffsetDateTime.of(
+        /* year */ 2020, /* month */ 5, /* dayOfMonth */ 25,
+        /* hour */ 8, /* minute */ 19, /* second */ 0,
+        /* nanoOfSecond */ 0, ZoneOffset.of("-5")
+    )
+}
+
+val TODAY: OffsetDateTime by lazy {
+    OffsetDateTime.now()
+}
 
 /**
  * Database name for storing incidents locally.
