@@ -123,6 +123,8 @@ class MoreInfoFragment : Fragment() {
             }
             R.id.toolbar_menu_share -> {
                 Timber.d("Share app menu item selected.")
+                viewModel.onShareAndroidAppLink()
+
                 Snackbar.make(
                     viewDataBinding.root,
                     "Thanks for caring! ❤️" +
@@ -130,7 +132,6 @@ class MoreInfoFragment : Fragment() {
                     Snackbar.LENGTH_INDEFINITE
                 ).setAction(R.string.button_cta_share_app, { startActivity(IntentBuilder.shareApp(resources)) })
                     .show()
-                analytics.logEvent(Analytics.ACTION_SHARE_APP)
 
                 return true
             }

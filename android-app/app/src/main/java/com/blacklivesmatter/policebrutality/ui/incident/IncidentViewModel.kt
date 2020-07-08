@@ -8,6 +8,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.config.PREF_KEY_SHARE_CAPABILITY_REMINDER_SHOWN
 import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.Incident
@@ -15,6 +16,7 @@ import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
 import timber.log.Timber
 
 class IncidentViewModel @ViewModelInject constructor(
+    private val analytics: Analytics,
     private val incidentRepository: IncidentRepository,
     private val preferences: SharedPreferences
 ) : ViewModel() {
@@ -31,6 +33,7 @@ class IncidentViewModel @ViewModelInject constructor(
 
     fun onShareIncidentClicked(incident: Incident) {
         Timber.d("User clicked on share incident")
+        analytics.logShare(Analytics.CONTENT_TYPE_INCIDENT_SHARE, incident.incident_id ?: "---")
         _shareIncident.value = incident
     }
 
