@@ -1,6 +1,10 @@
 package com.blacklivesmatter.policebrutality.ui.incidentlocations
 
+import android.annotation.SuppressLint
+import android.content.Context
+import android.graphics.drawable.InsetDrawable
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuInflater
@@ -8,6 +12,8 @@ import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.view.menu.MenuBuilder
+import androidx.appcompat.widget.PopupMenu
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -34,6 +40,9 @@ import java.util.ArrayList
 import java.util.Calendar
 import javax.inject.Inject
 
+/**
+ * Incidents by US States (location).
+ */
 @AndroidEntryPoint
 class LocationFragment : Fragment() {
     @Inject
@@ -115,6 +124,10 @@ class LocationFragment : Fragment() {
         }
 
         setupSwipeRefreshAction()
+
+        viewDataBinding.filterFab.setOnClickListener { fab ->
+            showAdditionalFilterMenu(requireContext(), fab)
+        }
     }
 
     override fun onStart() {
@@ -213,5 +226,42 @@ class LocationFragment : Fragment() {
         }
         picker.show(childFragmentManager, picker.toString())
         activity?.let { analytics.logPageView(it, Analytics.SCREEN_INCIDENT_DATE_FILTER) }
+    }
+
+    /**
+     * Shows menu anchored to [anchorView].
+     *
+     * Use to show additional filtering options for the incidents. For example:
+     * - Filter incidents by date
+     * - Show most recent incidents
+     * - and so on
+     */
+    @SuppressLint("RestrictedApi")
+    @SuppressWarnings("RestrictTo")
+    private fun showAdditionalFilterMenu(context: Context, anchorView: View) {
+        val popup = PopupMenu(context, anchorView)
+        // Inflating the Popup using xml file
+        popup.menuInflater.inflate(R.menu.locations_filter_menu, popup.menu)
+        // There is no public API to make icons show on menus.
+        // IF you need the icons to show this works however it's discouraged to rely on library only
+        // APIs since they might disappear in future versions.
+        if (popup.menu is MenuBuilder) {
+            val menuBuilder = popup.menu as MenuBuilder
+            menuBuilder.setOptionalIconsVisible(true)
+            for (item in menuBuilder.visibleItems) {
+                val iconMarginPx =
+                    TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8F, resources.displayMetrics).toInt()
+                if (item.icon != null) {
+                    item.icon = InsetDrawable(item.icon, iconMarginPx, 0, iconMarginPx, 0)
+                }
+            }
+        }
+
+        popup.setOnMenuItemClickListener { menuItem: MenuItem ->
+            onOptionsItemSelected(menuItem)
+            return@setOnMenuItemClickListener true
+        }
+
+        popup.show()
     }
 }

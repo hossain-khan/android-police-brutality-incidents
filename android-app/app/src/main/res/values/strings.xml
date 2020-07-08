@@ -40,6 +40,7 @@
     <string name="content_description_donate_for_cause_image">Donate to support the cause</string>
     <string name="content_description_george_floyd_protest_image">George Floyd protest image with protesters and police</string>
     <string name="content_description_go_back_to_prev_screen">Go back to previous screen</string>
+    <string name="content_description_filter_location_by">Filter Incidents by different criteria</string>
 
     <!-- Labels, Button CTA and so on -->
     <string name="label_external_links">External links on this incident</string>
@@ -52,6 +53,7 @@
     <string name="button_cta_share_incident">Share Incident</string>
     <string name="button_cta_charity_learn_more">Learn More</string>
     <string name="button_cta_charity_donate_now" tools:ignore="DuplicateStrings">Donate</string>
+    <string name="button_cta_filter_location_by">Filter</string>
 
     <!-- Social tags -->
     <string name="hash_tag_blacklivesmatter" translatable="false">#BlackLivesMatter</string>

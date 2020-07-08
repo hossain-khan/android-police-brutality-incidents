@@ -76,5 +76,20 @@
                 tools:itemCount="7"
                 tools:listitem="@layout/list_item_location" />
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/filter_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/blue_grey_700"
+            android:contentDescription="@string/content_description_filter_location_by"
+            android:text="@string/button_cta_filter_location_by"
+            android:textColor="?colorOnSurface"
+            app:icon="@drawable/ic_baseline_filter_list_24"
+            app:iconTint="?colorOnSurface"
+            app:layout_anchor="@id/appbarlayout"
+            app:layout_anchorGravity="bottom|right|end" />
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
