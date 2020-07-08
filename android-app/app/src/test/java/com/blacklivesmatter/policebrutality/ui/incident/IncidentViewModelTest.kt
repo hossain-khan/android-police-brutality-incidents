@@ -25,6 +25,7 @@
 package com.blacklivesmatter.policebrutality.ui.incident
 
 import androidx.lifecycle.Observer
+import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.test.BaseTest
@@ -39,6 +40,7 @@ import org.mockito.Mockito.verify
 class IncidentViewModelTest : BaseTest() {
 
     private lateinit var sut: IncidentViewModel
+    private val analytics: Analytics = mock()
     private val incidentRepository: IncidentRepository = mock()
     private val preferences = FakeSharedPreferences().preferences
     private val lifecycleOwner = MockLifecycleOwner()
@@ -46,7 +48,7 @@ class IncidentViewModelTest : BaseTest() {
 
     @Before
     fun setUp() {
-        sut = IncidentViewModel(incidentRepository, preferences)
+        sut = IncidentViewModel(analytics, incidentRepository, preferences)
     }
 
     @Test
@@ -68,5 +70,23 @@ class IncidentViewModelTest : BaseTest() {
         lifecycleOwner.start()
 
         verify(liveDataObserver, times(1)).onChanged(incident)
+    }
+
+    @Test
+    fun `onShareIncidentClicked - given incident selected - reports to analytics`() {
+        val incident = Incident(
+            id = "123",
+            incident_id = "ny-123",
+            state = "NY",
+            city = "NYC",
+            name = "Name",
+            date = null,
+            geocoding = null,
+            links = emptyList()
+        )
+
+        sut.onShareIncidentClicked(incident)
+
+        verify(analytics, times(1)).logShare(Analytics.CONTENT_TYPE_INCIDENT_SHARE, incident.incident_id!!)
     }
 }

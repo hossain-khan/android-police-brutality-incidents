@@ -16,11 +16,15 @@ interface Analytics {
         const val SCREEN_ABOUT_APP = "AboutApplication"
         const val SCREEN_CHARITY_ORGANIZATIONS = "CharityOrganizations"
 
-        const val ACTION_INCIDENT_REFRESH = "RefreshIncidents"
-        const val ACTION_INCIDENT_REPORT_NEW = "MakeIncidentReport"
-        const val ACTION_SHARE_APP = "ShareApplication"
-        const val ACTION_CHARITY_DONATE = "DonateCharity"
-        const val ACTION_CHARITY_DONATE_INFO = "DonateCharityInfo"
+        //
+        // Based on existing firebase analytics action naming convention, using `_` and all lowercase
+        // https://support.google.com/firebase/answer/6317498
+        //
+        const val ACTION_INCIDENT_REFRESH = "incidents_refresh"
+        const val ACTION_INCIDENT_REPORT_NEW = "incidents_report_new"
+        const val ACTION_SHARE_APP = "app_share"
+        const val ACTION_CHARITY_DONATE = "charity_donate"
+        const val ACTION_CHARITY_DONATE_INFO = "charity_org_info"
 
         const val CONTENT_TYPE_LOCATION = "TypeLocation"
         const val CONTENT_TYPE_CHARITY = "TypeCharity"
