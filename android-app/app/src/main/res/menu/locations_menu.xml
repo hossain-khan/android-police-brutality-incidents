@@ -4,6 +4,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="AppCompatResource">
+    <item
+        android:id="@+id/toolbar_menu_filter_by_date"
+        android:icon="@drawable/ic_baseline_date_range_24"
+        android:title="@string/menu_title_date_filter"
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/toolbar_menu_refresh"

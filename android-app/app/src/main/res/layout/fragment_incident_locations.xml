@@ -83,10 +83,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:backgroundTint="@color/blue_grey_700"
-            android:contentDescription="@string/content_description_filter_location_by"
-            android:text="@string/button_cta_filter_location_by"
+            android:contentDescription="@string/content_description_view_most_recent_incidents_list"
+            android:text="@string/button_cta_view_most_recent_incidents"
             android:textColor="?colorOnSurface"
-            app:icon="@drawable/ic_baseline_filter_list_24"
+            app:icon="@drawable/ic_protest_strike"
             app:iconTint="?colorOnSurface"
             app:layout_anchor="@id/appbarlayout"
             app:layout_anchorGravity="bottom|right|end" />
