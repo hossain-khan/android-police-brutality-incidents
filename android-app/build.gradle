@@ -10,12 +10,12 @@ buildscript {
         androidXHiltVersion = '1.0.0-alpha01'
         appCompatVersion = '1.1.0'
         cardViewVersion = '1.0.0'
-        constraintLayoutVersion = '2.0.0-beta7'
+        constraintLayoutVersion = '2.0.0-beta8'
         coreTestingVersion = '2.0.0'
         espressoVersion = '3.1.1'
         firebaseAnalyticsVersion = '17.4.3'
         firebaseCrashlyticsGradle = '2.1.1'
-        firebaseCrashlyticsVersion = '17.1.0'
+        firebaseCrashlyticsVersion = '17.1.1'
         fragmentVersion = '1.2.4'
         googleGmsServices = '4.3.3'
         gradleVersion = '4.0.0'
@@ -29,7 +29,7 @@ buildscript {
         materialVersion = '1.2.0-beta01' // https://github.com/material-components/material-components-android/releases
         mockitoVersion = '3.3.3'
         navigationVersion = '2.2.2'
-        okhttpVersion = '4.6.0'
+        okhttpVersion = '4.7.2' // https://github.com/square/okhttp/blob/master/CHANGELOG.md
         preferenceVersion = '1.1.1'
         recyclerViewVersion = '1.1.0'
         retrofitVersion = '2.9.0'
