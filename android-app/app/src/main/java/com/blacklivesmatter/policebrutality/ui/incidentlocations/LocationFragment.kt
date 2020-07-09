@@ -61,15 +61,7 @@ class LocationFragment : Fragment() {
         // This required to participate in providing toolbar menu on the host activity
         (requireActivity() as AppCompatActivity).setSupportActionBar(viewDataBinding.toolbar)
 
-        adapter = LocationListAdapter { state ->
-            Timber.d("Tapped on state item $state")
-            analytics.logSelectItem(Analytics.CONTENT_TYPE_LOCATION, state.stateName, state.stateName)
-            findNavController().navigate(
-                LocationFragmentDirections.navigationToIncidentsFragment(
-                    LocationFilterArgs(type = FilterType.STATE, stateName = state.stateName)
-                )
-            )
-        }
+        adapter = LocationListAdapter { locationIncident -> viewModel.onIncidentLocationSelected(locationIncident) }
         adapter.submitList(emptyList())
         showLoadingIndicator()
 
@@ -90,7 +82,8 @@ class LocationFragment : Fragment() {
             adapter.submitList(locationList)
         }
 
-        viewModel.dateFilterEvent.observeKotlin(viewLifecycleOwner) { navigationEvent ->
+        viewModel.navigationEvent.observeKotlin(viewLifecycleOwner) { navigationEvent ->
+            Timber.d("Navigate event received - $navigationEvent")
             when (navigationEvent) {
                 is NavigationEvent.Error -> {
                     Timber.d("There are no records, can't navigate")
@@ -104,7 +97,6 @@ class LocationFragment : Fragment() {
                     ).show()
                 }
                 is NavigationEvent.Filter -> {
-                    Timber.d("Navigate incident list for $navigationEvent")
                     findNavController().navigate(
                         LocationFragmentDirections.navigationToIncidentsFragment(
                             LocationFilterArgs(
@@ -112,6 +104,20 @@ class LocationFragment : Fragment() {
                                 timestamp = navigationEvent.timestamp,
                                 dateText = navigationEvent.dateText
                             )
+                        )
+                    )
+                }
+                is NavigationEvent.Location -> {
+                    findNavController().navigate(
+                        LocationFragmentDirections.navigationToIncidentsFragment(
+                            LocationFilterArgs(type = FilterType.STATE, stateName = navigationEvent.stateName)
+                        )
+                    )
+                }
+                is NavigationEvent.LatestIncidents -> {
+                    findNavController().navigate(
+                        LocationFragmentDirections.navigationToIncidentsFragment(
+                            LocationFilterArgs(type = FilterType.LATEST)
                         )
                     )
                 }
@@ -127,11 +133,7 @@ class LocationFragment : Fragment() {
         setupSwipeRefreshAction()
 
         viewDataBinding.showLatestIncidentsFab.setOnClickListener {
-            findNavController().navigate(
-                LocationFragmentDirections.navigationToIncidentsFragment(
-                    LocationFilterArgs(type = FilterType.LATEST)
-                )
-            )
+            viewModel.onShowLatestIncidentsSelected()
         }
     }
 

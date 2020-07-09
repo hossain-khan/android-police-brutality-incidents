@@ -32,6 +32,9 @@ import org.threeten.bp.format.FormatStyle
 import timber.log.Timber
 import java.util.concurrent.TimeUnit
 
+/**
+ * ViewModel for [LocationFragment].
+ */
 class LocationViewModel @ViewModelInject constructor(
     private val incidentRepository: IncidentRepository,
     private val analytics: Analytics,
@@ -39,6 +42,8 @@ class LocationViewModel @ViewModelInject constructor(
 ) : ViewModel(), LifecycleObserver {
     sealed class NavigationEvent {
         data class Filter(val timestamp: Long, val dateText: String) : NavigationEvent()
+        data class Location(val stateName: String) : NavigationEvent()
+        object LatestIncidents : NavigationEvent()
         data class Error(val selectedDateText: String) : NavigationEvent()
     }
 
@@ -54,8 +59,8 @@ class LocationViewModel @ViewModelInject constructor(
     val incidentDates: LiveData<List<String>> = incidentRepository.getIncidentDates()
 
     private val _dateFilterMediatorEvent = MediatorLiveData<NavigationEvent>()
-    private val _dateFilterEvent = LiveEvent<NavigationEvent>()
-    val dateFilterEvent: LiveData<NavigationEvent> = _dateFilterEvent
+    private val _navigationEvent = LiveEvent<NavigationEvent>()
+    val navigationEvent: LiveData<NavigationEvent> = _navigationEvent
 
     private val _refreshEvent = LiveEvent<RefreshEvent>()
     val refreshEvent: LiveData<RefreshEvent> = _refreshEvent
@@ -65,6 +70,16 @@ class LocationViewModel @ViewModelInject constructor(
         if (shouldRequestLatestData()) {
             onRefreshIncidentsRequested()
         }
+    }
+
+    fun onIncidentLocationSelected(locationIncident: LocationIncidents) {
+        Timber.d("Tapped on state item $locationIncident")
+        analytics.logSelectItem(Analytics.CONTENT_TYPE_LOCATION, locationIncident.stateName, locationIncident.stateName)
+        _navigationEvent.value = NavigationEvent.Location(stateName = locationIncident.stateName)
+    }
+
+    fun onShowLatestIncidentsSelected() {
+        _navigationEvent.value = NavigationEvent.LatestIncidents
     }
 
     fun onDateTimeStampSelected(lifecycleOwner: LifecycleOwner, selectedTimeStamp: Long) {
@@ -79,9 +94,9 @@ class LocationViewModel @ViewModelInject constructor(
 
         _dateFilterMediatorEvent.addSource(totalIncidentsOnDate) {
             if (it > 0) {
-                _dateFilterEvent.value = NavigationEvent.Filter(timeStamp, selectedDateText)
+                _navigationEvent.value = NavigationEvent.Filter(timeStamp, selectedDateText)
             } else {
-                _dateFilterEvent.value = NavigationEvent.Error(selectedDateText)
+                _navigationEvent.value = NavigationEvent.Error(selectedDateText)
             }
         }
 
