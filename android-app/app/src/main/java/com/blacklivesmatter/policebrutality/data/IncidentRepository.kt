@@ -8,6 +8,7 @@ interface IncidentRepository {
     fun getIncidents(): LiveData<List<Incident>>
     fun getStateIncidents(state: String): LiveData<List<Incident>>
     fun getIncidentsByDate(timeStamp: Long): LiveData<List<Incident>>
+    fun getIncidentsRecentFirst(): LiveData<List<Incident>>
     fun getLocations(): LiveData<List<LocationIncidents>>
     fun getTotalIncidentsOnDate(timeStamp: Long): LiveData<Int>
     fun getIncidentDates(): LiveData<List<String>>

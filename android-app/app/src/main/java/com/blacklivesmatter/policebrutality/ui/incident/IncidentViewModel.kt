@@ -13,6 +13,7 @@ import com.blacklivesmatter.policebrutality.config.PREF_KEY_SHARE_CAPABILITY_REM
 import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
+import com.blacklivesmatter.policebrutality.ui.incident.arg.FilterType
 import timber.log.Timber
 
 class IncidentViewModel @ViewModelInject constructor(
@@ -38,9 +39,10 @@ class IncidentViewModel @ViewModelInject constructor(
     }
 
     fun setArgs(navArgs: IncidentsFragmentArgs) {
-        navArgs.stateName?.let { selectedSate(it) }
-        if (navArgs.timestamp != 0L) {
-            selectedTimestamp(navArgs.timestamp)
+        when (navArgs.filterArgs.type) {
+            FilterType.STATE -> selectedSate(navArgs.filterArgs.stateName!!)
+            FilterType.DATE -> selectedTimestamp(navArgs.filterArgs.timestamp!!)
+            FilterType.LATEST -> selectedMostRecentIncidents()
         }
 
         val isMessageShown = preferences.getBoolean(PREF_KEY_SHARE_CAPABILITY_REMINDER_SHOWN, false)
@@ -64,6 +66,13 @@ class IncidentViewModel @ViewModelInject constructor(
 
     private fun selectedTimestamp(timestamp: Long) {
         _incidents.addSource(incidentRepository.getIncidentsByDate(timestamp)) {
+            Timber.d("Incidents Updated ")
+            _incidents.value = it
+        }
+    }
+
+    private fun selectedMostRecentIncidents() {
+        _incidents.addSource(incidentRepository.getIncidentsRecentFirst()) {
             Timber.d("Incidents Updated ")
             _incidents.value = it
         }

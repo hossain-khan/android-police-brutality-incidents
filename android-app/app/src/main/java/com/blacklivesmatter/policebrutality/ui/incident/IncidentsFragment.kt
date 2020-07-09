@@ -16,6 +16,7 @@ import com.blacklivesmatter.policebrutality.analytics.Analytics.Companion.CONTEN
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentsBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
+import com.blacklivesmatter.policebrutality.ui.incident.arg.FilterType
 import com.blacklivesmatter.policebrutality.ui.util.IntentBuilder
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
@@ -44,7 +45,7 @@ class IncidentsFragment : Fragment() {
         viewModel.setArgs(navArgs)
 
         adapter = IncidentsAdapter(
-            isDateBasedIncidents = navArgs.isDateBased(),
+            incidentFilterType = navArgs.filterArgs.type,
             itemClickCallback = { clickedIncident ->
                 Timber.d("Selected Incident: $clickedIncident")
                 analytics.logSelectItem(
@@ -95,12 +96,7 @@ class IncidentsFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        activity?.let {
-            analytics.logPageView(
-                it, if (navArgs.isDateBased()) Analytics.SCREEN_INCIDENT_LIST_BY_DATE
-                else Analytics.SCREEN_INCIDENT_LIST_BY_LOCATION
-            )
-        }
+        activity?.let { analytics.logPageView(it, navArgs.screenName()) }
     }
 
     private fun showIncidentDetailsForSharing(incident: Incident) {
@@ -133,9 +129,27 @@ class IncidentsFragment : Fragment() {
         }
     }
 
-    private fun IncidentsFragmentArgs.isDateBased(): Boolean = timestamp != 0L
-    private fun IncidentsFragmentArgs.titleResId(): Int =
-        if (isDateBased()) R.string.title_incidents_on_date else R.string.title_incidents_at_location
+    private fun IncidentsFragmentArgs.titleResId(): Int {
+        return when (filterArgs.type) {
+            FilterType.STATE -> R.string.title_incidents_at_location
+            FilterType.DATE -> R.string.title_incidents_on_date
+            FilterType.LATEST -> R.string.title_incidents_most_recent
+        }
+    }
 
-    private fun IncidentsFragmentArgs.titleText(): String = if (isDateBased()) dateText!! else stateName!!
+    private fun IncidentsFragmentArgs.titleText(): String {
+        return when (filterArgs.type) {
+            FilterType.STATE -> filterArgs.stateName!!
+            FilterType.DATE -> filterArgs.dateText!!
+            FilterType.LATEST -> ""
+        }
+    }
+
+    private fun IncidentsFragmentArgs.screenName(): String {
+        return when (filterArgs.type) {
+            FilterType.STATE -> Analytics.SCREEN_INCIDENT_LIST_BY_LOCATION
+            FilterType.DATE -> Analytics.SCREEN_INCIDENT_LIST_BY_DATE
+            FilterType.LATEST -> Analytics.SCREEN_INCIDENT_LIST_MOST_RECENT
+        }
+    }
 }

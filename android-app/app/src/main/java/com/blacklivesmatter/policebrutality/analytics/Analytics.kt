@@ -11,6 +11,7 @@ interface Analytics {
         const val SCREEN_INCIDENT_LOCATION = "IncidentLocations"
         const val SCREEN_INCIDENT_LIST_BY_DATE = "IncidentsByDate"
         const val SCREEN_INCIDENT_LIST_BY_LOCATION = "IncidentsByLocation"
+        const val SCREEN_INCIDENT_LIST_MOST_RECENT = "IncidentsByRecent"
         const val SCREEN_INCIDENT_DATE_FILTER = "FilterIncidentsByDate"
         const val SCREEN_MORE_INFO = "MoreInformation"
         const val SCREEN_ABOUT_APP = "AboutApplication"
