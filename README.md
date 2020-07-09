@@ -1,3 +1,5 @@
+[![Android CI](https://github.com/amardeshbd/android-police-brutality-incidents/workflows/Android%20CI/badge.svg)](https://github.com/amardeshbd/android-police-brutality-incidents/actions?query=workflow%3A%22Android+CI%22) [![Android Lint](https://github.com/amardeshbd/android-police-brutality-incidents/workflows/Android%20Lint/badge.svg)](https://github.com/amardeshbd/android-police-brutality-incidents/actions?query=workflow%3A%22Android+Lint%22) [![codecov](https://codecov.io/gh/amardeshbd/android-police-brutality-incidents/branch/develop/graph/badge.svg)](https://codecov.io/gh/amardeshbd/android-police-brutality-incidents)
+
 # 2020PB - Android App
 
 Android client app for https://github.com/2020PB/police-brutality (Repository containing evidence of police brutality during the 2020 George Floyd protests)
