@@ -29,6 +29,7 @@ android {
         versionCode 12
         versionName "2.5"
 
+        // https://developer.android.com/studio/build/shrink-code#unused-alt-resources
         resConfigs "en"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -112,6 +113,7 @@ dependencies {
     implementation "androidx.cardview:cardview:$rootProject.cardViewVersion"
     implementation "androidx.preference:preference-ktx:$rootProject.preferenceVersion"
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
 
     // Firebase
     implementation "com.google.firebase:firebase-analytics-ktx:$rootProject.firebaseAnalyticsVersion"
