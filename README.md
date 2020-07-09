@@ -23,18 +23,21 @@ This allows people to easily access data on the go, and allow them to easily rep
 
 Some of the key features based on data available though API is
 
-* Browse reported incidents by area (eg. State)
-* Filter reported incidents by date
-* Sync latest incidents from server though API
-* Auto update latest incidents if it hasn't been updated for a while
-* Visit external links of related to incidents via native app, or web browser
-* Allows the user to share a single incident with all the associated information
-* Allows user to report incident by opening official incident report form
-* Shows list of reknown charitable organizations that work for `#BlackLivesMatter` or in related area
-* Allows the users to explore more about charities or donate to them
-* Provides bit more information about the `/r/2020PoliceBrutality` reddit community with social links
-* Allows the user to copy popular hash tags
-* Provides app's information with option to share with friends and family
+* :scroll: Browse all the reported incidents
+  * By US State
+  * By specific date
+  * By recent incidents
+* :calling: Sync latest incidents from server though API
+* :arrows_counterclockwise: Auto update latest incidents if it hasn't been updated for a while
+* :earth_americas: Visit external links of related to incidents via native app, or web browser
+* :incoming_envelope: Allows the user to share a single incident with all the associated information 
+* :writing_hand: Allows user to report incident by opening official incident report form 
+* :eyes: Shows list of renown charitable organizations that work for `#BlackLivesMatter` or in related area 
+* :pray: Allows the users to explore more about charities or donate to them 
+* :fist_raised: Provides bit more information about the `/r/2020PoliceBrutality` reddit community with social links 
+* :hash: Allows the user to copy popular hash tags 
+* :heart: Provides app's information with option to share with friends and family 
+* :waxing_crescent_moon: Full dark mode support for device battery and eye
 
 ## Technical Details
 
