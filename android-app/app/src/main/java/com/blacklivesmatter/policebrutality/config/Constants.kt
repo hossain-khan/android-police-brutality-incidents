@@ -34,6 +34,11 @@ val TODAY: OffsetDateTime by lazy {
 const val DATABASE_NAME = "incidents-db"
 
 /**
+ * Number of maximum incidents to load when showing latest incidents.
+ */
+const val LATEST_INCIDENT_LIMIT = 50
+
+/**
  * Fallback data file incidents, used to preload [AppDatabase].
  */
 const val INCIDENT_DATA_FILENAME = "all_locations_fallback.json"

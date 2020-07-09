@@ -9,6 +9,7 @@ import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.blacklivesmatter.policebrutality.analytics.Analytics
+import com.blacklivesmatter.policebrutality.config.LATEST_INCIDENT_LIMIT
 import com.blacklivesmatter.policebrutality.config.PREF_KEY_SHARE_CAPABILITY_REMINDER_SHOWN
 import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.Incident
@@ -72,7 +73,7 @@ class IncidentViewModel @ViewModelInject constructor(
     }
 
     private fun selectedMostRecentIncidents() {
-        _incidents.addSource(incidentRepository.getIncidentsRecentFirst()) {
+        _incidents.addSource(incidentRepository.getIncidentsRecentFirst(limit = LATEST_INCIDENT_LIMIT)) {
             Timber.d("Incidents Updated ")
             _incidents.value = it
         }
