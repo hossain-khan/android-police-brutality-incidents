@@ -427,10 +427,10 @@ debugAndroidTestCompileClasspath - Compile classpath for compilation 'debugAndro
 |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
 |         +--- androidx.core:core:1.1.0 -> 1.3.0 (*)
 |         \--- androidx.collection:collection:1.1.0 (*)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8
 |    +--- androidx.appcompat:appcompat:1.1.0 (*)
 |    +--- androidx.core:core:1.2.0 -> 1.3.0 (*)
-|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta7
+|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta8
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2
 |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- androidx.navigation:navigation-fragment:2.2.2
@@ -594,9 +594,9 @@ debugAndroidTestCompileClasspath - Compile classpath for compilation 'debugAndro
 |    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- com.google.firebase:firebase-components:16.0.0 (*)
 |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 (*)
-+--- com.google.firebase:firebase-crashlytics:17.1.0
++--- com.google.firebase:firebase-crashlytics:17.1.1
 |    +--- com.google.android.datatransport:transport-api:2.2.0
-|    +--- com.google.android.datatransport:transport-backend-cct:2.2.3
+|    +--- com.google.android.datatransport:transport-backend-cct:2.3.0
 |    |    +--- androidx.annotation:annotation:1.1.0
 |    |    +--- com.google.android.datatransport:transport-api:2.2.0
 |    |    +--- com.google.android.datatransport:transport-runtime:2.2.3
@@ -614,7 +614,7 @@ debugAndroidTestCompileClasspath - Compile classpath for compilation 'debugAndro
 |    +--- com.google.firebase:firebase-iid:20.1.5 (*)
 |    +--- com.google.firebase:firebase-iid-interop:17.0.0 (*)
 |    +--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
-|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.7.2
 |         +--- com.squareup.okio:okio:2.6.0
 |         |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.70 -> 1.3.72 (*)
 |         |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.70 -> 1.3.72
@@ -641,7 +641,7 @@ debugAndroidTestCompileClasspath - Compile classpath for compilation 'debugAndro
 |         +--- androidx.lifecycle:lifecycle-common-java8:2.2.0
 |         |    +--- androidx.lifecycle:lifecycle-common:2.2.0 (*)
 |         |    \--- androidx.annotation:annotation:1.1.0
-|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.6.0 (*)
+|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.7.2 (*)
 |         \--- com.squareup.okio:okio:2.6.0 (*)
 +--- com.google.code.gson:gson:2.8.6
 +--- com.google.dagger:hilt-android:2.28-alpha
@@ -665,7 +665,7 @@ debugAndroidTestCompileClasspath - Compile classpath for compilation 'debugAndro
 |    +--- androidx.work:work-runtime:2.3.4 (*)
 |    \--- com.google.dagger:hilt-android:2.28-alpha (*)
 +--- com.squareup.retrofit2:retrofit:2.9.0
-|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.6.0 (*)
+|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.7.2 (*)
 +--- com.squareup.retrofit2:converter-gson:2.9.0
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
@@ -673,9 +673,9 @@ debugAndroidTestCompileClasspath - Compile classpath for compilation 'debugAndro
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    +--- io.reactivex.rxjava2:rxjava:2.0.0
 |    \--- org.reactivestreams:reactive-streams:1.0.3
-+--- com.squareup.okhttp3:okhttp:4.6.0 (*)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0
-|    \--- com.squareup.okhttp3:okhttp:4.6.0 (*)
++--- com.squareup.okhttp3:okhttp:4.7.2 (*)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2
+|    \--- com.squareup.okhttp3:okhttp:4.7.2 (*)
 +--- com.jakewharton.timber:timber:4.7.1
 |    \--- org.jetbrains:annotations:16.0.1
 +--- org.threeten:threetenbp:1.4.4
@@ -692,7 +692,7 @@ debugAndroidTestCompileClasspath - Compile classpath for compilation 'debugAndro
 +--- androidx.core:core-ktx:{strictly 1.3.0} -> 1.3.0 (c)
 +--- androidx.appcompat:appcompat:{strictly 1.1.0} -> 1.1.0 (c)
 +--- com.google.android.material:material:{strictly 1.2.0-beta01} -> 1.2.0-beta01 (c)
-+--- androidx.constraintlayout:constraintlayout:{strictly 2.0.0-beta7} -> 2.0.0-beta7 (c)
++--- androidx.constraintlayout:constraintlayout:{strictly 2.0.0-beta8} -> 2.0.0-beta8 (c)
 +--- androidx.navigation:navigation-fragment-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.navigation:navigation-ui-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.lifecycle:lifecycle-livedata-ktx:{strictly 2.2.0} -> 2.2.0 (c)
@@ -702,7 +702,7 @@ debugAndroidTestCompileClasspath - Compile classpath for compilation 'debugAndro
 +--- androidx.swiperefreshlayout:swiperefreshlayout:{strictly 1.1.0} -> 1.1.0 (c)
 +--- androidx.recyclerview:recyclerview:{strictly 1.1.0} -> 1.1.0 (c)
 +--- com.google.firebase:firebase-analytics-ktx:{strictly 17.4.3} -> 17.4.3 (c)
-+--- com.google.firebase:firebase-crashlytics:{strictly 17.1.0} -> 17.1.0 (c)
++--- com.google.firebase:firebase-crashlytics:{strictly 17.1.1} -> 17.1.1 (c)
 +--- androidx.work:work-runtime-ktx:{strictly 2.3.4} -> 2.3.4 (c)
 +--- androidx.room:room-runtime:{strictly 2.2.5} -> 2.2.5 (c)
 +--- androidx.room:room-ktx:{strictly 2.2.5} -> 2.2.5 (c)
@@ -714,8 +714,8 @@ debugAndroidTestCompileClasspath - Compile classpath for compilation 'debugAndro
 +--- com.squareup.retrofit2:retrofit:{strictly 2.9.0} -> 2.9.0 (c)
 +--- com.squareup.retrofit2:converter-gson:{strictly 2.9.0} -> 2.9.0 (c)
 +--- com.squareup.retrofit2:adapter-rxjava2:{strictly 2.9.0} -> 2.9.0 (c)
-+--- com.squareup.okhttp3:okhttp:{strictly 4.6.0} -> 4.6.0 (c)
-+--- com.squareup.okhttp3:logging-interceptor:{strictly 4.6.0} -> 4.6.0 (c)
++--- com.squareup.okhttp3:okhttp:{strictly 4.7.2} -> 4.7.2 (c)
++--- com.squareup.okhttp3:logging-interceptor:{strictly 4.7.2} -> 4.7.2 (c)
 +--- com.jakewharton.timber:timber:{strictly 4.7.1} -> 4.7.1 (c)
 +--- org.threeten:threetenbp:{strictly 1.4.4} -> 1.4.4 (c)
 +--- com.google.android.gms:play-services-maps:{strictly 17.0.0} -> 17.0.0 (c)
@@ -747,7 +747,7 @@ debugAndroidTestCompileClasspath - Compile classpath for compilation 'debugAndro
 +--- androidx.transition:transition:{strictly 1.2.0} -> 1.2.0 (c)
 +--- androidx.vectordrawable:vectordrawable:{strictly 1.1.0} -> 1.1.0 (c)
 +--- androidx.viewpager2:viewpager2:{strictly 1.0.0} -> 1.0.0 (c)
-+--- androidx.constraintlayout:constraintlayout-solver:{strictly 2.0.0-beta7} -> 2.0.0-beta7 (c)
++--- androidx.constraintlayout:constraintlayout-solver:{strictly 2.0.0-beta8} -> 2.0.0-beta8 (c)
 +--- androidx.navigation:navigation-fragment:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.navigation:navigation-runtime-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.fragment:fragment-ktx:{strictly 1.2.4} -> 1.2.4 (c)
@@ -766,7 +766,7 @@ debugAndroidTestCompileClasspath - Compile classpath for compilation 'debugAndro
 +--- com.google.firebase:firebase-components:{strictly 16.0.0} -> 16.0.0 (c)
 +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:{strictly 1.3.50} -> 1.3.50 (c)
 +--- com.google.android.datatransport:transport-api:{strictly 2.2.0} -> 2.2.0 (c)
-+--- com.google.android.datatransport:transport-backend-cct:{strictly 2.2.3} -> 2.2.3 (c)
++--- com.google.android.datatransport:transport-backend-cct:{strictly 2.3.0} -> 2.3.0 (c)
 +--- com.google.android.datatransport:transport-runtime:{strictly 2.2.3} -> 2.2.3 (c)
 +--- com.google.android.gms:play-services-tasks:{strictly 17.0.0} -> 17.0.0 (c)
 +--- com.google.firebase:firebase-encoders-json:{strictly 16.1.0} -> 16.1.0 (c)
@@ -1107,10 +1107,10 @@ debugAndroidTestRuntimeClasspath - Runtime classpath of compilation 'debugAndroi
 |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
 |         +--- androidx.core:core:1.1.0 -> 1.3.0 (*)
 |         \--- androidx.collection:collection:1.1.0 (*)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8
 |    +--- androidx.appcompat:appcompat:1.1.0 (*)
 |    +--- androidx.core:core:1.2.0 -> 1.3.0 (*)
-|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta7
+|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta8
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2
 |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- androidx.navigation:navigation-fragment:2.2.2
@@ -1274,9 +1274,9 @@ debugAndroidTestRuntimeClasspath - Runtime classpath of compilation 'debugAndroi
 |    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- com.google.firebase:firebase-components:16.0.0 (*)
 |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 (*)
-+--- com.google.firebase:firebase-crashlytics:17.1.0
++--- com.google.firebase:firebase-crashlytics:17.1.1
 |    +--- com.google.android.datatransport:transport-api:2.2.0
-|    +--- com.google.android.datatransport:transport-backend-cct:2.2.3
+|    +--- com.google.android.datatransport:transport-backend-cct:2.3.0
 |    |    +--- androidx.annotation:annotation:1.1.0
 |    |    +--- com.google.android.datatransport:transport-api:2.2.0
 |    |    +--- com.google.android.datatransport:transport-runtime:2.2.3
@@ -1294,7 +1294,7 @@ debugAndroidTestRuntimeClasspath - Runtime classpath of compilation 'debugAndroi
 |    +--- com.google.firebase:firebase-iid:20.1.5 (*)
 |    +--- com.google.firebase:firebase-iid-interop:17.0.0 (*)
 |    +--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
-|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.7.2
 |         +--- com.squareup.okio:okio:2.6.0 (*)
 |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.71 -> 1.3.72 (*)
 +--- androidx.work:work-runtime-ktx:2.3.4 (*)
@@ -1311,7 +1311,7 @@ debugAndroidTestRuntimeClasspath - Runtime classpath of compilation 'debugAndroi
 |         +--- androidx.lifecycle:lifecycle-common-java8:2.2.0
 |         |    +--- androidx.lifecycle:lifecycle-common:2.2.0 (*)
 |         |    \--- androidx.annotation:annotation:1.1.0
-|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.6.0 (*)
+|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.7.2 (*)
 |         +--- com.squareup.okio:okio:2.6.0 (*)
 |         +--- androidx.annotation:annotation:1.1.0
 |         +--- androidx.appcompat:appcompat-resources:1.1.0 (*)
@@ -1343,7 +1343,7 @@ debugAndroidTestRuntimeClasspath - Runtime classpath of compilation 'debugAndroi
 |    +--- androidx.work:work-runtime:2.3.4 (*)
 |    \--- com.google.dagger:hilt-android:2.28-alpha (*)
 +--- com.squareup.retrofit2:retrofit:2.9.0
-|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.6.0 (*)
+|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.7.2 (*)
 +--- com.squareup.retrofit2:converter-gson:2.9.0
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
@@ -1352,9 +1352,9 @@ debugAndroidTestRuntimeClasspath - Runtime classpath of compilation 'debugAndroi
 |    +--- io.reactivex.rxjava2:rxjava:2.0.0
 |    |    \--- org.reactivestreams:reactive-streams:1.0.0 -> 1.0.3
 |    \--- org.reactivestreams:reactive-streams:1.0.3
-+--- com.squareup.okhttp3:okhttp:4.6.0 (*)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0
-|    \--- com.squareup.okhttp3:okhttp:4.6.0 (*)
++--- com.squareup.okhttp3:okhttp:4.7.2 (*)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2
+|    \--- com.squareup.okhttp3:okhttp:4.7.2 (*)
 +--- com.jakewharton.timber:timber:4.7.1
 |    \--- org.jetbrains:annotations:16.0.1
 +--- org.threeten:threetenbp:1.4.4
@@ -1371,7 +1371,7 @@ debugAndroidTestRuntimeClasspath - Runtime classpath of compilation 'debugAndroi
 +--- androidx.core:core-ktx:{strictly 1.3.0} -> 1.3.0 (c)
 +--- androidx.appcompat:appcompat:{strictly 1.1.0} -> 1.1.0 (c)
 +--- com.google.android.material:material:{strictly 1.2.0-beta01} -> 1.2.0-beta01 (c)
-+--- androidx.constraintlayout:constraintlayout:{strictly 2.0.0-beta7} -> 2.0.0-beta7 (c)
++--- androidx.constraintlayout:constraintlayout:{strictly 2.0.0-beta8} -> 2.0.0-beta8 (c)
 +--- androidx.navigation:navigation-fragment-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.navigation:navigation-ui-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.lifecycle:lifecycle-livedata-ktx:{strictly 2.2.0} -> 2.2.0 (c)
@@ -1381,7 +1381,7 @@ debugAndroidTestRuntimeClasspath - Runtime classpath of compilation 'debugAndroi
 +--- androidx.swiperefreshlayout:swiperefreshlayout:{strictly 1.1.0} -> 1.1.0 (c)
 +--- androidx.recyclerview:recyclerview:{strictly 1.1.0} -> 1.1.0 (c)
 +--- com.google.firebase:firebase-analytics-ktx:{strictly 17.4.3} -> 17.4.3 (c)
-+--- com.google.firebase:firebase-crashlytics:{strictly 17.1.0} -> 17.1.0 (c)
++--- com.google.firebase:firebase-crashlytics:{strictly 17.1.1} -> 17.1.1 (c)
 +--- androidx.work:work-runtime-ktx:{strictly 2.3.4} -> 2.3.4 (c)
 +--- androidx.room:room-runtime:{strictly 2.2.5} -> 2.2.5 (c)
 +--- androidx.room:room-ktx:{strictly 2.2.5} -> 2.2.5 (c)
@@ -1393,8 +1393,8 @@ debugAndroidTestRuntimeClasspath - Runtime classpath of compilation 'debugAndroi
 +--- com.squareup.retrofit2:retrofit:{strictly 2.9.0} -> 2.9.0 (c)
 +--- com.squareup.retrofit2:converter-gson:{strictly 2.9.0} -> 2.9.0 (c)
 +--- com.squareup.retrofit2:adapter-rxjava2:{strictly 2.9.0} -> 2.9.0 (c)
-+--- com.squareup.okhttp3:okhttp:{strictly 4.6.0} -> 4.6.0 (c)
-+--- com.squareup.okhttp3:logging-interceptor:{strictly 4.6.0} -> 4.6.0 (c)
++--- com.squareup.okhttp3:okhttp:{strictly 4.7.2} -> 4.7.2 (c)
++--- com.squareup.okhttp3:logging-interceptor:{strictly 4.7.2} -> 4.7.2 (c)
 +--- com.jakewharton.timber:timber:{strictly 4.7.1} -> 4.7.1 (c)
 +--- org.threeten:threetenbp:{strictly 1.4.4} -> 1.4.4 (c)
 +--- com.google.android.gms:play-services-maps:{strictly 17.0.0} -> 17.0.0 (c)
@@ -1419,7 +1419,7 @@ debugAndroidTestRuntimeClasspath - Runtime classpath of compilation 'debugAndroi
 +--- androidx.transition:transition:{strictly 1.2.0} -> 1.2.0 (c)
 +--- androidx.vectordrawable:vectordrawable:{strictly 1.1.0} -> 1.1.0 (c)
 +--- androidx.viewpager2:viewpager2:{strictly 1.0.0} -> 1.0.0 (c)
-+--- androidx.constraintlayout:constraintlayout-solver:{strictly 2.0.0-beta7} -> 2.0.0-beta7 (c)
++--- androidx.constraintlayout:constraintlayout-solver:{strictly 2.0.0-beta8} -> 2.0.0-beta8 (c)
 +--- androidx.navigation:navigation-fragment:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.navigation:navigation-runtime-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.fragment:fragment-ktx:{strictly 1.2.4} -> 1.2.4 (c)
@@ -1438,7 +1438,7 @@ debugAndroidTestRuntimeClasspath - Runtime classpath of compilation 'debugAndroi
 +--- com.google.firebase:firebase-components:{strictly 16.0.0} -> 16.0.0 (c)
 +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:{strictly 1.3.50} -> 1.3.50 (c)
 +--- com.google.android.datatransport:transport-api:{strictly 2.2.0} -> 2.2.0 (c)
-+--- com.google.android.datatransport:transport-backend-cct:{strictly 2.2.3} -> 2.2.3 (c)
++--- com.google.android.datatransport:transport-backend-cct:{strictly 2.3.0} -> 2.3.0 (c)
 +--- com.google.android.datatransport:transport-runtime:{strictly 2.2.3} -> 2.2.3 (c)
 +--- com.google.android.gms:play-services-tasks:{strictly 17.0.0} -> 17.0.0 (c)
 +--- com.google.firebase:firebase-encoders-json:{strictly 16.1.0} -> 16.1.0 (c)
@@ -1741,10 +1741,10 @@ debugCompileClasspath - Compile classpath for compilation 'debug' (target  (andr
 |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
 |         +--- androidx.core:core:1.1.0 -> 1.3.0 (*)
 |         \--- androidx.collection:collection:1.1.0 (*)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8
 |    +--- androidx.appcompat:appcompat:1.1.0 (*)
 |    +--- androidx.core:core:1.2.0 -> 1.3.0 (*)
-|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta7
+|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta8
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2
 |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- androidx.navigation:navigation-fragment:2.2.2
@@ -1912,9 +1912,9 @@ debugCompileClasspath - Compile classpath for compilation 'debug' (target  (andr
 |    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- com.google.firebase:firebase-components:16.0.0 (*)
 |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 (*)
-+--- com.google.firebase:firebase-crashlytics:17.1.0
++--- com.google.firebase:firebase-crashlytics:17.1.1
 |    +--- com.google.android.datatransport:transport-api:2.2.0
-|    +--- com.google.android.datatransport:transport-backend-cct:2.2.3
+|    +--- com.google.android.datatransport:transport-backend-cct:2.3.0
 |    |    +--- androidx.annotation:annotation:1.1.0
 |    |    +--- com.google.android.datatransport:transport-api:2.2.0
 |    |    +--- com.google.android.datatransport:transport-runtime:2.2.3
@@ -1932,7 +1932,7 @@ debugCompileClasspath - Compile classpath for compilation 'debug' (target  (andr
 |    +--- com.google.firebase:firebase-iid:20.1.5 (*)
 |    +--- com.google.firebase:firebase-iid-interop:17.0.0 (*)
 |    +--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
-|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.7.2
 |         +--- com.squareup.okio:okio:2.6.0
 |         |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.70 -> 1.3.72 (*)
 |         |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.70 -> 1.3.72
@@ -1964,7 +1964,7 @@ debugCompileClasspath - Compile classpath for compilation 'debug' (target  (andr
 |         +--- androidx.lifecycle:lifecycle-common-java8:2.2.0
 |         |    +--- androidx.lifecycle:lifecycle-common:2.2.0 (*)
 |         |    \--- androidx.annotation:annotation:1.1.0
-|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.6.0 (*)
+|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.7.2 (*)
 |         \--- com.squareup.okio:okio:2.6.0 (*)
 +--- com.google.code.gson:gson:2.8.6
 +--- com.google.dagger:hilt-android:2.28-alpha
@@ -1988,7 +1988,7 @@ debugCompileClasspath - Compile classpath for compilation 'debug' (target  (andr
 |    +--- androidx.work:work-runtime:2.3.4 (*)
 |    \--- com.google.dagger:hilt-android:2.28-alpha (*)
 +--- com.squareup.retrofit2:retrofit:2.9.0
-|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.6.0 (*)
+|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.7.2 (*)
 +--- com.squareup.retrofit2:converter-gson:2.9.0
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
@@ -1996,9 +1996,9 @@ debugCompileClasspath - Compile classpath for compilation 'debug' (target  (andr
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    +--- io.reactivex.rxjava2:rxjava:2.0.0
 |    \--- org.reactivestreams:reactive-streams:1.0.3
-+--- com.squareup.okhttp3:okhttp:4.6.0 (*)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0
-|    \--- com.squareup.okhttp3:okhttp:4.6.0 (*)
++--- com.squareup.okhttp3:okhttp:4.7.2 (*)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2
+|    \--- com.squareup.okhttp3:okhttp:4.7.2 (*)
 +--- com.jakewharton.timber:timber:4.7.1
 |    \--- org.jetbrains:annotations:16.0.1
 +--- org.threeten:threetenbp:1.4.4
@@ -2015,7 +2015,7 @@ debugCompileClasspath - Compile classpath for compilation 'debug' (target  (andr
 +--- androidx.core:core-ktx:{strictly 1.3.0} -> 1.3.0 (c)
 +--- androidx.appcompat:appcompat:{strictly 1.1.0} -> 1.1.0 (c)
 +--- com.google.android.material:material:{strictly 1.2.0-beta01} -> 1.2.0-beta01 (c)
-+--- androidx.constraintlayout:constraintlayout:{strictly 2.0.0-beta7} -> 2.0.0-beta7 (c)
++--- androidx.constraintlayout:constraintlayout:{strictly 2.0.0-beta8} -> 2.0.0-beta8 (c)
 +--- androidx.navigation:navigation-fragment-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.navigation:navigation-ui-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.lifecycle:lifecycle-livedata-ktx:{strictly 2.2.0} -> 2.2.0 (c)
@@ -2025,7 +2025,7 @@ debugCompileClasspath - Compile classpath for compilation 'debug' (target  (andr
 +--- androidx.swiperefreshlayout:swiperefreshlayout:{strictly 1.1.0} -> 1.1.0 (c)
 +--- androidx.recyclerview:recyclerview:{strictly 1.1.0} -> 1.1.0 (c)
 +--- com.google.firebase:firebase-analytics-ktx:{strictly 17.4.3} -> 17.4.3 (c)
-+--- com.google.firebase:firebase-crashlytics:{strictly 17.1.0} -> 17.1.0 (c)
++--- com.google.firebase:firebase-crashlytics:{strictly 17.1.1} -> 17.1.1 (c)
 +--- androidx.work:work-runtime-ktx:{strictly 2.3.4} -> 2.3.4 (c)
 +--- androidx.room:room-runtime:{strictly 2.2.5} -> 2.2.5 (c)
 +--- androidx.room:room-ktx:{strictly 2.2.5} -> 2.2.5 (c)
@@ -2037,8 +2037,8 @@ debugCompileClasspath - Compile classpath for compilation 'debug' (target  (andr
 +--- com.squareup.retrofit2:retrofit:{strictly 2.9.0} -> 2.9.0 (c)
 +--- com.squareup.retrofit2:converter-gson:{strictly 2.9.0} -> 2.9.0 (c)
 +--- com.squareup.retrofit2:adapter-rxjava2:{strictly 2.9.0} -> 2.9.0 (c)
-+--- com.squareup.okhttp3:okhttp:{strictly 4.6.0} -> 4.6.0 (c)
-+--- com.squareup.okhttp3:logging-interceptor:{strictly 4.6.0} -> 4.6.0 (c)
++--- com.squareup.okhttp3:okhttp:{strictly 4.7.2} -> 4.7.2 (c)
++--- com.squareup.okhttp3:logging-interceptor:{strictly 4.7.2} -> 4.7.2 (c)
 +--- com.jakewharton.timber:timber:{strictly 4.7.1} -> 4.7.1 (c)
 +--- org.threeten:threetenbp:{strictly 1.4.4} -> 1.4.4 (c)
 +--- com.google.android.gms:play-services-maps:{strictly 17.0.0} -> 17.0.0 (c)
@@ -2060,7 +2060,7 @@ debugCompileClasspath - Compile classpath for compilation 'debug' (target  (andr
 +--- androidx.transition:transition:{strictly 1.2.0} -> 1.2.0 (c)
 +--- androidx.vectordrawable:vectordrawable:{strictly 1.1.0} -> 1.1.0 (c)
 +--- androidx.viewpager2:viewpager2:{strictly 1.0.0} -> 1.0.0 (c)
-+--- androidx.constraintlayout:constraintlayout-solver:{strictly 2.0.0-beta7} -> 2.0.0-beta7 (c)
++--- androidx.constraintlayout:constraintlayout-solver:{strictly 2.0.0-beta8} -> 2.0.0-beta8 (c)
 +--- androidx.navigation:navigation-fragment:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.navigation:navigation-runtime-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.fragment:fragment-ktx:{strictly 1.2.4} -> 1.2.4 (c)
@@ -2079,7 +2079,7 @@ debugCompileClasspath - Compile classpath for compilation 'debug' (target  (andr
 +--- com.google.firebase:firebase-components:{strictly 16.0.0} -> 16.0.0 (c)
 +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:{strictly 1.3.50} -> 1.3.50 (c)
 +--- com.google.android.datatransport:transport-api:{strictly 2.2.0} -> 2.2.0 (c)
-+--- com.google.android.datatransport:transport-backend-cct:{strictly 2.2.3} -> 2.2.3 (c)
++--- com.google.android.datatransport:transport-backend-cct:{strictly 2.3.0} -> 2.3.0 (c)
 +--- com.google.android.datatransport:transport-runtime:{strictly 2.2.3} -> 2.2.3 (c)
 +--- com.google.android.gms:play-services-tasks:{strictly 17.0.0} -> 17.0.0 (c)
 +--- com.google.firebase:firebase-encoders-json:{strictly 16.1.0} -> 16.1.0 (c)
@@ -2303,10 +2303,10 @@ debugImplementationDependenciesMetadata
 |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
 |         +--- androidx.core:core:1.1.0 -> 1.3.0 (*)
 |         \--- androidx.collection:collection:1.1.0 (*)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8
 |    +--- androidx.appcompat:appcompat:1.1.0 (*)
 |    +--- androidx.core:core:1.2.0 -> 1.3.0 (*)
-|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta7
+|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta8
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2
 |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- androidx.navigation:navigation-fragment:2.2.2
@@ -2474,9 +2474,9 @@ debugImplementationDependenciesMetadata
 |    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- com.google.firebase:firebase-components:16.0.0 (*)
 |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 (*)
-+--- com.google.firebase:firebase-crashlytics:17.1.0
++--- com.google.firebase:firebase-crashlytics:17.1.1
 |    +--- com.google.android.datatransport:transport-api:2.2.0
-|    +--- com.google.android.datatransport:transport-backend-cct:2.2.3
+|    +--- com.google.android.datatransport:transport-backend-cct:2.3.0
 |    |    +--- androidx.annotation:annotation:1.1.0
 |    |    +--- com.google.android.datatransport:transport-api:2.2.0
 |    |    +--- com.google.android.datatransport:transport-runtime:2.2.3
@@ -2494,7 +2494,7 @@ debugImplementationDependenciesMetadata
 |    +--- com.google.firebase:firebase-iid:20.1.5 (*)
 |    +--- com.google.firebase:firebase-iid-interop:17.0.0 (*)
 |    +--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
-|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.7.2
 |         +--- com.squareup.okio:okio:2.6.0
 |         |    \--- com.squareup.okio:okio-metadata:2.6.0
 |         |         \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.70 -> 1.3.72
@@ -2526,7 +2526,7 @@ debugImplementationDependenciesMetadata
 |         +--- androidx.lifecycle:lifecycle-common-java8:2.2.0
 |         |    +--- androidx.lifecycle:lifecycle-common:2.2.0 (*)
 |         |    \--- androidx.annotation:annotation:1.1.0
-|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.6.0 (*)
+|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.7.2 (*)
 |         \--- com.squareup.okio:okio:2.6.0 (*)
 +--- com.google.code.gson:gson:2.8.6
 +--- com.google.dagger:hilt-android:2.28-alpha
@@ -2550,7 +2550,7 @@ debugImplementationDependenciesMetadata
 |    +--- androidx.work:work-runtime:2.3.4 (*)
 |    \--- com.google.dagger:hilt-android:2.28-alpha (*)
 +--- com.squareup.retrofit2:retrofit:2.9.0
-|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.6.0 (*)
+|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.7.2 (*)
 +--- com.squareup.retrofit2:converter-gson:2.9.0
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
@@ -2558,9 +2558,9 @@ debugImplementationDependenciesMetadata
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    +--- io.reactivex.rxjava2:rxjava:2.0.0
 |    \--- org.reactivestreams:reactive-streams:1.0.3
-+--- com.squareup.okhttp3:okhttp:4.6.0 (*)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0
-|    \--- com.squareup.okhttp3:okhttp:4.6.0 (*)
++--- com.squareup.okhttp3:okhttp:4.7.2 (*)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2
+|    \--- com.squareup.okhttp3:okhttp:4.7.2 (*)
 +--- com.jakewharton.timber:timber:4.7.1
 |    \--- org.jetbrains:annotations:16.0.1
 +--- org.threeten:threetenbp:1.4.4
@@ -2740,10 +2740,10 @@ debugRuntimeClasspath - Runtime classpath of compilation 'debug' (target  (andro
 |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
 |         +--- androidx.core:core:1.1.0 -> 1.3.0 (*)
 |         \--- androidx.collection:collection:1.1.0 (*)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8
 |    +--- androidx.appcompat:appcompat:1.1.0 (*)
 |    +--- androidx.core:core:1.2.0 -> 1.3.0 (*)
-|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta7
+|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta8
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2
 |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- androidx.navigation:navigation-fragment:2.2.2
@@ -2911,9 +2911,9 @@ debugRuntimeClasspath - Runtime classpath of compilation 'debug' (target  (andro
 |    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- com.google.firebase:firebase-components:16.0.0 (*)
 |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 (*)
-+--- com.google.firebase:firebase-crashlytics:17.1.0
++--- com.google.firebase:firebase-crashlytics:17.1.1
 |    +--- com.google.android.datatransport:transport-api:2.2.0
-|    +--- com.google.android.datatransport:transport-backend-cct:2.2.3
+|    +--- com.google.android.datatransport:transport-backend-cct:2.3.0
 |    |    +--- androidx.annotation:annotation:1.1.0
 |    |    +--- com.google.android.datatransport:transport-api:2.2.0
 |    |    +--- com.google.android.datatransport:transport-runtime:2.2.3
@@ -2931,7 +2931,7 @@ debugRuntimeClasspath - Runtime classpath of compilation 'debug' (target  (andro
 |    +--- com.google.firebase:firebase-iid:20.1.5 (*)
 |    +--- com.google.firebase:firebase-iid-interop:17.0.0 (*)
 |    +--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
-|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.7.2
 |         +--- com.squareup.okio:okio:2.6.0 (*)
 |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.71 -> 1.3.72 (*)
 +--- androidx.work:work-runtime-ktx:2.3.4
@@ -2967,7 +2967,7 @@ debugRuntimeClasspath - Runtime classpath of compilation 'debug' (target  (andro
 |         +--- androidx.lifecycle:lifecycle-common-java8:2.2.0
 |         |    +--- androidx.lifecycle:lifecycle-common:2.2.0 (*)
 |         |    \--- androidx.annotation:annotation:1.1.0
-|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.6.0 (*)
+|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.7.2 (*)
 |         +--- com.squareup.okio:okio:2.6.0 (*)
 |         +--- androidx.annotation:annotation:1.1.0
 |         +--- androidx.appcompat:appcompat-resources:1.1.0 (*)
@@ -2999,7 +2999,7 @@ debugRuntimeClasspath - Runtime classpath of compilation 'debug' (target  (andro
 |    +--- androidx.work:work-runtime:2.3.4 (*)
 |    \--- com.google.dagger:hilt-android:2.28-alpha (*)
 +--- com.squareup.retrofit2:retrofit:2.9.0
-|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.6.0 (*)
+|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.7.2 (*)
 +--- com.squareup.retrofit2:converter-gson:2.9.0
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
@@ -3008,9 +3008,9 @@ debugRuntimeClasspath - Runtime classpath of compilation 'debug' (target  (andro
 |    +--- io.reactivex.rxjava2:rxjava:2.0.0
 |    |    \--- org.reactivestreams:reactive-streams:1.0.0 -> 1.0.3
 |    \--- org.reactivestreams:reactive-streams:1.0.3
-+--- com.squareup.okhttp3:okhttp:4.6.0 (*)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0
-|    \--- com.squareup.okhttp3:okhttp:4.6.0 (*)
++--- com.squareup.okhttp3:okhttp:4.7.2 (*)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2
+|    \--- com.squareup.okhttp3:okhttp:4.7.2 (*)
 +--- com.jakewharton.timber:timber:4.7.1
 |    \--- org.jetbrains:annotations:16.0.1
 +--- org.threeten:threetenbp:1.4.4
@@ -3194,10 +3194,10 @@ debugUnitTestCompileClasspath - Compile classpath for compilation 'debugUnitTest
 |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
 |         +--- androidx.core:core:1.1.0 -> 1.3.0 (*)
 |         \--- androidx.collection:collection:1.1.0 (*)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8
 |    +--- androidx.appcompat:appcompat:1.1.0 (*)
 |    +--- androidx.core:core:1.2.0 -> 1.3.0 (*)
-|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta7
+|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta8
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2
 |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- androidx.navigation:navigation-fragment:2.2.2
@@ -3365,9 +3365,9 @@ debugUnitTestCompileClasspath - Compile classpath for compilation 'debugUnitTest
 |    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- com.google.firebase:firebase-components:16.0.0 (*)
 |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 (*)
-+--- com.google.firebase:firebase-crashlytics:17.1.0
++--- com.google.firebase:firebase-crashlytics:17.1.1
 |    +--- com.google.android.datatransport:transport-api:2.2.0
-|    +--- com.google.android.datatransport:transport-backend-cct:2.2.3
+|    +--- com.google.android.datatransport:transport-backend-cct:2.3.0
 |    |    +--- androidx.annotation:annotation:1.1.0
 |    |    +--- com.google.android.datatransport:transport-api:2.2.0
 |    |    +--- com.google.android.datatransport:transport-runtime:2.2.3
@@ -3385,7 +3385,7 @@ debugUnitTestCompileClasspath - Compile classpath for compilation 'debugUnitTest
 |    +--- com.google.firebase:firebase-iid:20.1.5 (*)
 |    +--- com.google.firebase:firebase-iid-interop:17.0.0 (*)
 |    +--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
-|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.7.2
 |         +--- com.squareup.okio:okio:2.6.0
 |         |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.70 -> 1.3.72 (*)
 |         |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.70 -> 1.3.72
@@ -3417,7 +3417,7 @@ debugUnitTestCompileClasspath - Compile classpath for compilation 'debugUnitTest
 |         +--- androidx.lifecycle:lifecycle-common-java8:2.2.0
 |         |    +--- androidx.lifecycle:lifecycle-common:2.2.0 (*)
 |         |    \--- androidx.annotation:annotation:1.1.0
-|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.6.0 (*)
+|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.7.2 (*)
 |         \--- com.squareup.okio:okio:2.6.0 (*)
 +--- com.google.code.gson:gson:2.8.6
 +--- com.google.dagger:hilt-android:2.28-alpha
@@ -3441,7 +3441,7 @@ debugUnitTestCompileClasspath - Compile classpath for compilation 'debugUnitTest
 |    +--- androidx.work:work-runtime:2.3.4 (*)
 |    \--- com.google.dagger:hilt-android:2.28-alpha (*)
 +--- com.squareup.retrofit2:retrofit:2.9.0
-|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.6.0 (*)
+|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.7.2 (*)
 +--- com.squareup.retrofit2:converter-gson:2.9.0
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
@@ -3449,9 +3449,9 @@ debugUnitTestCompileClasspath - Compile classpath for compilation 'debugUnitTest
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    +--- io.reactivex.rxjava2:rxjava:2.0.0
 |    \--- org.reactivestreams:reactive-streams:1.0.3
-+--- com.squareup.okhttp3:okhttp:4.6.0 (*)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0
-|    \--- com.squareup.okhttp3:okhttp:4.6.0 (*)
++--- com.squareup.okhttp3:okhttp:4.7.2 (*)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2
+|    \--- com.squareup.okhttp3:okhttp:4.7.2 (*)
 +--- com.jakewharton.timber:timber:4.7.1
 |    \--- org.jetbrains:annotations:16.0.1
 +--- org.threeten:threetenbp:1.4.4
@@ -3488,7 +3488,7 @@ debugUnitTestCompileClasspath - Compile classpath for compilation 'debugUnitTest
 +--- androidx.core:core-ktx:{strictly 1.3.0} -> 1.3.0 (c)
 +--- androidx.appcompat:appcompat:{strictly 1.1.0} -> 1.1.0 (c)
 +--- com.google.android.material:material:{strictly 1.2.0-beta01} -> 1.2.0-beta01 (c)
-+--- androidx.constraintlayout:constraintlayout:{strictly 2.0.0-beta7} -> 2.0.0-beta7 (c)
++--- androidx.constraintlayout:constraintlayout:{strictly 2.0.0-beta8} -> 2.0.0-beta8 (c)
 +--- androidx.navigation:navigation-fragment-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.navigation:navigation-ui-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.lifecycle:lifecycle-livedata-ktx:{strictly 2.2.0} -> 2.2.0 (c)
@@ -3498,7 +3498,7 @@ debugUnitTestCompileClasspath - Compile classpath for compilation 'debugUnitTest
 +--- androidx.swiperefreshlayout:swiperefreshlayout:{strictly 1.1.0} -> 1.1.0 (c)
 +--- androidx.recyclerview:recyclerview:{strictly 1.1.0} -> 1.1.0 (c)
 +--- com.google.firebase:firebase-analytics-ktx:{strictly 17.4.3} -> 17.4.3 (c)
-+--- com.google.firebase:firebase-crashlytics:{strictly 17.1.0} -> 17.1.0 (c)
++--- com.google.firebase:firebase-crashlytics:{strictly 17.1.1} -> 17.1.1 (c)
 +--- androidx.work:work-runtime-ktx:{strictly 2.3.4} -> 2.3.4 (c)
 +--- androidx.room:room-runtime:{strictly 2.2.5} -> 2.2.5 (c)
 +--- androidx.room:room-ktx:{strictly 2.2.5} -> 2.2.5 (c)
@@ -3510,8 +3510,8 @@ debugUnitTestCompileClasspath - Compile classpath for compilation 'debugUnitTest
 +--- com.squareup.retrofit2:retrofit:{strictly 2.9.0} -> 2.9.0 (c)
 +--- com.squareup.retrofit2:converter-gson:{strictly 2.9.0} -> 2.9.0 (c)
 +--- com.squareup.retrofit2:adapter-rxjava2:{strictly 2.9.0} -> 2.9.0 (c)
-+--- com.squareup.okhttp3:okhttp:{strictly 4.6.0} -> 4.6.0 (c)
-+--- com.squareup.okhttp3:logging-interceptor:{strictly 4.6.0} -> 4.6.0 (c)
++--- com.squareup.okhttp3:okhttp:{strictly 4.7.2} -> 4.7.2 (c)
++--- com.squareup.okhttp3:logging-interceptor:{strictly 4.7.2} -> 4.7.2 (c)
 +--- com.jakewharton.timber:timber:{strictly 4.7.1} -> 4.7.1 (c)
 +--- org.threeten:threetenbp:{strictly 1.4.4} -> 1.4.4 (c)
 +--- com.google.android.gms:play-services-maps:{strictly 17.0.0} -> 17.0.0 (c)
@@ -3539,7 +3539,7 @@ debugUnitTestCompileClasspath - Compile classpath for compilation 'debugUnitTest
 +--- androidx.transition:transition:{strictly 1.2.0} -> 1.2.0 (c)
 +--- androidx.vectordrawable:vectordrawable:{strictly 1.1.0} -> 1.1.0 (c)
 +--- androidx.viewpager2:viewpager2:{strictly 1.0.0} -> 1.0.0 (c)
-+--- androidx.constraintlayout:constraintlayout-solver:{strictly 2.0.0-beta7} -> 2.0.0-beta7 (c)
++--- androidx.constraintlayout:constraintlayout-solver:{strictly 2.0.0-beta8} -> 2.0.0-beta8 (c)
 +--- androidx.navigation:navigation-fragment:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.navigation:navigation-runtime-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.fragment:fragment-ktx:{strictly 1.2.4} -> 1.2.4 (c)
@@ -3558,7 +3558,7 @@ debugUnitTestCompileClasspath - Compile classpath for compilation 'debugUnitTest
 +--- com.google.firebase:firebase-components:{strictly 16.0.0} -> 16.0.0 (c)
 +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:{strictly 1.3.50} -> 1.3.50 (c)
 +--- com.google.android.datatransport:transport-api:{strictly 2.2.0} -> 2.2.0 (c)
-+--- com.google.android.datatransport:transport-backend-cct:{strictly 2.2.3} -> 2.2.3 (c)
++--- com.google.android.datatransport:transport-backend-cct:{strictly 2.3.0} -> 2.3.0 (c)
 +--- com.google.android.datatransport:transport-runtime:{strictly 2.2.3} -> 2.2.3 (c)
 +--- com.google.android.gms:play-services-tasks:{strictly 17.0.0} -> 17.0.0 (c)
 +--- com.google.firebase:firebase-encoders-json:{strictly 16.1.0} -> 16.1.0 (c)
@@ -3832,10 +3832,10 @@ debugUnitTestRuntimeClasspath - Runtime classpath of compilation 'debugUnitTest'
 |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
 |         +--- androidx.core:core:1.1.0 -> 1.3.0 (*)
 |         \--- androidx.collection:collection:1.1.0 (*)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8
 |    +--- androidx.appcompat:appcompat:1.1.0 (*)
 |    +--- androidx.core:core:1.2.0 -> 1.3.0 (*)
-|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta7
+|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta8
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2
 |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- androidx.navigation:navigation-fragment:2.2.2
@@ -4003,9 +4003,9 @@ debugUnitTestRuntimeClasspath - Runtime classpath of compilation 'debugUnitTest'
 |    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- com.google.firebase:firebase-components:16.0.0 (*)
 |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 (*)
-+--- com.google.firebase:firebase-crashlytics:17.1.0
++--- com.google.firebase:firebase-crashlytics:17.1.1
 |    +--- com.google.android.datatransport:transport-api:2.2.0
-|    +--- com.google.android.datatransport:transport-backend-cct:2.2.3
+|    +--- com.google.android.datatransport:transport-backend-cct:2.3.0
 |    |    +--- androidx.annotation:annotation:1.1.0
 |    |    +--- com.google.android.datatransport:transport-api:2.2.0
 |    |    +--- com.google.android.datatransport:transport-runtime:2.2.3
@@ -4023,7 +4023,7 @@ debugUnitTestRuntimeClasspath - Runtime classpath of compilation 'debugUnitTest'
 |    +--- com.google.firebase:firebase-iid:20.1.5 (*)
 |    +--- com.google.firebase:firebase-iid-interop:17.0.0 (*)
 |    +--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
-|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.7.2
 |         +--- com.squareup.okio:okio:2.6.0 (*)
 |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.71 -> 1.3.72 (*)
 +--- androidx.work:work-runtime-ktx:2.3.4
@@ -4059,7 +4059,7 @@ debugUnitTestRuntimeClasspath - Runtime classpath of compilation 'debugUnitTest'
 |         +--- androidx.lifecycle:lifecycle-common-java8:2.2.0
 |         |    +--- androidx.lifecycle:lifecycle-common:2.2.0 (*)
 |         |    \--- androidx.annotation:annotation:1.1.0
-|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.6.0 (*)
+|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.7.2 (*)
 |         +--- com.squareup.okio:okio:2.6.0 (*)
 |         +--- androidx.annotation:annotation:1.1.0
 |         +--- androidx.appcompat:appcompat-resources:1.1.0 (*)
@@ -4091,7 +4091,7 @@ debugUnitTestRuntimeClasspath - Runtime classpath of compilation 'debugUnitTest'
 |    +--- androidx.work:work-runtime:2.3.4 (*)
 |    \--- com.google.dagger:hilt-android:2.28-alpha (*)
 +--- com.squareup.retrofit2:retrofit:2.9.0
-|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.6.0 (*)
+|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.7.2 (*)
 +--- com.squareup.retrofit2:converter-gson:2.9.0
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
@@ -4100,9 +4100,9 @@ debugUnitTestRuntimeClasspath - Runtime classpath of compilation 'debugUnitTest'
 |    +--- io.reactivex.rxjava2:rxjava:2.0.0
 |    |    \--- org.reactivestreams:reactive-streams:1.0.0 -> 1.0.3
 |    \--- org.reactivestreams:reactive-streams:1.0.3
-+--- com.squareup.okhttp3:okhttp:4.6.0 (*)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0
-|    \--- com.squareup.okhttp3:okhttp:4.6.0 (*)
++--- com.squareup.okhttp3:okhttp:4.7.2 (*)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2
+|    \--- com.squareup.okhttp3:okhttp:4.7.2 (*)
 +--- com.jakewharton.timber:timber:4.7.1
 |    \--- org.jetbrains:annotations:16.0.1
 +--- org.threeten:threetenbp:1.4.4
@@ -4162,7 +4162,7 @@ implementation - Implementation only dependencies for 'main' sources. (n)
 +--- androidx.core:core-ktx:1.3.0 (n)
 +--- androidx.appcompat:appcompat:1.1.0 (n)
 +--- com.google.android.material:material:1.2.0-beta01 (n)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7 (n)
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8 (n)
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2 (n)
 +--- androidx.navigation:navigation-ui-ktx:2.2.2 (n)
 +--- androidx.lifecycle:lifecycle-livedata-ktx:2.2.0 (n)
@@ -4172,7 +4172,7 @@ implementation - Implementation only dependencies for 'main' sources. (n)
 +--- androidx.swiperefreshlayout:swiperefreshlayout:1.1.0 (n)
 +--- androidx.recyclerview:recyclerview:1.1.0 (n)
 +--- com.google.firebase:firebase-analytics-ktx:17.4.3 (n)
-+--- com.google.firebase:firebase-crashlytics:17.1.0 (n)
++--- com.google.firebase:firebase-crashlytics:17.1.1 (n)
 +--- androidx.work:work-runtime-ktx:2.3.4 (n)
 +--- androidx.room:room-runtime:2.2.5 (n)
 +--- androidx.room:room-ktx:2.2.5 (n)
@@ -4184,8 +4184,8 @@ implementation - Implementation only dependencies for 'main' sources. (n)
 +--- com.squareup.retrofit2:retrofit:2.9.0 (n)
 +--- com.squareup.retrofit2:converter-gson:2.9.0 (n)
 +--- com.squareup.retrofit2:adapter-rxjava2:2.9.0 (n)
-+--- com.squareup.okhttp3:okhttp:4.6.0 (n)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0 (n)
++--- com.squareup.okhttp3:okhttp:4.7.2 (n)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2 (n)
 +--- com.jakewharton.timber:timber:4.7.1 (n)
 +--- org.threeten:threetenbp:1.4.4 (n)
 +--- com.google.android.gms:play-services-maps:17.0.0 (n)
@@ -4316,10 +4316,10 @@ implementationDependenciesMetadata
 |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
 |         +--- androidx.core:core:1.1.0 -> 1.3.0 (*)
 |         \--- androidx.collection:collection:1.1.0 (*)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8
 |    +--- androidx.appcompat:appcompat:1.1.0 (*)
 |    +--- androidx.core:core:1.2.0 -> 1.3.0 (*)
-|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta7
+|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta8
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2
 |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- androidx.navigation:navigation-fragment:2.2.2
@@ -4487,9 +4487,9 @@ implementationDependenciesMetadata
 |    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- com.google.firebase:firebase-components:16.0.0 (*)
 |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 (*)
-+--- com.google.firebase:firebase-crashlytics:17.1.0
++--- com.google.firebase:firebase-crashlytics:17.1.1
 |    +--- com.google.android.datatransport:transport-api:2.2.0
-|    +--- com.google.android.datatransport:transport-backend-cct:2.2.3
+|    +--- com.google.android.datatransport:transport-backend-cct:2.3.0
 |    |    +--- androidx.annotation:annotation:1.1.0
 |    |    +--- com.google.android.datatransport:transport-api:2.2.0
 |    |    +--- com.google.android.datatransport:transport-runtime:2.2.3
@@ -4507,7 +4507,7 @@ implementationDependenciesMetadata
 |    +--- com.google.firebase:firebase-iid:20.1.5 (*)
 |    +--- com.google.firebase:firebase-iid-interop:17.0.0 (*)
 |    +--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
-|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.7.2
 |         +--- com.squareup.okio:okio:2.6.0
 |         |    \--- com.squareup.okio:okio-metadata:2.6.0
 |         |         \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.70 -> 1.3.72
@@ -4539,7 +4539,7 @@ implementationDependenciesMetadata
 |         +--- androidx.lifecycle:lifecycle-common-java8:2.2.0
 |         |    +--- androidx.lifecycle:lifecycle-common:2.2.0 (*)
 |         |    \--- androidx.annotation:annotation:1.1.0
-|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.6.0 (*)
+|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.7.2 (*)
 |         \--- com.squareup.okio:okio:2.6.0 (*)
 +--- com.google.code.gson:gson:2.8.6
 +--- com.google.dagger:hilt-android:2.28-alpha
@@ -4563,7 +4563,7 @@ implementationDependenciesMetadata
 |    +--- androidx.work:work-runtime:2.3.4 (*)
 |    \--- com.google.dagger:hilt-android:2.28-alpha (*)
 +--- com.squareup.retrofit2:retrofit:2.9.0
-|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.6.0 (*)
+|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.7.2 (*)
 +--- com.squareup.retrofit2:converter-gson:2.9.0
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
@@ -4571,9 +4571,9 @@ implementationDependenciesMetadata
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    +--- io.reactivex.rxjava2:rxjava:2.0.0
 |    \--- org.reactivestreams:reactive-streams:1.0.3
-+--- com.squareup.okhttp3:okhttp:4.6.0 (*)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0
-|    \--- com.squareup.okhttp3:okhttp:4.6.0 (*)
++--- com.squareup.okhttp3:okhttp:4.7.2 (*)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2
+|    \--- com.squareup.okhttp3:okhttp:4.7.2 (*)
 +--- com.jakewharton.timber:timber:4.7.1
 |    \--- org.jetbrains:annotations:16.0.1
 +--- org.threeten:threetenbp:1.4.4
@@ -5950,10 +5950,10 @@ releaseCompileClasspath - Compile classpath for compilation 'release' (target  (
 |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
 |         +--- androidx.core:core:1.1.0 -> 1.3.0 (*)
 |         \--- androidx.collection:collection:1.1.0 (*)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8
 |    +--- androidx.appcompat:appcompat:1.1.0 (*)
 |    +--- androidx.core:core:1.2.0 -> 1.3.0 (*)
-|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta7
+|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta8
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2
 |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- androidx.navigation:navigation-fragment:2.2.2
@@ -6121,9 +6121,9 @@ releaseCompileClasspath - Compile classpath for compilation 'release' (target  (
 |    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- com.google.firebase:firebase-components:16.0.0 (*)
 |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 (*)
-+--- com.google.firebase:firebase-crashlytics:17.1.0
++--- com.google.firebase:firebase-crashlytics:17.1.1
 |    +--- com.google.android.datatransport:transport-api:2.2.0
-|    +--- com.google.android.datatransport:transport-backend-cct:2.2.3
+|    +--- com.google.android.datatransport:transport-backend-cct:2.3.0
 |    |    +--- androidx.annotation:annotation:1.1.0
 |    |    +--- com.google.android.datatransport:transport-api:2.2.0
 |    |    +--- com.google.android.datatransport:transport-runtime:2.2.3
@@ -6141,7 +6141,7 @@ releaseCompileClasspath - Compile classpath for compilation 'release' (target  (
 |    +--- com.google.firebase:firebase-iid:20.1.5 (*)
 |    +--- com.google.firebase:firebase-iid-interop:17.0.0 (*)
 |    +--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
-|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.7.2
 |         +--- com.squareup.okio:okio:2.6.0
 |         |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.70 -> 1.3.72 (*)
 |         |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.70 -> 1.3.72
@@ -6173,7 +6173,7 @@ releaseCompileClasspath - Compile classpath for compilation 'release' (target  (
 |         +--- androidx.lifecycle:lifecycle-common-java8:2.2.0
 |         |    +--- androidx.lifecycle:lifecycle-common:2.2.0 (*)
 |         |    \--- androidx.annotation:annotation:1.1.0
-|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.6.0 (*)
+|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.7.2 (*)
 |         \--- com.squareup.okio:okio:2.6.0 (*)
 +--- com.google.code.gson:gson:2.8.6
 +--- com.google.dagger:hilt-android:2.28-alpha
@@ -6197,7 +6197,7 @@ releaseCompileClasspath - Compile classpath for compilation 'release' (target  (
 |    +--- androidx.work:work-runtime:2.3.4 (*)
 |    \--- com.google.dagger:hilt-android:2.28-alpha (*)
 +--- com.squareup.retrofit2:retrofit:2.9.0
-|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.6.0 (*)
+|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.7.2 (*)
 +--- com.squareup.retrofit2:converter-gson:2.9.0
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
@@ -6205,9 +6205,9 @@ releaseCompileClasspath - Compile classpath for compilation 'release' (target  (
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    +--- io.reactivex.rxjava2:rxjava:2.0.0
 |    \--- org.reactivestreams:reactive-streams:1.0.3
-+--- com.squareup.okhttp3:okhttp:4.6.0 (*)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0
-|    \--- com.squareup.okhttp3:okhttp:4.6.0 (*)
++--- com.squareup.okhttp3:okhttp:4.7.2 (*)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2
+|    \--- com.squareup.okhttp3:okhttp:4.7.2 (*)
 +--- com.jakewharton.timber:timber:4.7.1
 |    \--- org.jetbrains:annotations:16.0.1
 +--- org.threeten:threetenbp:1.4.4
@@ -6228,7 +6228,7 @@ releaseCompileClasspath - Compile classpath for compilation 'release' (target  (
 +--- com.google.android.material:material:{strictly 1.2.0-beta01} -> 1.2.0-beta01 (c)
 +--- androidx.cardview:cardview:{strictly 1.0.0} -> 1.0.0 (c)
 +--- androidx.recyclerview:recyclerview:{strictly 1.1.0} -> 1.1.0 (c)
-+--- androidx.constraintlayout:constraintlayout:{strictly 2.0.0-beta7} -> 2.0.0-beta7 (c)
++--- androidx.constraintlayout:constraintlayout:{strictly 2.0.0-beta8} -> 2.0.0-beta8 (c)
 +--- androidx.navigation:navigation-fragment-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.lifecycle:lifecycle-viewmodel-ktx:{strictly 2.2.0} -> 2.2.0 (c)
 +--- androidx.navigation:navigation-ui-ktx:{strictly 2.2.2} -> 2.2.2 (c)
@@ -6236,8 +6236,8 @@ releaseCompileClasspath - Compile classpath for compilation 'release' (target  (
 +--- androidx.preference:preference-ktx:{strictly 1.1.1} -> 1.1.1 (c)
 +--- androidx.swiperefreshlayout:swiperefreshlayout:{strictly 1.1.0} -> 1.1.0 (c)
 +--- com.google.firebase:firebase-analytics-ktx:{strictly 17.4.3} -> 17.4.3 (c)
-+--- com.google.firebase:firebase-crashlytics:{strictly 17.1.0} -> 17.1.0 (c)
-+--- com.squareup.okhttp3:okhttp:{strictly 4.6.0} -> 4.6.0 (c)
++--- com.google.firebase:firebase-crashlytics:{strictly 17.1.1} -> 17.1.1 (c)
++--- com.squareup.okhttp3:okhttp:{strictly 4.7.2} -> 4.7.2 (c)
 +--- androidx.work:work-runtime-ktx:{strictly 2.3.4} -> 2.3.4 (c)
 +--- androidx.room:room-runtime:{strictly 2.2.5} -> 2.2.5 (c)
 +--- androidx.room:room-ktx:{strictly 2.2.5} -> 2.2.5 (c)
@@ -6249,7 +6249,7 @@ releaseCompileClasspath - Compile classpath for compilation 'release' (target  (
 +--- com.squareup.retrofit2:retrofit:{strictly 2.9.0} -> 2.9.0 (c)
 +--- com.squareup.retrofit2:converter-gson:{strictly 2.9.0} -> 2.9.0 (c)
 +--- com.squareup.retrofit2:adapter-rxjava2:{strictly 2.9.0} -> 2.9.0 (c)
-+--- com.squareup.okhttp3:logging-interceptor:{strictly 4.6.0} -> 4.6.0 (c)
++--- com.squareup.okhttp3:logging-interceptor:{strictly 4.7.2} -> 4.7.2 (c)
 +--- com.jakewharton.timber:timber:{strictly 4.7.1} -> 4.7.1 (c)
 +--- org.threeten:threetenbp:{strictly 1.4.4} -> 1.4.4 (c)
 +--- com.google.android.gms:play-services-maps:{strictly 17.0.0} -> 17.0.0 (c)
@@ -6270,7 +6270,7 @@ releaseCompileClasspath - Compile classpath for compilation 'release' (target  (
 +--- androidx.transition:transition:{strictly 1.2.0} -> 1.2.0 (c)
 +--- androidx.vectordrawable:vectordrawable:{strictly 1.1.0} -> 1.1.0 (c)
 +--- androidx.viewpager2:viewpager2:{strictly 1.0.0} -> 1.0.0 (c)
-+--- androidx.constraintlayout:constraintlayout-solver:{strictly 2.0.0-beta7} -> 2.0.0-beta7 (c)
++--- androidx.constraintlayout:constraintlayout-solver:{strictly 2.0.0-beta8} -> 2.0.0-beta8 (c)
 +--- androidx.navigation:navigation-fragment:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.navigation:navigation-runtime-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.fragment:fragment-ktx:{strictly 1.2.4} -> 1.2.4 (c)
@@ -6289,7 +6289,7 @@ releaseCompileClasspath - Compile classpath for compilation 'release' (target  (
 +--- com.google.firebase:firebase-components:{strictly 16.0.0} -> 16.0.0 (c)
 +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:{strictly 1.3.50} -> 1.3.50 (c)
 +--- com.google.android.datatransport:transport-api:{strictly 2.2.0} -> 2.2.0 (c)
-+--- com.google.android.datatransport:transport-backend-cct:{strictly 2.2.3} -> 2.2.3 (c)
++--- com.google.android.datatransport:transport-backend-cct:{strictly 2.3.0} -> 2.3.0 (c)
 +--- com.google.android.datatransport:transport-runtime:{strictly 2.2.3} -> 2.2.3 (c)
 +--- com.google.android.gms:play-services-tasks:{strictly 17.0.0} -> 17.0.0 (c)
 +--- com.google.firebase:firebase-encoders-json:{strictly 16.1.0} -> 16.1.0 (c)
@@ -6481,10 +6481,10 @@ releaseImplementationDependenciesMetadata
 |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
 |         +--- androidx.core:core:1.1.0 -> 1.3.0 (*)
 |         \--- androidx.collection:collection:1.1.0 (*)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8
 |    +--- androidx.appcompat:appcompat:1.1.0 (*)
 |    +--- androidx.core:core:1.2.0 -> 1.3.0 (*)
-|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta7
+|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta8
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2
 |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- androidx.navigation:navigation-fragment:2.2.2
@@ -6652,9 +6652,9 @@ releaseImplementationDependenciesMetadata
 |    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- com.google.firebase:firebase-components:16.0.0 (*)
 |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 (*)
-+--- com.google.firebase:firebase-crashlytics:17.1.0
++--- com.google.firebase:firebase-crashlytics:17.1.1
 |    +--- com.google.android.datatransport:transport-api:2.2.0
-|    +--- com.google.android.datatransport:transport-backend-cct:2.2.3
+|    +--- com.google.android.datatransport:transport-backend-cct:2.3.0
 |    |    +--- androidx.annotation:annotation:1.1.0
 |    |    +--- com.google.android.datatransport:transport-api:2.2.0
 |    |    +--- com.google.android.datatransport:transport-runtime:2.2.3
@@ -6672,7 +6672,7 @@ releaseImplementationDependenciesMetadata
 |    +--- com.google.firebase:firebase-iid:20.1.5 (*)
 |    +--- com.google.firebase:firebase-iid-interop:17.0.0 (*)
 |    +--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
-|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.7.2
 |         +--- com.squareup.okio:okio:2.6.0
 |         |    \--- com.squareup.okio:okio-metadata:2.6.0
 |         |         \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.70 -> 1.3.72
@@ -6704,7 +6704,7 @@ releaseImplementationDependenciesMetadata
 |         +--- androidx.lifecycle:lifecycle-common-java8:2.2.0
 |         |    +--- androidx.lifecycle:lifecycle-common:2.2.0 (*)
 |         |    \--- androidx.annotation:annotation:1.1.0
-|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.6.0 (*)
+|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.7.2 (*)
 |         \--- com.squareup.okio:okio:2.6.0 (*)
 +--- com.google.code.gson:gson:2.8.6
 +--- com.google.dagger:hilt-android:2.28-alpha
@@ -6728,7 +6728,7 @@ releaseImplementationDependenciesMetadata
 |    +--- androidx.work:work-runtime:2.3.4 (*)
 |    \--- com.google.dagger:hilt-android:2.28-alpha (*)
 +--- com.squareup.retrofit2:retrofit:2.9.0
-|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.6.0 (*)
+|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.7.2 (*)
 +--- com.squareup.retrofit2:converter-gson:2.9.0
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
@@ -6736,9 +6736,9 @@ releaseImplementationDependenciesMetadata
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    +--- io.reactivex.rxjava2:rxjava:2.0.0
 |    \--- org.reactivestreams:reactive-streams:1.0.3
-+--- com.squareup.okhttp3:okhttp:4.6.0 (*)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0
-|    \--- com.squareup.okhttp3:okhttp:4.6.0 (*)
++--- com.squareup.okhttp3:okhttp:4.7.2 (*)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2
+|    \--- com.squareup.okhttp3:okhttp:4.7.2 (*)
 +--- com.jakewharton.timber:timber:4.7.1
 |    \--- org.jetbrains:annotations:16.0.1
 +--- org.threeten:threetenbp:1.4.4
@@ -6885,10 +6885,10 @@ releaseRuntimeClasspath - Runtime classpath of compilation 'release' (target  (a
 |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
 |         +--- androidx.core:core:1.1.0 -> 1.3.0 (*)
 |         \--- androidx.collection:collection:1.1.0 (*)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8
 |    +--- androidx.appcompat:appcompat:1.1.0 (*)
 |    +--- androidx.core:core:1.2.0 -> 1.3.0 (*)
-|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta7
+|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta8
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2
 |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- androidx.navigation:navigation-fragment:2.2.2
@@ -7056,9 +7056,9 @@ releaseRuntimeClasspath - Runtime classpath of compilation 'release' (target  (a
 |    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- com.google.firebase:firebase-components:16.0.0 (*)
 |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 (*)
-+--- com.google.firebase:firebase-crashlytics:17.1.0
++--- com.google.firebase:firebase-crashlytics:17.1.1
 |    +--- com.google.android.datatransport:transport-api:2.2.0
-|    +--- com.google.android.datatransport:transport-backend-cct:2.2.3
+|    +--- com.google.android.datatransport:transport-backend-cct:2.3.0
 |    |    +--- androidx.annotation:annotation:1.1.0
 |    |    +--- com.google.android.datatransport:transport-api:2.2.0
 |    |    +--- com.google.android.datatransport:transport-runtime:2.2.3
@@ -7076,7 +7076,7 @@ releaseRuntimeClasspath - Runtime classpath of compilation 'release' (target  (a
 |    +--- com.google.firebase:firebase-iid:20.1.5 (*)
 |    +--- com.google.firebase:firebase-iid-interop:17.0.0 (*)
 |    +--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
-|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.7.2
 |         +--- com.squareup.okio:okio:2.6.0
 |         |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.70 -> 1.3.72 (*)
 |         |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.70 -> 1.3.72
@@ -7114,7 +7114,7 @@ releaseRuntimeClasspath - Runtime classpath of compilation 'release' (target  (a
 |         +--- androidx.lifecycle:lifecycle-common-java8:2.2.0
 |         |    +--- androidx.lifecycle:lifecycle-common:2.2.0 (*)
 |         |    \--- androidx.annotation:annotation:1.1.0
-|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.6.0 (*)
+|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.7.2 (*)
 |         +--- com.squareup.okio:okio:2.6.0 (*)
 |         +--- androidx.annotation:annotation:1.1.0
 |         +--- androidx.appcompat:appcompat-resources:1.1.0 (*)
@@ -7146,7 +7146,7 @@ releaseRuntimeClasspath - Runtime classpath of compilation 'release' (target  (a
 |    +--- androidx.work:work-runtime:2.3.4 (*)
 |    \--- com.google.dagger:hilt-android:2.28-alpha (*)
 +--- com.squareup.retrofit2:retrofit:2.9.0
-|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.6.0 (*)
+|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.7.2 (*)
 +--- com.squareup.retrofit2:converter-gson:2.9.0
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
@@ -7155,9 +7155,9 @@ releaseRuntimeClasspath - Runtime classpath of compilation 'release' (target  (a
 |    +--- io.reactivex.rxjava2:rxjava:2.0.0
 |    |    \--- org.reactivestreams:reactive-streams:1.0.0 -> 1.0.3
 |    \--- org.reactivestreams:reactive-streams:1.0.3
-+--- com.squareup.okhttp3:okhttp:4.6.0 (*)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0
-|    \--- com.squareup.okhttp3:okhttp:4.6.0 (*)
++--- com.squareup.okhttp3:okhttp:4.7.2 (*)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2
+|    \--- com.squareup.okhttp3:okhttp:4.7.2 (*)
 +--- com.jakewharton.timber:timber:4.7.1
 |    \--- org.jetbrains:annotations:16.0.1
 +--- org.threeten:threetenbp:1.4.4
@@ -7315,10 +7315,10 @@ releaseUnitTestCompileClasspath - Compile classpath for compilation 'releaseUnit
 |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
 |         +--- androidx.core:core:1.1.0 -> 1.3.0 (*)
 |         \--- androidx.collection:collection:1.1.0 (*)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8
 |    +--- androidx.appcompat:appcompat:1.1.0 (*)
 |    +--- androidx.core:core:1.2.0 -> 1.3.0 (*)
-|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta7
+|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta8
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2
 |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- androidx.navigation:navigation-fragment:2.2.2
@@ -7486,9 +7486,9 @@ releaseUnitTestCompileClasspath - Compile classpath for compilation 'releaseUnit
 |    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- com.google.firebase:firebase-components:16.0.0 (*)
 |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 (*)
-+--- com.google.firebase:firebase-crashlytics:17.1.0
++--- com.google.firebase:firebase-crashlytics:17.1.1
 |    +--- com.google.android.datatransport:transport-api:2.2.0
-|    +--- com.google.android.datatransport:transport-backend-cct:2.2.3
+|    +--- com.google.android.datatransport:transport-backend-cct:2.3.0
 |    |    +--- androidx.annotation:annotation:1.1.0
 |    |    +--- com.google.android.datatransport:transport-api:2.2.0
 |    |    +--- com.google.android.datatransport:transport-runtime:2.2.3
@@ -7506,7 +7506,7 @@ releaseUnitTestCompileClasspath - Compile classpath for compilation 'releaseUnit
 |    +--- com.google.firebase:firebase-iid:20.1.5 (*)
 |    +--- com.google.firebase:firebase-iid-interop:17.0.0 (*)
 |    +--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
-|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.7.2
 |         +--- com.squareup.okio:okio:2.6.0
 |         |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.70 -> 1.3.72 (*)
 |         |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.70 -> 1.3.72
@@ -7538,7 +7538,7 @@ releaseUnitTestCompileClasspath - Compile classpath for compilation 'releaseUnit
 |         +--- androidx.lifecycle:lifecycle-common-java8:2.2.0
 |         |    +--- androidx.lifecycle:lifecycle-common:2.2.0 (*)
 |         |    \--- androidx.annotation:annotation:1.1.0
-|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.6.0 (*)
+|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.7.2 (*)
 |         \--- com.squareup.okio:okio:2.6.0 (*)
 +--- com.google.code.gson:gson:2.8.6
 +--- com.google.dagger:hilt-android:2.28-alpha
@@ -7562,7 +7562,7 @@ releaseUnitTestCompileClasspath - Compile classpath for compilation 'releaseUnit
 |    +--- androidx.work:work-runtime:2.3.4 (*)
 |    \--- com.google.dagger:hilt-android:2.28-alpha (*)
 +--- com.squareup.retrofit2:retrofit:2.9.0
-|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.6.0 (*)
+|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.7.2 (*)
 +--- com.squareup.retrofit2:converter-gson:2.9.0
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
@@ -7570,9 +7570,9 @@ releaseUnitTestCompileClasspath - Compile classpath for compilation 'releaseUnit
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    +--- io.reactivex.rxjava2:rxjava:2.0.0
 |    \--- org.reactivestreams:reactive-streams:1.0.3
-+--- com.squareup.okhttp3:okhttp:4.6.0 (*)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0
-|    \--- com.squareup.okhttp3:okhttp:4.6.0 (*)
++--- com.squareup.okhttp3:okhttp:4.7.2 (*)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2
+|    \--- com.squareup.okhttp3:okhttp:4.7.2 (*)
 +--- com.jakewharton.timber:timber:4.7.1
 |    \--- org.jetbrains:annotations:16.0.1
 +--- org.threeten:threetenbp:1.4.4
@@ -7593,7 +7593,7 @@ releaseUnitTestCompileClasspath - Compile classpath for compilation 'releaseUnit
 +--- com.google.android.material:material:{strictly 1.2.0-beta01} -> 1.2.0-beta01 (c)
 +--- androidx.cardview:cardview:{strictly 1.0.0} -> 1.0.0 (c)
 +--- androidx.recyclerview:recyclerview:{strictly 1.1.0} -> 1.1.0 (c)
-+--- androidx.constraintlayout:constraintlayout:{strictly 2.0.0-beta7} -> 2.0.0-beta7 (c)
++--- androidx.constraintlayout:constraintlayout:{strictly 2.0.0-beta8} -> 2.0.0-beta8 (c)
 +--- androidx.navigation:navigation-fragment-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.lifecycle:lifecycle-viewmodel-ktx:{strictly 2.2.0} -> 2.2.0 (c)
 +--- androidx.navigation:navigation-ui-ktx:{strictly 2.2.2} -> 2.2.2 (c)
@@ -7601,8 +7601,8 @@ releaseUnitTestCompileClasspath - Compile classpath for compilation 'releaseUnit
 +--- androidx.preference:preference-ktx:{strictly 1.1.1} -> 1.1.1 (c)
 +--- androidx.swiperefreshlayout:swiperefreshlayout:{strictly 1.1.0} -> 1.1.0 (c)
 +--- com.google.firebase:firebase-analytics-ktx:{strictly 17.4.3} -> 17.4.3 (c)
-+--- com.google.firebase:firebase-crashlytics:{strictly 17.1.0} -> 17.1.0 (c)
-+--- com.squareup.okhttp3:okhttp:{strictly 4.6.0} -> 4.6.0 (c)
++--- com.google.firebase:firebase-crashlytics:{strictly 17.1.1} -> 17.1.1 (c)
++--- com.squareup.okhttp3:okhttp:{strictly 4.7.2} -> 4.7.2 (c)
 +--- androidx.work:work-runtime-ktx:{strictly 2.3.4} -> 2.3.4 (c)
 +--- androidx.room:room-runtime:{strictly 2.2.5} -> 2.2.5 (c)
 +--- androidx.room:room-ktx:{strictly 2.2.5} -> 2.2.5 (c)
@@ -7614,7 +7614,7 @@ releaseUnitTestCompileClasspath - Compile classpath for compilation 'releaseUnit
 +--- com.squareup.retrofit2:retrofit:{strictly 2.9.0} -> 2.9.0 (c)
 +--- com.squareup.retrofit2:converter-gson:{strictly 2.9.0} -> 2.9.0 (c)
 +--- com.squareup.retrofit2:adapter-rxjava2:{strictly 2.9.0} -> 2.9.0 (c)
-+--- com.squareup.okhttp3:logging-interceptor:{strictly 4.6.0} -> 4.6.0 (c)
++--- com.squareup.okhttp3:logging-interceptor:{strictly 4.7.2} -> 4.7.2 (c)
 +--- com.jakewharton.timber:timber:{strictly 4.7.1} -> 4.7.1 (c)
 +--- org.threeten:threetenbp:{strictly 1.4.4} -> 1.4.4 (c)
 +--- com.google.android.gms:play-services-maps:{strictly 17.0.0} -> 17.0.0 (c)
@@ -7662,7 +7662,7 @@ releaseUnitTestCompileClasspath - Compile classpath for compilation 'releaseUnit
 +--- androidx.transition:transition:{strictly 1.2.0} -> 1.2.0 (c)
 +--- androidx.vectordrawable:vectordrawable:{strictly 1.1.0} -> 1.1.0 (c)
 +--- androidx.viewpager2:viewpager2:{strictly 1.0.0} -> 1.0.0 (c)
-+--- androidx.constraintlayout:constraintlayout-solver:{strictly 2.0.0-beta7} -> 2.0.0-beta7 (c)
++--- androidx.constraintlayout:constraintlayout-solver:{strictly 2.0.0-beta8} -> 2.0.0-beta8 (c)
 +--- androidx.navigation:navigation-fragment:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.navigation:navigation-runtime-ktx:{strictly 2.2.2} -> 2.2.2 (c)
 +--- androidx.fragment:fragment-ktx:{strictly 1.2.4} -> 1.2.4 (c)
@@ -7681,7 +7681,7 @@ releaseUnitTestCompileClasspath - Compile classpath for compilation 'releaseUnit
 +--- com.google.firebase:firebase-components:{strictly 16.0.0} -> 16.0.0 (c)
 +--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:{strictly 1.3.50} -> 1.3.50 (c)
 +--- com.google.android.datatransport:transport-api:{strictly 2.2.0} -> 2.2.0 (c)
-+--- com.google.android.datatransport:transport-backend-cct:{strictly 2.2.3} -> 2.2.3 (c)
++--- com.google.android.datatransport:transport-backend-cct:{strictly 2.3.0} -> 2.3.0 (c)
 +--- com.google.android.datatransport:transport-runtime:{strictly 2.2.3} -> 2.2.3 (c)
 +--- com.google.android.gms:play-services-tasks:{strictly 17.0.0} -> 17.0.0 (c)
 +--- com.google.firebase:firebase-encoders-json:{strictly 16.1.0} -> 16.1.0 (c)
@@ -7913,10 +7913,10 @@ releaseUnitTestRuntimeClasspath - Runtime classpath of compilation 'releaseUnitT
 |         +--- androidx.recyclerview:recyclerview:1.1.0 (*)
 |         +--- androidx.core:core:1.1.0 -> 1.3.0 (*)
 |         \--- androidx.collection:collection:1.1.0 (*)
-+--- androidx.constraintlayout:constraintlayout:2.0.0-beta7
++--- androidx.constraintlayout:constraintlayout:2.0.0-beta8
 |    +--- androidx.appcompat:appcompat:1.1.0 (*)
 |    +--- androidx.core:core:1.2.0 -> 1.3.0 (*)
-|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta7
+|    \--- androidx.constraintlayout:constraintlayout-solver:2.0.0-beta8
 +--- androidx.navigation:navigation-fragment-ktx:2.2.2
 |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- androidx.navigation:navigation-fragment:2.2.2
@@ -8084,9 +8084,9 @@ releaseUnitTestRuntimeClasspath - Runtime classpath of compilation 'releaseUnitT
 |    |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.3.50 -> 1.3.72 (*)
 |    +--- com.google.firebase:firebase-components:16.0.0 (*)
 |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50 (*)
-+--- com.google.firebase:firebase-crashlytics:17.1.0
++--- com.google.firebase:firebase-crashlytics:17.1.1
 |    +--- com.google.android.datatransport:transport-api:2.2.0
-|    +--- com.google.android.datatransport:transport-backend-cct:2.2.3
+|    +--- com.google.android.datatransport:transport-backend-cct:2.3.0
 |    |    +--- androidx.annotation:annotation:1.1.0
 |    |    +--- com.google.android.datatransport:transport-api:2.2.0
 |    |    +--- com.google.android.datatransport:transport-runtime:2.2.3
@@ -8104,7 +8104,7 @@ releaseUnitTestRuntimeClasspath - Runtime classpath of compilation 'releaseUnitT
 |    +--- com.google.firebase:firebase-iid:20.1.5 (*)
 |    +--- com.google.firebase:firebase-iid-interop:17.0.0 (*)
 |    +--- com.google.firebase:firebase-measurement-connector:18.0.0 (*)
-|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.6.0
+|    \--- com.squareup.okhttp3:okhttp:3.12.1 -> 4.7.2
 |         +--- com.squareup.okio:okio:2.6.0
 |         |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.3.70 -> 1.3.72 (*)
 |         |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.3.70 -> 1.3.72
@@ -8142,7 +8142,7 @@ releaseUnitTestRuntimeClasspath - Runtime classpath of compilation 'releaseUnitT
 |         +--- androidx.lifecycle:lifecycle-common-java8:2.2.0
 |         |    +--- androidx.lifecycle:lifecycle-common:2.2.0 (*)
 |         |    \--- androidx.annotation:annotation:1.1.0
-|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.6.0 (*)
+|         +--- com.squareup.okhttp3:okhttp:3.12.11 -> 4.7.2 (*)
 |         +--- com.squareup.okio:okio:2.6.0 (*)
 |         +--- androidx.annotation:annotation:1.1.0
 |         +--- androidx.appcompat:appcompat-resources:1.1.0 (*)
@@ -8174,7 +8174,7 @@ releaseUnitTestRuntimeClasspath - Runtime classpath of compilation 'releaseUnitT
 |    +--- androidx.work:work-runtime:2.3.4 (*)
 |    \--- com.google.dagger:hilt-android:2.28-alpha (*)
 +--- com.squareup.retrofit2:retrofit:2.9.0
-|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.6.0 (*)
+|    \--- com.squareup.okhttp3:okhttp:3.14.9 -> 4.7.2 (*)
 +--- com.squareup.retrofit2:converter-gson:2.9.0
 |    +--- com.squareup.retrofit2:retrofit:2.9.0 (*)
 |    \--- com.google.code.gson:gson:2.8.5 -> 2.8.6
@@ -8183,9 +8183,9 @@ releaseUnitTestRuntimeClasspath - Runtime classpath of compilation 'releaseUnitT
 |    +--- io.reactivex.rxjava2:rxjava:2.0.0
 |    |    \--- org.reactivestreams:reactive-streams:1.0.0 -> 1.0.3
 |    \--- org.reactivestreams:reactive-streams:1.0.3
-+--- com.squareup.okhttp3:okhttp:4.6.0 (*)
-+--- com.squareup.okhttp3:logging-interceptor:4.6.0
-|    \--- com.squareup.okhttp3:okhttp:4.6.0 (*)
++--- com.squareup.okhttp3:okhttp:4.7.2 (*)
++--- com.squareup.okhttp3:logging-interceptor:4.7.2
+|    \--- com.squareup.okhttp3:okhttp:4.7.2 (*)
 +--- com.jakewharton.timber:timber:4.7.1
 |    \--- org.jetbrains:annotations:16.0.1
 +--- org.threeten:threetenbp:1.4.4
@@ -8402,5 +8402,5 @@ No dependencies
 
 A web-based, searchable dependency report is available by adding the --scan option.
 
-BUILD SUCCESSFUL in 1s
+BUILD SUCCESSFUL in 985ms
 1 actionable task: 1 executed
