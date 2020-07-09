@@ -17,6 +17,8 @@ import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.config.THE_846_DAY
 import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentLocationsBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
+import com.blacklivesmatter.policebrutality.ui.incident.arg.FilterType
+import com.blacklivesmatter.policebrutality.ui.incident.arg.LocationFilterArgs
 import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel.NavigationEvent
 import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel.RefreshEvent
 import com.blacklivesmatter.policebrutality.ui.util.IncidentAvailabilityValidator
@@ -34,6 +36,9 @@ import java.util.ArrayList
 import java.util.Calendar
 import javax.inject.Inject
 
+/**
+ * Incidents by US States (location).
+ */
 @AndroidEntryPoint
 class LocationFragment : Fragment() {
     @Inject
@@ -56,13 +61,7 @@ class LocationFragment : Fragment() {
         // This required to participate in providing toolbar menu on the host activity
         (requireActivity() as AppCompatActivity).setSupportActionBar(viewDataBinding.toolbar)
 
-        adapter = LocationListAdapter { state ->
-            Timber.d("Tapped on state item $state")
-            analytics.logSelectItem(Analytics.CONTENT_TYPE_LOCATION, state.stateName, state.stateName)
-            findNavController().navigate(
-                LocationFragmentDirections.navigationToIncidentsFragment(stateName = state.stateName)
-            )
-        }
+        adapter = LocationListAdapter { locationIncident -> viewModel.onIncidentLocationSelected(locationIncident) }
         adapter.submitList(emptyList())
         showLoadingIndicator()
 
@@ -83,7 +82,8 @@ class LocationFragment : Fragment() {
             adapter.submitList(locationList)
         }
 
-        viewModel.dateFilterEvent.observeKotlin(viewLifecycleOwner) { navigationEvent ->
+        viewModel.navigationEvent.observeKotlin(viewLifecycleOwner) { navigationEvent ->
+            Timber.d("Navigate event received - $navigationEvent")
             when (navigationEvent) {
                 is NavigationEvent.Error -> {
                     Timber.d("There are no records, can't navigate")
@@ -97,11 +97,27 @@ class LocationFragment : Fragment() {
                     ).show()
                 }
                 is NavigationEvent.Filter -> {
-                    Timber.d("Navigate incident list for $navigationEvent")
                     findNavController().navigate(
                         LocationFragmentDirections.navigationToIncidentsFragment(
-                            timestamp = navigationEvent.timestamp,
-                            dateText = navigationEvent.dateText
+                            LocationFilterArgs(
+                                type = FilterType.DATE,
+                                timestamp = navigationEvent.timestamp,
+                                dateText = navigationEvent.dateText
+                            )
+                        )
+                    )
+                }
+                is NavigationEvent.Location -> {
+                    findNavController().navigate(
+                        LocationFragmentDirections.navigationToIncidentsFragment(
+                            LocationFilterArgs(type = FilterType.STATE, stateName = navigationEvent.stateName)
+                        )
+                    )
+                }
+                is NavigationEvent.LatestIncidents -> {
+                    findNavController().navigate(
+                        LocationFragmentDirections.navigationToIncidentsFragment(
+                            LocationFilterArgs(type = FilterType.LATEST)
                         )
                     )
                 }
@@ -115,6 +131,10 @@ class LocationFragment : Fragment() {
         }
 
         setupSwipeRefreshAction()
+
+        viewDataBinding.showLatestIncidentsFab.setOnClickListener {
+            viewModel.onShowLatestIncidentsSelected()
+        }
     }
 
     override fun onStart() {
@@ -212,6 +232,7 @@ class LocationFragment : Fragment() {
             viewModel.onDateTimeStampSelected(viewLifecycleOwner, selectedTimeStamp)
         }
         picker.show(childFragmentManager, picker.toString())
+        analytics.logEvent(Analytics.ACTION_INCIDENT_FILTER_DATE)
         activity?.let { analytics.logPageView(it, Analytics.SCREEN_INCIDENT_DATE_FILTER) }
     }
 }

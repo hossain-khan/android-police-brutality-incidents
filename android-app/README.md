@@ -23,7 +23,7 @@ You can just run following gradle command to make local build
 
 #### Firebase App Distribution
 
-Any merge to `master` builds release build that is available in Firebase App Distribution [self-serve signup page](https://appdistribution.firebase.dev/i/5d2cb8359305f7e7).
+Any merge to `main` branch builds release build that is available in Firebase App Distribution [self-serve signup page](https://appdistribution.firebase.dev/i/5d2cb8359305f7e7).
 
 
 #### Release Builds

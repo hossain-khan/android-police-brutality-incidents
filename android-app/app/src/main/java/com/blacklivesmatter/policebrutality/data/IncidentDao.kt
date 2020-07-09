@@ -33,6 +33,9 @@ interface IncidentDao {
     @Query("SELECT * FROM incidents WHERE DATE(date) = DATE(DATETIME(:timestamp, 'unixepoch')) ORDER BY name")
     fun getIncidentsByDate(timestamp: Long): LiveData<List<Incident>>
 
+    @Query("SELECT * FROM incidents WHERE 1 ORDER BY date DESC LIMIT :limit")
+    fun getIncidentsRecentFirst(limit: Int): LiveData<List<Incident>>
+
     @Query("SELECT COUNT(id) FROM incidents")
     suspend fun getTotalRecords(): Int
 

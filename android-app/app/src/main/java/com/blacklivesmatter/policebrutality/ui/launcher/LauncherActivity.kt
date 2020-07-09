@@ -10,6 +10,7 @@ import com.blacklivesmatter.policebrutality.MainActivity
 import com.blacklivesmatter.policebrutality.R
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
 import dagger.hilt.android.AndroidEntryPoint
+import timber.log.Timber
 
 /**
  * Shows splash screen. Splash screen provided by window background,
@@ -37,6 +38,7 @@ class LauncherActivity : AppCompatActivity() {
                     finish()
                 }
                 is LauncherViewModel.NavigationEvent.Error -> {
+                    Timber.e(event.exception, "Unable to navigate from splash.")
                     Toast.makeText(this, event.exception.toString(), Toast.LENGTH_SHORT).show()
                     finish()
                 }

@@ -26,9 +26,10 @@ android {
         applicationId "com.blacklivesmatter.policebrutality"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
-        versionCode 11
-        versionName "2.4"
+        versionCode 12
+        versionName "2.5"
 
+        // https://developer.android.com/studio/build/shrink-code#unused-alt-resources
         resConfigs "en"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -50,11 +51,6 @@ android {
             storeFile file(keystoreProperties['storeFile'])
             storePassword keystoreProperties['storePassword']
         }
-    }
-
-
-    buildFeatures { // https://developer.android.com/studio/releases/gradle-plugin#buildFeatures
-        dataBinding = true
     }
 
     buildTypes {
@@ -85,6 +81,14 @@ android {
         jvmTarget = '1.8'
     }
 
+    buildFeatures { // https://developer.android.com/studio/releases/gradle-plugin#buildFeatures
+        dataBinding = true
+    }
+
+    androidExtensions { // https://plugins.gradle.org/plugin/org.jetbrains.kotlin.android.extensions
+        features = ["parcelize"]
+    }
+
     lintOptions { // https://developer.android.com/studio/write/lint.html
         checkAllWarnings true
         warningsAsErrors true
@@ -109,6 +113,7 @@ dependencies {
     implementation "androidx.cardview:cardview:$rootProject.cardViewVersion"
     implementation "androidx.preference:preference-ktx:$rootProject.preferenceVersion"
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
 
     // Firebase
     implementation "com.google.firebase:firebase-analytics-ktx:$rootProject.firebaseAnalyticsVersion"

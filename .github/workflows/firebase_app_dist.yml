@@ -5,8 +5,8 @@ on:
   push:
     branches:
       # https://help.github.com/en/actions/reference/events-that-trigger-workflows
-      # Trigger the workflow on push only for the master branch for Firebase App Distribution
-     - master
+      # Trigger the workflow on push only for the `main` branch for Firebase App Distribution
+     - main
 
 jobs:
   build:

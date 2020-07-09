@@ -8,13 +8,17 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.blacklivesmatter.policebrutality.analytics.Analytics
+import com.blacklivesmatter.policebrutality.config.LATEST_INCIDENT_LIMIT
 import com.blacklivesmatter.policebrutality.config.PREF_KEY_SHARE_CAPABILITY_REMINDER_SHOWN
 import com.blacklivesmatter.policebrutality.data.IncidentRepository
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.ui.extensions.LiveEvent
+import com.blacklivesmatter.policebrutality.ui.incident.arg.FilterType
 import timber.log.Timber
 
 class IncidentViewModel @ViewModelInject constructor(
+    private val analytics: Analytics,
     private val incidentRepository: IncidentRepository,
     private val preferences: SharedPreferences
 ) : ViewModel() {
@@ -31,13 +35,15 @@ class IncidentViewModel @ViewModelInject constructor(
 
     fun onShareIncidentClicked(incident: Incident) {
         Timber.d("User clicked on share incident")
+        analytics.logShare(Analytics.CONTENT_TYPE_INCIDENT_SHARE, incident.incident_id ?: "---")
         _shareIncident.value = incident
     }
 
     fun setArgs(navArgs: IncidentsFragmentArgs) {
-        navArgs.stateName?.let { selectedSate(it) }
-        if (navArgs.timestamp != 0L) {
-            selectedTimestamp(navArgs.timestamp)
+        when (navArgs.filterArgs.type) {
+            FilterType.STATE -> selectedSate(navArgs.filterArgs.stateName!!)
+            FilterType.DATE -> selectedTimestamp(navArgs.filterArgs.timestamp!!)
+            FilterType.LATEST -> selectedMostRecentIncidents()
         }
 
         val isMessageShown = preferences.getBoolean(PREF_KEY_SHARE_CAPABILITY_REMINDER_SHOWN, false)
@@ -61,6 +67,13 @@ class IncidentViewModel @ViewModelInject constructor(
 
     private fun selectedTimestamp(timestamp: Long) {
         _incidents.addSource(incidentRepository.getIncidentsByDate(timestamp)) {
+            Timber.d("Incidents Updated ")
+            _incidents.value = it
+        }
+    }
+
+    private fun selectedMostRecentIncidents() {
+        _incidents.addSource(incidentRepository.getIncidentsRecentFirst(limit = LATEST_INCIDENT_LIMIT)) {
             Timber.d("Incidents Updated ")
             _incidents.value = it
         }

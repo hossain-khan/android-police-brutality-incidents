@@ -76,5 +76,20 @@
                 tools:itemCount="7"
                 tools:listitem="@layout/list_item_location" />
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/show_latest_incidents_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/blue_grey_700"
+            android:contentDescription="@string/content_description_view_most_recent_incidents_list"
+            android:text="@string/button_cta_view_most_recent_incidents"
+            android:textColor="?colorOnSurface"
+            app:icon="@drawable/ic_protest_strike"
+            app:iconTint="?colorOnSurface"
+            app:layout_anchor="@id/appbarlayout"
+            app:layout_anchorGravity="bottom|right|end" />
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
