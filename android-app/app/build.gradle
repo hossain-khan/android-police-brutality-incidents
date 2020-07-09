@@ -52,11 +52,6 @@ android {
         }
     }
 
-
-    buildFeatures { // https://developer.android.com/studio/releases/gradle-plugin#buildFeatures
-        dataBinding = true
-    }
-
     buildTypes {
         release {
             // https://developer.android.com/studio/build/shrink-code
@@ -83,6 +78,14 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+    buildFeatures { // https://developer.android.com/studio/releases/gradle-plugin#buildFeatures
+        dataBinding = true
+    }
+
+    androidExtensions { // https://plugins.gradle.org/plugin/org.jetbrains.kotlin.android.extensions
+        features = ["parcelize"]
     }
 
     lintOptions { // https://developer.android.com/studio/write/lint.html

@@ -6,6 +6,7 @@
     <string name="title_brutality_incidents">Reported Incidents</string>
     <string name="title_incidents_at_location">Incidents at %s</string>
     <string name="title_incidents_on_date">Incidents on %s</string>
+    <string name="title_incidents_most_recent">Latest Incidents</string>
     <string name="title_report_new_incident">Report Incident</string>
     <string name="title_more_info_and_sources">Additional Resources</string>
     <string name="title_donate_for_cause">Donate for Cause</string>
@@ -40,6 +41,7 @@
     <string name="content_description_donate_for_cause_image">Donate to support the cause</string>
     <string name="content_description_george_floyd_protest_image">George Floyd protest image with protesters and police</string>
     <string name="content_description_go_back_to_prev_screen">Go back to previous screen</string>
+    <string name="content_description_view_most_recent_incidents_list">Show most recent incidents</string>
 
     <!-- Labels, Button CTA and so on -->
     <string name="label_external_links">External links on this incident</string>
@@ -52,6 +54,7 @@
     <string name="button_cta_share_incident">Share Incident</string>
     <string name="button_cta_charity_learn_more">Learn More</string>
     <string name="button_cta_charity_donate_now" tools:ignore="DuplicateStrings">Donate</string>
+    <string name="button_cta_view_most_recent_incidents">Recent</string>
 
     <!-- Social tags -->
     <string name="hash_tag_blacklivesmatter" translatable="false">#BlackLivesMatter</string>

@@ -8,7 +8,7 @@
         <import type="android.view.View" />
 
         <variable
-            name="isDateBased"
+            name="shouldShowCityAndState"
             type="Boolean" />
 
         <variable
@@ -64,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/list_item_vertical_margin"
-                android:text="@{safeUnbox(isDateBased)? @string/incident_location_at_city_state_display_text(incident.city, incident.state): @string/incident_location_at_city_display_text(incident.city)}"
+                android:text="@{safeUnbox(shouldShowCityAndState)? @string/incident_location_at_city_state_display_text(incident.city, incident.state): @string/incident_location_at_city_display_text(incident.city)}"
                 android:textAlignment="textEnd"
                 android:textColor="@color/grey_500"
                 android:visibility="visible"

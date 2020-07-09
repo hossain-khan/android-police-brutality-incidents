@@ -17,6 +17,8 @@ import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.config.THE_846_DAY
 import com.blacklivesmatter.policebrutality.databinding.FragmentIncidentLocationsBinding
 import com.blacklivesmatter.policebrutality.ui.extensions.observeKotlin
+import com.blacklivesmatter.policebrutality.ui.incident.arg.FilterType
+import com.blacklivesmatter.policebrutality.ui.incident.arg.LocationFilterArgs
 import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel.NavigationEvent
 import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel.RefreshEvent
 import com.blacklivesmatter.policebrutality.ui.util.IncidentAvailabilityValidator
@@ -34,6 +36,9 @@ import java.util.ArrayList
 import java.util.Calendar
 import javax.inject.Inject
 
+/**
+ * Incidents by US States (location).
+ */
 @AndroidEntryPoint
 class LocationFragment : Fragment() {
     @Inject
@@ -60,7 +65,9 @@ class LocationFragment : Fragment() {
             Timber.d("Tapped on state item $state")
             analytics.logSelectItem(Analytics.CONTENT_TYPE_LOCATION, state.stateName, state.stateName)
             findNavController().navigate(
-                LocationFragmentDirections.navigationToIncidentsFragment(stateName = state.stateName)
+                LocationFragmentDirections.navigationToIncidentsFragment(
+                    LocationFilterArgs(type = FilterType.STATE, stateName = state.stateName)
+                )
             )
         }
         adapter.submitList(emptyList())
@@ -100,8 +107,11 @@ class LocationFragment : Fragment() {
                     Timber.d("Navigate incident list for $navigationEvent")
                     findNavController().navigate(
                         LocationFragmentDirections.navigationToIncidentsFragment(
-                            timestamp = navigationEvent.timestamp,
-                            dateText = navigationEvent.dateText
+                            LocationFilterArgs(
+                                type = FilterType.DATE,
+                                timestamp = navigationEvent.timestamp,
+                                dateText = navigationEvent.dateText
+                            )
                         )
                     )
                 }
@@ -115,6 +125,14 @@ class LocationFragment : Fragment() {
         }
 
         setupSwipeRefreshAction()
+
+        viewDataBinding.showLatestIncidentsFab.setOnClickListener {
+            findNavController().navigate(
+                LocationFragmentDirections.navigationToIncidentsFragment(
+                    LocationFilterArgs(type = FilterType.LATEST)
+                )
+            )
+        }
     }
 
     override fun onStart() {

@@ -9,9 +9,10 @@ import com.blacklivesmatter.policebrutality.R
 import com.blacklivesmatter.policebrutality.data.model.Incident
 import com.blacklivesmatter.policebrutality.databinding.ListItemIncidentCoreBinding
 import com.blacklivesmatter.policebrutality.ui.common.DataBoundListAdapter
+import com.blacklivesmatter.policebrutality.ui.incident.arg.FilterType
 
 class IncidentsAdapter constructor(
-    private val isDateBasedIncidents: Boolean,
+    private val incidentFilterType: FilterType,
     private val itemClickCallback: ((Incident) -> Unit)?,
     private val linkClickCallback: ((String) -> Unit)? = null
 ) : DataBoundListAdapter<Incident, ListItemIncidentCoreBinding>(
@@ -42,7 +43,7 @@ class IncidentsAdapter constructor(
 
     override fun bind(binding: ListItemIncidentCoreBinding, item: Incident) {
         binding.incident = item
-        binding.isDateBased = isDateBasedIncidents
+        binding.shouldShowCityAndState = incidentFilterType != FilterType.STATE
 
         val adapter = IncidentLinkAdapter(itemClickCallback = linkClickCallback)
         binding.linksRecyclerView.layoutManager = LinearLayoutManager(binding.root.context)
