@@ -232,6 +232,7 @@ class LocationFragment : Fragment() {
             viewModel.onDateTimeStampSelected(viewLifecycleOwner, selectedTimeStamp)
         }
         picker.show(childFragmentManager, picker.toString())
+        analytics.logEvent(Analytics.ACTION_INCIDENT_FILTER_DATE)
         activity?.let { analytics.logPageView(it, Analytics.SCREEN_INCIDENT_DATE_FILTER) }
     }
 }

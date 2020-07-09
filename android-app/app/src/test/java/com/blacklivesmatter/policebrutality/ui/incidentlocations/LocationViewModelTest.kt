@@ -126,6 +126,13 @@ class LocationViewModelTest : BaseTest() {
     }
 
     @Test
+    fun `onShowLatestIncidentsSelected - reports analytics action`() {
+        sut.onShowLatestIncidentsSelected()
+
+        verify(analytics).logEvent(Analytics.ACTION_INCIDENT_FILTER_RECENT)
+    }
+
+    @Test
     fun `onIncidentLocationSelected - should navigate to selected state`() {
         sut.navigationEvent.observe(lifecycleOwner, navigationEventObserver)
 

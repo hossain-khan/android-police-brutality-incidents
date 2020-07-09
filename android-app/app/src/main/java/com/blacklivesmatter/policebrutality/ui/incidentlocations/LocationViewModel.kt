@@ -79,6 +79,7 @@ class LocationViewModel @ViewModelInject constructor(
     }
 
     fun onShowLatestIncidentsSelected() {
+        analytics.logEvent(Analytics.ACTION_INCIDENT_FILTER_RECENT)
         _navigationEvent.value = NavigationEvent.LatestIncidents
     }
 

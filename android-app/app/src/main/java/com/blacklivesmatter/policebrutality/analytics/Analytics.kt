@@ -23,6 +23,8 @@ interface Analytics {
         //
         const val ACTION_INCIDENT_REFRESH = "incidents_refresh"
         const val ACTION_INCIDENT_REPORT_NEW = "incidents_report_new"
+        const val ACTION_INCIDENT_FILTER_DATE = "filter_by_date"
+        const val ACTION_INCIDENT_FILTER_RECENT = "filter_by_recent"
         const val ACTION_SHARE_APP = "app_share"
         const val ACTION_CHARITY_DONATE = "charity_donate"
         const val ACTION_CHARITY_DONATE_INFO = "charity_org_info"
