@@ -31,17 +31,21 @@ import com.blacklivesmatter.policebrutality.analytics.Analytics
 import com.blacklivesmatter.policebrutality.config.INCIDENT_DATA_AUTO_REFRESH_DAYS
 import com.blacklivesmatter.policebrutality.config.PREF_KEY_LAST_UPDATED_TIMESTAMP_EPOCH_SECONDS
 import com.blacklivesmatter.policebrutality.data.IncidentRepository
+import com.blacklivesmatter.policebrutality.data.model.LocationIncidents
 import com.blacklivesmatter.policebrutality.test.BaseTest
 import com.blacklivesmatter.policebrutality.test.FakeSharedPreferences
 import com.blacklivesmatter.policebrutality.test.MockLifecycleOwner
 import com.blacklivesmatter.policebrutality.test.mock
+import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel.NavigationEvent
 import com.blacklivesmatter.policebrutality.ui.incidentlocations.LocationViewModel.RefreshEvent
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
+import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
+import org.mockito.ArgumentCaptor
 import org.mockito.Mockito.`when`
 import org.mockito.Mockito.any
 import org.mockito.Mockito.times
@@ -55,7 +59,8 @@ class LocationViewModelTest : BaseTest() {
     private val incidentRepository: IncidentRepository = mock()
     private val analytics: Analytics = mock()
     private val lifecycleOwner = MockLifecycleOwner()
-    private val liveDataObserver: Observer<RefreshEvent> = mock()
+    private val refreshEventObserver: Observer<RefreshEvent> = mock()
+    private val navigationEventObserver: Observer<NavigationEvent> = mock()
     private val preferences: SharedPreferences = FakeSharedPreferences().preferences
 
     private lateinit var sut: LocationViewModel
@@ -69,12 +74,12 @@ class LocationViewModelTest : BaseTest() {
     fun `onRefreshIncidentsRequested - given refresh already in progress - does not request refresh again`() {
         sut.isOperationInProgress.set(true)
 
-        sut.refreshEvent.observe(lifecycleOwner, liveDataObserver)
+        sut.refreshEvent.observe(lifecycleOwner, refreshEventObserver)
 
         sut.onRefreshIncidentsRequested()
         lifecycleOwner.start() // Start the lifecycle event after observing live data
 
-        verify(liveDataObserver, times(0)).onChanged(any())
+        verify(refreshEventObserver, times(0)).onChanged(any())
     }
 
     @Test
@@ -108,5 +113,31 @@ class LocationViewModelTest : BaseTest() {
         }
 
         assertTrue(sut.shouldRequestLatestData())
+    }
+
+    @Test
+    fun `onShowLatestIncidentsSelected - should navigate to latest incidents`() {
+        sut.navigationEvent.observe(lifecycleOwner, navigationEventObserver)
+
+        sut.onShowLatestIncidentsSelected()
+        lifecycleOwner.start() // Start the lifecycle event after observing live data
+
+        verify(navigationEventObserver, times(1)).onChanged(any())
+    }
+
+    @Test
+    fun `onIncidentLocationSelected - should navigate to selected state`() {
+        sut.navigationEvent.observe(lifecycleOwner, navigationEventObserver)
+
+
+        val locationIncident = LocationIncidents(stateName = "StateName", totalIncidents = 1, lastReportedDate = null)
+        sut.onIncidentLocationSelected(locationIncident)
+        lifecycleOwner.start() // Start the lifecycle event after observing live data
+
+        val captor = ArgumentCaptor.forClass(NavigationEvent::class.java)
+        verify(navigationEventObserver, times(1)).onChanged(captor.capture())
+
+        assertTrue(captor.value is NavigationEvent.Location)
+        assertEquals(locationIncident.stateName, (captor.value as NavigationEvent.Location).stateName)
     }
 }
