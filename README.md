@@ -8,11 +8,19 @@ Android client app for https://github.com/2020PB/police-brutality (Repository co
   <img src="https://raw.githubusercontent.com/amardeshbd/android-police-brutality-incidents/develop/resources/poster/github-repository-social-preview.png" width="50%">
 </p>
 
-### Early BETA Testing 🚧
-If you want to try the app as it is being developed, you can get the latest Android buid via Firebase:
-* Firebase App Distribution - Subscribe to new updates via email. Use this [open-beta testing](https://appdistribution.firebase.dev/i/5d2cb8359305f7e7) process. The invite email will be sent on next release, not immediately.
+## Google Play Submission Update
+[![rejected](https://user-images.githubusercontent.com/99822/89718591-c2cc3380-d98d-11ea-9c6c-643b3daa694d.png)](https://github.com/amardeshbd/android-police-brutality-incidents/releases)
 
-> NOTE: App will be available in Google Play in few days after it's reviewed and approved.
+After being under review for [over a month](https://github.com/amardeshbd/android-police-brutality-incidents/issues/204), unfortunately Google has rejected the applications due to following Google Play policy violation.
+
+* Sensitive Events policy - Specifically, we don't allow apps that lack reasonable sensitivity towards or capitalize on a natural disaster, atrocity, conflict, death, or other tragic event.
+* Bullying and Harassment policy - We don't allow apps that contain or facilitate threats, harassment, or bullying.
+
+So, if you are still interested to try this app, then [**download the APK** from latest release](https://github.com/amardeshbd/android-police-brutality-incidents/releases) and sideload the application. Alternatively you can sign up for beta testing subscription and get latest updates via Firebase App Distribution.
+
+### BETA Testing 🚧
+If you want to try the app as it is being developed, you can get the latest Android buid via Firebase:
+* Firebase App Distribution - Subscribe to new updates via email. Use this [open-beta testing](https://appdistribution.firebase.dev/i/5d2cb8359305f7e7) process.
 
 ## Objective
 
