@@ -20,7 +20,7 @@ So, if you are still interested to try this app, then [**download the APK** from
 
 ### BETA Testing 🚧
 If you want to try the app as it is being developed, you can get the latest Android buid via Firebase:
-* Firebase App Distribution - Subscribe to new updates via email. Use this [open-beta testing](https://appdistribution.firebase.dev/i/5d2cb8359305f7e7) process. The invite email will be sent on next release, not immediately.
+* Firebase App Distribution - Subscribe to new updates via email. Use this [open-beta testing](https://appdistribution.firebase.dev/i/5d2cb8359305f7e7) process.
 
 ## Objective
 
