@@ -26,8 +26,8 @@ android {
         applicationId "com.blacklivesmatter.policebrutality"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
-        versionCode 12
-        versionName "2.5"
+        versionCode 13
+        versionName "2.6"
 
         // https://developer.android.com/studio/build/shrink-code#unused-alt-resources
         resConfigs "en"
