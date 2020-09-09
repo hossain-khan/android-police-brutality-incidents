@@ -48,6 +48,12 @@ interface IncidentDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(incidents: List<Incident>)
 
+    // NOTE: With lot of records it throws following error
+    // SQLiteException: too many SQL variables (code 1 SQLITE_ERROR)
+    // So, instead use `deleteAllRecords()`
     @Query("DELETE FROM incidents WHERE id NOT IN (:ids)")
     suspend fun deleteItemByIds(ids: List<String>): Int
+
+    @Query("DELETE FROM incidents WHERE 1")
+    suspend fun deleteAllRecords(): Int
 }

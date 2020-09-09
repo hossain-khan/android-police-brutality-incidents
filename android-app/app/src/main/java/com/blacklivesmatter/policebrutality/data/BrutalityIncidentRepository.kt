@@ -55,6 +55,11 @@ class BrutalityIncidentRepository @Inject constructor(
         Timber.i("Removed $affectedRows stale records from database.")
     }
 
+    override suspend fun deleteAllRecords() {
+        val affectedRows = incidentDao.deleteAllRecords()
+        Timber.i("Removed $affectedRows records from database.")
+    }
+
     override suspend fun totalIncidents(): Int {
         return incidentDao.getTotalRecords()
     }
