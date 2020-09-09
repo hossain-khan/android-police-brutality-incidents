@@ -134,8 +134,8 @@ class LocationViewModel @ViewModelInject constructor(
             Timber.d("Received total ${incidents.size} incidents, updating local cache.")
             saveLastUpdatedTimestamp()
 
+            incidentRepository.deleteAllRecords()
             incidentRepository.addIncidents(incidents)
-            incidentRepository.removeStaleIncidents(incidents)
             _refreshEvent.value = RefreshEvent.Success(incidents.size)
         }
     }
