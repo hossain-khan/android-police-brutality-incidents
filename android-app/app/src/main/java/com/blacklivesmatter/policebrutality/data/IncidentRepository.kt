@@ -28,4 +28,5 @@ interface IncidentRepository {
      * Should remove all stale incidents except the [latestIncidents] provided here.
      */
     suspend fun removeStaleIncidents(latestIncidents: List<Incident>)
+    suspend fun deleteAllRecords()
 }
