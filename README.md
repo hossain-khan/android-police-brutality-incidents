@@ -16,7 +16,8 @@ After being under review for [over a month](https://github.com/amardeshbd/androi
 * Sensitive Events policy - Specifically, we don't allow apps that lack reasonable sensitivity towards or capitalize on a natural disaster, atrocity, conflict, death, or other tragic event.
 * Bullying and Harassment policy - We don't allow apps that contain or facilitate threats, harassment, or bullying.
 
-So, if you are still interested to try this app, then [**download the APK** from latest release](https://github.com/amardeshbd/android-police-brutality-incidents/releases) and sideload the application. Alternatively you can sign up for beta testing subscription and get latest updates via Firebase App Distribution.
+So, if you are still interested to try this app, then [**download the APK** from latest release](https://github.com/amardeshbd/android-police-brutality-incidents/releases) and sideload the application.  
+**Alternatively**, you can sign up for beta testing subscription below and get latest updates via Google Firebase App Distribution.
 
 ### BETA Testing 🚧
 If you want to try the app as it is being developed, you can get the latest Android buid via Firebase:
@@ -25,7 +26,7 @@ If you want to try the app as it is being developed, you can get the latest Andr
 ## Objective
 
 The objective of the app is to be front-end of the data that is collected and exposed by [police-brutality](https://github.com/2020PB/police-brutality) repository.
-This allows people to easily access data on the go, and allow them to easily report new incident.
+This allows people to easily access data on the go, and allow them to easily report new incident via official GitHub project.
 
 ### Key Features
 
