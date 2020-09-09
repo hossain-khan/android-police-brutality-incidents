@@ -10,7 +10,7 @@ buildscript {
         androidXHiltVersion = '1.0.0-alpha02' // https://developer.android.com/jetpack/androidx/releases/hilt
         appCompatVersion = '1.2.0'
         cardViewVersion = '1.0.0'
-        constraintLayoutVersion = '2.0.0-rc1'
+        constraintLayoutVersion = '2.0.1'
         coreTestingVersion = '2.0.0'
         espressoVersion = '3.1.1'
         firebaseAnalyticsVersion = '17.4.4'
