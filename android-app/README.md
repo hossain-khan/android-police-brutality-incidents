@@ -6,9 +6,9 @@ Android client app for https://github.com/2020PB/police-brutality (Repository co
 
 Essentially, the app should follow standard guidelines from Google.
 
-Currently following key features are being used.
+Currently following key features and libraries are being used.
 
-* MVVM, Dagger Hilt, Room, Navigation, WorkManager, Retrofit2, Architecture Components and other JetPack libraries.
+* MVVM + Data Binding, Dagger Hilt, Room, Navigation, WorkManager, Retrofit2, Architecture Components and other JetPack libraries.
 
 See [app/build.gradle](https://github.com/amardeshbd/android-police-brutality-incidents/blob/develop/android-app/app/build.gradle#L87) for library dependency.
 
@@ -28,7 +28,7 @@ Any merge to `main` branch builds release build that is available in Firebase Ap
 
 #### Release Builds
 
-Release build is manually built and posted to Google Play store. (pending approval)
+Since app is rejected from Google Play, release build is captured from [Firebase App Dist - GitHub Action](https://github.com/amardeshbd/android-police-brutality-incidents/actions?query=workflow%3A%22Firebase+App+Distribution%22) and posted to [App Releases](https://github.com/amardeshbd/android-police-brutality-incidents/releases) page.
 
 
 ## Background
